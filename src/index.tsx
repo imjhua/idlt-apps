@@ -10,10 +10,9 @@ function HomePage(){
           <Clock type="digital" />
         </Heading>
         <List
-          primaryKey="item"
           data={[
+            { item: <Link to="/소개">소개</Link> },
             { item: <Link to="/랜덤달리기">랜덤달리기</Link> },
-            // { item: <Link to="/명상">명상</Link> },
           ]}
         />
       </Box>

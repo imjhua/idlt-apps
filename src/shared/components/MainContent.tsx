@@ -22,10 +22,6 @@ function MainContent(){
 
 export default MainContent
 
-export const MainLayout = styled.div`
-
-  /* scroll-behavior: smooth;
-  overflow: scroll; */
-
+const MainLayout = styled.div`
   padding: 0 10px;
 `

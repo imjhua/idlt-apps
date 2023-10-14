@@ -7,6 +7,10 @@ import MainContent from './MainContent'
 export const GNB_HEIGHT = 44
 export const BOX_PADDING = 6 * 2
 export const CONTENT_PADDING = 6
+export const SUB_NAV_HEIGHT = 26
+export const SUB_NAV_PADDING = 10
+
+export const TOP_PADDING = GNB_HEIGHT + (BOX_PADDING / 2) + CONTENT_PADDING + SUB_NAV_HEIGHT + SUB_NAV_PADDING
 
 function Layout(){
   return (
@@ -30,7 +34,7 @@ function Layout(){
           position: 'fixed', top: 0, right: 0, left: 0,
         }}
       >
-        <Gnb addYOffset={GNB_HEIGHT} />
+        <Gnb addYOffset={4} />
       </Box>
       <Box
         gridArea="main"

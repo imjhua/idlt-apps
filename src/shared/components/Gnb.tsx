@@ -12,8 +12,13 @@ function Gnb({ addYOffset }: GnbProps){
 
   const location = useLocation()
   const title = useMemo(() => {
-    const path = decodeURI(location.pathname)
-    return path.split('/')[1]
+    const subPath = decodeURI(location.pathname).split('/')[1]
+    const hash = decodeURI(location.hash).split('#')[1]
+    if (hash){
+      setOpacity(1)
+    }
+
+    return hash || subPath
   }, [location])
 
   /*
@@ -25,7 +30,7 @@ function Gnb({ addYOffset }: GnbProps){
   useEffect(() => {
     const handleScroll = () => {
       if (addYOffset) {
-        const yOffsetHeight = 20 // scrollY 20지점에서 opacity 계산
+        const yOffsetHeight = 20 // 기본 scrollY 20지점에서 opacity 계산
         const start = addYOffset + yOffsetHeight
         const opacity = window.scrollY < start ? 0 : (window.scrollY - start) / yOffsetHeight
         setOpacity(opacity)
@@ -36,7 +41,7 @@ function Gnb({ addYOffset }: GnbProps){
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [addYOffset])
+  }, [addYOffset, location])
 
   return (
     <Header>

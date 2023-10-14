@@ -1,6 +1,5 @@
+import { Box } from 'grommet'
 import { useState } from 'react'
-
-import { Section } from '@/shared/components/Styles'
 
 import Run from '../shared/components/Run'
 import Setting from '../shared/components/Setting'
@@ -17,14 +16,10 @@ function Page(){
     setStatus(status)
   }
   return (
-    <>
-      <Section>
-        <Setting status={status} count={count} onChange={handleCountChange} />
-      </Section>
-      <Section>
-        <Run status={status} count={count} onUpdateStatus={handleStatusUpdate} />
-      </Section>
-    </>
+    <Box gap="small">
+      <Setting status={status} count={count} onChange={handleCountChange} />
+      <Run status={status} count={count} onUpdateStatus={handleStatusUpdate} />
+    </Box>
   )
 }
 
