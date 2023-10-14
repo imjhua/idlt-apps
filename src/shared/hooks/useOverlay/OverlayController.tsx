@@ -1,0 +1,49 @@
+/* eslint-disable react-refresh/only-export-components */
+import {
+  forwardRef, Ref, useCallback, useEffect, useImperativeHandle, useState,
+} from 'react'
+
+import { CreateOverlayElement } from './types'
+
+interface Props {
+  overlayElement: CreateOverlayElement;
+  onExit: () => void;
+}
+
+export interface OverlayControlRef {
+  close: () => void;
+}
+
+const OverlayController = ((
+  { overlayElement: OverlayElement, onExit }: Props,
+  ref: Ref<OverlayControlRef>,
+) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClose = useCallback(() => setIsOpen(false), [])
+
+  useImperativeHandle(
+    ref,
+    () => {
+      return { close: handleClose }
+    },
+    [handleClose],
+  )
+
+  useEffect(() => {
+    // NOTE: requestAnimationFrame이 없으면 가끔 Open 애니메이션이 실행되지 않는다.
+    requestAnimationFrame(() => {
+      setIsOpen(true)
+    })
+  }, [])
+
+  return (
+    <OverlayElement
+      isOpen={isOpen}
+      close={handleClose}
+      exit={onExit}
+    />
+  )
+})
+
+export default forwardRef(OverlayController)

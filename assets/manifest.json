@@ -1,0 +1,47 @@
+{
+  "short_name": "랜덤달리기",
+  "name": "IDLT APPs",
+  "description": "IDLT APPs - 랜덤달리기",
+  "icons": [
+    {
+      "src": "icon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Home",
+      "url": "/"
+    }
+  ],
+  "idr": "ltr",
+  "categories": ["games", "lifestyle", "entertainment"],
+  "id": "random-run",
+  "edge_side_panel": {},
+  "handle_links": "preferred",
+  "display_override": ["window-controls-overlay","fullscreen", "standalone"],
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "start_url": "/",
+  "scope": "/"
+}
