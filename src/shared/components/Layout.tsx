@@ -30,7 +30,7 @@ function Layout(){
           position: 'fixed', top: 0, right: 0, left: 0,
         }}
       >
-        <Gnb />
+        <Gnb addYOffset={GNB_HEIGHT} />
       </Box>
       <Box
         gridArea="main"
