@@ -136,7 +136,11 @@ const Block = styled.div`
   bottom: 0;
   padding-top: calc(100px + ${TOP_PADDING}px);
 
+  @media (orientation: landscape) {
+    padding-top: calc(${TOP_PADDING}px - 20px);
+  }
 `
+
 const ButtonBlock = styled.div`
   position: absolute;
   width: 100%;
