@@ -24,10 +24,11 @@ const Text = styled.div`
   font-size: 130px;
 
   color: #333;
-  background: rgb(255 255 255 / 80%);
+  background: rgb(255 255 255 / 60%);
 
   display: flex;
   justify-content: center;
   align-items: end;
-  padding-bottom: 100px;
+  padding-bottom: calc(100px + env(safe-area-inset-bottom));
+
 `

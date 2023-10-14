@@ -1,7 +1,8 @@
 import styled from '@emotion/styled/macro'
-import { Box, Text } from 'grommet'
+import { Box, Button, Text } from 'grommet'
 import { useEffect, useMemo, useState } from 'react'
 
+import { TOP_PADDING } from '@/shared/components/Layout'
 import { Highlight } from '@/shared/components/Styles'
 
 import { STATUS } from '../meta'
@@ -58,13 +59,17 @@ function Timer({ minutes, onEnd }: TimerProps){
   }, [time])
 
   const text = useMemo(() => {
-    if (time.minute === '' && time.second === ''){
-      return '끝'
-    }
     return `${time.minute} : ${time.second}`
   }, [time])
 
+  const handleTimerEndClick = () => {
+    setStatus(STATUS.END)
+    onEnd()
+  }
+
   const handleTimerClick = () => {
+    console.log('asdf')
+
     if (status === STATUS.END){
       onEnd()
       return
@@ -83,36 +88,59 @@ function Timer({ minutes, onEnd }: TimerProps){
       return status
     })
   }
+  if (status === STATUS.END){
+    return (
+      <Block onClick={handleTimerClick}>
+        <Text alignSelf="center" size="6xl" weight={900}>끝</Text>
+      </Block>
+    )
+
+  }
 
   return (
-    <Box direction="column">
-      <Text alignSelf="center" size="3xl" margin="medium">
-        <Highlight>
-          {status !== STATUS.END && (status === STATUS.STOP ? '멈춤' : '시작')}
-        </Highlight>
-      </Text>
-
+    <>
       <Block onClick={handleTimerClick}>
-        <Text size="6xl" weight={900}>{text}</Text>
+        <Box>
+          <Text alignSelf="center" size="3xl" margin="medium">
+            <Highlight>
+              {(status === STATUS.STOP ? '멈춤' : '시작')}
+            </Highlight>
+          </Text>
+
+          <Text alignSelf="center" size="6xl" weight={900}>{text}</Text>
+        </Box>
       </Block>
-    </Box>
+
+      <ButtonBlock>
+        <Button
+          primary
+          size="small"
+          label="종료하기"
+          onClick={handleTimerEndClick} fill />
+      </ButtonBlock>
+    </>
   )
 }
 
 export default Timer
 
 const Block = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* background-color: red; */
 
-  @media (orientation: landscape) {
-    font-size: 170px;
-  }
-
+  text-align: center;
+  
   position: fixed;
   right: 0;
-  left: 0;
+  left: 0; 
   top: 0;
+  bottom: 0;
+  padding-top: calc(100px + ${TOP_PADDING}px);
+
+`
+const ButtonBlock = styled.div`
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
   bottom: 0;
 `

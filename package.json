@@ -1,8 +1,8 @@
 {
-  "name": "random-run",
+  "name": "idlt-apps",
   "private": true,
   "version": "1.0.0",
-  "repository": "https://github.com/imjhua/toy.git",
+  "repository": "https://github.com/imjhua/idlt-apps.git",
   "type": "module",
   "scripts": {
     "push": "git checkout dev && git add . && git commit -m 'add' && git push",
