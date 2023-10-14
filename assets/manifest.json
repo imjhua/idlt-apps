@@ -1,7 +1,7 @@
 {
-  "short_name": "랜덤달리기",
+  "short_name": "IDLT APPs",
   "name": "IDLT APPs",
-  "description": "IDLT APPs - 랜덤달리기",
+  "description": "IDLT APPs",
   "icons": [
     {
       "src": "icon.ico",
@@ -34,7 +34,7 @@
   ],
   "idr": "ltr",
   "categories": ["games", "lifestyle", "entertainment"],
-  "id": "random-run",
+  "id": "idlt",
   "edge_side_panel": {},
   "handle_links": "preferred",
   "display_override": ["window-controls-overlay","fullscreen", "standalone"],
