@@ -35,4 +35,5 @@ export const NavBlock = styled(Box)`
   left: 0;
   top: ${GNB_HEIGHT}px;
   z-index: 1;
+  padding-top: env(safe-area-inset-top);
 `
