@@ -3,8 +3,7 @@ import styled from '@emotion/styled/macro'
 
 import { SUB_NAV_HEIGHT, SUB_NAV_PADDING, TOP_PADDING } from '@/shared/components/Layout'
 
-import Hero from '../shared/components/Hero'
-import Parallax, { ParallaxSection1, ParallaxSection2, ParallaxSection3 } from '../shared/components/Parallax'
+import { ParallaxSection1, ParallaxSection2, ParallaxSection3 } from '../shared/components/Parallax'
 import SubNav from '../shared/components/SubNav'
 
 function Page(){

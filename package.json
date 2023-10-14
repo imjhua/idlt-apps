@@ -5,8 +5,8 @@
   "repository": "https://github.com/imjhua/toy.git",
   "type": "module",
   "scripts": {
-    "push": "git checkout dev && git add . && git commit -m 'add' && git push",
-    "merge": "git checkout main && git merge dev && git push",
+    "push": "yarn build && git checkout dev && git add . && git commit -m 'add' && git push",
+    "merge": "yarn build && git checkout main && git merge dev && git push",
     "========================================== [ENVIRONMENT]": "",
     "env": "cp .env/.env.development .env.local",
     "env:prod": "cp .env/.env.production .env.local",

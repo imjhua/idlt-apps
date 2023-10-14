@@ -1,10 +1,7 @@
 import styled from '@emotion/styled/macro'
 import { Box } from 'grommet'
 
-import { SUB_NAV_HEIGHT, SUB_NAV_PADDING } from '@/shared/components/Layout'
-
-type ParallaxProps = { }
-function Parallax({ }: ParallaxProps){
+function Parallax(){
   return (
     <>
       <ParallaxSection1 />

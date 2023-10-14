@@ -3,8 +3,7 @@ import { Box } from 'grommet'
 
 import { SUB_NAV_HEIGHT, SUB_NAV_PADDING } from '@/shared/components/Layout'
 
-type HeroProps = { }
-function Hero({ }: HeroProps){
+function Hero(){
   return (
     <StickySection>
       <div>
