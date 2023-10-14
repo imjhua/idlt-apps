@@ -7,6 +7,14 @@ import { ParallaxSection1, ParallaxSection2, ParallaxSection3 } from '../shared/
 import SubNav from '../shared/components/SubNav'
 
 function Page(){
+  // useEffect(() => {
+  //   [1, 2, 3].map((number) => {
+  //     const fileName = `/images/background/${number}.jpg`
+  //     const images = new Image()
+  //     images.src = fileName
+  //   })
+  // }, [])
+
   return (
     <>
       <SubNav />

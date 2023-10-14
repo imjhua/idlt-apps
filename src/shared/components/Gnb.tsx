@@ -56,7 +56,7 @@ function Gnb({ addYOffset }: GnbProps){
 
 export default Gnb
 
-export const Title = styled.span<{ opacity: number }>`
+const Title = styled.span<{ opacity: number }>`
   margin: 4px;
   opacity: ${({ opacity }) => opacity};
   transition: .5s;

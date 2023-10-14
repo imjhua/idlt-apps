@@ -15,4 +15,5 @@ export default Logo
 const Anchor = styled.a`
   border-radius: 4px;
   text-align: center;
+  padding-left: 6px;
 `

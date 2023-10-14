@@ -3,16 +3,16 @@ import { useState } from 'react'
 
 import Run from '../shared/components/Run'
 import Setting from '../shared/components/Setting'
-import { STATUS } from '../shared/meta'
+import { COUNT_DWON_STATUS } from '../shared/meta'
 
 function Page(){
-  const [status, setStatus] = useState<STATUS | undefined>()
+  const [status, setStatus] = useState<COUNT_DWON_STATUS | undefined>()
   const [count, setCount] = useState<number>(0)
 
   const handleCountChange = (count: number) => {
     setCount(count)
   }
-  const handleStatusUpdate = (status: STATUS) => {
+  const handleStatusUpdate = (status: COUNT_DWON_STATUS) => {
     setStatus(status)
   }
   return (

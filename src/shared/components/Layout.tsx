@@ -24,12 +24,12 @@ function Layout(){
       fill
     >
       <Box
-        border={{ color: 'border', style: 'dashed' }}
         gridArea="header"
         justify="center"
         background="header"
+        border="bottom"
         style={{
-          zIndex: 1,
+          zIndex: 10,
           paddingTop: 'env(safe-area-inset-top)',
           position: 'fixed', top: 0, right: 0, left: 0,
         }}

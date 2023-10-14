@@ -1,6 +1,8 @@
 import { Box, Clock, Heading, List } from 'grommet'
 import { Link } from 'react-router-dom'
 
+import { MENUS } from './menu'
+
 function HomePage(){
   return (
     <>
@@ -10,10 +12,10 @@ function HomePage(){
           <Clock type="digital" />
         </Heading>
         <List
-          data={[
-            { item: <Link to="/소개">소개</Link> },
-            { item: <Link to="/랜덤달리기">랜덤달리기</Link> },
-          ]}
+          data={
+            MENUS.map(({ path, title }, index) => {
+              return { item: <Link key={index} to={path}>{title}</Link> }
+            })}
         />
       </Box>
     </>

@@ -10,12 +10,12 @@ import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
 import NoData from '@/shared/components/NoData'
 
-import { CHARACTER_LIST, STATUS } from '../meta'
+import { CHARACTER_LIST, COUNT_DWON_STATUS } from '../meta'
 import CountDown from './CountDown'
 
 const COUNT_DOWN = 3
 const DURATION = 10
-type RunProps = { status: STATUS | undefined; count: number; onUpdateStatus: (status: STATUS) => void }
+type RunProps = { status: COUNT_DWON_STATUS | undefined; count: number; onUpdateStatus: (status: COUNT_DWON_STATUS) => void }
 
 function Run({ status, count = 0, onUpdateStatus }: RunProps){
   const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
@@ -37,8 +37,8 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
   }, [])
 
   useEffect(() => {
-    if (status === STATUS.READY){
-      onUpdateStatus(STATUS.START)
+    if (status === COUNT_DWON_STATUS.READY){
+      onUpdateStatus(COUNT_DWON_STATUS.START)
     }
   }, [status, count, onUpdateStatus])
 
@@ -70,7 +70,7 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
   }, [count])
 
   const handleGoButtonClick = () => {
-    if (memberList.length === 0 || status === STATUS.START){
+    if (memberList.length === 0 || status === COUNT_DWON_STATUS.START){
       return
     }
 
@@ -149,11 +149,11 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
       // console.log(playerList.filter(({ winner }) => (winner))[0].character, '당첨!')
     }, ((COUNT_DOWN + DURATION) * 1000) + 200 + 200)
 
-    onUpdateStatus(STATUS.READY)
+    onUpdateStatus(COUNT_DWON_STATUS.READY)
   }
 
   const handleResetButtonClick = () => {
-    onUpdateStatus(STATUS.RESET)
+    onUpdateStatus(COUNT_DWON_STATUS.RESET)
   }
   const handleShuffleButtonClick = () => {
     const memberList = CHARACTER_LIST.reduce<string[]>((data) => {
@@ -183,7 +183,7 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
       <Box gap="small">
         <Box direction="row" gap="medium" justify="between">
           {
-            status !== STATUS.START ? (
+            status !== COUNT_DWON_STATUS.START ? (
               <>
                 <Box direction="row" gap="small">
                   <Button
@@ -231,7 +231,7 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
                             alpha={getRandomIntInclusive(1, 2) % 2 === 0 ? 1 : -1}
                             delay={COUNT_DOWN}
                             duration={speedMode ? 1 : DURATION}
-                            active={status === STATUS.START}
+                            active={status === COUNT_DWON_STATUS.START}
                             timing={timings}
                             speedMode={speedMode}
                           >
@@ -247,7 +247,7 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
                 ]}
               />)}
             {/* <CountDown count={3} /> */}
-            {status === STATUS.START && countDown !== 0 && <CountDown count={countDown} />}
+            {status === COUNT_DWON_STATUS.START && countDown !== 0 && <CountDown count={countDown} />}
           </Item>
         </Box>
       </Box>

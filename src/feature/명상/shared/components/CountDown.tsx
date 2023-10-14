@@ -11,13 +11,23 @@ function CountDown({ count }: CountDownProps){
 export default CountDown
 
 const Text = styled.div`
+  text-align: center;
+  z-index: 10;
+
   position: fixed;
-  transform: translate(50%, 50%) scale(4);
-  top: 50%;
-  right: 50%;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 
   font-weight: bold;
-  font-size: 50px;
+  font-size: 130px;
 
-  color: ${({ theme }) => theme.highlight};
+  color: #333;
+  background: rgb(255 255 255 / 80%);
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 100px;
 `
