@@ -1,8 +1,8 @@
 import styled from '@emotion/styled/macro'
-import { Image as Img } from 'grommet'
+import { Image } from 'grommet'
 import { ImgHTMLAttributes } from 'react'
 
-function Image({ src, width, height }: ImgHTMLAttributes<HTMLImageElement>){
+function Img({ src, width, height }: ImgHTMLAttributes<HTMLImageElement>){
   return (
     <ImageBlock
       src={src}
@@ -12,8 +12,8 @@ function Image({ src, width, height }: ImgHTMLAttributes<HTMLImageElement>){
   )
 }
 
-export default Image
+export default Img
 
-const ImageBlock = styled(Img)`
+const ImageBlock = styled(Image)`
   vertical-align: middle;
 `

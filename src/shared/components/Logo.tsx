@@ -1,11 +1,11 @@
 import styled from '@emotion/styled/macro'
 
-import Image from './Image'
+import Img from './Image'
 
 function Logo(){
   return (
     <Anchor href="/">
-      <Image src="/logo.png" width={44} height={44} />
+      <Img src="/logo.png" width={44} height={44} />
     </Anchor>
   )
 }

@@ -7,7 +7,7 @@ import { Cycle } from 'grommet-icons'
 import { useEffect, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
-import Image from '@/shared/components/Image'
+import Img from '@/shared/components/Image'
 import NoData from '@/shared/components/NoData'
 
 import { CHARACTER_LIST, STATUS } from '../meta'
@@ -27,6 +27,14 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
     character: string;
     timings: number[];
   }[]>([])
+
+  useEffect(() => {
+    CHARACTER_LIST.map((character) => {
+      const fileName = `/images/animal/${String(character)}.png`
+      const images = new Image()
+      images.src = fileName
+    })
+  }, [])
 
   useEffect(() => {
     if (status === STATUS.READY){
@@ -227,7 +235,7 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
                             timing={timings}
                             speedMode={speedMode}
                           >
-                            <Image
+                            <Img
                               width={38} height={38}
                               src={`/images/animal/${String(character)}.png`}
                               alt={character} />
@@ -250,12 +258,13 @@ function Run({ status, count = 0, onUpdateStatus }: RunProps){
 export default Run
 
 const Block = styled.div`
-  padding: 16px;
+  padding: 16px;  
   margin-bottom: 4px;
   border: 3px solid ${({ theme }) => theme.border};
 `
 
 const Item = styled.div`
+
   position: relative;
   table{
     width: 100%;
