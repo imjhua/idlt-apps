@@ -2,7 +2,6 @@ import styled from '@emotion/styled/macro'
 import { Box, Button, Text } from 'grommet'
 import { useEffect, useMemo, useState } from 'react'
 
-import { TOP_PADDING } from '@/shared/components/Layout'
 import { Highlight } from '@/shared/components/Styles'
 
 import { STATUS } from '../meta'
@@ -101,7 +100,7 @@ function Timer({ minutes, onEnd }: TimerProps){
     <>
       <Block onClick={handleTimerClick}>
         <Box>
-          <Text alignSelf="center" size="3xl" margin="medium">
+          <Text alignSelf="center" size="2xl">
             <Highlight>
               {(status === STATUS.STOP ? '멈춤' : '시작')}
             </Highlight>
@@ -128,17 +127,16 @@ const Block = styled.div`
   /* background-color: red; */
 
   text-align: center;
-  
   position: fixed;
   right: 0;
   left: 0; 
   top: 0;
   bottom: 0;
-  padding-top: calc(100px + ${TOP_PADDING}px);
 
-  @media (orientation: landscape) {
-    padding-top: calc(${TOP_PADDING}px - 20px);
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
 `
 
 const ButtonBlock = styled.div`
