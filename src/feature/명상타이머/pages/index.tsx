@@ -3,6 +3,8 @@ import styled from '@emotion/styled/macro'
 import { Box, Button } from 'grommet'
 import { useState } from 'react'
 
+import useTitle from '@/shared/hooks/useTitle'
+
 import CountDown from '../shared/components/CountDown'
 import InspirationalQuotes from '../shared/components/InspirationalQuotes'
 import Timer from '../shared/components/Timer'
@@ -12,6 +14,8 @@ const COUNT_DOWN = 3
 const TIMER_MINUTES = 10
 
 function Page(){
+  useTitle('명상타이머 | IDLT APPs')
+
   const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
   const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
 
