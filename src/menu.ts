@@ -11,4 +11,8 @@ export const MENUS = [
     path: '/명상타이머',
     title: '명상타이머'
   },
+  {
+    path: '/퇴직금계산기',
+    title: '퇴직금계산기'
+  },
 ]
