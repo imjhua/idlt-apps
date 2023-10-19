@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 
+import { BRAND_NAME } from '@/meta'
+
 const useTitle = (title: string) => {
   const documentDefined = typeof document !== 'undefined'
   const originalTitle = useRef(documentDefined ? document.title : null)
@@ -11,7 +13,7 @@ const useTitle = (title: string) => {
 
     const current = originalTitle.current
     if (document.title !== title) {
-      document.title = title
+      document.title = `${title} | ${BRAND_NAME}`
     }
 
     return () => {
