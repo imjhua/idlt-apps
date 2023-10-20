@@ -2,12 +2,10 @@ import styled from '@emotion/styled/macro'
 import { Image } from 'grommet'
 import { ImgHTMLAttributes } from 'react'
 
-function Img({ src, width, height }: ImgHTMLAttributes<HTMLImageElement>){
+function Img({ ...option }: ImgHTMLAttributes<HTMLImageElement>){
   return (
     <ImageBlock
-      src={src}
-      width={width}
-      height={height}
+      {...option}
     />
   )
 }

@@ -10,17 +10,16 @@ import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
 import NoData from '@/shared/components/NoData'
 
-import { CHARACTER_LIST, COUNT_DWON_STATUS, STATUS } from '../meta'
+import { CHARACTER_LIST, COUNT_DWON_STATUS } from '../meta'
+import CountDown from './CountDown'
 
+const COUNT_DOWN = 3
 const DURATION = 10
-type RunProps = { delay: number; status: STATUS | undefined; count: number; countDownStatus: COUNT_DWON_STATUS;onUpdateStatus: (status: STATUS) => void }
+type RunProps = { status: COUNT_DWON_STATUS | undefined; count: number; onUpdateStatus: (status: COUNT_DWON_STATUS) => void }
 
-function Run({
-  delay, status, count, countDownStatus, onUpdateStatus
-}: RunProps){
-  // const [clickedImg, setClickedImg] = useState<{ path: string; show: boolean }>()
-
-  const [speedMode, setSpeedMode] = useState(false)
+function Run({ status, count = 0, onUpdateStatus }: RunProps){
+  const [clickedImg, setClickedImg] = useState<boolean>(false)
+  const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
 
   const [memberList, setMemberList] = useState<string[]>([])
   const [playerList, setPlayerList] = useState<{
@@ -28,7 +27,6 @@ function Run({
     winner: boolean;
     character: string;
     timings: number[];
-    duration: number;
   }[]>([])
 
   useEffect(() => {
@@ -38,6 +36,12 @@ function Run({
       images.src = fileName
     })
   }, [])
+
+  useEffect(() => {
+    if (status === COUNT_DWON_STATUS.READY){
+      onUpdateStatus(COUNT_DWON_STATUS.START)
+    }
+  }, [status, count, onUpdateStatus])
 
   useEffect(() => {
     // 카운트 변경시마다 멤버 리스트 업데이트
@@ -61,98 +65,97 @@ function Run({
         character: value,
         timings: [],
         winner: false,
-        duration: 0,
       }
     })
     setPlayerList(playerListInit)
-
-    onUpdateStatus(STATUS.READY)
-  }, [count, onUpdateStatus])
+  }, [count])
 
   const handleGoButtonClick = () => {
-    if (memberList.length === 0 || status === STATUS.START){
+    if (memberList.length === 0 || status === COUNT_DWON_STATUS.START){
       return
     }
 
     const winningIndex = getRandomIntInclusive(0, memberList.length - 1)
     const randomMaxValues = [
-      15, // 0
-      13, // 1
-      winningIndex ? 10 : 15, // 2
-      13, // 3
-      14, // 4
-      winningIndex ? 12 : 16, // 5
-      13, // 6 (여기서부터 85이상인 경우 보정)
-      12, // 7
-      13 // 8  -> sum 126
+      16, // 0
+      14, // 1
+      18, // 2
+      14, // 3
+      15, // 4
+      17, // 5
+      14, // 6
+      13 // 7  -> sum 121
     ]
-    console.log(randomMaxValues.reduce((data, item) => data + item, 0))
-
-    console.log('wwwww'.repeat(10))
-    console.log(memberList[winningIndex])
-    console.log('='.repeat(10))
+    // console.log('wwwww'.repeat(10))
+    // console.log(memberList[winningIndex])
+    // console.log(randomMaxValues.reduce((data, item) => data + item, 0))
+    // console.log('='.repeat(10))
 
     const playerList = memberList.map((player, index) => {
       const number0 = getRandomIntInclusive(1, randomMaxValues[0])
       const number1 = getRandomIntInclusive(1, randomMaxValues[1])
-      const number2 = getRandomIntInclusive(3, randomMaxValues[2])
-      const number3 = getRandomIntInclusive(2, randomMaxValues[3])
-      const number4 = getRandomIntInclusive(5, randomMaxValues[4])
-      const number5 = getRandomIntInclusive(7, randomMaxValues[5])
+      const number2 = getRandomIntInclusive(1, randomMaxValues[2])
+      const number3 = getRandomIntInclusive(1, randomMaxValues[3])
+      const number4 = getRandomIntInclusive(1, randomMaxValues[4])
+      const number5 = getRandomIntInclusive(1, randomMaxValues[5])
       const number6 = getRandomIntInclusive(1, randomMaxValues[6])
       const number7 = getRandomIntInclusive(1, randomMaxValues[7])
-      const number8 = getRandomIntInclusive(1, randomMaxValues[8])
 
-      const valueList = [
-        number0,
-        number0 + number1,
-        number0 + number1 + number2,
-        number0 + number1 + number2 + number3,
-        number0 + number1 + number2 + number3 + number4,
-        number0 + number1 + number2 + number3 + number4 + number5,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8,
-      ]
+      const valueList = [number0, number1, number2, number3, number4, number5, number6, number7]
+      const sumValue = valueList.reduce((data, item) => data + item, 0)
+      if (sumValue > 90){
+        // console.log(player)
+        // console.log([...valueList])
+        // console.log('보정')
+        const filtedList = valueList.filter((value) => {
+          return value > 12
+        })
+        filtedList.forEach((_, maxValueIndex) => {
+          valueList[maxValueIndex] = getRandomIntInclusive(1, 10)
+        })
+        // console.log(valueList)
+      }
 
-      // 보정
-      const newValueList = valueList.map((value, index) => {
-        if (index >= 7 && value > 85){
-          console.log('보정')
-          return valueList[index - 1] + getRandomIntInclusive(1, 5)
-        }
+      const lastNumber = (winningIndex === index ? 100 - sumValue : getRandomIntInclusive(1, 5))
 
-        return value
-      })
-      const defaultDuration = speedMode ? 1 : DURATION
+      // console.log(player)
+      // console.log([number0, number1, number2, number3, number4, number5, number6, number7, lastNumber])
+      // console.log([number0, number1, number2, number3, number4, number5, number6, number7, lastNumber].reduce((data, item) => data + item, 0))
       return {
         index: index + 1,
         character: player,
-        timings: [...newValueList, 100],
+        timings: [...valueList, lastNumber],
         winner: winningIndex === index,
-        duration: winningIndex === index ?
-          defaultDuration : defaultDuration + getRandomIntInclusive(5, 20) * 0.1,
       }
     })
 
     // 플레이어 설정
     setPlayerList(playerList)
 
-    // 당첨자 확인
-    // setTimeout(() => {
-    //   if (!playerList){
-    //     return
-    //   }
-    //   // console.log(playerList.filter(({ winner }) => (winner))[0].character, '당첨!')
-    // }, ((delay + DURATION) * 1000) + 200 + 200)
+    // 카운트다운
+    setCountDown(COUNT_DOWN)
+    for (let i = 1; i <= COUNT_DOWN; i++){
+      (function(i){
+        setTimeout(() => {
+          setCountDown(COUNT_DOWN - i)
+        }, 1000 * i)
+      }(i))
+    }
 
-    onUpdateStatus(STATUS.START)
+    // 당첨자 확인
+    setTimeout(() => {
+      if (!playerList){
+        return
+      }
+      // console.log(playerList.filter(({ winner }) => (winner))[0].character, '당첨!')
+    }, ((COUNT_DOWN + DURATION) * 1000) + 200 + 200)
+
+    onUpdateStatus(COUNT_DWON_STATUS.READY)
   }
 
   const handleResetButtonClick = () => {
-    onUpdateStatus(STATUS.READY)
+    onUpdateStatus(COUNT_DWON_STATUS.RESET)
   }
-
   const handleShuffleButtonClick = () => {
     const memberList = CHARACTER_LIST.reduce<string[]>((data) => {
       const randomNumber1 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
@@ -170,18 +173,18 @@ function Run({
         character: value,
         timings: [],
         winner: false,
-        duration: 0
       }
     })
     setPlayerList(playerListInit)
   }
+  const [speedMode, setSpeedMode] = useState(false)
 
   return (
     <Block>
       <Box gap="small">
         <Box direction="row" gap="medium" justify="between">
           {
-            status === STATUS.READY ? (
+            status !== COUNT_DWON_STATUS.START ? (
               <>
                 <Box direction="row" gap="small">
                   <Button
@@ -199,18 +202,11 @@ function Run({
                   label={<Cycle />} onClick={handleShuffleButtonClick} disabled={!count} />
               </>
             ) : (
-              <Button label="Re-Game" onClick={handleResetButtonClick} disabled={countDownStatus === COUNT_DWON_STATUS.START} />
+              <Button label="Reset" onClick={handleResetButtonClick} disabled={countDown !== 0} />
             )
           }
         </Box>
         <Box>
-          {/* {clickedImg && <CharacterImg
-            show={clickedImg.show}
-            src={clickedImg.path}
-            width={38}
-            height={38}
-          />} */}
-
           <Item>
             {!count ? (
               <NoData text="인원수를 입력해주세요." />
@@ -229,44 +225,21 @@ function Run({
                     property: 'character',
                     header: <Text></Text>,
                     size: 'large',
-                    render: ({ character, timings, winner, duration }) => {
+                    render: ({ character, timings }) => {
                       return (
                         <>
                           <Rail
                             alpha={getRandomIntInclusive(1, 2) % 2 === 0 ? 1 : -1}
-                            delay={delay}
-                            duration={duration}
-                            active={status !== STATUS.READY}
+                            delay={COUNT_DOWN}
+                            duration={speedMode ? 1 : DURATION}
+                            active={status === COUNT_DWON_STATUS.START}
                             timing={timings}
-                            winner={winner}
                             speedMode={speedMode}
                           >
                             <Img
                               width={38} height={38}
                               src={`/images/animal/${String(character)}.png`}
-                              alt={character}
-                              // onClick={() => {
-
-                              //   setClickedImg({
-                              //     show: true,
-                              //     path: `/images/animal/${String(character)}.png`
-                              //   })
-
-                              //   setTimeout(() => {
-                              //     setClickedImg({
-                              //       show: false,
-                              //       path: `/images/animal/${String(character)}.png`
-                              //     })
-                              //   }, 800)
-
-                              //   setTimeout(() => {
-                              //     setClickedImg({
-                              //       show: false,
-                              //       path: ''
-                              //     })
-                              //   }, 1000)
-                              // }}
-                            />
+                              alt={character} />
                           </Rail>
                         </>
                       )
@@ -274,6 +247,8 @@ function Run({
                   },
                 ]}
               />)}
+            {/* <CountDown count={3} /> */}
+            {status === COUNT_DWON_STATUS.START && countDown !== 0 && <CountDown count={countDown} />}
           </Item>
         </Box>
       </Box>
@@ -282,20 +257,6 @@ function Run({
 }
 
 export default Run
-
-// const CharacterImg = styled(Img)<{ show: boolean }>`
-//   transition: all .8s;
-//   /* display: ${({ show }) => !show ? 'block' : 'none' }; */
-//   /* opacity: ${({ show }) => !show ? 1 : 0.5 }; */
-//   transform: translate(50%, 50%) scale(${({ show }) => !show ? 0 : 4 });
-//   position: absolute;
-//   right: 50%;
-//   top: 50%;
-//   z-index: 1;
-//   padding: 10px;
-//   background: ${({ theme }) => theme.background};
-//   border: 3px solid ${({ theme }) => theme.border};
-// `
 
 const Block = styled.div`
   padding: 16px;  
@@ -343,7 +304,7 @@ const Item = styled.div`
     }
   } 
 `
-const Rail = styled.div<{ speedMode: boolean; alpha: number; delay: number; duration: number; active: boolean; timing: number[]; winner: boolean }>`
+const Rail = styled.div<{ speedMode: boolean; alpha: number; delay: number; duration: number; active: boolean; timing: number[] }>`
   width: calc(100% - 46px);
   transform: translateX(0px) translateY(0px);
   /* transform: translateX(calc(99%)) translateY(0px); */
@@ -377,9 +338,9 @@ const Rail = styled.div<{ speedMode: boolean; alpha: number; delay: number; dura
     vertical-align: middle;
   }
 
-  ${({ delay, active, winner, duration }) => active && winner && css`
+  ${({ delay, active, timing, duration }) => active && (timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8]) === 100 && css`
     > img{
-      animation: ${shake} .3s ${delay + duration}s ease-in infinite;
+      animation: ${shake} .3s ${delay + duration}.4s ease-in infinite;
     }
   `}
 `
@@ -395,49 +356,40 @@ const ready = (alpha: number) => keyframes`
     transform: translateY(calc(2px * ${alpha}));
   }
 `
-
 const running = (timing: number[]) => keyframes`
   0% {
     transform: translateX(0px) translateY(0px);
   }
-  10% {
+  9% {
     transform: translateX(calc(${timing[0]}%)) translateY(2px);
   }
-  20% {
-    transform: translateX(calc(${timing[1]}%)) translateY(2px);
+  22% {
+    transform: translateX(calc(${(timing[0] + timing[1])}%)) translateY(-2px);
   }
-  30% {
-    transform: translateX(calc(${timing[2]}%)) translateY(2px);
+  34% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2])}%)) translateY(2px);
   }
-  40% {
-    transform: translateX(calc(${timing[3]}%)) translateY(2px);
+  45% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2] + timing[3])}%)) translateY(-2px);
   }
-  50% {
-    transform: translateX(calc(${timing[4]}%)) translateY(2px);
+  57% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4])}%)) translateY(2px);
   }
-  60% {
-    transform: translateX(calc(${timing[5]}%)) translateY(2px);
+  71% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5])}%)) translateY(2px);
   }
-  70% {
-    transform: translateX(calc(${timing[6]}%)) translateY(2px);
+  82% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6])}%)) translateY(2px);
   }
-  80% {
-    transform: translateX(calc(${timing[7]}%)) translateY(2px);
-  }
-  90% {
-    transform: translateX(calc(${timing[8]}%)) translateY(2px);
+  92% {
+    transform: translateX(calc(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7])}%)) translateY(2px);
   }
   100% {
-    transform: translateX(calc(${timing[9]}%)) translateY(2px);
-    /* transform: translateX(100%) translateY(2px); */
-  }
-  
-  /* 100% {
     transform: translateX(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8]) === 100
     ? '100%'
     : String((timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8])) + '%'})
     translateY(0);
-  } */
+  }
 `
 
 const shake = keyframes`

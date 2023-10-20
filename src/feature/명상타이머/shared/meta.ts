@@ -10,6 +10,7 @@ export const QUOTES = [
 export enum COUNT_DWON_STATUS {
   READY,
   START,
+  END,
 }
 
 export enum STATUS {

@@ -29,7 +29,7 @@ function Page(){
 
     // 카운트다운
     setCountDown(COUNT_DOWN)
-    for (let i = 1; i <= COUNT_DOWN;i++){
+    for (let i = 1; i <= COUNT_DOWN; i++){
       (function(i){
         setTimeout(() => {
           setCountDown(COUNT_DOWN - i)

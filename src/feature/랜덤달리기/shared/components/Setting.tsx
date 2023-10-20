@@ -1,9 +1,9 @@
 import { Box, Form, FormField, TextInput } from 'grommet'
 
-import { COUNT_DWON_STATUS } from '../meta'
+import { STATUS } from '../meta'
 
 const MAX_MEMBER = 12
-type SettingProps = { status: COUNT_DWON_STATUS | undefined; count: number; onChange: (count: number) => void }
+type SettingProps = { status: STATUS | undefined; count: number; onChange: (count: number) => void }
 function Setting({ status, count, onChange }: SettingProps){
   return (
     <Box>
@@ -35,7 +35,7 @@ function Setting({ status, count, onChange }: SettingProps){
             type="tel"
             min={1}
             max={12}
-            disabled={status === COUNT_DWON_STATUS.START}
+            disabled={status === STATUS.START}
           />
         </FormField>
       </Form>

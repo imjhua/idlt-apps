@@ -4,5 +4,9 @@ export enum COUNT_DWON_STATUS {
   READY,
   START,
   END,
-  RESET,
+}
+
+export enum STATUS {
+  READY,
+  START,
 }

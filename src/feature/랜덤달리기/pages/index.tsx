@@ -1,28 +1,60 @@
 import { Box } from 'grommet'
-import { useState } from 'react'
+import { useCallback, useState } from 'react'
 
 import useTitle from '@/shared/hooks/useTitle'
 
+import CountDown from '../shared/components/CountDown'
 import Run from '../shared/components/Run'
 import Setting from '../shared/components/Setting'
-import { COUNT_DWON_STATUS } from '../shared/meta'
+import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
 
+const COUNT_DOWN = 3
 function Page(){
-  useTitle('랜덤달리기 | IDLT APPs')
+  useTitle('랜덤달리기')
 
-  const [status, setStatus] = useState<COUNT_DWON_STATUS | undefined>()
   const [count, setCount] = useState<number>(0)
+
+  const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
+  const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
+
+  const [status, setStatus] = useState<STATUS>(STATUS.READY)
 
   const handleCountChange = (count: number) => {
     setCount(count)
   }
-  const handleStatusUpdate = (status: COUNT_DWON_STATUS) => {
+  const handleStatusUpdate = useCallback((status: STATUS) => {
     setStatus(status)
-  }
+
+    if (status === STATUS.START){
+      setCountDownStatus(COUNT_DWON_STATUS.START)
+
+      // 카운트다운
+      setCountDown(COUNT_DOWN)
+      for (let i = 1; i <= COUNT_DOWN; i++){
+        (function(i){
+          setTimeout(() => {
+            setCountDown(COUNT_DOWN - i)
+            if (i === COUNT_DOWN){
+              setCountDownStatus(COUNT_DWON_STATUS.READY)
+            }
+          }, 1000 * i)
+        }(i))
+      }
+    }
+  }, [])
+
   return (
     <Box gap="small">
       <Setting status={status} count={count} onChange={handleCountChange} />
-      <Run status={status} count={count} onUpdateStatus={handleStatusUpdate} />
+      <Run
+        delay={COUNT_DOWN}
+        status={status}
+        count={count}
+        countDownStatus={countDownStatus}
+        onUpdateStatus={handleStatusUpdate} />
+
+      {/* <CountDown count={3} /> */}
+      {countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
     </Box>
   )
 }
