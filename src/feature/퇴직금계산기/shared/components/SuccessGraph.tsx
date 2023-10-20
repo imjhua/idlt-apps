@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { useMemo } from 'react'
 
-const BONUS = 100
+// const BONUS = 100
 
 // YGap 10개로 제한해두기
 const SVG_WIDTH = 600
@@ -190,7 +190,7 @@ function Graph({ year, retiermentPay }: { year: number; retiermentPay: number })
     <>
       {/* 점 */}
       <g>
-        {data.map(({ score }, index) => {
+        {data.map((_, index) => {
           // 처음과 끝은 무조건 노출
           // if (index === 0 || dataLength - 1 === index) {
           //   return null
@@ -312,20 +312,20 @@ const Text = styled.text`
   fill: ${({ theme }) => theme.color};
 `
 
-const Path = styled.path`
-  stroke: ${({ theme }) => theme.primary};
-  stroke-dasharray: 2000;
-  stroke-dashoffset: 2000;
-  animation: line-animation 3s forwards;
-  @keyframes line-animation {
-    0% {
-      stroke-dashoffset: 2000;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
-`
+// const Path = styled.path`
+//   stroke: ${({ theme }) => theme.primary};
+//   stroke-dasharray: 2000;
+//   stroke-dashoffset: 2000;
+//   animation: line-animation 3s forwards;
+//   @keyframes line-animation {
+//     0% {
+//       stroke-dashoffset: 2000;
+//     }
+//     100% {
+//       stroke-dashoffset: 0;
+//     }
+//   }
+// `
 
 const Circle = styled.circle`
   fill: ${({ theme }) => theme.primary};
