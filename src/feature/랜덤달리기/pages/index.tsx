@@ -10,7 +10,7 @@ import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
 
 const COUNT_DOWN = 3
 function Page(){
-  useTitle('랜덤달리기')
+  useTitle()
 
   const [count, setCount] = useState<number>(0)
 

@@ -7,7 +7,7 @@ import Setting from '../shared/components/Setting'
 import SuccessGraph from '../shared/components/SuccessGraph'
 
 function Page(){
-  useTitle('퇴직금계산기')
+  useTitle()
 
   const [retiermentPay, setRetiermentPay] = useState<number>(0)
   const [year, setYear] = useState<number>(2)

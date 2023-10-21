@@ -14,7 +14,7 @@ const COUNT_DOWN = 3
 const TIMER_MINUTES = 10
 
 function Page(){
-  useTitle('명상타이머')
+  useTitle()
 
   const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
   const [countDown, setCountDown] = useState<number>(COUNT_DOWN)

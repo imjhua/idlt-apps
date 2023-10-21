@@ -2,7 +2,11 @@ import { useEffect, useRef } from 'react'
 
 import { BRAND_NAME } from '@/meta'
 
-const useTitle = (title: string) => {
+import { TITLE } from '../meta'
+
+const useTitle = () => {
+  const title = TITLE[decodeURI(location.pathname)]
+
   const documentDefined = typeof document !== 'undefined'
   const originalTitle = useRef(documentDefined ? document.title : null)
 
