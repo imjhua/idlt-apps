@@ -1,6 +1,13 @@
+import SubNav from '@/feature/영어단어테스트/shared/components/SubNav'
+
+import Setting from '../components/Setting'
+
 function Page(){
   return (
-    <>영어단어 퀴즈</>
+    <>
+      <SubNav />
+      <Setting />
+    </>
   )
 }
 

@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ThemeProvider from './context/ThemeProvider'
 import { routes } from './routes'
 import ErrorBoundary from './shared/components/ErrorBoundary'
+import Toast from './shared/components/Toast'
 import { OverlayProvider } from './shared/hooks/useOverlay'
 import GlobalStyle from './styles/GlobalStyle'
 
@@ -34,6 +35,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
           <GlobalStyle />
           {/* <Splash /> */}
           <RouterProvider router={router} />
+          <Toast />
+
         </ThemeProvider>
 
         <OverlayProvider>

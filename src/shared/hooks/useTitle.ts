@@ -9,7 +9,8 @@ const useTitle = () => {
   const location = useLocation()
 
   const title = useMemo(() => {
-    return TITLE[decodeURI(location.pathname)] || BRAND_NAME
+    const pathname = decodeURI(location.pathname.split('/')[1])
+    return TITLE[`/${pathname}`] || BRAND_NAME
   }, [location])
 
   const documentDefined = typeof document !== 'undefined'
