@@ -1,12 +1,12 @@
 import SubNav from '@/feature/영어단어테스트/shared/components/SubNav'
 
-import Word from '../components/Word'
+import WordList from '../components/WordList'
 
 function Page(){
   return (
     <>
       <SubNav />
-      <Word />
+      <WordList />
     </>
   )
 }

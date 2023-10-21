@@ -26,10 +26,7 @@ function Timer({ minutes, onEnd }: TimerProps){
 
   useEffect(() => {
     if (status === STATUS.START){
-      console.log('start')
       const id = setInterval(() => {
-        console.log('timer')
-
         setSeconds((state) => {
           if (state > 0){
             return state - 1
@@ -67,8 +64,6 @@ function Timer({ minutes, onEnd }: TimerProps){
   }
 
   const handleTimerClick = () => {
-    console.log('asdf')
-
     if (status === STATUS.END){
       onEnd()
       return

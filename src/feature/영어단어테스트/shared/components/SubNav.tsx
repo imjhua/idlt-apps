@@ -21,6 +21,7 @@ function SubNav(){
         >
           <Link to="/영어단어테스트/영어단어추가"><Text>영어단어추가</Text></Link>
           <Link to="/영어단어테스트/영어단어퀴즈"><Text>영어단어퀴즈</Text></Link>
+          <Link to="/영어단어테스트/영어단어목록"><Text>영어단어목록</Text></Link>
         </Nav>
       </NavBlock>
       <Padding height={SUB_NAV_HEIGHT + SUB_NAV_PADDING + 30} />
