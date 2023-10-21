@@ -1,8 +1,6 @@
 import { Box } from 'grommet'
 import { useCallback, useState } from 'react'
 
-import useTitle from '@/shared/hooks/useTitle'
-
 import CountDown from '../shared/components/CountDown'
 import Run from '../shared/components/Run'
 import Setting from '../shared/components/Setting'
@@ -10,7 +8,6 @@ import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
 
 const COUNT_DOWN = 3
 function Page(){
-  useTitle()
 
   const [count, setCount] = useState<number>(0)
 

@@ -1,14 +1,10 @@
 import { Box } from 'grommet'
 import { useState } from 'react'
 
-import useTitle from '@/shared/hooks/useTitle'
-
 import Setting from '../shared/components/Setting'
 import SuccessGraph from '../shared/components/SuccessGraph'
 
 function Page(){
-  useTitle()
-
   const [retiermentPay, setRetiermentPay] = useState<number>(0)
   const [year, setYear] = useState<number>(2)
 
