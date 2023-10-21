@@ -1,41 +1,55 @@
 import styled from '@emotion/styled/macro'
 import { Box, Text, } from 'grommet'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 
-function Word(){
-  const wordListOriginal = [
-    { word: 'A', meaning: 'A 뜻' },
-    { word: 'B', meaning: 'B 뜻' },
-    { word: 'C', meaning: 'C 뜻' },
-  ]
+const wordListOriginal = [
+  { word: 'A', meaning: 'A 뜻' },
+  { word: 'B', meaning: 'B 뜻' },
+  { word: 'C', meaning: 'C 뜻' },
+]
 
-  const wordList = wordListOriginal.reduce<{ word: string; meaning: string }[]>((data) => {
-    const randomNumber1 = getRandomIntInclusive(0, wordListOriginal.length - 1)
-    const randomNumber2 = getRandomIntInclusive(0, wordListOriginal.length - 1)
-    const temp = data[randomNumber1]
-    data[randomNumber1] = data[randomNumber2]
-    data[randomNumber2] = temp
-    return data
-  }, [...wordListOriginal])
+function Word(){
+  const wordList = useMemo(() => {
+    wordListOriginal.reduce<{ word: string; meaning: string }[]>((data) => {
+      const randomNumber1 = getRandomIntInclusive(0, wordListOriginal.length - 1)
+      const randomNumber2 = getRandomIntInclusive(0, wordListOriginal.length - 1)
+      const temp = data[randomNumber1]
+      data[randomNumber1] = data[randomNumber2]
+      data[randomNumber2] = temp
+      return data
+    }, [...wordListOriginal])
+
+    return wordListOriginal
+  }, [])
 
   const [nextIndex, setNextIndex] = useState<number>(0)
+  const [showMeaning, setShowMeaning] = useState<boolean>(false)
 
   // 터치할때마다 랜덤노출 뜻
-  const handleTimerClick = () => {
+  const handleBgClick = () => {
+    if (!showMeaning){
+      setShowMeaning(true)
+      return
+    }
+    setShowMeaning(false)
     setNextIndex((state) => {
       if (state === wordList.length - 1){
         return 0
       }
       return (state + 1)
     })
+
   }
   return (
-    <Block onClick={handleTimerClick}>
+    <Block onClick={handleBgClick}>
       <Box>
         <Text alignSelf="center" size="6xl" weight={900}>
           {wordList[nextIndex].word}
+        </Text>
+        <Text>
+          {(showMeaning) && wordList[nextIndex].meaning}
         </Text>
       </Box>
     </Block>
