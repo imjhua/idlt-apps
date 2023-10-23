@@ -4,7 +4,7 @@ import {
   Box, Button, CheckBox, DataTable, Text
 } from 'grommet'
 import { Cycle } from 'grommet-icons'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
@@ -71,9 +71,33 @@ function Run({
     onUpdateStatus(STATUS.READY)
   }, [count, onUpdateStatus])
 
-  const durationList = useMemo(() => {
-    if (count === 0){
-      return []
+  // const durationList = useMemo(() => {
+  //   if (count === 0){
+  //     return []
+  //   }
+
+  //   const defaultValues = new Array(count).fill(0)
+  //     .map((_, index) => (index + 1))
+
+  //   const durationList = defaultValues.reduce<number[]>((data) => {
+  //     const randomNumber1 = getRandomIntInclusive(0, count - 1)
+  //     const randomNumber2 = getRandomIntInclusive(0, count - 1)
+  //     const temp = data[randomNumber1]
+  //     data[randomNumber1] = data[randomNumber2]
+  //     data[randomNumber2] = temp
+  //     return data
+  //   }, [...defaultValues])
+
+  //   return durationList
+  // }, [count])
+
+  // const sortedDurationList = useMemo(() => {
+  //   return [...durationList].sort((a, b) => a - b)
+  // }, [durationList])
+
+  const handleGoButtonClick = () => {
+    if (memberList.length === 0 || status === STATUS.START){
+      return
     }
 
     const defaultValues = new Array(count).fill(0)
@@ -88,17 +112,7 @@ function Run({
       return data
     }, [...defaultValues])
 
-    return durationList
-  }, [count])
-
-  const sortedDurationList = useMemo(() => {
-    return [...durationList].sort((a, b) => a - b)
-  }, [durationList])
-
-  const handleGoButtonClick = () => {
-    if (memberList.length === 0 || status === STATUS.START){
-      return
-    }
+    const sortedDurationList = [...durationList].sort((a, b) => a - b)
 
     const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 4]
     const playerTiming = [18, 15, 16, 16, 12, 14, 18, 10, 12]
@@ -167,7 +181,7 @@ function Run({
         duration
       }
     })
-    console.log(playerList)
+    // console.log(playerList)
 
     // 플레이어 설정
     setPlayerList(playerList)
@@ -278,12 +292,7 @@ function Run({
                             winner={winner}
                             speedMode={speedMode}
                           >
-                            {/* {delay}
-                            {duration} */}
-                            {/* {delay + duration} */}
-                            {/* <Xxx delay={1}>{ranking}</Xxx> */}
-                            {/* <Xxx active delay={22}>{22}</Xxx> */}
-                            <Ranking active delay={delay + duration}>{ranking}</Ranking>
+                            <Ranking active={status !== STATUS.READY} delay={delay + duration}>{ranking}</Ranking>
 
                             <Img
                               width={38} height={38}
@@ -447,8 +456,8 @@ const Ranking = styled.span<{ active: boolean; delay: number }>`
   background-color: ${({ theme }) => theme.highlight};
   text-align: right;
   visibility: hidden;
-  ${({ active, delay }) => active && delay && css`
-    animation: ${show} 1s ${delay + 0.5}s linear forwards;
+  ${({ active, delay }) => active && css`
+    animation: ${show} 1s ${delay + 0.5}s linear infinite;
   `}
 `
 
