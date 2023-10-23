@@ -4,7 +4,7 @@ import {
   Box, Button, CheckBox, DataTable, Text
 } from 'grommet'
 import { Cycle } from 'grommet-icons'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
@@ -29,6 +29,7 @@ function Run({
     character: string;
     timings: number[];
     duration: number;
+    ranking: number;
   }[]>([])
 
   useEffect(() => {
@@ -62,6 +63,7 @@ function Run({
         timings: [],
         winner: false,
         duration: 0,
+        ranking: 0
       }
     })
     setPlayerList(playerListInit)
@@ -69,30 +71,50 @@ function Run({
     onUpdateStatus(STATUS.READY)
   }, [count, onUpdateStatus])
 
+  const durationList = useMemo(() => {
+    if (count === 0){
+      return []
+    }
+
+    const defaultValues = new Array(count).fill(0)
+      .map((_, index) => (index + 1))
+
+    const durationList = defaultValues.reduce<number[]>((data) => {
+      const randomNumber1 = getRandomIntInclusive(0, count - 1)
+      const randomNumber2 = getRandomIntInclusive(0, count - 1)
+      const temp = data[randomNumber1]
+      data[randomNumber1] = data[randomNumber2]
+      data[randomNumber2] = temp
+      return data
+    }, [...defaultValues])
+
+    return durationList
+  }, [count])
+
+  const sortedDurationList = useMemo(() => {
+    return [...durationList].sort((a, b) => a - b)
+  }, [durationList])
+
   const handleGoButtonClick = () => {
     if (memberList.length === 0 || status === STATUS.START){
       return
     }
 
+    const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 4]
+    const playerTiming = [18, 15, 16, 16, 12, 14, 18, 10, 12]
     const winningIndex = getRandomIntInclusive(0, memberList.length - 1)
-    const randomMaxValues = [
-      15, // 0
-      13, // 1
-      winningIndex ? 10 : 15, // 2
-      13, // 3
-      14, // 4
-      winningIndex ? 12 : 16, // 5
-      13, // 6 (여기서부터 85이상인 경우 보정)
-      12, // 7
-      13 // 8  -> sum 126
-    ]
-    console.log(randomMaxValues.reduce((data, item) => data + item, 0))
+    console.log(winningTiming.reduce((data, item) => data + item, 0))
+    console.log(playerTiming.reduce((data, item) => data + item, 0))
 
     console.log('wwwww'.repeat(10))
     console.log(memberList[winningIndex])
     console.log('='.repeat(10))
 
     const playerList = memberList.map((player, index) => {
+      const randomMaxValues = index === winningIndex ?
+        winningTiming
+        : playerTiming
+
       const number0 = getRandomIntInclusive(1, randomMaxValues[0])
       const number1 = getRandomIntInclusive(1, randomMaxValues[1])
       const number2 = getRandomIntInclusive(3, randomMaxValues[2])
@@ -117,23 +139,35 @@ function Run({
 
       // 보정
       const newValueList = valueList.map((value, index) => {
-        if (index >= 7 && value > 85){
+        if (index >= 7 && value > 90){
           console.log('보정')
           return valueList[index - 1] + getRandomIntInclusive(1, 5)
         }
 
         return value
       })
+
+      let duration = 0
       const defaultDuration = speedMode ? 1 : DURATION
+      if (winningIndex === index){
+        duration = defaultDuration
+      } else {
+        duration = defaultDuration + (durationList[index] * (speedMode ? 0.1 : 0.2))
+      }
+
+      const removeItem = durationList[winningIndex]
+      const rankingList = sortedDurationList.filter((value) => (value !== removeItem))
+
       return {
         index: index + 1,
         character: player,
         timings: [...newValueList, 100],
         winner: winningIndex === index,
-        duration: winningIndex === index ?
-          defaultDuration : defaultDuration + getRandomIntInclusive(5, 20) * 0.1,
+        ranking: winningIndex === index ? 1 : rankingList.indexOf(durationList[index]) + 2, //(index > winningIndex ? 2 : 1),
+        duration
       }
     })
+    console.log(playerList)
 
     // 플레이어 설정
     setPlayerList(playerList)
@@ -170,7 +204,8 @@ function Run({
         character: value,
         timings: [],
         winner: false,
-        duration: 0
+        duration: 0,
+        ranking: 0
       }
     })
     setPlayerList(playerListInit)
@@ -229,7 +264,9 @@ function Run({
                     property: 'character',
                     header: <Text></Text>,
                     size: 'large',
-                    render: ({ character, timings, winner, duration }) => {
+                    render: ({
+                      character, timings, winner, duration, ranking
+                    }) => {
                       return (
                         <>
                           <Rail
@@ -241,6 +278,13 @@ function Run({
                             winner={winner}
                             speedMode={speedMode}
                           >
+                            {/* {delay}
+                            {duration} */}
+                            {/* {delay + duration} */}
+                            {/* <Xxx delay={1}>{ranking}</Xxx> */}
+                            {/* <Xxx active delay={22}>{22}</Xxx> */}
+                            <Ranking active delay={delay + duration}>{ranking}</Ranking>
+
                             <Img
                               width={38} height={38}
                               src={`/images/animal/${String(character)}.png`}
@@ -381,6 +425,30 @@ const Rail = styled.div<{ speedMode: boolean; alpha: number; delay: number; dura
     > img{
       animation: ${shake} .3s ${delay + duration}s ease-in infinite;
     }
+  `}
+`
+
+const show = keyframes`
+  from{
+    visibility: hidden;
+  }
+  to{
+    visibility: visible;
+  }
+`
+
+const Ranking = styled.span<{ active: boolean; delay: number }>`
+  display: inline-block;
+  font-size: 20px;
+  width: 130px;
+  margin-left: -150px;
+  padding-right: 20px;
+  margin-right: 2px;
+  background-color: ${({ theme }) => theme.highlight};
+  text-align: right;
+  visibility: hidden;
+  ${({ active, delay }) => active && delay && css`
+    animation: ${show} 1s ${delay + 0.5}s linear forwards;
   `}
 `
 
