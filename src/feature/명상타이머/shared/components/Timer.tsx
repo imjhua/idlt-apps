@@ -108,9 +108,11 @@ function Timer({ minutes, onEnd }: TimerProps){
       <ButtonBlock>
         <Button
           primary
-          size="small"
+          size="large"
           label="종료하기"
-          onClick={handleTimerEndClick} fill />
+          onClick={handleTimerEndClick}
+          fill
+        />
       </ButtonBlock>
     </>
   )

@@ -1,11 +1,23 @@
 import styled from '@emotion/styled/macro'
 import { Box, Nav, Text } from 'grommet'
-import { Link } from 'react-router-dom'
+import { useMemo } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 import { GNB_HEIGHT, SUB_NAV_HEIGHT, SUB_NAV_PADDING } from '@/shared/components/Layout'
 import { Padding } from '@/shared/components/Styles'
 
+import { SUB_MENU } from '../meta'
+
 function SubNav(){
+  const location = useLocation()
+
+  const menu = useMemo(() => {
+    const menu = SUB_MENU.map(({ path, title }) => {
+      return { path, title, active: path === decodeURI(location.pathname) }
+    })
+    return menu
+  }, [location])
+
   return (
     <>
       <NavBlock
@@ -18,13 +30,16 @@ function SubNav(){
           }}
           direction="row" background="brand" gap="large"
           justify="center"
-        >
-          <Link to="/영어단어테스트/영어단어추가"><Text>영어단어추가</Text></Link>
-          <Link to="/영어단어테스트/영어단어퀴즈"><Text>영어단어퀴즈</Text></Link>
-          <Link to="/영어단어테스트/영어단어목록"><Text>영어단어목록</Text></Link>
+        >{menu.map(({ path, title, active }, index) => {
+            return (
+              <Link
+                style={{ fontWeight: active ? 'bold' : 'normal' }}
+                key={index} to={path}><Text>{title}</Text></Link>
+            )
+          })}
         </Nav>
       </NavBlock>
-      <Padding height={SUB_NAV_HEIGHT + SUB_NAV_PADDING + 30} />
+      <Padding height={SUB_NAV_HEIGHT + SUB_NAV_PADDING} />
     </>
   )
 }
@@ -38,4 +53,5 @@ export const NavBlock = styled(Box)`
   top: ${GNB_HEIGHT}px;
   z-index: 1;
   padding-top: env(safe-area-inset-top);
+
 `

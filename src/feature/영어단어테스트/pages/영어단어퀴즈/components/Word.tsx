@@ -2,17 +2,12 @@ import styled from '@emotion/styled/macro'
 import { Box, Text, } from 'grommet'
 import { useMemo, useState } from 'react'
 
+import { wordListOriginal } from '@/feature/영어단어테스트/shared/meta'
 import { getRandomIntInclusive } from '@/lib/utils'
-
-const wordListOriginal = [
-  { word: 'A', meaning: 'A 뜻' },
-  { word: 'B', meaning: 'B 뜻' },
-  { word: 'C', meaning: 'C 뜻' },
-]
 
 function Word(){
   const wordList = useMemo(() => {
-    wordListOriginal.reduce<{ word: string; meaning: string }[]>((data) => {
+    const wordList = wordListOriginal.reduce<{ word: string; meaning: string }[]>((data) => {
       const randomNumber1 = getRandomIntInclusive(0, wordListOriginal.length - 1)
       const randomNumber2 = getRandomIntInclusive(0, wordListOriginal.length - 1)
       const temp = data[randomNumber1]
@@ -21,7 +16,7 @@ function Word(){
       return data
     }, [...wordListOriginal])
 
-    return wordListOriginal
+    return wordList
   }, [])
 
   const [nextIndex, setNextIndex] = useState<number>(0)

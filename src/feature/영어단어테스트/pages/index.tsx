@@ -3,6 +3,8 @@ import styled from '@emotion/styled/macro'
 import { Box, Button } from 'grommet'
 import { Link } from 'react-router-dom'
 
+import { SUB_MENU } from '../shared/meta'
+
 function Page(){
   return (
     <PageBlock>
@@ -11,12 +13,14 @@ function Page(){
         justify="center"
         alignContent="center"
       >
-        <Link to="영어단어추가">
-          <Button label="영어단어 추가" />
-        </Link>
-        <Link to="영어단어퀴즈">
-          <Button label="영어단어 퀴즈" />
-        </Link>
+        {SUB_MENU.map(({ path, title }, index) => {
+          const to = decodeURI(path.split('/').slice(-1)[0])
+          return (
+            <Link key={index} to={to}>
+              <Button label={title} />
+            </Link>
+          )
+        })}
       </Box>
     </PageBlock>
   )
