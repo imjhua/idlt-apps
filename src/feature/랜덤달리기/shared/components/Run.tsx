@@ -115,7 +115,7 @@ function Run({
     const sortedDurationList = [...durationList].sort((a, b) => a - b)
 
     const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 4]
-    const playerTiming = [18, 15, 16, 16, 12, 14, 18, 10, 12]
+    const playerTiming = [18, 15, 16, 16, 12, 14, 14, 10, 12]
     const winningIndex = getRandomIntInclusive(0, memberList.length - 1)
     console.log(winningTiming.reduce((data, item) => data + item, 0))
     console.log(playerTiming.reduce((data, item) => data + item, 0))
@@ -154,7 +154,7 @@ function Run({
       // 보정
       const newValueList = valueList.map((value, index) => {
         if (index >= 7 && value > 90){
-          console.log('보정')
+          console.log('보정', player)
           return valueList[index - 1] + getRandomIntInclusive(1, 5)
         }
 
@@ -448,6 +448,7 @@ const show = keyframes`
 
 const Ranking = styled.span<{ active: boolean; delay: number }>`
   display: inline-block;
+  border-radius: 4px;
   font-size: 20px;
   width: 130px;
   margin-left: -150px;
@@ -457,7 +458,7 @@ const Ranking = styled.span<{ active: boolean; delay: number }>`
   text-align: right;
   visibility: hidden;
   ${({ active, delay }) => active && css`
-    animation: ${show} 1s ${delay + 0.5}s linear infinite;
+    animation: ${show} .1s ${delay + 0.5}s linear forwards;
   `}
 `
 
