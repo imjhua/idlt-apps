@@ -6,6 +6,7 @@ function Page(){
   return (
     <>
       <SubNav />
+      <div>자동 플레이</div>
       <Word />
     </>
   )

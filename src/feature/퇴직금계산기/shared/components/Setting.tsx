@@ -9,7 +9,7 @@ type SettingProps = {
 
 }
 function Setting({ retiermentPay, onPaymentChange, year, onYearChange }: SettingProps){
-  const [salary, setSalary] = useState<number>(50)
+  const [salary, setSalary] = useState<number>(0)
 
   useEffect(() => {
     if (salary && year){

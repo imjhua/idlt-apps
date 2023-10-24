@@ -6,7 +6,7 @@ import SuccessGraph from '../shared/components/SuccessGraph'
 
 function Page(){
   const [retiermentPay, setRetiermentPay] = useState<number>(0)
-  const [year, setYear] = useState<number>(2)
+  const [year, setYear] = useState<number>(0)
 
   const handleRetiermentPayChange = (count: number) => {
     setRetiermentPay(count)
