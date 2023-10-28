@@ -27,12 +27,21 @@ function Setting({
     setSalary(Number(e.target.value))
   }
   const handleYearChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onYearChange(Number(e.target.value))
+    const year = Number(e.target.value)
+    if (!year){
+      onContinuousYearsChange(0)
+    }
+    if (year < continuousYears){
+      onContinuousYearsChange(year)
+    }
+    onYearChange(year)
   }
+
   const handleContinuousYearsChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onContinuousYearsChange(Number(e.target.value))
+    const continuousYears = Number(e.target.value)
+    onContinuousYearsChange(year < continuousYears ? year : continuousYears)
   }
-  // 근속년수
+
   return (
     <Box gap="small">
       <Box
@@ -40,7 +49,7 @@ function Setting({
         gap="small">
         <Box direction="row" justify="center" align="end">
           <Box>
-            <Text size="small">평균월급</Text>
+            <Text size="small">평균월급(만원)</Text>
             <TextInput
               value={salary || ''}
               placeholder="한달에 얼마?"
@@ -55,7 +64,7 @@ function Setting({
         </Box>
         <Box direction="row" justify="center" align="end">
           <Box>
-            <Text size="small">퇴직시기</Text>
+            <Text size="small">퇴직시기(몇 년)</Text>
             <TextInput
               value={year || ''}
               placeholder="몇년 후 퇴직?"
@@ -87,7 +96,7 @@ function Setting({
           placeholder="계산된 퇴직금"
           type="tel"
           size="small"
-          disabled
+          readOnly
         />
       </Box>
     </Box>

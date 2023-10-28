@@ -1,3 +1,4 @@
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 import { useMemo } from 'react'
 
@@ -6,6 +7,7 @@ import NoData from '@/shared/components/NoData'
 
 // const BONUS = 100
 
+const ANIMATION_DURATION = 5
 const WIDTH = 360
 const HEIGHT = 320
 
@@ -97,8 +99,7 @@ function YAxis({ retiermentPay }: { year: number; retiermentPay: number }) {
 }
 
 function GridRow({ retiermentPay }: { retiermentPay: number }) {
-  let yAxisLength = retiermentPay / 10
-  console.log(yAxisLength)
+  let yAxisLength = Math.floor(retiermentPay / 10)
 
   if (yAxisLength >= 300){
     yAxisLength /= 10
@@ -178,17 +179,6 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
       {/* 점 */}
       <g>
         {data.map((value, index) => {
-          // if (index === currunt){
-          //   return (
-          //     <text
-          //       key={index} fill="red"
-          //       x={(X_START + (xGap * index)) - 10}
-          //       y={Y_START - (((yGap * value) / 10) / year)}
-          //     >
-          //       current
-          //     </text>
-          //   )
-          // }
           if (index === lastYear){
             return (
               <Circle
@@ -226,6 +216,8 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
       />
 
       <Path
+        length={Math.sqrt(Math.pow((xGap * currunt), 2) + Math.pow((((yGap * ((currunt + 1) * dayIncome)) / 10) / year), 2))}
+        animation={currunt > 0}
         fill="none"
         strokeWidth="1"
         d={data.map((value, index) => {
@@ -252,24 +244,27 @@ type ScoreDataType = {
   continuousYears: number;
 }
 export default function SuccessGraph({ retiermentPay, year, continuousYears }: ScoreDataType) {
+  // TODO: 반응형 높이 조정 & 포인트 재계산
+
+  const ImgMeta = useMemo(() => {
+    const xAxisLength = X_TICK * year
+    const xGap = X_WIDTH / (xAxisLength - 1)
+
+    const yAxisLength = retiermentPay / 10
+    const yGap = Y_HEIGHT / yAxisLength
+
+    const dayIncome = retiermentPay / X_TICK
+    const currunt = (continuousYears * 12) - 1
+
+    return {
+      size: [30, 30],
+      x: (X_START + (xGap * currunt)) - 10,
+      y: Y_START + (((yGap * ((currunt + 1) * dayIncome)) / 10) / year)
+    }
+  }, [retiermentPay, continuousYears, year])
+
   if (!year || !retiermentPay){
     return <NoData text="입력하세요." />
-  }
-
-  const xAxisLength = X_TICK * year
-  const xGap = X_WIDTH / (xAxisLength - 1)
-
-  const yAxisLength = retiermentPay / 10
-  const yGap = Y_HEIGHT / yAxisLength
-
-  const dayIncome = retiermentPay / X_TICK
-
-  const currunt = (continuousYears * 12) - 1
-
-  const ImgMeta = {
-    size: [30, 30],
-    x: (X_START + (xGap * currunt)) - 10,
-    y: Y_START + (((yGap * ((currunt + 1) * dayIncome)) / 10) / year)
   }
 
   return (
@@ -292,16 +287,20 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
             year={year}
             retiermentPay={retiermentPay} />
         </SVG>
-        <Img
-          style={{
-            position: 'absolute',
-            bottom: ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2) - 4,
-            left: ImgMeta.x - 4,
-          }}
-          width={ImgMeta.size[0]} height={ImgMeta.size[1]}
-          src="/images/camping-car.png"
-          alt="캠핑카"
-        />
+        {continuousYears > 0 && (
+          <PointImg
+            // style={{
+            //   position: 'absolute',
+            //   bottom: ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2) - 4,
+            //   left: ImgMeta.x - 4,
+            // }}
+            x={ImgMeta.x - 4}
+            y={ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2)}
+            width={ImgMeta.size[0]} height={ImgMeta.size[1]}
+            src="/images/camping-car.png"
+            alt="캠핑카"
+          />
+        )}
         {/* <SVGGuard column={11 + ((year - 1) * 12)}>
           {new Array(11 + ((year - 1) * 12)).fill(0).map((_, index) => {
             return <div key={index}>.</div>
@@ -358,20 +357,21 @@ const Text = styled.text`
   fill: ${({ theme }) => theme.color};
 `
 
-const Path = styled.path`
+const Path = styled.path<{ length?: number; animation?: boolean }>`
   stroke: ${({ theme }) => theme.primary};
-  /* stroke-dasharray: 2,2; */
-  /* stroke-dasharray: 2000; */
-  /* stroke-dashoffset: 2000; */
-  /* animation: line-animation 3s forwards;
-  @keyframes line-animation {
-    0% {
-      stroke-dashoffset: 2000;
+  ${({ animation, length }) => animation && css`
+    stroke-dasharray: ${length};
+    stroke-dashoffset: ${length};
+    animation: line-animation ${ANIMATION_DURATION}s forwards;
+    @keyframes line-animation {
+      0% {
+        stroke-dashoffset: ${length};
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
     }
-    100% {
-      stroke-dashoffset: 0;
-    }
-  } */
+  `};
 `
 
 const Circle = styled.circle`
@@ -388,3 +388,19 @@ const Circle = styled.circle`
     }
   }
 `
+
+const PointImg = styled(Img)<{ x: number; y: number }>`
+  /* transform: translate(26px, -${Y_LABEL}px); */
+  /* transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - 10}px)`}; */
+
+  animation: move-point ${ANIMATION_DURATION}s forwards;
+  @keyframes move-point {
+    0% {
+      transform: translate(26px, -${Y_LABEL}px);
+    }
+    100% {
+      transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - 10}px)`};
+    }
+  }
+`
+
