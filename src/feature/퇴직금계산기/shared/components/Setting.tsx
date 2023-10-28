@@ -18,22 +18,29 @@ function Setting({
   const [salary, setSalary] = useState<number>(0)
 
   useEffect(() => {
-    if (salary && year){
-      onPaymentChange(salary * year)
+    // 유효성
+    if (!salary){
+      onPaymentChange(0)
     }
-  }, [salary, year, onPaymentChange])
 
-  const handleSalaryChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSalary(Number(e.target.value))
-  }
-  const handleYearChange = (e: ChangeEvent<HTMLInputElement>) => {
-    const year = Number(e.target.value)
     if (!year){
       onContinuousYearsChange(0)
     }
     if (year < continuousYears){
       onContinuousYearsChange(year)
     }
+
+    if (salary && year){
+      onPaymentChange(salary * year)
+    }
+  }, [salary, year, onPaymentChange, continuousYears, onContinuousYearsChange])
+
+  const handleSalaryChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const salary = Number(e.target.value)
+    setSalary(salary)
+  }
+  const handleYearChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const year = Number(e.target.value)
     onYearChange(year)
   }
 

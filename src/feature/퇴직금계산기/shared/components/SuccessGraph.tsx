@@ -9,7 +9,7 @@ import NoData from '@/shared/components/NoData'
 
 const ANIMATION_DURATION = 5
 const WIDTH = 360
-const HEIGHT = 320
+const HEIGHT = 330
 
 const X_TICK = 12
 const Y_TICK = 2
@@ -17,10 +17,10 @@ const Y_TICK = 2
 const SVG_WIDTH = X_TICK * (WIDTH / X_TICK)
 const SVG_HEIGHT = Y_TICK * (HEIGHT / Y_TICK)
 
-const TOP_PADDING = 10
+const TOP_PADDING = 16
 const BOTTOM_PADDING = 16
 const RIGHT_PADDING = 16
-const LEFT_PADDING = 40
+const LEFT_PADDING = 50
 
 const X_WIDTH = SVG_WIDTH - (LEFT_PADDING + RIGHT_PADDING)
 const Y_HEIGHT = SVG_HEIGHT - (TOP_PADDING + BOTTOM_PADDING)
@@ -29,17 +29,23 @@ const X_START = LEFT_PADDING
 const Y_START = -BOTTOM_PADDING
 
 const X_LABEL = -14
-const Y_LABEL = 38
+const Y_LABEL = 44
 
 function XAsix({ year }: { year: number }) {
-  const xAxisLength = X_TICK * year
+  let xAxisLength = Math.floor(X_TICK * year)
+
+  let x = 1
+  if (xAxisLength >= 240){
+    x = (xAxisLength / 120)
+  }
+  xAxisLength /= x
   const xGap = X_WIDTH / (xAxisLength - 1)
 
   return (
     <>
       {/* XAsix */}
       <Line
-        x1={X_START - 10}
+        x1={X_START - (xGap + 10)}
         y1={Y_START}
         x2={SVG_WIDTH - RIGHT_PADDING + 10}
         y2={Y_START}
@@ -48,7 +54,7 @@ function XAsix({ year }: { year: number }) {
       {/* XAsix 텍스트 */}
       <g>
         {new Array(xAxisLength).fill(0).map((_, index) => {
-          const label = index === 0 ? '시작' : `${(index + 1) / 12}년`
+          const label = index === 0 ? '' : `${((index + 1) / 12) * x}년`
           // 처음과 끝은 무조건 노출
           if (index === 0 || (index + 1) % 12 === 0) {
             return (
@@ -87,7 +93,7 @@ function YAxis({ retiermentPay }: { year: number; retiermentPay: number }) {
             <Text
               key={index}
               x={X_START - Y_LABEL}
-              y={Y_START - (yGap * (index + 1)) - 2}
+              y={Y_START - (yGap * (index + 1)) - 4}
             >
               {(index + 1) * (retiermentPay / yAxisLength)} 만원
             </Text>
@@ -131,14 +137,29 @@ function GridRow({ retiermentPay }: { retiermentPay: number }) {
 }
 
 function GridColumn({ year }: { year: number }) {
-  const xAxisLength = (X_TICK) + ((year - 1) * X_TICK)
+  let xAxisLength = Math.floor((X_TICK) + ((year - 1) * X_TICK))
+
+  if (xAxisLength >= 240){
+    xAxisLength /= (xAxisLength / 120)
+  }
   const xGap = X_WIDTH / (xAxisLength - 1)
 
   return (
     <g>
       {new Array(xAxisLength).fill(0).map((_, index) => {
-        // 처음과 끝은 무조건 노출
-        if (index === 0 || (index + 1) % 12 === 0) {
+        if (index === 0) {
+          return (
+            <Line
+              key={index}
+              x1={X_START - xGap}
+              y1={Y_START}
+              x2={X_START - xGap}
+              y2={(-SVG_HEIGHT + TOP_PADDING - 6)}
+              strokeDasharray="2"
+            />
+          )
+        }
+        if ((index + 1) % 12 === 0) {
           return (
             <Line
               key={index}
@@ -166,12 +187,15 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
   const dayIncome = retiermentPay / X_TICK
   const data = useMemo(() => {
     // x축 데이터
-    return new Array(year * 12).fill(0).map((_, index) => {
+    return new Array((year * 12) + 1).fill(0).map((_, index) => {
+      if (index === 0){
+        return 0
+      }
       return (index + 1) * dayIncome
     })
   }, [dayIncome, year])
 
-  const currunt = (continuousYears * 12) - 1
+  const currunt = (continuousYears * 12) - 1 - 1
   const lastYear = (year * 12) - 1
 
   return (
@@ -193,13 +217,29 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
         })}
       </g>
       {/* 선 */}
+
+      {/* <Path
+        fill="none"
+        strokeWidth="1"
+        strokeDasharray="2,2"
+        d={data.slice(0, 2).map((_, index) => {
+          if (index === 0) {
+            return `M${X_START - xGap},${Y_START}`
+          }
+          return `L
+              ${X_START},
+              ${(Y_START) - (((yGap * data[index - 1]) / 10) / year)}
+              `
+        }).join(' ')}
+      /> */}
+
       <Path
         fill="none"
         strokeWidth="1"
         strokeDasharray="2,2"
         d={data.map((value, index) => {
           if (index === 0) {
-            return `M${X_START},${Y_START - (((yGap * value) / 10) / year)}`
+            return `M${X_START - xGap},${Y_START}`
           }
           if (index < currunt){
             return `L
@@ -207,7 +247,6 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
               ${(Y_START) - (((yGap * value) / 10) / year)}
               `
           }
-
           return `L
               ${X_START + (xGap * index)},
               ${(Y_START) - (((yGap * value) / 10) / year)}
@@ -222,7 +261,7 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
         strokeWidth="1"
         d={data.map((value, index) => {
           if (index === 0) {
-            return `M${X_START},${Y_START - (((yGap * value) / 10) / year)}`
+            return `M${X_START - xGap},${Y_START}`
           }
           if (index < currunt + 1){
             return `L
@@ -254,7 +293,7 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
     const yGap = Y_HEIGHT / yAxisLength
 
     const dayIncome = retiermentPay / X_TICK
-    const currunt = (continuousYears * 12) - 1
+    const currunt = (continuousYears * 12) - 1 - 1
 
     return {
       size: [30, 30],
@@ -289,7 +328,6 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
         </SVG>
         <PointImg
           continuousYears={continuousYears}
-
           // style={{
           //   position: 'absolute',
           //   bottom: ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2) - 4,
@@ -390,7 +428,7 @@ const Circle = styled.circle`
 `
 
 const PointImg = styled(Img)<{ continuousYears: number;x: number; y: number }>`
-  transform: translate(26px, -${Y_LABEL}px);
+  transform: translate(30px, -${Y_LABEL - 12}px);
 
   ${({ continuousYears }) => continuousYears && css`
     animation: point ${ANIMATION_DURATION}s forwards;
@@ -399,10 +437,10 @@ const PointImg = styled(Img)<{ continuousYears: number;x: number; y: number }>`
   
   @keyframes point {
     0% {
-      transform: translate(26px, -${Y_LABEL}px);
+      transform: translate(30px, -${Y_LABEL - 12}px);
     }
     100% {
-      transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - 10}px)`};
+      transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - TOP_PADDING - 12}px)`};
     }
   }
 `
