@@ -1,27 +1,19 @@
-# React + TypeScript + Vite
+# idlt-apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 랜덤달리기
 
-Currently, two official plugins are available:
+## 명상타이머
+## 퇴직금계산기
+## 노후자산계산기
+## 영어단어테스트
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TODO
+- QR코드
+- 공유하기(navigator / kakao talk)
 
-## Expanding the ESLint configuration
+## 참고 사이트
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- 이모지: https://emoji.supply/kitchen/
+- 캐릭터 이미지: https://www.flaticon.com/packs/animals-126
+- grommet 아이콘: https://icons.grommet.io/?
+- grommet 컴포넌트: https://v2.grommet.io/components
