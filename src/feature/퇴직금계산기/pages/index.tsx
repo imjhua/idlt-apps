@@ -8,8 +8,8 @@ function Page(){
   const [retiermentPay, setRetiermentPay] = useState<number>(0)
   const [year, setYear] = useState<number>(0)
 
-  const handleRetiermentPayChange = (count: number) => {
-    setRetiermentPay(count)
+  const handleRetiermentPayChange = (pay: number) => {
+    setRetiermentPay(pay)
   }
   const handleYearChange = (count: number) => {
     setYear(count)

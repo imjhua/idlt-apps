@@ -1,18 +1,23 @@
 import styled from '@emotion/styled'
 import { useMemo } from 'react'
 
+import NoData from '@/shared/components/NoData'
+
 // const BONUS = 100
+
+const WIDTH = 360
+const HEIGHT = 500
 
 const X_TICK = 12
 const Y_TICK = 2
 
-const SVG_WIDTH = X_TICK * 50
-const SVG_HEIGHT = Y_TICK * 200
+const SVG_WIDTH = X_TICK * (WIDTH / X_TICK) - 30
+const SVG_HEIGHT = Y_TICK * (HEIGHT / Y_TICK) - 60
 
-const TOP_PADDING = 60
-const BOTTOM_PADDING = 50
-const RIGHT_PADDING = 40
-const LEFT_PADDING = 70
+const TOP_PADDING = 10
+const BOTTOM_PADDING = 16
+const RIGHT_PADDING = 6
+const LEFT_PADDING = 40
 
 const X_WIDTH = SVG_WIDTH - (LEFT_PADDING + RIGHT_PADDING)
 const Y_HEIGHT = SVG_HEIGHT - (TOP_PADDING + BOTTOM_PADDING)
@@ -200,69 +205,76 @@ type ScoreDataType = {
 }
 export default function SuccessGraph({ year, retiermentPay }: ScoreDataType) {
   if (!retiermentPay){
-    return null
+    return <NoData text="입력하세요" />
   }
-  return (
-    <SVGBlock>
-      <SVG
-        width={SVG_WIDTH}
-        height={SVG_HEIGHT}
-        /* x y width height */
-        viewBox={`0 -${SVG_HEIGHT} ${SVG_WIDTH} ${SVG_HEIGHT}`}
-        // viewBox={`0 0 ${SVG_WIDTH} -${SVG_HEIGHT}`}
-      >
-        <XAsix year={year} />
-        <YAxis
-          year={year}
-          retiermentPay={retiermentPay} />
-        <GridRow
-          retiermentPay={retiermentPay} />
-        <GridColumn year={year} />
 
-        <Graph
-          year={year}
-          retiermentPay={retiermentPay} />
-      </SVG>
-      <SVGX column={11 + ((year - 1) * 12)}>
-        {new Array(11 + ((year - 1) * 12)).fill(0).map((_, index) => {
-          return <div key={index}>{index + 1}</div>
-        })}
-      </SVGX>
-    </SVGBlock>
+  return (
+    <SVGBlockX>
+      <SVGBlock>
+        <SVG
+          width={SVG_WIDTH}
+          height={SVG_HEIGHT}
+          viewBox={`0 -${SVG_HEIGHT} ${SVG_WIDTH} ${SVG_HEIGHT}`}
+        >
+          <XAsix year={year} />
+          <YAxis
+            year={year}
+            retiermentPay={retiermentPay} />
+          <GridRow
+            retiermentPay={retiermentPay} />
+          <GridColumn year={year} />
+
+          <Graph
+            year={year}
+            retiermentPay={retiermentPay} />
+        </SVG>
+        {/* <SVGGuard column={11 + ((year - 1) * 12)}>
+          {new Array(11 + ((year - 1) * 12)).fill(0).map((_, index) => {
+            return <div key={index}>.</div>
+          })}
+        </SVGGuard> */}
+      </SVGBlock>
+    </SVGBlockX>
   )
 }
+
+const SVGBlockX = styled.div`
+  display: flex;
+  justify-content: center;
+`
+const SVGBlock = styled.div`
+  border: 2px solid blue;
+  position: relative;
+  width: ${SVG_WIDTH}px;
+  height: ${SVG_HEIGHT}px;
+  margin-top: 20px;
+
+`
 
 const SVG = styled.svg`
 `
 
-const SVGBlock = styled.div`
-  position: relative;
-  border: 2px solid blue;
-  width: ${SVG_WIDTH}px;
-  height: ${SVG_HEIGHT}px;
-`
-const SVGX = styled.div<{ column: number }>`
-  width: ${X_WIDTH}px;
-  height: ${Y_HEIGHT}px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+// const SVGGuard = styled.div<{ column: number }>`
+//   width: ${X_WIDTH}px;
+//   height: ${Y_HEIGHT}px;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   right: 0;
+//   left: 0;
 
-  border: 2px solid #ff00001a;
-  box-sizing: border-box;
-  margin: ${TOP_PADDING}px ${RIGHT_PADDING}px ${BOTTOM_PADDING}px ${LEFT_PADDING}px;
+//   border: 2px solid #ff00001a;
+//   box-sizing: border-box;
+//   margin: ${TOP_PADDING}px ${RIGHT_PADDING}px ${BOTTOM_PADDING}px ${LEFT_PADDING}px;
 
-  display: grid;
-  grid-template-columns: ${({ column }) => `repeat(${column}, 1fr)`};
+//   display: grid;
+//   grid-template-columns: ${({ column }) => `repeat(${column}, 1fr)`};
 
-
-  > div{
-    background-color: #f5f5dc8c;
-    border: 1px solid #ddd
-  }
-`
+//   > div{
+//     background-color: #f5f5dc8c;
+//     border: 1px solid #ddd
+//   }
+// `
 
 const Line = styled.line<{ grid?: boolean }>`
   stroke: ${({ theme, grid }) => (grid ? theme.border : theme.divider)};
