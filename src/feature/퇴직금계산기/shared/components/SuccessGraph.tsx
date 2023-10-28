@@ -287,20 +287,20 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
             year={year}
             retiermentPay={retiermentPay} />
         </SVG>
-        {continuousYears > 0 && (
-          <PointImg
-            // style={{
-            //   position: 'absolute',
-            //   bottom: ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2) - 4,
-            //   left: ImgMeta.x - 4,
-            // }}
-            x={ImgMeta.x - 4}
-            y={ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2)}
-            width={ImgMeta.size[0]} height={ImgMeta.size[1]}
-            src="/images/camping-car.png"
-            alt="캠핑카"
-          />
-        )}
+        <PointImg
+          continuousYears={continuousYears}
+
+          // style={{
+          //   position: 'absolute',
+          //   bottom: ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2) - 4,
+          //   left: ImgMeta.x - 4,
+          // }}
+          x={ImgMeta.x - 4}
+          y={ImgMeta.y + Y_LABEL - (ImgMeta.size[1] / 2)}
+          width={ImgMeta.size[0]} height={ImgMeta.size[1]}
+          src="/images/camping-car.png"
+          alt="캠핑카"
+        />
         {/* <SVGGuard column={11 + ((year - 1) * 12)}>
           {new Array(11 + ((year - 1) * 12)).fill(0).map((_, index) => {
             return <div key={index}>.</div>
@@ -389,12 +389,15 @@ const Circle = styled.circle`
   }
 `
 
-const PointImg = styled(Img)<{ x: number; y: number }>`
-  /* transform: translate(26px, -${Y_LABEL}px); */
-  /* transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - 10}px)`}; */
+const PointImg = styled(Img)<{ continuousYears: number;x: number; y: number }>`
+  transform: translate(26px, -${Y_LABEL}px);
 
-  animation: move-point ${ANIMATION_DURATION}s forwards;
-  @keyframes move-point {
+  ${({ continuousYears }) => continuousYears && css`
+    animation: point ${ANIMATION_DURATION}s forwards;
+  `};
+
+  
+  @keyframes point {
     0% {
       transform: translate(26px, -${Y_LABEL}px);
     }
