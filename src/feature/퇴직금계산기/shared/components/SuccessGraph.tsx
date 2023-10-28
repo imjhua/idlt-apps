@@ -289,7 +289,7 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
   }, [retiermentPay, continuousYears, year])
 
   if (!year || !retiermentPay){
-    return <NoData text="입력하세요." />
+    return <NoData text="퇴직금 계산에 필요한 정보들을 입력하세요." />
   }
 
   return (
