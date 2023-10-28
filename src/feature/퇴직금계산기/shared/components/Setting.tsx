@@ -1,4 +1,4 @@
-import { Box, Text, TextInput } from 'grommet'
+import { Box, Button, Text, TextInput } from 'grommet'
 import { ChangeEvent, useEffect, useState } from 'react'
 
 import { numberWithCommas } from '@/lib/utils'
@@ -15,6 +15,8 @@ function Setting({
   year, onYearChange,
   continuousYears, onContinuousYearsChange
 }: SettingProps){
+  const [showRetiermentPay, setShowRetiermentPay] = useState<boolean>(false)
+
   const [salary, setSalary] = useState<number>(0)
 
   useEffect(() => {
@@ -29,12 +31,23 @@ function Setting({
     if (year < continuousYears){
       onContinuousYearsChange(year)
     }
+  }, [salary, year, onPaymentChange, continuousYears, onContinuousYearsChange])
+
+  const handleRestClick = () => {
+    setShowRetiermentPay(false)
+    onPaymentChange(0)
+    setSalary(0)
+    onYearChange(0)
+    onContinuousYearsChange(0)
+  }
+
+  const handleShowRetiermentPayClick = () => {
+    setShowRetiermentPay(true)
 
     if (salary && year){
       onPaymentChange(salary * year)
     }
-  }, [salary, year, onPaymentChange, continuousYears, onContinuousYearsChange])
-
+  }
   const handleSalaryChange = (e: ChangeEvent<HTMLInputElement>) => {
     const salary = Number(e.target.value)
     setSalary(salary)
@@ -63,6 +76,7 @@ function Setting({
               type="tel"
               size="small"
               onChange={handleSalaryChange}
+              disabled={!!(retiermentPay)}
             />
           </Box>
         </Box>
@@ -78,6 +92,7 @@ function Setting({
               type="tel"
               size="small"
               onChange={handleYearChange}
+              disabled={!!(retiermentPay)}
             />
           </Box>
         </Box>
@@ -90,6 +105,7 @@ function Setting({
           type="tel"
           size="small"
           onChange={handleContinuousYearsChange}
+          disabled={!!(retiermentPay)}
         />
       </Box>
       <Box>
@@ -98,13 +114,32 @@ function Setting({
           예상 퇴직금
           </Highlight>
         </Text>
-        <TextInput
-          value={retiermentPay ? numberWithCommas(retiermentPay, ' 만원') : ''}
-          placeholder="계산된 퇴직금"
-          type="tel"
-          size="small"
-          readOnly
-        />
+        {!showRetiermentPay ? (
+          <Button
+            disabled={!(salary && year)}
+            style={{ borderRadius: 4 }}
+            primary
+            label="퇴직금 보기"
+            onClick={handleShowRetiermentPayClick} />
+        ) : (
+          <Box direction="row" gap="small">
+            <TextInput
+              // width="200"
+              value={retiermentPay ? numberWithCommas(retiermentPay, ' 만원') : ''}
+              placeholder="계산된 퇴직금"
+              type="tel"
+              size="small"
+              readOnly
+            />
+            <Button
+              primary
+              disabled={!(salary && year)}
+              style={{ borderRadius: 4, width: 120 }}
+              label="초기화"
+              size="small"
+              onClick={handleRestClick} />
+          </Box>
+        )}
       </Box>
     </Box>
   )
