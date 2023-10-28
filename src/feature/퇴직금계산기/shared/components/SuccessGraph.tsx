@@ -9,7 +9,7 @@ import NoData from '@/shared/components/NoData'
 
 const ANIMATION_DURATION = 5
 const WIDTH = 360
-const HEIGHT = 330
+const HEIGHT = 320
 
 const X_TICK = 12
 const Y_TICK = 2
@@ -142,18 +142,20 @@ function GridColumn({ year }: { year: number }) {
   if (xAxisLength >= 240){
     xAxisLength /= (xAxisLength / 120)
   }
+
   const xGap = X_WIDTH / (xAxisLength - 1)
 
   return (
     <g>
       {new Array(xAxisLength).fill(0).map((_, index) => {
         if (index === 0) {
+          // return null
           return (
             <Line
               key={index}
-              x1={X_START - xGap}
+              x1={X_START}
               y1={Y_START}
-              x2={X_START - xGap}
+              x2={X_START}
               y2={(-SVG_HEIGHT + TOP_PADDING - 6)}
               strokeDasharray="2"
             />
@@ -217,22 +219,6 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
         })}
       </g>
       {/* 선 */}
-
-      {/* <Path
-        fill="none"
-        strokeWidth="1"
-        strokeDasharray="2,2"
-        d={data.slice(0, 2).map((_, index) => {
-          if (index === 0) {
-            return `M${X_START - xGap},${Y_START}`
-          }
-          return `L
-              ${X_START},
-              ${(Y_START) - (((yGap * data[index - 1]) / 10) / year)}
-              `
-        }).join(' ')}
-      /> */}
-
       <Path
         fill="none"
         strokeWidth="1"
@@ -255,7 +241,7 @@ function Graph({ retiermentPay, year, continuousYears }: { retiermentPay: number
       />
 
       <Path
-        length={Math.sqrt(Math.pow((xGap * currunt), 2) + Math.pow((((yGap * ((currunt + 1) * dayIncome)) / 10) / year), 2))}
+        length={Math.sqrt(Math.pow((xGap * currunt + 1), 2) + Math.pow((((yGap * ((currunt + 1 + 1) * dayIncome)) / 10) / year), 2))}
         animation={currunt > 0}
         fill="none"
         strokeWidth="1"
@@ -297,8 +283,8 @@ export default function SuccessGraph({ retiermentPay, year, continuousYears }: S
 
     return {
       size: [30, 30],
-      x: (X_START + (xGap * currunt)) - 10,
-      y: Y_START + (((yGap * ((currunt + 1) * dayIncome)) / 10) / year)
+      x: (X_START + (xGap * currunt)) - 8,
+      y: Y_START + (((yGap * ((currunt + 1) * dayIncome)) / 10) / year) - 4
     }
   }, [retiermentPay, continuousYears, year])
 
@@ -428,7 +414,7 @@ const Circle = styled.circle`
 `
 
 const PointImg = styled(Img)<{ continuousYears: number;x: number; y: number }>`
-  transform: translate(30px, -${Y_LABEL - 12}px);
+  transform: translate(32px, -${Y_LABEL - 12}px);
 
   ${({ continuousYears }) => continuousYears && css`
     animation: point ${ANIMATION_DURATION}s forwards;
@@ -437,10 +423,10 @@ const PointImg = styled(Img)<{ continuousYears: number;x: number; y: number }>`
   
   @keyframes point {
     0% {
-      transform: translate(30px, -${Y_LABEL - 12}px);
+      transform: translate(32px, -${Y_LABEL - 12}px);
     }
     100% {
-      transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - TOP_PADDING - 12}px)`};
+      transform: ${({ x, y }) => `translate(${x}px, -${y + Y_LABEL - TOP_PADDING}px)`};
     }
   }
 `
