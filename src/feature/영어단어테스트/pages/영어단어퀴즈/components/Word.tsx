@@ -35,8 +35,8 @@ function Word(){
       }
       return (state + 1)
     })
-
   }
+
   return (
     <Block onClick={handleBgClick}>
       <Box>

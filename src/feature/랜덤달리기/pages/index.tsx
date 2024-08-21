@@ -1,4 +1,4 @@
-import { Box } from 'grommet'
+import { Box, } from 'grommet'
 import { useCallback, useState } from 'react'
 
 import CountDown from '../shared/components/CountDown'
@@ -7,7 +7,7 @@ import Setting from '../shared/components/Setting'
 import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
 
 const COUNT_DOWN = 3
-function Page(){
+function MainPage(){
 
   const [count, setCount] = useState<number>(0)
 
@@ -56,5 +56,4 @@ function Page(){
   )
 }
 
-export default Page
-
+export default MainPage

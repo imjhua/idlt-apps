@@ -1,5 +1,5 @@
 
-import styled from '@emotion/styled/macro'
+import { Page, PageContent } from 'grommet'
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
@@ -14,9 +14,11 @@ function MainContent(){
   return (
     <ErrorBoundary>
       <Suspense fallback={<Loading />}>
-        <MainLayout>
-          <Outlet />
-        </MainLayout>
+        <Page background="main">
+          <PageContent pad="medium">
+            <Outlet />
+          </PageContent>
+        </Page>
         <ThemeSwitch />
       </Suspense>
     </ErrorBoundary>
@@ -25,6 +27,3 @@ function MainContent(){
 
 export default MainContent
 
-const MainLayout = styled.div`
-  padding: 0 10px;
-`

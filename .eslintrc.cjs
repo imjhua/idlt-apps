@@ -78,6 +78,7 @@ module.exports = {
     }],
     'arrow-parens': ['error', 'always'],
     'object-curly-newline': ['error', { 'multiline': true, 'minProperties': 5 }],
-    'jsx-quotes': ['error', 'prefer-double']
+    'jsx-quotes': ['error', 'prefer-double'],
+    'react/no-unescaped-entities': OFF
   },
 }

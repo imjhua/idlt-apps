@@ -7,10 +7,7 @@ import {
   // RadioGroup,
   Text
 } from '@radix-ui/themes'
-import {
-  Button, Form, FormField, RadioButton, RadioButtonGroup
-} from 'grommet'
-import { Fragment } from 'react'
+import { Button, Form, FormField, RadioButtonGroup } from 'grommet'
 
 import { getRandomIntInclusive, getRandomList } from '@/lib/utils'
 
@@ -96,7 +93,7 @@ export default Stroop
 
 function AnswerItem({ color, text, tureOrFalse }: { color: string; text: string; tureOrFalse: boolean }){
 
-  const handleSubmitClick = ({ value }) => {
+  const handleSubmitClick = ({ value }: { value: string }) => {
     console.log('정답제출!')
     console.log(value)
 

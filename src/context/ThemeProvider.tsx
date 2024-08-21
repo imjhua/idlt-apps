@@ -27,6 +27,10 @@ const myTheme = {
         dark: theme.dark.background,
         light: theme.light.background
       },
+      main: {
+        dark: theme.dark.background,
+        light: theme.light.background
+      },
       background: {
         dark: theme.dark.background,
         light: theme.light.background
