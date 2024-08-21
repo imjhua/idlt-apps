@@ -36,7 +36,8 @@ const myTheme = {
         light: theme.light.background
       },
       focus: '#4397af' // added focus color
-    }
+    },
+    focus: { outline: { color: 'none' }, }
   },
 }
 

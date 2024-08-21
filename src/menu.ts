@@ -15,10 +15,6 @@ export const MENUS = [
     path: '/스트룹테스트',
     title: '스트룹테스트'
   },
-  {
-    path: '/영어회화패턴',
-    title: '영어회화패턴'
-  },
   // {
   //   path: '/퇴직금계산기',
   //   title: '퇴직금계산기'
@@ -26,5 +22,9 @@ export const MENUS = [
   {
     path: '/영어단어테스트',
     title: '영어단어테스트'
+  },
+  {
+    path: '/영어회화패턴',
+    title: '영어회화패턴'
   },
 ]

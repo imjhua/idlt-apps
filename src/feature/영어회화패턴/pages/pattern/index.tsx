@@ -59,7 +59,7 @@ function HomePage(){
         ['main'],
         ['footer'],
       ]}
-      rows={['auto', 'xsmall', 'medium', 'xsmall']}
+      rows={['auto', 'auto', '260px', 'xsmall']}
       columns={['full']}
       gap="small"
     >
@@ -82,12 +82,15 @@ function HomePage(){
         gap="large"
         onClick={handleBgClick}
       >
-        <Text size="large" weight="bold">
+        <Text size="xlarge" weight="bold">
           {randomList[nextIndex].key}
         </Text>
-        {showMeaning && <Card pad="large" background="white">
-          {randomList[nextIndex].value}
-        </Card>}
+        {showMeaning &&
+        (<Card pad="large" background="white">
+          <Text size="medium">
+            {randomList[nextIndex].value}
+          </Text>
+        </Card>)}
       </Box>
 
       <Box gridArea="footer" gap="large">
