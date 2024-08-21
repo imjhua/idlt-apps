@@ -27,7 +27,6 @@ function Layout(){
         background="header"
         gridArea="header"
         justify="center"
-        border="bottom"
         style={{
           height: GNB_HEIGHT,
           zIndex: 10,

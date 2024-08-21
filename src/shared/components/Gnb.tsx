@@ -44,7 +44,7 @@ function Gnb({ addYOffset }: GnbProps){
   }, [addYOffset, location])
 
   return (
-    <Header>
+    <Header border="bottom">
       <div>
         <Logo />
         <Title opacity={opacity}>{(title) && title}</Title>
