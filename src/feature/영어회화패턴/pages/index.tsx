@@ -16,7 +16,7 @@ const LIST = new Array(PATTERN_LENGHT / STEP).fill(0).map((_, index) => {
 function HomePage(){
   return (
     <>
-      <Box align="center" pad="large" gap="large">
+      <Box pad="large" gap="large">
         <Heading level={2}>영어회화 이지패턴 300문장</Heading>
         <List
           data={
