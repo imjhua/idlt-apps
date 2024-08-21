@@ -13,10 +13,10 @@ export default defineConfig(({ mode }) => {
       react(),
       tsconfigPaths(),
       macrosPlugin(),
-      createHtmlPlugin({
-        minify: true,
-        inject: { data: { domain: env.VITE_APP_DOMAIN } }
-      }),
+      // createHtmlPlugin({
+      //   minify: true,
+      //   inject: { data: { domain: env.VITE_APP_DOMAIN } }
+      // }),
     ],
   }
 })

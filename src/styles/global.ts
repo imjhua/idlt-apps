@@ -52,7 +52,7 @@ html, body{
 }
 
 body{
-  // overflow: hidden;
+  overflow-x: hidden;
 }
 
 ul{

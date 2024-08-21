@@ -14,7 +14,7 @@ function MainContent(){
   return (
     <ErrorBoundary>
       <Suspense fallback={<Loading />}>
-        <Page background="main">
+        <Page background="main" height="full">
           <PageContent pad="medium">
             <Outlet />
           </PageContent>

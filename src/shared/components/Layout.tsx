@@ -4,7 +4,7 @@ import { Box, Grid } from 'grommet'
 import Gnb from './Gnb'
 import MainContent from './MainContent'
 
-export const GNB_HEIGHT = 48
+export const GNB_HEIGHT = 62
 export const BOX_PADDING = 6 * 2
 export const CONTENT_PADDING = 6
 export const SUB_NAV_HEIGHT = 26
@@ -16,7 +16,7 @@ function Layout(){
   return (
     <Grid
       fill
-      rows={['xxsmall', 'full']}
+      rows={[`${GNB_HEIGHT}px`, 'full']}
       columns={['full']}
       areas={[
         ['header'],
@@ -27,12 +27,6 @@ function Layout(){
         background="header"
         gridArea="header"
         justify="center"
-        style={{
-          height: GNB_HEIGHT,
-          zIndex: 10,
-          paddingTop: 'env(safe-area-inset-top)',
-          position: 'fixed', top: 0, right: 0, left: 0,
-        }}
       >
         <Gnb addYOffset={4} />
       </Box>

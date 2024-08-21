@@ -3,6 +3,7 @@ import { Header } from 'grommet'
 import { useEffect, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
+import { GNB_HEIGHT } from './Layout'
 import Logo from './Logo'
 import Profile from './Profile'
 
@@ -44,7 +45,16 @@ function Gnb({ addYOffset }: GnbProps){
   }, [addYOffset, location])
 
   return (
-    <Header border="bottom" style={{ paddingTop: 4 }}>
+    <Header
+      border="bottom"
+      background="header"
+      style={{
+        height: GNB_HEIGHT,
+        paddingTop: 'env(safe-area-inset-top)',
+        zIndex: 10,
+        position: 'fixed', top: 0, right: 0, left: 0,
+      }}
+    >
       <div>
         <Logo />
         <Title opacity={opacity}>{(title) && title}</Title>
