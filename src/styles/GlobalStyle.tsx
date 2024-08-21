@@ -1,3 +1,5 @@
+import '@radix-ui/themes/styles.css'
+
 import { Global } from '@emotion/react'
 
 import global from './global'

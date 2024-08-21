@@ -60,7 +60,7 @@ export default Page
 
 const float = keyframes`
   from{
-    transform: translateY(-4 px);
+    transform: translateY(-4px);
   }
   to{
     transform: translateY(4px);

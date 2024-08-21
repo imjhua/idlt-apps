@@ -3,6 +3,10 @@ import styled from '@emotion/styled/macro'
 export const PageBlock = styled.div`
   margin: 40px 0;
   text-align: center;
+
+  strong{
+    font-weight: 500;
+  }
 `
 
 export const ErrorCode = styled.div`
