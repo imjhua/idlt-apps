@@ -49,7 +49,7 @@ function Gnb({ addYOffset }: GnbProps){
       border="bottom"
       background="header"
       style={{
-        height: GNB_HEIGHT,
+        height: `calc(${GNB_HEIGHT}px + env(safe-area-inset-top))`,
         paddingTop: 'env(safe-area-inset-top)',
         zIndex: 10,
         position: 'fixed', top: 0, right: 0, left: 0,
