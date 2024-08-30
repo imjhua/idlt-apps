@@ -3,6 +3,7 @@ import {
   Box, Button, Card, Grid,
   Heading, List, Text
 } from 'grommet'
+import { CaretNext, CaretPrevious } from 'grommet-icons'
 import { useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
@@ -21,7 +22,7 @@ function HomePage(){
   }, [start, end])
 
   const randomList = useMemo(() => {
-    const randomList = originalList.reduce<{ key: string; value: string }[]>((data) => {
+    const randomList = originalList.reduce<{ key: string; value: string; index: string; ex1: string | null; ex2: string | null }[]>((data) => {
       const randomNumber1 = getRandomIntInclusive(0, originalList.length - 1)
       const randomNumber2 = getRandomIntInclusive(0, originalList.length - 1)
       const temp = data[randomNumber1]
@@ -35,6 +36,22 @@ function HomePage(){
 
   const [show, setShow] = useState<boolean>(false)
 
+  const handlePreviousClick = () => {
+    setNextIndex((state) => {
+      if (state === randomList.length - 1){
+        return 0
+      }
+      return (state - 1)
+    })
+  }
+  const handleNextClick = () => {
+    setNextIndex((state) => {
+      if (state === randomList.length - 1){
+        return 0
+      }
+      return (state + 1)
+    })
+  }
   const handleBgClick = () => {
     if (!showMeaning){
       setShowMeaning(true)
@@ -57,6 +74,7 @@ function HomePage(){
         ['pattern'],
         ['index'],
         ['main'],
+        ['button'],
         ['footer'],
       ]}
       rows={['auto', 'auto', '260px', 'xsmall']}
@@ -65,7 +83,10 @@ function HomePage(){
     >
       <Box gridArea="pattern" align="end">
         <Text size="medium">
-          pattern: {start}-{end}
+          PATTERN: {start}-{end}
+        </Text>
+        <Text>
+          (pattern: {randomList[nextIndex].index})
         </Text>
       </Box>
 
@@ -92,7 +113,10 @@ function HomePage(){
           </Text>
         </Card>)}
       </Box>
-
+      <Box gridArea="button" justify="between" direction="row">
+        <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
+        <Button icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
+      </Box>
       <Box gridArea="footer" gap="large">
         <Button
           primary
@@ -101,10 +125,11 @@ function HomePage(){
           }} />
 
         {show && <List
+          pad="medium"
           data={
             [
-              '11',
-              '22'
+              randomList[nextIndex].ex1 || '',
+              randomList[nextIndex].ex2 || '',
             ]
           }
         />}
