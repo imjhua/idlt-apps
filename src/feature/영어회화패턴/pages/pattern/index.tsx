@@ -100,7 +100,7 @@ function HomePage(){
         <Heading>
           # {nextIndex + 1}
         </Heading>
-        <Box>
+        <Box align="end">
           <Text size="medium">
           PATTERN: {start}-{end}
           </Text>
