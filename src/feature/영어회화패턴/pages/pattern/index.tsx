@@ -87,40 +87,39 @@ function HomePage(){
       fill
       areas={[
         ['pattern'],
-        ['index'],
         ['main'],
         ['footer'],
       ]}
-      rows={['auto', 'auto', '220px', 'xsmall']}
+      rows={['auto', '220px', 'xsmall']}
       columns={['full']}
       gap="small"
     >
-      <Box gridArea="pattern" align="end">
-        <Text size="medium">
-          PATTERN: {start}-{end}
-        </Text>
-        <Text>
-          (pattern: {randomList[nextIndex].index})
-        </Text>
-      </Box>
-
       <Box
-        gridArea="index"
-        pad="medium" gap="large">
+        pad="medium" gridArea="pattern" direction="row"
+        justify="between">
         <Heading>
           # {nextIndex + 1}
         </Heading>
+        <Box>
+          <Text size="medium">
+          PATTERN: {start}-{end}
+          </Text>
+          <Text>
+          (pattern: {randomList[nextIndex].index})
+          </Text>
+        </Box>
       </Box>
 
       <Box
-        gridArea="main" pad="large"
+        gridArea="main"
+        pad="medium"
         gap="large"
         align="center"
         onClick={handleBgClick}
       >
         <Box
-          align="center" justify="between"
-          direction="row" width="100%">
+          align="center" direction="row" justify="between"
+          width="100%">
           <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
           <>
             <Text size="xlarge" weight="bold">
