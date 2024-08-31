@@ -1,8 +1,8 @@
 const global = `
 :root {
-  // theme: indigo
-  --color-light-bg: color(display-p3 0.885 0.914 1);
-  --color-dark-bg: color(display-p3 0.129 0.18 0.369);
+  // theme: gray
+  --color-light-bg: color(display-p3 0.975 0.975 0.975);
+  --color-dark-bg: color(display-p3 0.098 0.098 0.098);
 }
 
 /* 시스템 테마에 따른 root 배경색상 지정. 텍스트는 하위 페이지 테마에서 관장 */

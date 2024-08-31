@@ -115,7 +115,11 @@ function HomePage() {
           width="100%">
           <Button
             pad="none"
-            style={{ height: '100%', width: '40px' }}
+            style={{
+              height: '100%',
+              width: '40px',
+              textAlign: 'center'
+            }}
             icon={<CaretPrevious />}
             hoverIndicator
             onClick={handlePreviousClick}
@@ -140,7 +144,8 @@ function HomePage() {
             pad="none"
             style={{
               height: '100%',
-              width: '40px'
+              width: '40px',
+              textAlign: 'center'
             }} icon={<CaretNext />}
             hoverIndicator onClick={handleNextClick} />
         </Box>

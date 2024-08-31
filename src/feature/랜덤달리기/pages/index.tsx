@@ -40,7 +40,7 @@ function MainPage() {
   }, [])
 
   return (
-    <Box pad="large" gap="small">
+    <Box pad="small" gap="small">
       <Setting status={status} count={count} onChange={handleCountChange} />
       <Run
         delay={COUNT_DOWN}
