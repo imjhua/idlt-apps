@@ -133,7 +133,8 @@ function HomePage(){
             {showMeaning &&
               (<Card
                 pad="large" background="white"
-                width="auto">
+                width="auto"
+                style={{ padding: '24px 0' }}>
                 <Text size="medium">
                   {randomList[nextIndex].value}
                 </Text>
