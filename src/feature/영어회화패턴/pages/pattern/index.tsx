@@ -4,7 +4,7 @@ import {
   Heading, List, Text
 } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
-import { useMemo, useState } from 'react'
+import { MouseEvent, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import useQueryParams from '@/shared/hooks/useQueryParams'
@@ -34,17 +34,30 @@ function HomePage(){
     return randomList
   }, [originalList])
 
-  const [show, setShow] = useState<boolean>(false)
+  const [showExSentence, setShowExSentence] = useState<boolean>(false)
 
-  const handlePreviousClick = () => {
+  const handleExampleSentenceClick = () => {
+    setShowExSentence((state) => (!state))
+  }
+  const handlePreviousClick = (e: MouseEvent) => {
+    e.stopPropagation()
+
+    setShowMeaning(false)
+    setShowExSentence(false)
+
     setNextIndex((state) => {
-      if (state === randomList.length - 1){
+      if (state === 0){
         return 0
       }
       return (state - 1)
     })
   }
-  const handleNextClick = () => {
+  const handleNextClick = (e: MouseEvent) => {
+    e.stopPropagation()
+
+    setShowMeaning(false)
+    setShowExSentence(false)
+
     setNextIndex((state) => {
       if (state === randomList.length - 1){
         return 0
@@ -53,6 +66,8 @@ function HomePage(){
     })
   }
   const handleBgClick = () => {
+    setShowExSentence(false)
+
     if (!showMeaning){
       setShowMeaning(true)
       return
@@ -74,10 +89,9 @@ function HomePage(){
         ['pattern'],
         ['index'],
         ['main'],
-        ['button'],
         ['footer'],
       ]}
-      rows={['auto', 'auto', '260px', 'xsmall']}
+      rows={['auto', 'auto', '220px', 'xsmall']}
       columns={['full']}
       gap="small"
     >
@@ -99,40 +113,44 @@ function HomePage(){
       </Box>
 
       <Box
-        gridArea="main" align="center" pad="large"
+        gridArea="main" pad="large"
         gap="large"
+        align="center"
         onClick={handleBgClick}
       >
-        <Text size="xlarge" weight="bold">
-          {randomList[nextIndex].key}
-        </Text>
-        {showMeaning &&
-        (<Card pad="large" background="white">
-          <Text size="medium">
-            {randomList[nextIndex].value}
-          </Text>
-        </Card>)}
-      </Box>
-      <Box gridArea="button" justify="between" direction="row">
-        <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
-        <Button icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
-      </Box>
-      <Box gridArea="footer" gap="large">
-        <Button
-          primary
-          label="응용 문장 보기" onClick={() => {
-            setShow((state) => (!state))
-          }} />
+        <Box
+          align="center" justify="between"
+          direction="row" width="100%">
+          <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
+          <>
+            <Text size="xlarge" weight="bold">
+              {randomList[nextIndex].key}
+            </Text>
+          </>
+          <Button icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
+        </Box>
 
-        {show && <List
+        {showMeaning &&
+          (<Card
+            pad="large" background="white"
+            width="auto">
+            <Text size="medium">
+              {randomList[nextIndex].value}
+            </Text>
+          </Card>)}
+      </Box>
+
+      <Box gridArea="footer" gap="large" pad="large">
+        <Text size="small">* 예문을 보려면 아래 영역을 터치하세요.</Text>
+        <List
+          style={{ color: showExSentence ? 'inherit' : 'transparent' }}
+          onClick={handleExampleSentenceClick}
           pad="medium"
-          data={
-            [
-              randomList[nextIndex].ex1 || '',
-              randomList[nextIndex].ex2 || '',
-            ]
-          }
-        />}
+          data={[
+            randomList[nextIndex].ex1 || '(문장 필요)',
+            randomList[nextIndex].ex2 || '(문장 필요)',
+          ]}
+        />
       </Box>
     </Grid>
   )

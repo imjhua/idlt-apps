@@ -4,64 +4,64 @@ const SENTENCES_50 = [
     'index': '1',
     'key': '~할 수 있다',
     'value': 'I can + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I can help you with your homework.',
+    'ex2': 'I can understand French, but I can\'t speak it fluently.'
   },
   {
     'index': '2',
     'key': '그냥 ~할 수 없다',
     'value': 'I just cant\'t + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I just can\'t eat that.',
+    'ex2': 'I just can\'t look at him.'
   },
   {
     'index': '3',
     'key': '~할 수 있어요?',
     'value': 'Can you + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Can you show me how to use this software?',
+    'ex2': 'Can you explain how this works?'
   },
   {
     'index': '4',
     'key': '~하실 수 있어요?',
     'value': 'Could you + 동사원형~?',
     'ex1': 'Could you hold this for me?',
-    'ex2': null
+    'ex2': 'Could you send me the details by email?'
   },
   {
     'index': '5',
     'key': '~해야 한다(강한의지)',
     'value': 'I have to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I have to pick up my sister from the airport.',
+    'ex2': 'I have to attend a meeting this afternoon.'
   },
   {
     'index': '6',
-    'key': '~할 필요 없다',
+    'key': '~할 필요 없다(have to)',
     'value': 'You don\'t have to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You don\'t have to hurry.',
+    'ex2': 'You  don\'t have to wake up early.'
   },
   {
     'index': '7',
     'key': '~해야 했다',
     'value': 'I had to + 동사원형',
     'ex1': 'I had to buy this.',
-    'ex2': null
+    'ex2': 'I had to work hard.'
   },
   {
     'index': '8',
     'key': '~해야 해요?',
     'value': 'Do I have to + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Do I have to rush?',
+    'ex2': 'Do I have to attend the meeting today?'
   },
   {
     'index': '9',
     'key': '~하겠다(계획되지 않은 미래)',
     'value': 'I will + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I will finish the report by tomorrow.',
+    'ex2': 'I will call you when I arrive at the airport.'
   },
   {
     'index': '10',
@@ -72,7 +72,7 @@ const SENTENCES_50 = [
   },
   {
     'index': '11',
-    'key': '~하지 않겠다(갑작스런상황)',
+    'key': '~하지 않겠다(갑작스런 상황)',
     'value': 'I won\'t + 동사원형',
     'ex1': 'I won\'t go out.',
     'ex2': 'I won\'t park here.'
@@ -82,11 +82,11 @@ const SENTENCES_50 = [
     'key': '절대 ~ 안 할 거다',
     'value': 'I\'ll never + 동사원형',
     'ex1': 'I\'ll naver do that again.',
-    'ex2': null
+    'ex2': 'I\'ll never understand why he did that.'
   },
   {
     'index': '13',
-    'key': '~해야겠다(작은 의지 / 좋다)',
+    'key': '~해야겠다(작은의지)',
     'value': 'I should + 동사원형',
     'ex1': 'I should go on a diet.',
     'ex2': 'I should go home.'
@@ -95,8 +95,8 @@ const SENTENCES_50 = [
     'index': '14',
     'key': '~했어야 했어는데',
     'value': 'I should have p.p',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I should have taken care of him.',
+    'ex2': 'I should have studied harder for the exam.'
   },
   {
     'index': '15',
@@ -116,71 +116,71 @@ const SENTENCES_50 = [
     'index': '17',
     'key': '~해도 된다',
     'value': 'You may + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You may leave the office early today.',
+    'ex2': 'You may come closer.'
   },
   {
     'index': '18',
     'key': '~해도 될까요?',
     'value': 'May I + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'May I drop by?',
+    'ex2': 'May I open the door?'
   },
   {
     'index': '19',
     'key': '틀림없이 ~이다',
     'value': 'It must be + 명사',
     'ex1': 'It must be true.',
-    'ex2': null
+    'ex2': 'It must be a new restaurant in town.'
   },
   {
     'index': '20',
     'key': '~일 것 같다(추측)',
     'value': 'It might be + 형용사 + to + 동사',
     'ex1': 'It might be hard to forget it.',
-    'ex2': null
+    'ex2': 'It might be raining later, so take an umbrella.'
   },
   {
     'index': '21',
     'key': '예전에 ~였다',
     'value': 'I used to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I used to be fat.',
+    'ex2': 'I used to practice yoga.'
   },
   {
     'index': '22',
     'key': '~에 익숙해졌다',
     'value': 'I got used to + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I got used to waking up early for work.',
+    'ex2': 'I got used to the new routine at the gym.'
   },
   {
     'index': '23',
-    'key': '~하지 말아요',
+    'key': '~하지 말아요(명령문)',
     'value': 'Don\'t + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Don\'t laugh at me.',
+    'ex2': 'Don\'t make a mess.'
   },
   {
     'index': '24',
-    'key': '~하지 말아요',
+    'key': '~하지 말아요(명령문 be)',
     'value': 'Dont\'t be + 형용사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Don\'t be sorry.',
+    'ex2': 'Don\'t be serious.'
   },
   {
     'index': '25',
     'key': '이것은 ~이다',
     'value': 'This is + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'There is my job.',
+    'ex2': 'There is the way I like it.'
   },
   {
     'index': '26',
     'key': '그거 ~한데!',
     'value': 'That\'s + 형용사!',
-    'ex1': 'That\'s Amazing!',
-    'ex2': null
+    'ex1': 'That\'s surprising!',
+    'ex2': 'That\'s wonderful!'
   },
   {
     'index': '27',
@@ -193,92 +193,92 @@ const SENTENCES_50 = [
     'index': '28',
     'key': 'A가 아니라 B다',
     'value': 'It\'s not A but B',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'It\'s not the size but the comfort that counts.',
+    'ex2': 'It\'s not the price but the quality that matters to me.'
   },
   {
     'index': '29',
     'key': '~하다는 게 정말이에요?',
     'value': 'Is it true + 주어 + 동사~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Is it ture he told a lie?',
+    'ex2': 'Is it true they are divorced?'
   },
   {
     'index': '30',
     'key': '사실은 ~이다',
     'value': 'The truth is, + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'The truth is, he doesn’t really like that movie.',
+    'ex2': 'The truth is, I forgot about the meeting.'
   },
   {
     'index': '31',
     'key': '~가 있다',
     'value': 'There is/are + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'There is a book on the table.',
+    'ex2': 'There are many opportunities for growth.'
   },
   {
     'index': '32',
     'key': '여기 ~ 있다',
     'value': 'Here is/are + 명사',
     'ex1': 'Here are rules to follow.',
-    'ex2': null
+    'ex2': 'Here are the keys you asked for.'
   },
   {
     'index': '33',
     'key': '~가 있나요?',
     'value': 'Is/Are there + 명사~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Is there a good restaurant around here?',
+    'ex2': 'Are there any questions about the new policy?'
   },
   {
     'index': '34',
-    'key': '~가 있을까요?',
+    'key': '~가 있을까요?(기대 또는 추측)',
     'value': 'Will there be + 명사~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Will there be good news?',
+    'ex2': 'Will there be any refreshments at the event?'
   },
   {
     'index': '35',
     'key': '~가 전혀없다',
     'value': 'There\'s nothing + 수식어구',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'There\'s nothing wrong with it.',
+    'ex2': 'There\'s nothing I can do.'
   },
   {
     'index': '36',
-    'key': '~할 필요가 없다',
+    'key': '~할 필요가 없다\b(there\'s)',
     'value': 'There\'s no need to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'There\'s no need to fear.',
+    'ex2': 'There\'s no need to no worry about it.'
   },
   {
     'index': '37',
     'key': '~할 방법이 없다',
     'value': 'There\'s no way to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'There\'s no way to contact him right now.',
+    'ex2': 'There\'s no way to get a refund after 30 days.'
   },
   {
     'index': '38',
     'key': '~할 방법이 없나요?',
     'value': 'Is there any way to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Is there any way to find him?',
+    'ex2': 'Is there any way to get there?'
   },
   {
     'index': '39',
     'key': '~하는 중이다',
     'value': 'Im + -ing',
     'ex1': 'Im cleaning the room.',
-    'ex2': null
+    'ex2': 'Im staying in Seoul.'
   },
   {
     'index': '40',
     'key': '~하고 있어요?',
     'value': 'Are you + -ing~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Are you studying for the exam?',
+    'ex2': '(Why) Are you working on the project right now?'
   },
   {
     'index': '41',
@@ -296,59 +296,59 @@ const SENTENCES_50 = [
   },
   {
     'index': '43',
-    'key': '~할거에요?',
+    'key': '~할거에요?(미래 상대방의 의도 파악)',
     'value': 'Are you going to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Are you going to take the new job offer?',
+    'ex2': 'Are you going to renovate the house this summer?'
   },
   {
     'index': '44',
     'key': '~하려고 했다',
     'value': 'I was going to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I was going to call you earlier, but I forgot.',
+    'ex2': 'I was going to bake a cake, but I didn’t do it.'
   },
   {
     'index': '45',
     'key': '난 정말 ~하다',
     'value': 'Im really + 형용사',
     'ex1': 'Im really mad at her.',
-    'ex2': null
+    'ex2': 'I\'m really impressed by your performance.'
   },
   {
     'index': '46',
     'key': '난 좀 ~하다',
     'value': 'Im kind of + 형용사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I\'m kind of tired after the long day.',
+    'ex2': 'I\'m kind of excited about the upcoming trip.'
   },
   {
     'index': '47',
     'key': '~해서 정말 기쁘다',
     'value': 'Im so glad to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I\'m so glad to work with you.',
+    'ex2': 'I\'m so glad to hear that you got the job.'
   },
   {
     'index': '48',
     'key': '~한다면 좋겠다',
     'value': 'I\'d be happy to + 동사원형',
     'ex1': 'I\'d be happy to hear from you.',
-    'ex2': 'I\'d be happy to live in New York.'
+    'ex2': 'I\'d be happy to join you for dinner tonight.'
   },
   {
     'index': '49',
     'key': '~를 무서워하다',
     'value': 'Im afraid of + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I\'m afraid of flying.',
+    'ex2': 'I\'m afraid of making mistakes in the presentation.'
   },
   {
     'index': '50',
     'key': '아무래도 ~할 것 같다',
     'value': 'Im afraid + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I\'m afraid we are lost.',
+    'ex2': 'I\'m afraid it is going to rain.'
   }
 ]
 const SENTENCES_100 = [
