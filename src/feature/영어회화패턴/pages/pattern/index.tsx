@@ -90,7 +90,7 @@ function HomePage(){
         ['main'],
         ['footer'],
       ]}
-      rows={['auto', '220px', 'xsmall']}
+      rows={['auto', 'auto', 'auto']}
       columns={['full']}
       gap="small"
     >
@@ -121,22 +121,25 @@ function HomePage(){
           align="center" direction="row" justify="between"
           width="100%">
           <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
-          <>
+
+          <Box
+            height="220px"
+            gap="large" justify="center" align="center">
             <Text size="xlarge" weight="bold">
               {randomList[nextIndex].key}
             </Text>
-          </>
+            {showMeaning &&
+              (<Card
+                pad="large" background="white"
+                width="auto">
+                <Text size="medium">
+                  {randomList[nextIndex].value}
+                </Text>
+              </Card>)}
+          </Box>
+
           <Button icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
         </Box>
-
-        {showMeaning &&
-          (<Card
-            pad="large" background="white"
-            width="auto">
-            <Text size="medium">
-              {randomList[nextIndex].value}
-            </Text>
-          </Card>)}
       </Box>
 
       <Box gridArea="footer" gap="large" pad="small">
