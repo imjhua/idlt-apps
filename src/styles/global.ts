@@ -53,6 +53,7 @@ html, body{
 
 body{
   overflow-x: hidden;
+  backgournd: red;
 }
 
 ul{
