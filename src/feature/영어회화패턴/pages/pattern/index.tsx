@@ -120,7 +120,9 @@ function HomePage(){
           align="center" direction="row" justify="between"
           width="100%">
           <Button
-            pad="none" icon={<CaretPrevious />} hoverIndicator
+            pad="none"
+            style={{ height: '100%' }}
+            icon={<CaretPrevious />} hoverIndicator
             onClick={handlePreviousClick} />
 
           <Box
@@ -143,6 +145,7 @@ function HomePage(){
 
           <Button
             pad="none"
+            style={{ height: '100%' }}
             icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
         </Box>
       </Box>
