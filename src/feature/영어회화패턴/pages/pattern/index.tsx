@@ -45,6 +45,7 @@ function HomePage() {
     setShowExSentence((state) => !state)
 
     if (showExSentence){
+      setShowMeaning(false)
       setNextIndex((state) => {
         if (state === randomList.length - 1) {
           return 0
