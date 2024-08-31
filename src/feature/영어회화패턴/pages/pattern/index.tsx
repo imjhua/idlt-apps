@@ -134,7 +134,7 @@ function HomePage(){
               (<Card
                 pad="large" background="white"
                 width="auto"
-                style={{ padding: '24px 0' }}>
+                style={{ whiteSpace: 'pre', padding: '14px' }}>
                 <Text size="medium">
                   {randomList[nextIndex].value}
                 </Text>
