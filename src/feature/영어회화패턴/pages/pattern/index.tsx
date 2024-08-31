@@ -115,7 +115,7 @@ function HomePage() {
           width="100%">
           <Button
             pad="none"
-            style={{ height: '100%' }}
+            style={{ height: '100%', width: '40px' }}
             icon={<CaretPrevious />}
             hoverIndicator
             onClick={handlePreviousClick}
@@ -137,7 +137,11 @@ function HomePage() {
           </Box>
 
           <Button
-            pad="none" style={{ height: '100%' }} icon={<CaretNext />}
+            pad="none"
+            style={{
+              height: '100%',
+              width: '40px'
+            }} icon={<CaretNext />}
             hoverIndicator onClick={handleNextClick} />
         </Box>
       </Box>
