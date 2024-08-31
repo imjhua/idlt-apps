@@ -71,12 +71,12 @@ function HomePage() {
     })
   }
   const handleBgClick = () => {
-    setShowExSentence(false)
-
     if (!showMeaning) {
       setShowMeaning(true)
       return
     }
+
+    setShowExSentence(false)
     setShowMeaning(false)
 
     setNextIndex((state) => {
