@@ -140,12 +140,12 @@ function HomePage(){
           </Card>)}
       </Box>
 
-      <Box gridArea="footer" gap="large" pad="large">
+      <Box gridArea="footer" gap="large" pad="small">
         <Text size="small">* 예문을 보려면 아래 영역을 터치하세요.</Text>
         <List
           style={{ color: showExSentence ? 'inherit' : 'transparent' }}
           onClick={handleExampleSentenceClick}
-          pad="medium"
+          pad="small"
           data={[
             randomList[nextIndex].ex1 || '(문장 필요)',
             randomList[nextIndex].ex2 || '(문장 필요)',
