@@ -75,7 +75,7 @@ function Gnb({ addYOffset }: GnbProps) {
 
         <Profile email="idlt@email.com" />
       </Box>
-      <Box height={`${GNB_HEIGHT}px`} />
+      {/* <Box height={`${GNB_HEIGHT}px`} /> */}
     </>
   )
 }

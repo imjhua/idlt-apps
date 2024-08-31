@@ -1,22 +1,24 @@
 const global = `
-:root{
-  --color-light-bg: #fff;
-  --color-dark-bg: #222;
+:root {
+  // --color-light-bg: #fff;
+  // --color-dark-bg: #222;
+
+  background: var(--accent-4);
 }
 
 /* 시스템 테마에 따른 root 배경색상 지정. 텍스트는 하위 페이지 테마에서 관장 */
-@media (prefers-color-scheme: light) {
-  :root { background: var(--color-light-bg); }
-  svg{
-    fill: var(--color-light-bg);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root { background: var(--color-dark-bg); }
-  svg{
-    fill: var(--color-dark-bg);
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root { background: var(--color-light-bg); }
+//   svg{
+//     fill: var(--color-light-bg);
+//   }
+// }
+// @media (prefers-color-scheme: dark) {
+//   :root { background: var(--color-dark-bg); }
+//   svg{
+//     fill: var(--color-dark-bg);
+//   }
+// }
 
 input, textarea, button, select {
   appearance: none;
