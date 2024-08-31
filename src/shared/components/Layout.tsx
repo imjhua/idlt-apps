@@ -1,8 +1,4 @@
 
-// import { Box, Grid } from 'grommet'
-
-// import { Box, Grid } from '@radix-ui/themes'
-
 import Gnb from './Gnb'
 import MainContent from './MainContent'
 
@@ -20,41 +16,9 @@ function Layout(){
     <>
       <Gnb addYOffset={4} />
       <MainContent />
-
-      {/* <div
-        style={{
-          position: 'fixed',
-          top: '0',
-          bottom: '0',
-          right: '0',
-          left: '0',
-        }}>
-      </div> */}
     </>
   )
 
-  // return (
-  //   <Grid
-  //     fill
-  //     rows={[`${GNB_HEIGHT}px`, 'full']}
-  //     columns={['full']}
-  //     areas={[
-  //       ['header'],
-  //       ['main'],
-  //     ]}
-  //   >
-  //     <Box
-  //       background="header"
-  //       gridArea="header"
-  //       justify="center"
-  //     >
-  //       <Gnb addYOffset={4} />
-  //     </Box>
-  //     <Box gridArea="main">
-  //       <MainContent />
-  //     </Box>
-  //   </Grid>
-  // )
 }
 
 export default Layout

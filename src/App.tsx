@@ -1,4 +1,3 @@
-import { css, Global } from '@emotion/react'
 import styled from '@emotion/styled/macro'
 import { Suspense } from 'react'
 import { ScrollRestoration } from 'react-router-dom'
@@ -6,22 +5,12 @@ import { ScrollRestoration } from 'react-router-dom'
 import ErrorBoundary from './shared/components/ErrorBoundary'
 import Layout from './shared/components/Layout'
 import Loading from './shared/components/Loading'
-import useTheme from './shared/hooks/useTheme'
 import theme from './styles/theme'
 
 function App() {
-  const themeProps = useTheme()
 
   return (
     <>
-
-      <Global
-        styles={css`
-          :root { 
-            background: ${themeProps.theme === 'light' ? 'var(--color-light-bg)' : 'var(--color-dark-bg)'}; 
-          }
-        `}
-      />
       <ErrorBoundary>
         <Suspense fallback={<Loading />}>
           <ScrollRestoration />

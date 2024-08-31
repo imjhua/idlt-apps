@@ -276,7 +276,7 @@ function Run({
                   },
                   {
                     property: 'character',
-                    header: <Text></Text>,
+                    header: <Text />,
                     size: 'large',
                     render: ({
                       character, timings, winner, duration, ranking
@@ -455,6 +455,7 @@ const Ranking = styled.span<{ active: boolean; delay: number }>`
   padding-right: 20px;
   margin-right: 2px;
   background-color: ${({ theme }) => theme.highlight};
+  color: #333;
   text-align: right;
   visibility: hidden;
   ${({ active, delay }) => active && css`

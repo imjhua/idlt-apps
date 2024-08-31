@@ -1,4 +1,4 @@
-import { Box, } from 'grommet'
+import { Box } from 'grommet'
 import { useCallback, useState } from 'react'
 
 import CountDown from '../shared/components/CountDown'
@@ -7,8 +7,7 @@ import Setting from '../shared/components/Setting'
 import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
 
 const COUNT_DOWN = 3
-function MainPage(){
-
+function MainPage() {
   const [count, setCount] = useState<number>(0)
 
   const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
@@ -22,33 +21,34 @@ function MainPage(){
   const handleStatusUpdate = useCallback((status: STATUS) => {
     setStatus(status)
 
-    if (status === STATUS.START){
+    if (status === STATUS.START) {
       setCountDownStatus(COUNT_DWON_STATUS.START)
 
       // 카운트다운
       setCountDown(COUNT_DOWN)
-      for (let i = 1; i <= COUNT_DOWN; i++){
-        (function(i){
+      for (let i = 1; i <= COUNT_DOWN; i++) {
+        ((i) => {
           setTimeout(() => {
             setCountDown(COUNT_DOWN - i)
-            if (i === COUNT_DOWN){
+            if (i === COUNT_DOWN) {
               setCountDownStatus(COUNT_DWON_STATUS.READY)
             }
           }, 1000 * i)
-        }(i))
+        })(i)
       }
     }
   }, [])
 
   return (
-    <Box gap="small">
+    <Box pad="large" gap="small">
       <Setting status={status} count={count} onChange={handleCountChange} />
       <Run
         delay={COUNT_DOWN}
         status={status}
         count={count}
         countDownStatus={countDownStatus}
-        onUpdateStatus={handleStatusUpdate} />
+        onUpdateStatus={handleStatusUpdate}
+      />
 
       {/* <CountDown count={3} /> */}
       {countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
