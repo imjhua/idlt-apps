@@ -31,6 +31,6 @@ export const AppBlock = styled.div`
   background-color: ${theme.background};
   // min-height: 100dvh;;
 
-  min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
 
 `

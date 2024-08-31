@@ -53,6 +53,7 @@ html, body, body > div{
   // height: 100%;
   // min-height: 100%;
   // max-height: 100%;
+  background: red;
 }
 
 body{
