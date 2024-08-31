@@ -5,7 +5,7 @@ const SENTENCES_50 = [
     'key': '~할 수 있다',
     'value': 'I can + 동사원형',
     'ex1': 'I can help you with your homework.',
-    'ex2': 'I can understand French, but I can\'t speak it fluently.'
+    'ex2': 'I can understand French, but I can\'t speak it.'
   },
   {
     'index': '2',
@@ -194,7 +194,7 @@ const SENTENCES_50 = [
     'key': 'A가 아니라 B다',
     'value': 'It\'s not A but B',
     'ex1': 'It\'s not the size but the comfort that counts.',
-    'ex2': 'It\'s not the price but the quality that matters to me.'
+    'ex2': 'It\'s not the price but the quality.'
   },
   {
     'index': '29',
@@ -229,7 +229,7 @@ const SENTENCES_50 = [
     'key': '~가 있나요?',
     'value': 'Is/Are there + 명사~?',
     'ex1': 'Is there a good restaurant around here?',
-    'ex2': 'Are there any questions about the new policy?'
+    'ex2': 'Are there any questions about the rules?'
   },
   {
     'index': '34',
@@ -278,7 +278,7 @@ const SENTENCES_50 = [
     'key': '~하고 있어요?',
     'value': 'Are you + -ing~?',
     'ex1': 'Are you studying for the exam?',
-    'ex2': '(Why) Are you working on the project right now?'
+    'ex2': '(Why) Are you working on the task right now?'
   },
   {
     'index': '41',
@@ -341,7 +341,7 @@ const SENTENCES_50 = [
     'key': '~를 무서워하다',
     'value': 'Im afraid of + 명사',
     'ex1': 'I\'m afraid of flying.',
-    'ex2': 'I\'m afraid of making mistakes in the presentation.'
+    'ex2': 'I\'m afraid of making mistakes in the design.'
   },
   {
     'index': '50',
