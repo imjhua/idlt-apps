@@ -112,7 +112,6 @@ function HomePage(){
 
       <Box
         gridArea="main"
-        pad="medium"
         gap="large"
         align="center"
         onClick={handleBgClick}
@@ -120,12 +119,15 @@ function HomePage(){
         <Box
           align="center" direction="row" justify="between"
           width="100%">
-          <Button icon={<CaretPrevious />} hoverIndicator onClick={handlePreviousClick} />
+          <Button
+            pad="none" icon={<CaretPrevious />} hoverIndicator
+            onClick={handlePreviousClick} />
 
           <Box
-            height="220px"
+            height="240px"
             gap="large" justify="center" align="center">
-            <Text size="xlarge" weight="bold">
+            <Text
+              size="xlarge" weight="bold" style={{ whiteSpace: 'pre' }}>
               {randomList[nextIndex].key}
             </Text>
             {showMeaning &&
@@ -138,7 +140,9 @@ function HomePage(){
               </Card>)}
           </Box>
 
-          <Button icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
+          <Button
+            pad="none"
+            icon={<CaretNext />} hoverIndicator onClick={handleNextClick} />
         </Box>
       </Box>
 
