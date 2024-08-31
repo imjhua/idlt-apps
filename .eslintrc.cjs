@@ -8,7 +8,7 @@ module.exports = {
   env: { browser: true, es2020: true },
   settings: { react: { version: 'detect' } },
   extends: [
-    "eslint:recommended",
+    'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
@@ -79,6 +79,7 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'object-curly-newline': ['error', { 'multiline': true, 'minProperties': 5 }],
     'jsx-quotes': ['error', 'prefer-double'],
-    'react/no-unescaped-entities': OFF
+    'react/no-unescaped-entities': OFF,
+    'lint/style/useSelfClosingElements': OFF
   },
 }

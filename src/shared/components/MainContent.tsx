@@ -1,5 +1,5 @@
 
-import { Page, PageContent } from 'grommet'
+// import { Page, PageContent } from 'grommet'
 import { Suspense } from 'react'
 import { Outlet } from 'react-router-dom'
 
@@ -14,11 +14,11 @@ function MainContent(){
   return (
     <ErrorBoundary>
       <Suspense fallback={<Loading />}>
-        <Page background="main" height="full">
+        <Outlet />
+        {/* <Page height="full">
           <PageContent pad="medium">
-            <Outlet />
           </PageContent>
-        </Page>
+        </Page> */}
         <ThemeSwitch />
       </Suspense>
     </ErrorBoundary>

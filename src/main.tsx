@@ -1,4 +1,3 @@
-import { Theme } from '@radix-ui/themes'
 import { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
@@ -32,13 +31,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <ReactQueryDevtools initialIsOpen={false} />
 
         <ThemeProvider>
-          <Theme>
-            {/* {import.meta.env['VITE_APP_TYPE'] === 'LOCAL' && <VConsoleScript />} */}
-            <GlobalStyle />
-            {/* <Splash /> */}
-            <RouterProvider router={router} />
-            <Toast />
-          </Theme>
+          {/* {import.meta.env['VITE_APP_TYPE'] === 'LOCAL' && <VConsoleScript />} */}
+          <GlobalStyle />
+          {/* <Splash /> */}
+          <RouterProvider router={router} />
+          <Toast />
         </ThemeProvider>
 
         <OverlayProvider>

@@ -11,22 +11,24 @@ declare module '@emotion/react' {
 }
 
 const theme = {
-  light: {
-    color: '#444',
-    border: '#dcdddf',
-    divider: 'rgba(38, 45, 57, .32)',
-    background: '#fff',
-    primary: '#7d4cdb',
-    highlight: '#ffe58f',
-  },
-  dark: {
-    color: '#eee',
-    border: '#333',
-    divider: '#dcdddf',
-    background: '#222',
-    primary: '#7d4cdb',
-    highlight: '#a59b79',
-  }
+  background: 'var(--accent-4)',
+  border: 'var(--black-a4)'
+  // light: {
+  //   color: '#444',
+  //   border: '#dcdddf',
+  //   divider: 'rgba(38, 45, 57, .32)',
+  //   background: '#fff',
+  //   primary: '#7d4cdb',
+  //   highlight: '#ffe58f',
+  // },
+  // dark: {
+  //   color: '#eee',
+  //   border: '#333',
+  //   divider: '#dcdddf',
+  //   background: '#222',
+  //   primary: '#7d4cdb',
+  //   highlight: '#a59b79',
+  // }
 }
 export default theme
 

@@ -1,10 +1,9 @@
-
 import { useCallback, useLayoutEffect, useState } from 'react'
 
 export type ThemeType = 'light' | 'dark'
 function useTheme() {
   const [theme, setTheme] = useState<ThemeType>(
-    window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+    window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark',
   )
 
   const onChangeTheme = useCallback(() => {
@@ -19,17 +18,14 @@ function useTheme() {
       setTheme(savedTheme as ThemeType)
       return
     }
-    if (
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    ) {
+    if (window.matchMedia?.('(prefers-color-scheme: dark)').matches) {
       setTheme('dark')
     }
   }, [])
 
   return {
     theme,
-    onChangeTheme
+    onChangeTheme,
   }
 }
 
@@ -41,4 +37,3 @@ export default useTheme
 //   const themeType = theme === 'light' ? themeStyle.light : themeStyle.dark
 //   return themeType.text
 // }
-
