@@ -20,6 +20,16 @@ function Layout(){
     <>
       <Gnb addYOffset={4} />
       <MainContent />
+
+      {/* <div
+        style={{
+          position: 'fixed',
+          top: '0',
+          bottom: '0',
+          right: '0',
+          left: '0',
+        }}>
+      </div> */}
     </>
   )
 

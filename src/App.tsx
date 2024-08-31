@@ -29,8 +29,6 @@ export const AppBlock = styled.div`
   padding-left: env(safe-area-inset-left);
 
   background-color: ${theme.background};
-  // min-height: 100dvh;;
-
   min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
 
 `
