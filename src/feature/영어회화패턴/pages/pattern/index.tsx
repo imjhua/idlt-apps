@@ -43,6 +43,15 @@ function HomePage() {
   const handleExampleSentenceClick = (e: MouseEvent) => {
     e.stopPropagation()
     setShowExSentence((state) => !state)
+
+    if (showExSentence){
+      setNextIndex((state) => {
+        if (state === randomList.length - 1) {
+          return 0
+        }
+        return state + 1
+      })
+    }
   }
   const handlePreviousClick = (e: MouseEvent) => {
     e.stopPropagation()
