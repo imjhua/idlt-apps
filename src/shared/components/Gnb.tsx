@@ -53,9 +53,8 @@ function Gnb({ addYOffset }: GnbProps) {
   return (
     <>
       <Box
-        height={`${GNB_HEIGHT}px`}
+        height={`calc(${GNB_HEIGHT}px + env(safe-area-inset-top))`}
         style={{
-          // height: `calc(${GNB_HEIGHT}px + env(safe-area-inset-top))`,
           paddingTop: 'env(safe-area-inset-top)',
           zIndex: 10,
           position: 'fixed',
