@@ -356,351 +356,351 @@ const SENTENCES_100 = [
     'index': '1',
     'key': '~을 잘하다',
     'value': 'Im good at + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Im good at + 명사',
+    'ex2': 'I’m good at cooking.'
   },
   {
     'index': '2',
     'key': '~를 잘 알다',
     'value': 'Im familiar with + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m familiar with this area of town.',
+    'ex2': 'I’m familiar with classical music.'
   },
   {
     'index': '3',
     'key': '~에 화가 나다',
     'value': 'Im mad at + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m mad at my friend for being late.',
+    'ex2': 'I’m mad at the team for missing the deadline.'
   },
   {
     'index': '4',
     'key': '~때문에 초조하다',
     'value': 'Im nervouse about + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m nervous about the job interview.',
+    'ex2': 'I’m nervous about speaking in public.'
   },
   {
     'index': '5',
     'key': '~에 질리다',
     'value': 'Im tired of + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m tired of the constant noise.',
+    'ex2': 'I’m tired of waiting in long lines.'
   },
   {
     'index': '6',
     'key': '~가 지루하다',
     'value': 'Im bored with + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Im bored with + 명사',
+    'ex2': 'I’m bored with the same routine every day.'
   },
   {
     'index': '7',
     'key': '~가 자랑스럽다',
     'value': 'Im proud of + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m proud of my team for finishing the project.',
+    'ex2': 'I’m proud of him for starting his own business.'
   },
   {
     'index': '8',
     'key': '~가 부끄럽다',
     'value': 'Im ashamed of + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m ashamed of my behavior last night.',
+    'ex2': 'I’m ashamed of not keeping my promises.'
   },
   {
     'index': '9',
     'key': '~할 준비가 됐어요?',
     'value': 'Are you ready to + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Are you ready to leave for the airport?',
+    'ex2': 'Are you ready to take the exam?'
   },
   {
     'index': '10',
     'key': '~하려던 참이다',
     'value': 'Im about to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m about to leave the house.',
+    'ex2': 'I’m about to finish this book.'
   },
   {
     'index': '11',
     'key': '~하는 것이 틀림없다',
     'value': 'Im sure 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m sure she knows the answer.',
+    'ex2': 'I’m sure they are going to enjoy the movie.'
   },
   {
     'index': '12',
     'key': '~가 틀림없이 ~할 것이다',
     'value': '주어 + be sure to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You should be sure to check your email regularly.',
+    'ex2': 'They are sure to arrive on time for the meeting.'
   },
   {
     'index': '13',
     'key': '정말 ~인가요?',
     'value': 'Are you sure + 주어 + 동사~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Are you sure she is coming to the party?',
+    'ex2': 'Are you sure this is the right address?'
   },
   {
     'index': '14',
     'key': '꼭 ~하세요',
     'value': 'Be sure to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Be sure to bring your ID to the airport.',
+    'ex2': 'Be sure to turn off the lights when you leave the room.'
   },
   {
     'index': '15',
     'key': '당신은 정말 ~하다',
     'value': 'You\'re so + 형용사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You\'re so talented.',
+    'ex2': 'You\'re so brave.'
   },
   {
     'index': '16',
     'key': '당신은 정말 ~한 살마이다',
     'value': 'You\'re such a + 형용사 + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You\'re such a + 형용사 + 명사',
+    'ex2': 'You\'re such a + 형용사 + 명사'
   },
   {
     'index': '17',
     'key': '~로 가득 차다',
     'value': '주어 + \bbe full of + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'The garden is full of beautiful flowers.',
+    'ex2': 'Her room is full of interesting books.'
   },
   {
     'index': '18',
     'key': '~로 가득 차다',
     'value': '주어 + \bbe filled with + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'The museum is filled with ancient artifacts.',
+    'ex2': 'The basket is filled with fresh fruits.'
   },
   {
     'index': '19',
     'key': '~에 가는 길이다',
     'value': '주어 + be on one\'s way + to 장소',
-    'ex1': null,
-    'ex2': null
+    'ex1': '주어 + be on one\'s way + to 장소',
+    'ex2': 'we are on our way to the airport.'
   },
   {
     'index': '20',
     'key': '~로 가는 길에',
     'value': '주어 + on your way +  to 장소',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'She is on her way to the gym.',
+    'ex2': 'Are you on your way to the party?'
   },
   {
     'index': '21',
     'key': '~하자',
     'value': 'Let\'s + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Let\'s try a new restaurant for lunch.',
+    'ex2': 'Let\'s visit the museum this weekend.'
   },
   {
     'index': '22',
     'key': '~하지 말자',
     'value': 'Let\'s not + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Let\'s try a new restaurant for lunch.',
+    'ex2': 'Let’s not make any sudden decisions.'
   },
   {
     'index': '23',
     'key': '내가 ~하겠다',
     'value': 'Let me + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Let me help you with that.',
+    'ex2': 'Let me know if you need anything.'
   },
   {
     'index': '24',
     'key': '~할 건지 알려 주세요',
     'value': 'Let me know + 의문사 + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Let me know how I can assist you.',
+    'ex2': 'Let me know what time the meeting starts.'
   },
   {
     'index': '25',
     'key': '너의 ~가 맘에 든다',
     'value': 'I like your + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I like your new shoes.',
+    'ex2': 'I like your sense of humor.'
   },
   {
     'index': '26',
     'key': '~가 어때요?',
     'value': 'How do you like my + 명사?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'How do you like my presentation?',
+    'ex2': 'How do you like my choice of restaurant?'
   },
   {
     'index': '27',
     'key': '~하는 것을 좋아하다',
     'value': 'I like + -ing',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I like reading books.',
+    'ex2': 'I like going for a walk in the park.'
   },
   {
     'index': '28',
     'key': '누가 ~하는 방식이 좋다',
     'value': 'I like the way + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I like the way she explains things clearly.',
+    'ex2': 'I like the way they handle difficult situations.'
   },
   {
     'index': '29',
     'key': '~하고 싶다',
     'value': 'I\'d like to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I\'d like to visit Japan someday.',
+    'ex2': 'I\'d like to learn how to play the piano.'
   },
   {
     'index': '30',
     'key': '~하시겠어요?',
     'value': 'Would you like to + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Would you like to try some coffee?',
+    'ex2': 'Would you like to watch a movie tonight?'
   },
   {
     'index': '31',
     'key': '~하고 싶다',
     'value': 'I want to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I want to visit my friends this weekend.',
+    'ex2': 'I want to see that new movie.'
   },
   {
     'index': '32',
     'key': '그냥 ~하고 싶었다',
     'value': 'I just wanted to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I just wanted to say thank you.',
+    'ex2': 'I just wanted to ask a quick question.'
   },
   {
     'index': '33',
     'key': '~하고 싶어요?',
     'value': 'Do you want to + 동사원형~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Do you want to help me with this task?',
+    'ex2': 'Do you want to try this new restaurant?'
   },
   {
     'index': '34',
     'key': '당신이 ~해 주면 좋겠다',
     'value': 'I want you to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I want you to help me with this project.',
+    'ex2': 'I want you to bring me a drink.'
   },
   {
     'index': '35',
     'key': '~을 알고 있다',
     'value': 'I know + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I know she works hard every day.',
+    'ex2': 'I know they are planning a surprise party.'
   },
   {
     'index': '36',
     'key': '~할지 모르겠다',
     'value': 'I don\'t know + 관계사 + to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I don\'t know how to fix this issue.',
+    'ex2': 'I don\'t know where to find the information.'
   },
   {
     'index': '37',
     'key': '~라는 거 당신도 알잖아요',
     'value': 'You know + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You know she always arrives early.',
+    'ex2': 'You know they are planning a big event.'
   },
   {
     'index': '38',
     'key': '~는 아무도 모른다',
     'value': 'God knows + wh절',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'God knows where he disappeared to.',
+    'ex2': 'God knows why things turned out this way.'
   },
   {
     'index': '39',
     'key': '~인 것 같다',
     'value': 'I think + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I think she is going to be promoted soon.',
+    'ex2': 'I think we should leave now to avoid traffic.'
   },
   {
     'index': '40',
     'key': '~라고 생각해요?',
     'value': 'Do you think + 주어 + 동사~?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'Do you think she will accept the job offer?',
+    'ex2': 'Do you think they are going to win the match?'
   },
   {
     'index': '41',
     'key': '~하는 것을 생각 중이다',
     'value': 'Im thinking of + -ing',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I’m thinking of taking a vacation next month.',
+    'ex2': 'I’m thinking of starting a new hobby.'
   },
   {
     'index': '42',
     'key': '~에 대해 어떻게 생각해요?',
     'value': 'What do you think of + 명사?',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'What do you think of the new policy at work?',
+    'ex2': 'What do you think of my proposal?'
   },
   {
     'index': '43',
     'key': '~할 필요가 있다',
     'value': 'I need to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I need to call my friend to confirm the plans.',
+    'ex2': 'I need to study for the upcoming exam.'
   },
   {
     'index': '44',
-    'key': '너는 ~할 필요 없다',
+    'key': '너는 ~할 필요 없다(need)',
     'value': 'You don\'t need to + 동사원형',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'You don\'t need to worry about the details.',
+    'ex2': 'You don\'t need to bring any food.'
   },
   {
     'index': '45',
     'key': '내 말은~',
     'value': 'I mean + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I mean you should try harder.',
+    'ex2': 'I mean we have to follow the instructions.'
   },
   {
     'index': '46',
     'key': '내 말뜻은~',
     'value': 'What I mean is + 주어 + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'What I mean is you should take a break.',
+    'ex2': 'What I mean is everyone needs to be on time.'
   },
   {
     'index': '47',
     'key': '\b~한 것 같다',
     'value': 'I feel + 형용사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I feel relieved now that the presentation is over.',
+    'ex2': 'I feel excited about starting the new job.'
   },
   {
     'index': '48',
     'key': '~때문에 ~한 느낌이 든다',
     'value': '주어 + make me feel + 형용사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'The movie made me feel nostalgic.',
+    'ex2': 'The warm weather makes me feel energetic.'
   },
   {
     'index': '49',
     'key': '~할 것 같다',
     'value': 'I feel like + 명사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I feel like a failure.',
+    'ex2': 'I feel like a kid again.'
   },
   {
     'index': '50',
     'key': '~하는 것 같은 느낌이다',
     'value': 'I feel like I + 동사',
-    'ex1': null,
-    'ex2': null
+    'ex1': 'I feel like I should apologize.',
+    'ex2': 'I feel like I need a vacation.'
   }
 ]
 const SENTENCES_150 = [
