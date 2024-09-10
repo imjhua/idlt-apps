@@ -73,7 +73,7 @@ function Gnb({ addYOffset }: GnbProps) {
           <Title opacity={opacity}>{title && title}</Title>
         </div>
 
-        <Profile email="idlt@email.com" />
+        <Profile email="idltapps@gmail.com" />
       </Box>
       <Box height={`${GNB_HEIGHT}px`} />
     </>
