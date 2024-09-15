@@ -36,7 +36,7 @@
     },
     {
         "index": "6",
-        "key": "~가 있는 것 같다",
+        "key": "~가 있는 것 같다(보인다)",
         "value": "There seems to be + 명사",
         "ex1": "There seems to be a misunderstanding.",
         "ex2": "There seems to be an issue with the system."
@@ -94,8 +94,8 @@
         "index": "14",
         "key": "~인지 궁금하다",
         "value": "I wonder if + 주어 + 동사",
-        "ex1": "I wonder if they will come to the event.",
-        "ex2": "I wonder if the puppy is sleeping well."
+        "ex1": "I wonder if the puppy is sleeping well.",
+        "ex2": "I wonder if he will go to the practice field or not."
     },
     {
         "index": "15",
@@ -162,8 +162,8 @@
     },
     {
         "index": "24",
-        "key": "~가 ~할 때 까지 기다리세요",
-        "value": "Wait for + 명사 + to + 동사원형",
+        "key": "~가\b~하는 것을 기다리세요",
+        "value": "Wait for + 가주어 + to + 동사원형",
         "ex1": "Wait for the bus to arrive.",
         "ex2": "We have to wait for the rain to stop at home."
     },
@@ -253,17 +253,17 @@
     },
     {
         "index": "37",
-        "key": "~하러 갔다",
+        "key": "~하러 갔다(목적강조)",
         "value": "주어 + went to + 동사원형",
-        "ex1": "She went to see a movie.",
-        "ex2": "They went to have dinner at a restaurant."
+        "ex1": "They went to have dinner at a restaurant.",
+        "ex2": "We went to walk the dog."
     },
     {
         "index": "38",
-        "key": "~하러 갔다",
-        "value": "주어 went + -ing",
+        "key": "~하러 갔다(활동강조)",
+        "value": "주어 + went + -ing",
         "ex1": "He went hiking in the mountains.",
-        "ex2": "I went shopping at the mall."
+        "ex2": "We went walking with the dog."
     },
     {
         "index": "39",
@@ -274,7 +274,7 @@
     },
     {
         "index": "40",
-        "key": "내가 ~가 ~되게 했다",
+        "key": "~가 ~되게 했다",
         "value": "I got + 명사 + p.p",
         "ex1": "I got the house cleaned.",
         "ex2": "I got his problem fixed."
@@ -330,7 +330,7 @@
     },
     {
         "index": "48",
-        "key": "내가 ~하게 만들었다",
+        "key": "내가 ~를 ~도록 만들었다",
         "value": "I made + 명사 + 동사원형",
         "ex1": "I made the meeting run smoothly.",
         "ex2": "I made the car stop at the red light."
