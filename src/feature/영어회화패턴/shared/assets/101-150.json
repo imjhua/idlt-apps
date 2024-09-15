@@ -221,7 +221,7 @@
         "key": "B보다 A가 더 좋다",
         "value": "I prefer A to B",
         "ex1": "I prefer summer to winter.",
-        "ex2": "I prefer summer to winter."
+        "ex2": "I prefer reading books to watching TV."
     },
     {
         "index": "33",
@@ -323,21 +323,21 @@
     },
     {
         "index": "47",
-        "key": "~를 ~하게 했다",
+        "key": "~하게 했다(너가 나를)",
         "value": "You made me + 형용사",
         "ex1": "You made me nervous.",
         "ex2": "You made me proud."
     },
     {
         "index": "48",
-        "key": "~가 ~하게 만들었다",
+        "key": "~하게 만들었다(내가)",
         "value": "I made + 명사 + 동사원형",
         "ex1": "I made the meeting run smoothly.",
         "ex2": "I made the car stop at the red light."
     },
     {
         "index": "49",
-        "key": "~에게 ~을 해 주었다",
+        "key": "~에게 ~을 해 주었다(make)",
         "value": "I made + 사람 + 사물",
         "ex1": "I made her a cup of tea.",
         "ex2": "I made them a playlist for the trip."
