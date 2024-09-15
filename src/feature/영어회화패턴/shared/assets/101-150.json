@@ -99,7 +99,7 @@
     },
     {
         "index": "15",
-        "key": "~인 것 같다",
+        "key": "~인 것 같다(추측)",
         "value": "I guess + 주어 + 동사",
         "ex1": "I guess they didn't receive the message.",
         "ex2": "I guess he's tired after playing soccer in the morning."
@@ -134,7 +134,7 @@
     },
     {
         "index": "20",
-        "key": "~가 하나도 없다",
+        "key": "~할게 하나도 없다",
         "value": "I have nothing to + 동사원형",
         "ex1": "I have nothing to do today.",
         "ex2": "I have nothing to hide from you."
