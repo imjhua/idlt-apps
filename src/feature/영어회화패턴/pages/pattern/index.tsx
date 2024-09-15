@@ -115,7 +115,7 @@ function HomePage() {
           <Text size="medium">
             PATTERN: {start}-{end}
           </Text>
-          <Text>(pattern: {randomList[nextIndex].index})</Text>
+          <Text>(pattern: {Number(randomList[nextIndex].index) + start - 1})</Text>
         </Box>
       </Box>
 
