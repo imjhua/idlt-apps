@@ -274,7 +274,7 @@
     },
     {
         "index": "40",
-        "key": "~을 ~되게 했다",
+        "key": "내가 ~가 ~되게 했다",
         "value": "I got + 명사 + p.p",
         "ex1": "I got the house cleaned.",
         "ex2": "I got his problem fixed."
@@ -323,21 +323,21 @@
     },
     {
         "index": "47",
-        "key": "~하게 했다(너가 나를)",
+        "key": "너가 나를 ~하게 했다",
         "value": "You made me + 형용사",
         "ex1": "You made me nervous.",
         "ex2": "You made me proud."
     },
     {
         "index": "48",
-        "key": "~하게 만들었다(내가)",
+        "key": "내가 ~하게 만들었다",
         "value": "I made + 명사 + 동사원형",
         "ex1": "I made the meeting run smoothly.",
         "ex2": "I made the car stop at the red light."
     },
     {
         "index": "49",
-        "key": "~에게 ~을 해 주었다(make)",
+        "key": "~에게 ~을 해 주었다",
         "value": "I made + 사람 + 사물",
         "ex1": "I made her a cup of tea.",
         "ex2": "I made them a playlist for the trip."
