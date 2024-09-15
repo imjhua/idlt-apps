@@ -43,10 +43,10 @@
     },
     {
         "index": "7",
-        "key": "~해서 고맙다",
+        "key": "~대해 고맙다",
         "value": "Thank you for + 명사",
         "ex1": "Thank you for your help.",
-        "ex2": "Thank you for your patience."
+        "ex2": "Thank you for your patience"
     },
     {
         "index": "8",
@@ -57,7 +57,7 @@
     },
     {
         "index": "9",
-        "key": "~해서 미안하다",
+        "key": "~가 미안하다 (명사)",
         "value": "Sorry for + 명사",
         "ex1": "Sorry for the inconvenience.",
         "ex2": "Sorry for not replying sooner."
@@ -71,7 +71,7 @@
     },
     {
         "index": "11",
-        "key": "~해서 미안하다",
+        "key": "~해서 미안하다 (동사)",
         "value": "Sorry to + 동사원형",
         "ex1": "Sorry to keep you waiting.",
         "ex2": "Sorry to bother you."
@@ -95,21 +95,21 @@
         "key": "~인지 궁금하다",
         "value": "I wonder if + 주어 + 동사",
         "ex1": "I wonder if they will come to the event.",
-        "ex2": "I wonder if they will come to the event."
+        "ex2": "I wonder if the puppy is sleeping well."
     },
     {
         "index": "15",
         "key": "~인 것 같다",
         "value": "I guess + 주어 + 동사",
         "ex1": "I guess they didn't receive the message.",
-        "ex2": "I guess he forgot about the meeting."
+        "ex2": "I guess he's tired after playing soccer in the morning."
     },
     {
         "index": "16",
         "key": "~인지 맞춰 봐요",
         "value": "Guess what + 주어 + 동사",
-        "ex1": "Guess what I found in the attic!",
-        "ex2": "Guess what movie we’re watching tonight."
+        "ex1": "Guess what she told me yesterday!",
+        "ex2": "Guess what we are having for dinner tonight!"
     },
     {
         "index": "17",
@@ -137,7 +137,7 @@
         "key": "~가 하나도 없다",
         "value": "I have nothing to + 동사원형",
         "ex1": "I have nothing to do today.",
-        "ex2": "I have nothing to offer at the moment."
+        "ex2": "I have nothing to hide from you."
     },
     {
         "index": "21",
@@ -165,14 +165,14 @@
         "key": "~가 ~할 때 까지 기다리세요",
         "value": "Wait for + 명사 + to + 동사원형",
         "ex1": "Wait for the bus to arrive.",
-        "ex2": "Wait for the rain to stop."
+        "ex2": "We have to wait for the rain to stop at home."
     },
     {
         "index": "25",
         "key": "~하다니 믿을 수가 없다",
         "value": "I cna't believe + 주어 + 동사",
         "ex1": "I can't believe she won the competition.",
-        "ex2": "I can't believe the price of the concert tickets."
+        "ex2": "I can't believe it's already Wednesday."
     },
     {
         "index": "26",
@@ -192,7 +192,7 @@
         "index": "28",
         "key": "~하지 않을 수 없다",
         "value": "I can't help but + 동사원형",
-        "ex1": "I can't help but agree with you.",
+        "ex1": "I can't help but make coffee.",
         "ex2": "I can't help but notice the changes."
     },
     {
@@ -204,7 +204,7 @@
     },
     {
         "index": "30",
-        "key": "~하도록 유지시키다",
+        "key": "~하도록 유지해",
         "value": "Keep + 명사 + 형용사",
         "ex1": "Keep your room clean.",
         "ex2": "Keep the noise down."
@@ -228,7 +228,7 @@
         "key": "나는 ~에 대해서 상관 안한다",
         "value": "I don't care about + 명사",
         "ex1": "I don't care about the weather.",
-        "ex2": "I don't care about the latest trends."
+        "ex2": "I don't care about seeds in grapes."
     },
     {
         "index": "34",
@@ -246,9 +246,9 @@
     },
     {
         "index": "36",
-        "key": "~해졌다",
+        "key": "~해졌다(나쁜상태가 됨)",
         "value": "주어 + went + 형용사",
-        "ex1": "We went hungry after the long hike.",
+        "ex1": "The milk went bad after a few days.",
         "ex2": "He went mad when he lost his wallet."
     },
     {
@@ -276,22 +276,22 @@
         "index": "40",
         "key": "~을 ~되게 했다",
         "value": "I got + 명사 + p.p",
-        "ex1": "I got the documents signed.",
-        "ex2": "I got the food delivered."
+        "ex1": "I got the house cleaned.",
+        "ex2": "I got his problem fixed."
     },
     {
         "index": "41",
         "key": "~하게 되었다",
         "value": "주어 + have got + 형용사",
-        "ex1": "I have got a new job.",
-        "ex2": "We have got a long way to go."
+        "ex1": "I have got much better.",
+        "ex2": "He has got confused."
     },
     {
         "index": "42",
         "key": "되었다",
         "value": "주어 + have got + p.p",
         "ex1": "I have got everything done.",
-        "ex2": "He has got his car repaired."
+        "ex2": "The house has got burned down."
     },
     {
         "index": "43",
