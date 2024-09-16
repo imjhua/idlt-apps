@@ -211,10 +211,10 @@
     },
     {
         "index": "31",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "매우, 많이, 매우 높이",
+        "value": "highly",
+        "ex1": "She is highly skilled in mathematics.",
+        "ex2": "The movie was highly praised by critics."
     },
     {
         "index": "32",
