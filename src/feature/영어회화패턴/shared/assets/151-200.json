@@ -1,0 +1,352 @@
+[
+    {
+        "index": "1",
+        "key": "~하도록 노력했다",
+        "value": "I tried to + 동사원형",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "2",
+        "key": "~하지 않으려고 애썼다",
+        "value": "I tried not to + 동사원형",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "3",
+        "key": "~하려는 게 아니었다",
+        "value": "I didn't mean to + 동사",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "4",
+        "key": "~가 무슨 말인가요?",
+        "value": "What do you mean by + 명사?",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "5",
+        "key": "~하는 것을 잊어버렸다",
+        "value": "I forgot to + 동사",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "6",
+        "key": "잊지 말고 ~하세요",
+        "value": "Don't forget to + 동사원형",
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "7",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "8",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "9",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "10",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "11",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "12",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "13",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "14",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "15",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "16",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "17",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "18",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "19",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "20",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "21",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "22",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "23",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "24",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "25",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "26",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "27",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "28",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "29",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "30",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "31",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "32",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "33",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "34",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "35",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "36",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "37",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "38",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "39",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "40",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "41",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "42",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "43",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "44",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "45",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "46",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "47",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "48",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "49",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "50",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    }
+]

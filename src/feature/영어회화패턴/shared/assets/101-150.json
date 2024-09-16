@@ -106,7 +106,7 @@
     },
     {
         "index": "16",
-        "key": "~인지 맞춰 봐요",
+        "key": "무엇인지 맞춰 봐요",
         "value": "Guess what + 주어 + 동사",
         "ex1": "Guess what she told me yesterday!",
         "ex2": "Guess what we are having for dinner tonight!"
@@ -162,7 +162,7 @@
     },
     {
         "index": "24",
-        "key": "~가\b~하는 것을 기다리세요",
+        "key": "~가 ~하는 것을 기다리세요",
         "value": "Wait for + 가주어 + to + 동사원형",
         "ex1": "Wait for the bus to arrive.",
         "ex2": "We have to wait for the rain to stop at home."
@@ -183,14 +183,14 @@
     },
     {
         "index": "27",
-        "key": "~하지 않을 수 없다",
+        "key": "~하지 않을 수 없다(ing)",
         "value": "I can't help + -ing",
         "ex1": "I can't help thinking about the past.",
         "ex2": "I can't help worrying about the test."
     },
     {
         "index": "28",
-        "key": "~하지 않을 수 없다",
+        "key": "~하지 않을 수 없다(but)",
         "value": "I can't help but + 동사원형",
         "ex1": "I can't help but make coffee.",
         "ex2": "I can't help but notice the changes."
@@ -282,13 +282,13 @@
     {
         "index": "41",
         "key": "~하게 되었다",
-        "value": "주어 + have got + 형용사",
+        "value": "주어 + (have) got + 형용사",
         "ex1": "I have got much better.",
         "ex2": "He has got confused."
     },
     {
         "index": "42",
-        "key": "되었다",
+        "key": "~되었다",
         "value": "주어 + have got + p.p",
         "ex1": "I have got everything done.",
         "ex2": "The house has got burned down."

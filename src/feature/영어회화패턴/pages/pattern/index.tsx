@@ -16,13 +16,26 @@ function HomePage() {
   const [showMeaning, setShowMeaning] = useState<boolean>(false)
 
   const originalList = useMemo(() => {
-    return SENTENCES.slice(start - 1, end)
+    return SENTENCES.slice(start - 1, end).filter(
+      ({ key, value }) => key && value
+    ) as {
+      index: string;
+      key: string;
+      value: string;
+      ex1: string | null;
+      ex2: string | null;
+    }[]
   }, [start, end])
 
   const randomList = useMemo(() => {
     const randomList = originalList.reduce<
-    { key: string; value: string; index: string;
-      ex1: string | null; ex2: string | null; }[]
+    {
+      index: string;
+      key: string;
+      value: string;
+      ex1: string | null;
+      ex2: string | null;
+    }[]
     >(
       (data) => {
         const randomNumber1 = getRandomIntInclusive(0, originalList.length - 1)
@@ -32,7 +45,7 @@ function HomePage() {
         data[randomNumber2] = temp
         return data
       },
-      [...originalList],
+      [...originalList]
     )
 
     return randomList
@@ -44,7 +57,7 @@ function HomePage() {
     e.stopPropagation()
     setShowExSentence((state) => !state)
 
-    if (showExSentence){
+    if (showExSentence) {
       setShowMeaning(false)
       setNextIndex((state) => {
         if (state === randomList.length - 1) {
@@ -115,7 +128,9 @@ function HomePage() {
           <Text size="medium">
             PATTERN: {start}-{end}
           </Text>
-          <Text>(pattern: {Number(randomList[nextIndex].index) + start - 1})</Text>
+          <Text>
+            (pattern: {Number(randomList[nextIndex].index) + start - 1})
+          </Text>
         </Box>
       </Box>
 
@@ -128,7 +143,7 @@ function HomePage() {
             style={{
               height: '100%',
               width: '40px',
-              textAlign: 'center'
+              textAlign: 'center',
             }}
             icon={<CaretPrevious />}
             hoverIndicator
@@ -143,8 +158,11 @@ function HomePage() {
             </Text>
             {showMeaning && (
               <Card
-                pad="large" background="white" width="auto"
-                style={{ whiteSpace: 'pre', padding: '14px' }}>
+                pad="large"
+                background="white"
+                width="auto"
+                style={{ whiteSpace: 'pre', padding: '14px' }}
+              >
                 <Text size="medium">{randomList[nextIndex].value}</Text>
               </Card>
             )}
@@ -155,9 +173,12 @@ function HomePage() {
             style={{
               height: '100%',
               width: '40px',
-              textAlign: 'center'
-            }} icon={<CaretNext />}
-            hoverIndicator onClick={handleNextClick} />
+              textAlign: 'center',
+            }}
+            icon={<CaretNext />}
+            hoverIndicator
+            onClick={handleNextClick}
+          />
         </Box>
       </Box>
 
@@ -167,7 +188,10 @@ function HomePage() {
           style={{ color: showExSentence ? 'inherit' : 'transparent' }}
           onClick={handleExampleSentenceClick}
           pad="small"
-          data={[randomList[nextIndex].ex1 || '(문장 필요)', randomList[nextIndex].ex2 || '(문장 필요)']}
+          data={[
+            randomList[nextIndex].ex1 || '(문장 필요) - 1',
+            randomList[nextIndex].ex2 || '(문장 필요) - 2',
+          ]}
         />
       </Box>
     </Grid>

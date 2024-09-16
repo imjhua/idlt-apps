@@ -3,7 +3,7 @@ import { Box, Heading, List } from 'grommet'
 import { Link } from 'react-router-dom'
 
 const STEP = 50
-const PATTERN_LENGHT = 200
+const PATTERN_LENGHT = 300
 const LIST = new Array(PATTERN_LENGHT / STEP).fill(0).map((_, index) => {
   const start = (index) * STEP + 1
   const end = (index + 1) * STEP

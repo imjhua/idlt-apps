@@ -1,0 +1,352 @@
+[
+    {
+        "index": "1",
+        "key": "한때",
+        "value": "once + 동사",
+        "ex1": "I once lived in New York.",
+        "ex2": "I once visited Paris on a school trip."
+    },
+    {
+        "index": "2",
+        "key": "분명히",
+        "value": "clearly + 동사",
+        "ex1": "She clearly understands the topic.",
+        "ex2": "He clearly didn’t hear what you said."
+    },
+    {
+        "index": "3",
+        "key": "오직",
+        "value": "only + 동사",
+        "ex1": "I only asked a question.",
+        "ex2": "They only need a few minutes."
+    },
+    {
+        "index": "4",
+        "key": "단지",
+        "value": "just + 동사",
+        "ex1": "She just wanted to say hello.",
+        "ex2": "He just smiled at the joke."
+    },
+    {
+        "index": "5",
+        "key": "단순히",
+        "value": "simply + 동사",
+        "ex1": "I simply asked for directions.",
+        "ex2": "They simply ignored the problem."
+    },
+    {
+        "index": "6",
+        "key": "아마도",
+        "value": "arguably + 동사",
+        "ex1": "She arguably helped the most.",
+        "ex2": "He arguably changed the course of history with his actions."
+    },
+    {
+        "index": "7",
+        "key": "대부분",
+        "value": "mainly + 동사",
+        "ex1": "She mainly focuses on research.",
+        "ex2": "They mainly discuss financial issues."
+    },
+    {
+        "index": "8",
+        "key": "주로(대량으로)",
+        "value": "largely + 동사",
+        "ex1": "The event largely exceeded expectations.",
+        "ex2": "The study largely confirms the hypothesis."
+    },
+    {
+        "index": "9",
+        "key": "원래",
+        "value": "originally + 동사",
+        "ex1": "He originally wanted to be a teacher.",
+        "ex2": "He originally wanted to be a teacher."
+    },
+    {
+        "index": "10",
+        "key": "여전히",
+        "value": "still + 동사",
+        "ex1": "She still remembers the first day of school.",
+        "ex2": "He still works at the same company."
+    },
+    {
+        "index": "11",
+        "key": "이전에",
+        "value": "formerly + 동사",
+        "ex1": "She formerly worked as a journalist.",
+        "ex2": "The area was formerly known for its factories."
+    },
+    {
+        "index": "12",
+        "key": "대개",
+        "value": "mostly + 동사",
+        "ex1": "She mostly works from home.",
+        "ex2": "The restaurant mostly serves Italian cuisine."
+    },
+    {
+        "index": "13",
+        "key": "그저",
+        "value": "merely + 동사",
+        "ex1": "He merely explained the situation.",
+        "ex2": "The book merely discusses the basics."
+    },
+    {
+        "index": "14",
+        "key": "반드시 ~인 것은 아니다",
+        "value": "not necessarily + 동사",
+        "ex1": "That does not necessarily help.",
+        "ex2": "Success does not necessarily follow."
+    },
+    {
+        "index": "15",
+        "key": "어느 때 보다 더",
+        "value": "주어 + 동사 + than ever",
+        "ex1": "She looks happier than ever.",
+        "ex2": "I'm more excited than ever."
+    },
+    {
+        "index": "16",
+        "key": "거의 하지 않는다(+부정문 강조)",
+        "value": "주어 + hardly ever + 동사",
+        "ex1": "She hardly ever calls.",
+        "ex2": "They hardly ever eat out."
+    },
+    {
+        "index": "17",
+        "key": "아직 ~하지 않았다",
+        "value": "주어 + have yet + 동사",
+        "ex1": "She has yet to reply to my message.",
+        "ex2": "I have not yet finished my homework."
+    },
+    {
+        "index": "18",
+        "key": "~만큼 할 수 있다. (+원급강조)",
+        "value": "just as + 형용사/부사 + as",
+        "ex1": "She is just as smart as her brother.",
+        "ex2": "He can run just as fast as you."
+    },
+    {
+        "index": "19",
+        "key": "심지어 ~하다",
+        "value": "주어 + 동사 + even",
+        "ex1": "Even children can understand this concept.",
+        "ex2": "I didn’t expect him to come, but even he showed up."
+    },
+    {
+        "index": "20",
+        "key": "더욱 더 ~하다",
+        "value": "형용사/부사 + even more",
+        "ex1": "The second book is even more interesting.",
+        "ex2": "She was even more excited than before."
+    },
+    {
+        "index": "21",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "22",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "23",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "24",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "25",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "26",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "27",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "28",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "29",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "30",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "31",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "32",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "33",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "34",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "35",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "36",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "37",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "38",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "39",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "40",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "41",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "42",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "43",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "44",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "45",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "46",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "47",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "48",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "49",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    },
+    {
+        "index": "50",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null
+    }
+]
