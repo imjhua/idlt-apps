@@ -1,0 +1,352 @@
+[
+    {
+        "index": "1",
+        "key": "거기에 있는 리모콘 좀 줘",
+        "value": "Can you give me ther remocon over there?",
+        "ex1": "거기에 있는 리모콘 좀 줘",
+        "ex2": "Can you give me ther remocon over there?"
+    },
+    {
+        "index": "2",
+        "key": "저기에 있는 포도박스 어떻게 할까?",
+        "value": "What should I do with the box of grapes over there?",
+        "ex1": "저기에 있는 포도박스 어떻게 할까?",
+        "ex2": "What should I do with the box of grapes over there?"
+    },
+    {
+        "index": "3",
+        "key": "그냥 냅둬",
+        "value": "Just leave it.",
+        "ex1": "그냥 냅둬",
+        "ex2": "Just leave it."
+    },
+    {
+        "index": "4",
+        "key": "나는 하우스오브카드 미드 보는 것을 다시 시작했어",
+        "value": "I've started watching House of Cards again.",
+        "ex1": "나는 하우스오브카드 미드 보는 것을 다시 시작했어",
+        "ex2": "I've started watching House of Cards again."
+    },
+    {
+        "index": "5",
+        "key": "강아지가 떨고 있어요.",
+        "value": "The dog is shivering.",
+        "ex1": "강아지가 떨고 있어요.",
+        "ex2": "The dog is shivering."
+    },
+    {
+        "index": "6",
+        "key": "양치를 하고 싶은 느낌이야",
+        "value": "I feel like brushing my teeth.",
+        "ex1": "양치를 하고 싶은 느낌이야",
+        "ex2": "I feel like brushing my teeth."
+    },
+    {
+        "index": "7",
+        "key": "티비소리좀 줄여주세요.",
+        "value": "Could you please turn down the TV volume?",
+        "ex1": "티비소리좀 줄여주세요.",
+        "ex2": "Could you please turn down the TV volume?"
+    },
+    {
+        "index": "8",
+        "key": "미국에는 기차가 없나요?",
+        "value": "Are there trains in the U.S.?",
+        "ex1": "미국에는 기차가 없나요?",
+        "ex2": "Are there trains in the U.S.?"
+    },
+    {
+        "index": "9",
+        "key": "농부로 사는게 어땠는지 볼 수 있었다",
+        "value": "I got to see what it was like to live as a farmer.",
+        "ex1": "농부로 사는게 어땠는지 볼 수 있었다",
+        "ex2": "I got to see what it was like to live as a farmer."
+    },
+    {
+        "index": "10",
+        "key": "보통사람들이 하고 싶어 하는 것들을 나는 못했어",
+        "value": "I couldn't do the things that people usually want to do.",
+        "ex1": "보통사람들이 하고 싶어 하는 것들을 나는 못했어",
+        "ex2": "I couldn't do the things that people usually want to do."
+    },
+    {
+        "index": "11",
+        "key": "몸이 깃털처럼 가벼워",
+        "value": "My body feels as light as a feather.",
+        "ex1": "몸이 깃털처럼 가벼워",
+        "ex2": "My body feels as light as a feather."
+    },
+    {
+        "index": "12",
+        "key": "집에가는 길에 마트에 들릴건데 뭐 사갈까?",
+        "value": "Im stopping by the grocery store on my way home. What should I pick up?",
+        "ex1": "집에가는 길에 마트에 들릴건데 뭐 사갈까?",
+        "ex2": "Im stopping by the grocery store on my way home. What should I pick up?"
+    },
+    {
+        "index": "13",
+        "key": "집에 들어오는 길에 장 봐갈게",
+        "value": "I'll do some grocery shopping on my way home.",
+        "ex1": "집에 들어오는 길에 장 봐갈게",
+        "ex2": "I'll do some grocery shopping on my way home."
+    },
+    {
+        "index": "14",
+        "key": "맥주가 먹고 싶은 기분이야",
+        "value": "I fee like having a beer.",
+        "ex1": "맥주가 먹고 싶은 기분이야",
+        "ex2": "I fee like having a beer."
+    },
+    {
+        "index": "15",
+        "key": "나는 보람찬 하루를 보낸 것 같아",
+        "value": "I think I feel like I've had a productive day.",
+        "ex1": "나는 보람찬 하루를 보낸 것 같아",
+        "ex2": "I think I feel like I've had a productive day."
+    },
+    {
+        "index": "16",
+        "key": "이 과자가 몸에 좋지 않다는 걸 잘 알아.",
+        "value": "I know very well that this snack is not good for me.",
+        "ex1": "이 과자가 몸에 좋지 않다는 걸 잘 알아.",
+        "ex2": "I know very well that this snack is not good for me."
+    },
+    {
+        "index": "17",
+        "key": "이 강아지를 오랫동안 키워왔기 때문에 잘 알아.",
+        "value": "I know very well becouse of I've raised this dog for a long time.",
+        "ex1": "이 강아지를 오랫동안 키워왔기 때문에 잘 알아.",
+        "ex2": "I know very well becouse of I've raised this dog for a long time."
+    },
+    {
+        "index": "18",
+        "key": "이 강아지를 오랫동안 돌봐왔기 때문에 잘 알아.",
+        "value": "I've taken care of this dog for a long time, so I know him well.\"",
+        "ex1": "이 강아지를 오랫동안 돌봐왔기 때문에 잘 알아.",
+        "ex2": "I've taken care of this dog for a long time, so I know him well.\""
+    },
+    {
+        "index": "19",
+        "key": "맥주 한잔 하고 싶어요?",
+        "value": "Do you want to have a beer?",
+        "ex1": "맥주 한잔 하고 싶어요?",
+        "ex2": "Do you want to have a beer?"
+    },
+    {
+        "index": "20",
+        "key": "어떤 맥주 좋아해?",
+        "value": "Whats your favorite type of beer?",
+        "ex1": "어떤 맥주 좋아해?",
+        "ex2": "Whats your favorite type of beer?"
+    },
+    {
+        "index": "21",
+        "key": "너 운동 안가?",
+        "value": "Are you not going to the gym?",
+        "ex1": "너 운동 안가?",
+        "ex2": "Are you not going to the gym?"
+    },
+    {
+        "index": "22",
+        "key": "운동 왜 안가?",
+        "value": "Why are not you going to the gym?",
+        "ex1": "운동 왜 안가?",
+        "ex2": "Why are not you going to the gym?"
+    },
+    {
+        "index": "23",
+        "key": "닭가슴살 너무 많이 먹어서 질렸어.",
+        "value": "Im sick of chicken breast because I've eaten it too much.",
+        "ex1": "닭가슴살 너무 많이 먹어서 질렸어.",
+        "ex2": "Im sick of chicken breast because I've eaten it too much."
+    },
+    {
+        "index": "24",
+        "key": "오늘은 맥주한잔 해야겠어.",
+        "value": "I think I'll have a bear today.",
+        "ex1": "오늘은 맥주한잔 해야겠어.",
+        "ex2": "I think I'll have a bear today."
+    },
+    {
+        "index": "25",
+        "key": "아주머니가 깜빡하고 봉투를 안주셨어요.",
+        "value": "The lady at the store forgot to give me the bag.",
+        "ex1": "아주머니가 깜빡하고 봉투를 안주셨어요.",
+        "ex2": "The lady at the store forgot to give me the bag."
+    },
+    {
+        "index": "26",
+        "key": "내일 영수증을 가지고 다시 찾아갈게.",
+        "value": "I'll bring the receipt and come back tomorrow.",
+        "ex1": "내일 영수증을 가지고 다시 찾아갈게.",
+        "ex2": "I'll bring the receipt and come back tomorrow."
+    },
+    {
+        "index": "27",
+        "key": "강아지랑 산책하기 위해서 아울렛어 왔어.",
+        "value": "I came to the outlet to walk the dog.",
+        "ex1": "강아지랑 산책하기 위해서 아울렛어 왔어.",
+        "ex2": "I came to the outlet to walk the dog."
+    },
+    {
+        "index": "28",
+        "key": "여기에 있는 음식들 정말 맛있다.",
+        "value": "The food here is really delicious.",
+        "ex1": "여기에 있는 음식들 정말 맛있다.",
+        "ex2": "The food here is really delicious."
+    },
+    {
+        "index": "29",
+        "key": "주차장에서 차를 못찾아서 한참 헤맸어.",
+        "value": "I couldnt find my car in the parking lot, so I wandered around for a long time.",
+        "ex1": "주차장에서 차를 못찾아서 한참 헤맸어.",
+        "ex2": "I couldnt find my car in the parking lot, so I wandered around for a long time."
+    },
+    {
+        "index": "30",
+        "key": "내가 다시 가지고 올게",
+        "value": "I'll bring it back.",
+        "ex1": "내가 다시 가지고 올게",
+        "ex2": "I'll bring it back."
+    },
+    {
+        "index": "31",
+        "key": "우리는 놀러가고 있어요.",
+        "value": "We are going on a outing. /  We are going to hang out.",
+        "ex1": "우리는 놀러가고 있어요.",
+        "ex2": "We are going on a outing. /  We are going to hang out."
+    },
+    {
+        "index": "32",
+        "key": "이 도로가 막힌다는 것을 알고 있어요.",
+        "value": "I know this road gets blocked.",
+        "ex1": "이 도로가 막힌다는 것을 알고 있어요.",
+        "ex2": "I know this road gets blocked."
+    },
+    {
+        "index": "33",
+        "key": "늦을까봐 초조해",
+        "value": "I'm nervous that I might be late.",
+        "ex1": "늦을까봐 초조해",
+        "ex2": "I'm nervous that I might be late."
+    },
+    {
+        "index": "34",
+        "key": "당신은 싱글플레이어 이시군요!",
+        "value": "You're a single player!",
+        "ex1": "당신은 싱글플레이어 이시군요!",
+        "ex2": "You're a single player!"
+    },
+    {
+        "index": "35",
+        "key": "아닙니다. 운이 좋았을 뿐이에요.",
+        "value": "No, I was just lucky.",
+        "ex1": "아닙니다. 운이 좋았을 뿐이에요.",
+        "ex2": "No, I was just lucky."
+    },
+    {
+        "index": "36",
+        "key": "나 골프 잘해",
+        "value": "I'm good at golf.",
+        "ex1": "나 골프 잘해",
+        "ex2": "I'm good at golf."
+    },
+    {
+        "index": "37",
+        "key": "운전이 너무 지쳤어",
+        "value": "I'm tired of driving. / I'm exhausted from driving.",
+        "ex1": "운전이 너무 지쳤어",
+        "ex2": "I'm tired of driving. / I'm exhausted from driving."
+    },
+    {
+        "index": "38",
+        "key": "싱글플레이어라는 것이 사실이야?",
+        "value": "Is it true that you're a single?",
+        "ex1": "싱글플레이어라는 것이 사실이야?",
+        "ex2": "Is it true that you're a single?"
+    },
+    {
+        "index": "39",
+        "key": "우리가 늦었다는 것을 알잖아.",
+        "value": "You know that we’re late.",
+        "ex1": "우리가 늦었다는 것을 알잖아.",
+        "ex2": "You know that we’re late."
+    },
+    {
+        "index": "40",
+        "key": "이 노래 들으니까 마음이 편안해",
+        "value": "This song makes me feel peaceful.",
+        "ex1": "이 노래 들으니까 마음이 편안해",
+        "ex2": "This song makes me feel peaceful."
+    },
+    {
+        "index": "41",
+        "key": "저 차 색깔 아주 예쁘다.",
+        "value": "The color of that car is really nice. / That car has a beautiful color.",
+        "ex1": "저 차 색깔 아주 예쁘다.",
+        "ex2": "The color of that car is really nice. / That car has a beautiful color."
+    },
+    {
+        "index": "42",
+        "key": "우리 결혼한지 벌써 5년이나 되었어",
+        "value": "It’s already been 5 years since we got married.",
+        "ex1": "우리 결혼한지 벌써 5년이나 되었어",
+        "ex2": "It’s already been 5 years since we got married."
+    },
+    {
+        "index": "43",
+        "key": "다시 가지고 와",
+        "value": "Please bring it back.",
+        "ex1": "다시 가지고 와",
+        "ex2": "Please bring it back."
+    },
+    {
+        "index": "44",
+        "key": "이거 버려주세요.",
+        "value": "Please throw this away.",
+        "ex1": "이거 버려주세요.",
+        "ex2": "Please throw this away."
+    },
+    {
+        "index": "45",
+        "key": "이거 같이 먹을래?",
+        "value": "Do you want to eat this together?",
+        "ex1": "이거 같이 먹을래?",
+        "ex2": "Do you want to eat this together?"
+    },
+    {
+        "index": "46",
+        "key": "이거 같이 먹자!",
+        "value": "Let's eat this together",
+        "ex1": "이거 같이 먹자!",
+        "ex2": "Let's eat this together"
+    },
+    {
+        "index": "47",
+        "key": "밥 다되었다",
+        "value": "Food's ready!",
+        "ex1": "밥 다되었다",
+        "ex2": "Food's ready!"
+    },
+    {
+        "index": "48",
+        "key": "나갈까?",
+        "value": "Shall we go out?",
+        "ex1": "나갈까?",
+        "ex2": "Shall we go out?"
+    },
+    {
+        "index": "49",
+        "key": "눈이 예쁘다",
+        "value": "Your eyes are beautiful.",
+        "ex1": "눈이 예쁘다",
+        "ex2": "Your eyes are beautiful."
+    },
+    {
+        "index": "50",
+        "key": "너 어디가고 싶어?",
+        "value": "Where would you like to go?",
+        "ex1": "너 어디가고 싶어?",
+        "ex2": "Where would you like to go?"
+    }
+]

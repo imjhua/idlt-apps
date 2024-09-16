@@ -1,5 +1,7 @@
 
+import Type1 from './assets/1.json'
 import Sentences50 from './assets/1-50.json'
+import Type2 from './assets/2.json'
 import Sentences100 from './assets/51-100.json'
 import Sentences150 from './assets/101-150.json'
 import Sentences200 from './assets/151-200.json'
@@ -13,4 +15,6 @@ export const SENTENCES = [
   ...Sentences200,
   ...전치사to,
   ...부사,
+  ...Type1,
+  ...Type2,
 ]

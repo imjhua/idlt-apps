@@ -1,0 +1,402 @@
+[
+    {
+        "index": "1",
+        "key": "남편이랑 보홀 여행가고 싶어",
+        "value": "I'd like to go to Bohol with my husband.",
+        "ex1": "남편이랑 보홀 여행가고 싶어",
+        "ex2": "I'd like to go to Bohol with my husband.",
+        "": null
+    },
+    {
+        "index": "2",
+        "key": "그곳에서 다이빙을 할거야",
+        "value": "I'd like to go to Bohol with my husband. I'm going to dive there. I've been learning free diving these days.",
+        "ex1": "그곳에서 다이빙을 할거야",
+        "ex2": "I'd like to go to Bohol with my husband. I'm going to dive there. I've been learning free diving these days.",
+        "": null
+    },
+    {
+        "index": "3",
+        "key": "최근에 프리다이빙을 배웠어",
+        "value": "I've been learning free diving these days.",
+        "ex1": "최근에 프리다이빙을 배웠어",
+        "ex2": "I've been learning free diving these days.",
+        "": null
+    },
+    {
+        "index": "4",
+        "key": "다이빙을 할때 우주에 있는 것처럼 느껴져",
+        "value": "When I dive I feel like Im in space.",
+        "ex1": "다이빙을 할때 우주에 있는 것처럼 느껴져",
+        "ex2": "When I dive I feel like Im in space.",
+        "": null
+    },
+    {
+        "index": "5",
+        "key": "깊은 바다에 있으면 우주에 혼자 있는 것 처럼 느껴져",
+        "value": "When I'm deep in the ocean, I feel like I'm alone in space.",
+        "ex1": "깊은 바다에 있으면 우주에 혼자 있는 것 처럼 느껴져",
+        "ex2": "When I'm deep in the ocean, I feel like I'm alone in space.",
+        "": null
+    },
+    {
+        "index": "6",
+        "key": "수영장에는 긴 오리발로 다이빙 하는 사람들로 가득해.",
+        "value": "The swimming pool is full of people who are diving with long fins.",
+        "ex1": "수영장에는 긴 오리발로 다이빙 하는 사람들로 가득해.",
+        "ex2": "The swimming pool is full of people who are diving with long fins.",
+        "": null
+    },
+    {
+        "index": "7",
+        "key": "롱핀은 무엇인가요? (의문문)",
+        "value": "What are long fins? / What are you long fins? (X)",
+        "ex1": "롱핀은 무엇인가요? (의문문)",
+        "ex2": "What are long fins? / What are you long fins? (X)",
+        "": null
+    },
+    {
+        "index": "8",
+        "key": "롱 핀에 대해 알고 계시나요? (간접의문문)",
+        "value": "Do you know what long fins are?",
+        "ex1": "롱 핀에 대해 알고 계시나요? (간접의문문)",
+        "ex2": "Do you know what long fins are?",
+        "": null
+    },
+    {
+        "index": "9",
+        "key": "마스크가 무엇인지 아세요?",
+        "value": "Do you know what a mask is?",
+        "ex1": "마스크가 무엇인지 아세요?",
+        "ex2": "Do you know what a mask is?",
+        "": null
+    },
+    {
+        "index": "10",
+        "key": "나는 늦게 점심먹으로 갈거야",
+        "value": "Im going to have lunch late.",
+        "ex1": "나는 늦게 점심먹으로 갈거야",
+        "ex2": "Im going to have lunch late.",
+        "": null
+    },
+    {
+        "index": "11",
+        "key": "늦었지만 지금이라도 점심을 먹으러 갈거야.",
+        "value": "It's late, but I'm still going to have lunch now.",
+        "ex1": "늦었지만 지금이라도 점심을 먹으러 갈거야.",
+        "ex2": "It's late, but I'm still going to have lunch now.",
+        "": null
+    },
+    {
+        "index": "12",
+        "key": "이게 왜 흔들리지?",
+        "value": "Why is this shaking?",
+        "ex1": "이게 왜 흔들리지?",
+        "ex2": "Why is this shaking?",
+        "": null
+    },
+    {
+        "index": "13",
+        "key": "이 일을 왜하지?",
+        "value": "Why are we doing this?",
+        "ex1": "이 일을 왜하지?",
+        "ex2": "Why are we doing this?",
+        "": null
+    },
+    {
+        "index": "14",
+        "key": "혹시 지난번에 여행갈때 사진찍은거야?",
+        "value": "Did you take photos when you went on a trip last time?",
+        "ex1": "혹시 지난번에 여행갈때 사진찍은거야?",
+        "ex2": "Did you take photos when you went on a trip last time?",
+        "": null
+    },
+    {
+        "index": "15",
+        "key": "줄을 서시겠어요?",
+        "value": "Would you like to stand in line?",
+        "ex1": "줄을 서시겠어요?",
+        "ex2": "Would you like to stand in line?",
+        "": null
+    },
+    {
+        "index": "16",
+        "key": "강아지가 밥을 안먹어서 미워요",
+        "value": "I'm upset because my dog isn't eating.",
+        "ex1": "강아지가 밥을 안먹어서 미워요",
+        "ex2": "I'm upset because my dog isn't eating.",
+        "": null
+    },
+    {
+        "index": "17",
+        "key": "이거 오빠가 사왔는데 맛있다.",
+        "value": "My brother bought this, and it's really delicious",
+        "ex1": "이거 오빠가 사왔는데 맛있다.",
+        "ex2": "My brother bought this, and it's really delicious",
+        "": null
+    },
+    {
+        "index": "18",
+        "key": "이 프로젝트에 대해 소개해드릴게요.",
+        "value": "I'd like to introduce this initiative to you.",
+        "ex1": "이 프로젝트에 대해 소개해드릴게요.",
+        "ex2": "I'd like to introduce this initiative to you.",
+        "": null
+    },
+    {
+        "index": "19",
+        "key": "너를 오래 기다리는 느낌이야",
+        "value": "It feels like I've been waiting for you for a long time.",
+        "ex1": "너를 오래 기다리는 느낌이야",
+        "ex2": "It feels like I've been waiting for you for a long time.",
+        "": null
+    },
+    {
+        "index": "20",
+        "key": "어디에요? 나는 메뉴보는 곳 앞에 서있어요.",
+        "value": "Where are you? I'm standing in front, looking at the menu.",
+        "ex1": "어디에요? 나는 메뉴보는 곳 앞에 서있어요.",
+        "ex2": "Where are you? I'm standing in front, looking at the menu.",
+        "": null
+    },
+    {
+        "index": "21",
+        "key": "준비성이 철저하구나!",
+        "value": "You're really well-prepared!",
+        "ex1": "준비성이 철저하구나!",
+        "ex2": "You're really well-prepared!",
+        "": null
+    },
+    {
+        "index": "22",
+        "key": "그게 마침 있었네!",
+        "value": "It was there just in time!",
+        "ex1": "그게 마침 있었네!",
+        "ex2": "It was there just in time!",
+        "": null
+    },
+    {
+        "index": "23",
+        "key": "그게 딱 있었네!",
+        "value": "It was just there!",
+        "ex1": "그게 딱 있었네!",
+        "ex2": "It was just there!",
+        "": null
+    },
+    {
+        "index": "24",
+        "key": "너 피곤한거 아니지?",
+        "value": "You’re not tired, are you?",
+        "ex1": "너 피곤한거 아니지?",
+        "ex2": "You’re not tired, are you?",
+        "": null
+    },
+    {
+        "index": "25",
+        "key": "이게 뭔지 맞춰봐",
+        "value": "Guess what this is.",
+        "ex1": "이게 뭔지 맞춰봐",
+        "ex2": "Guess what this is.",
+        "": null
+    },
+    {
+        "index": "26",
+        "key": "앞으로 쭉 가면 횡단보도가 나와",
+        "value": "If you keep going straight, you'll come to a crosswalk.",
+        "ex1": "앞으로 쭉 가면 횡단보도가 나와",
+        "ex2": "If you keep going straight, you'll come to a crosswalk.",
+        "": null
+    },
+    {
+        "index": "27",
+        "key": "거기에서 3번째 블록이야",
+        "value": "It's the third block from there.",
+        "ex1": "거기에서 3번째 블록이야",
+        "ex2": "It's the third block from there.",
+        "": null
+    },
+    {
+        "index": "28",
+        "key": "우리도 그쪽으로 가는데, 같이 걸어갈까?",
+        "value": "We’re heading that way too. How about we walk together?",
+        "ex1": "우리도 그쪽으로 가는데, 같이 걸어갈까?",
+        "ex2": "We’re heading that way too. How about we walk together?",
+        "": null
+    },
+    {
+        "index": "29",
+        "key": "줄을 서시겠어요?",
+        "value": "Would you like to stand in line?",
+        "ex1": "줄을 서시겠어요?",
+        "ex2": "Would you like to stand in line?",
+        "": null
+    },
+    {
+        "index": "30",
+        "key": "이번에는 너가 설거지 할 차례야",
+        "value": "This time, it's your turn to do the dishes.",
+        "ex1": "이번에는 너가 설거지 할 차례야",
+        "ex2": "This time, it's your turn to do the dishes.",
+        "": null
+    },
+    {
+        "index": "31",
+        "key": "우승자는 누구야?",
+        "value": "who is winner?",
+        "ex1": "우승자는 누구야?",
+        "ex2": "who is winner?",
+        "": null
+    },
+    {
+        "index": "32",
+        "key": "강아지 발털이 너무 길어. 발털을 잘라야 해",
+        "value": "The dog’s paw fur is too long. We need to trim it.",
+        "ex1": "강아지 발털이 너무 길어. 발털을 잘라야 해",
+        "ex2": "The dog’s paw fur is too long. We need to trim it.",
+        "": null
+    },
+    {
+        "index": "33",
+        "key": "강아지 발톱을 잘라줄래?",
+        "value": "Could you trim the dog's claws?",
+        "ex1": "강아지 발톱을 잘라줄래?",
+        "ex2": "Could you trim the dog's claws?",
+        "": null
+    },
+    {
+        "index": "34",
+        "key": "비가 그칠때까지 집에서 기다려야해",
+        "value": "We have to wait for the rain to stop at home.",
+        "ex1": "비가 그칠때까지 집에서 기다려야해",
+        "ex2": "We have to wait for the rain to stop at home.",
+        "": null
+    },
+    {
+        "index": "35",
+        "key": "나는 하나도 안피곤해",
+        "value": "I’m not tired at all.",
+        "ex1": "나는 하나도 안피곤해",
+        "ex2": "I’m not tired at all.",
+        "": null
+    },
+    {
+        "index": "36",
+        "key": "왜이렇게 피곤하지?",
+        "value": "Why am I so tired?",
+        "ex1": "왜이렇게 피곤하지?",
+        "ex2": "Why am I so tired?",
+        "": null
+    },
+    {
+        "index": "37",
+        "key": "우승자가 누구인지 맞춰봐",
+        "value": "Guess who the winner is? 가",
+        "ex1": "우승자가 누구인지 맞춰봐",
+        "ex2": "Guess who the winner is? 가",
+        "": null
+    },
+    {
+        "index": "38",
+        "key": "누가 이길거 같아?",
+        "value": "Who do you think will win?",
+        "ex1": "누가 이길거 같아?",
+        "ex2": "Who do you think will win?",
+        "": null
+    },
+    {
+        "index": "39",
+        "key": "너 물건을 왜그렇게 잘 잃어버려",
+        "value": "Why do you lose things so easily?",
+        "ex1": "너 물건을 왜그렇게 잘 잃어버려",
+        "ex2": "Why do you lose things so easily?",
+        "": "Guess who the winner is? 가"
+    },
+    {
+        "index": "40",
+        "key": "누가 우승할지 궁금해",
+        "value": "I wonder who will win.",
+        "ex1": "누가 우승할지 궁금해",
+        "ex2": "I wonder who will win.",
+        "": null
+    },
+    {
+        "index": "41",
+        "key": "우승자는 누구야?",
+        "value": "who is winner?",
+        "ex1": "우승자는 누구야?",
+        "ex2": "who is winner?",
+        "": null
+    },
+    {
+        "index": "42",
+        "key": "가게에 병을 놓고 왔어요.",
+        "value": "I left a bottle at the sore.",
+        "ex1": "가게에 병을 놓고 왔어요.",
+        "ex2": "I left a bottle at the sore.",
+        "": null
+    },
+    {
+        "index": "43",
+        "key": "오늘 공이 잘 맞았어요.",
+        "value": "Today, I hit the ball well.",
+        "ex1": "오늘 공이 잘 맞았어요.",
+        "ex2": "Today, I hit the ball well.",
+        "": null
+    },
+    {
+        "index": "44",
+        "key": "골프공이 그린을 넘어갔다.",
+        "value": "The golf ball went over ther green.",
+        "ex1": "골프공이 그린을 넘어갔다.",
+        "ex2": "The golf ball went over ther green.",
+        "": null
+    },
+    {
+        "index": "45",
+        "key": "해가 지기전에 출발하는게 어때?",
+        "value": "How about leaving before the sun sets?",
+        "ex1": "해가 지기전에 출발하는게 어때?",
+        "ex2": "How about leaving before the sun sets?",
+        "": null
+    },
+    {
+        "index": "46",
+        "key": "이거 같이 먹자!",
+        "value": "Let's eat this together",
+        "ex1": "이거 같이 먹자!",
+        "ex2": "Let's eat this together",
+        "": null
+    },
+    {
+        "index": "47",
+        "key": "밥 다되었다",
+        "value": "Food's ready!",
+        "ex1": "밥 다되었다",
+        "ex2": "Food's ready!",
+        "": null
+    },
+    {
+        "index": "48",
+        "key": "나갈까?",
+        "value": "Shall we go out?",
+        "ex1": "나갈까?",
+        "ex2": "Shall we go out?",
+        "": null
+    },
+    {
+        "index": "49",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null,
+        "": null
+    },
+    {
+        "index": "50",
+        "key": null,
+        "value": null,
+        "ex1": null,
+        "ex2": null,
+        "": null
+    }
+]
