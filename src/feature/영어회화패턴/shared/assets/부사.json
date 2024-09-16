@@ -142,72 +142,72 @@
     {
         "index": "21",
         "key": "여전히, 아직도",
-        "value": "stil",
+        "value": "stil + 동사",
         "ex1": "She still lives in the same house.",
         "ex2": "He is still not ready for the meeting."
     },
     {
         "index": "22",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "충분히(well)",
+        "value": "well + 전치사",
+        "ex1": "We should plan the event well in advance.",
+        "ex2": "The new policy works well with existing regulations."
     },
     {
         "index": "23",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "잘",
+        "value": "well + \b동사(동사만 수식!)",
+        "ex1": "She sings well.",
+        "ex2": "The project is well managed."
     },
     {
         "index": "24",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "더 많은, 추후의",
+        "value": "further + 명사",
+        "ex1": "She has a further question.",
+        "ex2": "She needs further information to complete the report."
     },
     {
         "index": "25",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "더, 더 많이",
+        "value": "further + 동사(동사만 수식!)",
+        "ex1": "We need to discuss this matter further.",
+        "ex2": "The car broke down and we had to walk further to reach the town."
     },
     {
         "index": "26",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "충분한",
+        "value": "enough + 명사",
+        "ex1": "We have enough food for the party.",
+        "ex2": "There is enough space in the room."
     },
     {
         "index": "27",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "충분히(enough)",
+        "value": "형용사 + enough",
+        "ex1": "The coffee is hot enough to drink.",
+        "ex2": "The room is big enough to hold the party."
     },
     {
         "index": "28",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "직전, 직후",
+        "value": "shortly + 전치사",
+        "ex1": "Shortly before the show.",
+        "ex2": "Shortly after the meeting, she left the office."
     },
     {
         "index": "29",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "곧",
+        "value": "미래시제 + shorly",
+        "ex1": "She will call you shortly.",
+        "ex2": "The meeting will start shortly."
     },
     {
         "index": "30",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "그외에는, 그렇지 않으면",
+        "value": "otherwise",
+        "ex1": "She is a great cook; otherwise, she has a talent for painting.",
+        "ex2": "Finish your homework; otherwise, you can't watch TV."
     },
     {
         "index": "31",
