@@ -95,7 +95,7 @@
         "key": "반드시 ~인 것은 아니다",
         "value": "not necessarily + 명사구",
         "ex1": "Not necessarily the right answer.",
-        "ex2": "Not necessarily the right answer."
+        "ex2": "He’s not necessarily the right person for the job."
     },
     {
         "index": "15",
@@ -198,7 +198,7 @@
     {
         "index": "29",
         "key": "곧",
-        "value": "미래시제 + shorly",
+        "value": "미래시제 + shortly",
         "ex1": "She will call you shortly.",
         "ex2": "The meeting will start shortly."
     },
