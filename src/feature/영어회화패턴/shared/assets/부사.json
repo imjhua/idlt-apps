@@ -1,101 +1,101 @@
 [
     {
         "index": "1",
-        "key": "한때",
-        "value": "once + 동사",
-        "ex1": "I once lived in New York.",
-        "ex2": "I once visited Paris on a school trip."
+        "key": "한때(과거의)",
+        "value": "once + 명사구",
+        "ex1": "Once the bell rings, class will start.",
+        "ex2": "Once the sun sets, it gets cooler."
     },
     {
         "index": "2",
         "key": "분명히",
-        "value": "clearly + 동사",
-        "ex1": "She clearly understands the topic.",
-        "ex2": "He clearly didn’t hear what you said."
+        "value": "clearly + 명사구",
+        "ex1": "Clearly the solution is working.",
+        "ex2": "Clearly her idea is the best."
     },
     {
         "index": "3",
         "key": "오직",
-        "value": "only + 동사",
-        "ex1": "I only asked a question.",
-        "ex2": "They only need a few minutes."
+        "value": "only + 명사구",
+        "ex1": "Only the manager knows the details.",
+        "ex2": "Only time will tell."
     },
     {
         "index": "4",
         "key": "단지",
-        "value": "just + 동사",
-        "ex1": "She just wanted to say hello.",
-        "ex2": "He just smiled at the joke."
+        "value": "just + 명사구",
+        "ex1": "Just the basics are needed.",
+        "ex2": "Just a few minutes left."
     },
     {
         "index": "5",
         "key": "단순히",
-        "value": "simply + 동사",
-        "ex1": "I simply asked for directions.",
-        "ex2": "They simply ignored the problem."
+        "value": "simply + 명사구",
+        "ex1": "Simply the best option available.",
+        "ex2": "Simply a misunderstanding."
     },
     {
         "index": "6",
         "key": "아마도",
-        "value": "arguably + 동사",
-        "ex1": "She arguably helped the most.",
-        "ex2": "He arguably changed the course of history with his actions."
+        "value": "arguably + 명사구",
+        "ex1": "Arguably the best player on the team.",
+        "ex2": "Arguably the most important issue."
     },
     {
         "index": "7",
-        "key": "대부분",
-        "value": "mainly + 동사",
-        "ex1": "She mainly focuses on research.",
-        "ex2": "They mainly discuss financial issues."
+        "key": "주로(대부분)",
+        "value": "mainly + 명사구",
+        "ex1": "Mainly the budget is the issue.",
+        "ex2": "Mainly used for research purposes."
     },
     {
         "index": "8",
-        "key": "주로(대량으로)",
-        "value": "largely + 동사",
-        "ex1": "The event largely exceeded expectations.",
-        "ex2": "The study largely confirms the hypothesis."
+        "key": "대체로",
+        "value": "largely + 명사구",
+        "ex1": "Largely the project was successful.",
+        "ex2": "Largely due to his efforts."
     },
     {
         "index": "9",
         "key": "원래",
-        "value": "originally + 동사",
-        "ex1": "He originally wanted to be a teacher.",
-        "ex2": "He originally wanted to be a teacher."
+        "value": "originally + 명사구",
+        "ex1": "Originally the plan was different.",
+        "ex2": "Originally the plan was different."
     },
     {
         "index": "10",
         "key": "여전히",
-        "value": "still + 동사",
-        "ex1": "She still remembers the first day of school.",
-        "ex2": "He still works at the same company."
+        "value": "still + 명사구",
+        "ex1": "Still the best choice for the job.",
+        "ex2": "Still a popular destination."
     },
     {
         "index": "11",
         "key": "이전에",
-        "value": "formerly + 동사",
-        "ex1": "She formerly worked as a journalist.",
-        "ex2": "The area was formerly known for its factories."
+        "value": "formerly + 명사구",
+        "ex1": "Formerly a major company.",
+        "ex2": "Formerly known as XYZ Inc."
     },
     {
         "index": "12",
         "key": "대개",
-        "value": "mostly + 동사",
-        "ex1": "She mostly works from home.",
-        "ex2": "The restaurant mostly serves Italian cuisine."
+        "value": "mostly + 명사구",
+        "ex1": "Mostly completed on time.",
+        "ex2": "Mostly quiet during the day."
     },
     {
         "index": "13",
         "key": "그저",
-        "value": "merely + 동사",
-        "ex1": "He merely explained the situation.",
-        "ex2": "The book merely discusses the basics."
+        "value": "merely + 명사구",
+        "ex1": "Mostly quiet during the day.",
+        "ex2": "Merely a coincidence."
     },
     {
         "index": "14",
         "key": "반드시 ~인 것은 아니다",
-        "value": "not necessarily + 동사",
-        "ex1": "That does not necessarily help.",
-        "ex2": "Success does not necessarily follow."
+        "value": "not necessarily + 명사구",
+        "ex1": "Not necessarily the right answer.",
+        "ex2": "Not necessarily the right answer."
     },
     {
         "index": "15",
@@ -141,10 +141,10 @@
     },
     {
         "index": "21",
-        "key": null,
-        "value": null,
-        "ex1": null,
-        "ex2": null
+        "key": "여전히, 아직도",
+        "value": "stil",
+        "ex1": "She still lives in the same house.",
+        "ex2": "He is still not ready for the meeting."
     },
     {
         "index": "22",
