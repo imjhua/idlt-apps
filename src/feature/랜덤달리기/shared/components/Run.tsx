@@ -362,7 +362,7 @@ const Rail = styled.div<{
 
   ${({ speedMode }) => speedMode &&
     css`
-      // margin-left: -20px;
+      margin-left: -20px;
       &:before {
         background-image: url("/images/fire.png");
         background-size: 20px 20px;
