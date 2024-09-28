@@ -27,6 +27,14 @@
 			"suspicious":{
 				"noArrayIndexKey":"off"
 			},
+      "style": {
+        "useNamingConvention": {
+          "level": "off",
+          "options": {
+            "strictCase": false
+          }
+        }
+      },
 			"a11y": {
 				"noAccessKey": "error",
 				"noAriaUnsupportedElements": "error",
@@ -61,11 +69,12 @@
 			"jsxQuoteStyle": "double",
 			"quoteProperties": "asNeeded",
 			"semicolons": "asNeeded",
-			"arrowParentheses": "asNeeded",
+			"arrowParentheses": "always",
 			"bracketSpacing": true,
 			"bracketSameLine": false,
 			"quoteStyle": "single",
-			"attributePosition": "auto"
+			"attributePosition": "auto",
+			"lineWidth": 120
 		}
 	}
 }

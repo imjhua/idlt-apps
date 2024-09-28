@@ -4,8 +4,11 @@ declare module '@emotion/react' {
     border: string;
     highlight: string;
     /* TODO: 사용하지 않는 프롭 확인 */
+    /** @deprecated */
     color: string;
+    /** @deprecated */
     divider: string;
+    /** @deprecated */
     primary: string;
   }
 }

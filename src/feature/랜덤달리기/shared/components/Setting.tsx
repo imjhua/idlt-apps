@@ -35,7 +35,7 @@ function Setting({ status, count, onChange }: SettingProps){
             type="tel"
             min={1}
             max={12}
-            disabled={status === STATUS.START}
+            disabled={status === STATUS.RUN}
           />
         </FormField>
       </Form>

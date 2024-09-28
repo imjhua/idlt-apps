@@ -34,7 +34,6 @@ module.exports = {
     '@typescript-eslint/space-infix-ops': ERROR,
     '@typescript-eslint/type-annotation-spacing': ERROR,
     '@typescript-eslint/comma-dangle': OFF,
-    '@typescript-eslint/indent': [WARN, 2],
     '@typescript-eslint/member-delimiter-style': ERROR,
     '@typescript-eslint/no-unsafe-call': OFF,
     '@typescript-eslint/no-unsafe-return': OFF,
@@ -77,7 +76,7 @@ module.exports = {
       'maxBOF': 1
     }],
     'arrow-parens': ['error', 'always'],
-    'object-curly-newline': ['error', { 'multiline': true, 'minProperties': 5 }],
+    'object-curly-newline': ['error', { 'multiline': true, 'minProperties': 7 }],
     'jsx-quotes': ['error', 'prefer-double'],
     'react/no-unescaped-entities': OFF,
     'lint/style/useSelfClosingElements': OFF

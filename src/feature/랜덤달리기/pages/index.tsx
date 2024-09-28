@@ -1,59 +1,117 @@
-import { Box } from 'grommet'
-import { useCallback, useState } from 'react'
+import styled from '@emotion/styled/macro'
+import { Box, Button } from 'grommet'
+import { useEffect, useState } from 'react'
 
-import CountDown from '../shared/components/CountDown'
+import { getRandomIntInclusive } from '@/lib/utils'
+import Img from '@/shared/components/Image'
+import Loading from '@/shared/components/Loading'
+
 import Run from '../shared/components/Run'
-import Setting from '../shared/components/Setting'
-import { COUNT_DWON_STATUS, STATUS } from '../shared/meta'
+import { CHARACTER_LIST } from '../shared/meta'
 
-const COUNT_DOWN = 3
 function MainPage() {
-  const [count, setCount] = useState<number>(0)
+  const [isUserReady, setIsUserReady] = useState<boolean>(false)
 
-  const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
-  const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
+  const [players, setPlayers] = useState<string[]>([])
+  // TODO: CHARACTER_LIST 의 값을 타입으로 가지도록
+  const [selectedPlayers, setSelectedPlayers] = useState<Set<string>>(new Set())
 
-  const [status, setStatus] = useState<STATUS>(STATUS.READY)
+  useEffect(() => {
+    CHARACTER_LIST.map((character) => {
+      const fileName = `/images/animal/${String(character)}.png`
+      const images = new Image()
+      images.src = fileName
+    })
 
-  const handleCountChange = (count: number) => {
-    setCount(count)
-  }
-  const handleStatusUpdate = useCallback((status: STATUS) => {
-    setStatus(status)
+    const randomCharacterList = CHARACTER_LIST.reduce<string[]>((data) => {
+        const randomNumber1 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
+        const randomNumber2 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
+        const temp = data[randomNumber1]
+        data[randomNumber1] = data[randomNumber2]
+        data[randomNumber2] = temp
+        return data
+      }, [...CHARACTER_LIST])
 
-    if (status === STATUS.START) {
-      setCountDownStatus(COUNT_DWON_STATUS.START)
-
-      // 카운트다운
-      setCountDown(COUNT_DOWN)
-      for (let i = 1; i <= COUNT_DOWN; i++) {
-        ((i) => {
-          setTimeout(() => {
-            setCountDown(COUNT_DOWN - i)
-            if (i === COUNT_DOWN) {
-              setCountDownStatus(COUNT_DWON_STATUS.READY)
-            }
-          }, 1000 * i)
-        })(i)
-      }
-    }
+    setPlayers(randomCharacterList)
   }, [])
+
+  const handleUserReadyButtonClick = (isUserReady: boolean) => {
+    setIsUserReady(isUserReady)
+  }
+
+  const handleCharacterChange = (characterName: string) => {
+    setSelectedPlayers((state) => {
+      const newState = new Set([...state])
+
+      newState.has(characterName) ? newState.delete(characterName) : newState.add(characterName)
+
+      return newState
+    })
+  }
+
+  if (players.length === 0){
+    return <Loading />
+  }
 
   return (
     <Box pad="small" gap="small">
-      <Setting status={status} count={count} onChange={handleCountChange} />
-      <Run
-        delay={COUNT_DOWN}
-        status={status}
-        count={count}
-        countDownStatus={countDownStatus}
-        onUpdateStatus={handleStatusUpdate}
-      />
-
-      {/* <CountDown count={3} /> */}
-      {countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
+      {!isUserReady ? (
+        <Box gap="medium">
+          <Grid>
+            {players.map((characterName) => {
+              return (
+                <GridItem
+                  key={characterName}
+                  selected={selectedPlayers.has(characterName)}
+                  onClick={() => {
+                    handleCharacterChange(characterName)
+                  }}
+                >
+                  <>
+                    <Img
+                      width={50} height={50} src={`/images/animal/${String(characterName)}.png`}
+                      alt={characterName} />
+                  </>
+                </GridItem>
+              )
+            })}
+          </Grid>
+          <Button
+            label="Are You Ready?"
+            onClick={() => {
+              handleUserReadyButtonClick(true)
+            }}
+            disabled={selectedPlayers.size === 0}
+            primary
+          />
+        </Box>
+      ) : (
+        <>
+          <Run
+            playerNames={[...selectedPlayers]}
+            onUserReadyChange={() => {
+              handleUserReadyButtonClick(false)
+            }}
+          />
+        </>
+      )}
     </Box>
   )
 }
 
 export default MainPage
+
+const Grid = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+`
+
+const GridItem = styled.div<{ selected: boolean }>`
+  background: ${({ theme, selected }) => (selected ? theme.highlight : theme.background)};
+  border: 2px solid ${({ theme }) => theme.border};
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+`

@@ -1,6 +1,4 @@
-import {
-  createContext, PropsWithChildren, ReactNode, useCallback, useMemo, useState,
-} from 'react'
+import { createContext, type PropsWithChildren, type ReactNode, useCallback, useMemo, useState } from 'react'
 
 import Portal from '@/shared/components/Portal'
 

@@ -1,133 +1,126 @@
 import { css, keyframes } from '@emotion/react'
 import styled from '@emotion/styled/macro'
-import {
-  Box, Button, CheckBox, DataTable, Text
-} from 'grommet'
+import { Box, Button, CheckBox, DataTable, Text } from 'grommet'
 import { Cycle } from 'grommet-icons'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
 import NoData from '@/shared/components/NoData'
 
-import { CHARACTER_LIST, COUNT_DWON_STATUS, STATUS } from '../meta'
+import { COUNT_DWON_STATUS, STATUS } from '../meta'
+import CountDown from './CountDown'
+
+const COUNT_DOWN = 3
 
 const DURATION = 10
-type RunProps = { delay: number; status: STATUS | undefined; count: number; countDownStatus: COUNT_DWON_STATUS;onUpdateStatus: (status: STATUS) => void }
+type RunProps = {
+  playerNames: string[];
+  onUserReadyChange: (isUserReady: boolean) => void;
+}
 
-function Run({
-  delay, status, count, countDownStatus, onUpdateStatus
-}: RunProps){
-  // const [clickedImg, setClickedImg] = useState<{ path: string; show: boolean }>()
-
+function Run({ playerNames, onUserReadyChange }: RunProps) {
   const [speedMode, setSpeedMode] = useState(false)
+  const [runningStatus, setRunningStatus] = useState<STATUS>(STATUS.READY)
 
-  const [memberList, setMemberList] = useState<string[]>([])
-  const [playerList, setPlayerList] = useState<{
-    index: number;
-    winner: boolean;
-    character: string;
-    timings: number[];
-    duration: number;
-    ranking: number;
-  }[]>([])
+  const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
+  const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(COUNT_DWON_STATUS.READY)
 
-  useEffect(() => {
-    CHARACTER_LIST.map((character) => {
-      const fileName = `/images/animal/${String(character)}.png`
-      const images = new Image()
-      images.src = fileName
-    })
+  const [players, setPlayers] = useState<{
+                                          index: number;
+                                          winner: boolean;
+                                          name: string;
+                                          timings: number[];
+                                          duration: number;
+                                          ranking: number;
+                                        }[]>([])
+
+  const count = useMemo(() => {
+    return playerNames.length
+  }, [playerNames.length])
+
+  const handleStatusUpdate = useCallback((status: STATUS) => {
+    setRunningStatus(status)
+
+    if (status === STATUS.RUN) {
+      setCountDownStatus(COUNT_DWON_STATUS.START)
+
+      // 카운트다운
+      setCountDown(COUNT_DOWN)
+      for (let i = 1; i <= COUNT_DOWN; i++) {
+        ((i) => {
+          setTimeout(() => {
+            setCountDown(COUNT_DOWN - i)
+            if (i === COUNT_DOWN) {
+              setCountDownStatus(COUNT_DWON_STATUS.READY)
+            }
+          }, 1000 * i)
+        })(i)
+      }
+    }
   }, [])
 
-  useEffect(() => {
-    // 카운트 변경시마다 멤버 리스트 업데이트
-    if (!count){
-      return
-    }
-
-    const memberList = CHARACTER_LIST.reduce<string[]>((data) => {
-      const randomNumber1 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
-      const randomNumber2 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
+  const handleShuffleButtonClick = useCallback(() => {
+    const randomPlayerNames = playerNames.reduce<string[]>((data) => {
+      const randomNumber1 = getRandomIntInclusive(0, playerNames.length - 1)
+      const randomNumber2 = getRandomIntInclusive(0, playerNames.length - 1)
       const temp = data[randomNumber1]
       data[randomNumber1] = data[randomNumber2]
       data[randomNumber2] = temp
       return data
-    }, [...CHARACTER_LIST]).slice(0, count)
-    setMemberList(memberList)
+    }, [...playerNames])
 
-    const playerListInit = memberList.map((value, index) => {
+    const playerListInit = randomPlayerNames.map((name, index) => {
       return {
         index: index + 1,
-        character: value,
+        name,
         timings: [],
         winner: false,
         duration: 0,
-        ranking: 0
+        ranking: 0,
       }
     })
-    setPlayerList(playerListInit)
+    setPlayers(playerListInit)
+  }, [playerNames])
 
-    onUpdateStatus(STATUS.READY)
-  }, [count, onUpdateStatus])
-
-  // const durationList = useMemo(() => {
-  //   if (count === 0){
-  //     return []
-  //   }
-
-  //   const defaultValues = new Array(count).fill(0)
-  //     .map((_, index) => (index + 1))
-
-  //   const durationList = defaultValues.reduce<number[]>((data) => {
-  //     const randomNumber1 = getRandomIntInclusive(0, count - 1)
-  //     const randomNumber2 = getRandomIntInclusive(0, count - 1)
-  //     const temp = data[randomNumber1]
-  //     data[randomNumber1] = data[randomNumber2]
-  //     data[randomNumber2] = temp
-  //     return data
-  //   }, [...defaultValues])
-
-  //   return durationList
-  // }, [count])
-
-  // const sortedDurationList = useMemo(() => {
-  //   return [...durationList].sort((a, b) => a - b)
-  // }, [durationList])
+  useEffect(() => {
+    handleShuffleButtonClick()
+  }, [handleShuffleButtonClick])
 
   const handleGoButtonClick = () => {
-    if (memberList.length === 0 || status === STATUS.START){
+    const count = players.length
+
+    if (count === 0 || runningStatus !== STATUS.READY) {
       return
     }
 
-    const defaultValues = new Array(count).fill(0)
-      .map((_, index) => (index + 1))
+    const defaultValues = new Array(count).fill(0).map((_, index) => index + 1)
 
     const durationList = defaultValues.reduce<number[]>((data) => {
-      const randomNumber1 = getRandomIntInclusive(0, count - 1)
-      const randomNumber2 = getRandomIntInclusive(0, count - 1)
-      const temp = data[randomNumber1]
-      data[randomNumber1] = data[randomNumber2]
-      data[randomNumber2] = temp
-      return data
-    }, [...defaultValues])
+        const randomNumber1 = getRandomIntInclusive(0, count - 1)
+        const randomNumber2 = getRandomIntInclusive(0, count - 1)
+        const temp = data[randomNumber1]
+        data[randomNumber1] = data[randomNumber2]
+        data[randomNumber2] = temp
+        return data
+      },
+      [...defaultValues],
+    )
 
     const sortedDurationList = [...durationList].sort((a, b) => a - b)
 
     const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 4]
     const playerTiming = [18, 15, 16, 16, 12, 14, 14, 10, 12]
-    const winningIndex = getRandomIntInclusive(0, memberList.length - 1)
-    console.log(winningTiming.reduce((data, item) => data + item, 0))
-    console.log(playerTiming.reduce((data, item) => data + item, 0))
+    const winningIndex = getRandomIntInclusive(0, count - 1)
+    // console.log(winningTiming.reduce((data, item) => data + item, 0))
+    // console.log(playerTiming.reduce((data, item) => data + item, 0))
 
-    console.log('wwwww'.repeat(10))
-    console.log(memberList[winningIndex])
-    console.log('='.repeat(10))
+    // console.log('wwwww'.repeat(10))
+    // console.log(playerNames[winningIndex])
+    // console.log('='.repeat(10))
 
-    const playerList = memberList.map((player, index) => {
-      const randomMaxValues = index === winningIndex ?
-        winningTiming
-        : playerTiming
+    const playerList = players.map(({ name: playerName }, index) => {
+      const randomMaxValues = index === winningIndex ? winningTiming : playerTiming
 
       const number0 = getRandomIntInclusive(1, randomMaxValues[0])
       const number1 = getRandomIntInclusive(1, randomMaxValues[1])
@@ -153,8 +146,8 @@ function Run({
 
       // 보정
       const newValueList = valueList.map((value, index) => {
-        if (index >= 7 && value > 90){
-          console.log('보정', player)
+        if (index >= 7 && value > 90) {
+          console.log('보정', playerName)
           return valueList[index - 1] + getRandomIntInclusive(1, 5)
         }
 
@@ -163,203 +156,159 @@ function Run({
 
       let duration = 0
       const defaultDuration = speedMode ? 1 : DURATION
-      if (winningIndex === index){
+      if (winningIndex === index) {
         duration = defaultDuration
       } else {
-        duration = defaultDuration + (durationList[index] * (speedMode ? 0.1 : 0.2))
+        duration = defaultDuration + durationList[index] * (speedMode ? 0.1 : 0.2)
       }
 
       const removeItem = durationList[winningIndex]
-      const rankingList = sortedDurationList.filter((value) => (value !== removeItem))
+      const rankingList = sortedDurationList.filter((value) => value !== removeItem)
 
       return {
         index: index + 1,
-        character: player,
+        name: playerName,
         timings: [...newValueList, 100],
         winner: winningIndex === index,
         ranking: winningIndex === index ? 1 : rankingList.indexOf(durationList[index]) + 2, //(index > winningIndex ? 2 : 1),
-        duration
+        duration,
       }
     })
-    // console.log(playerList)
 
     // 플레이어 설정
-    setPlayerList(playerList)
+    setPlayers(playerList)
 
-    // 당첨자 확인
-    // setTimeout(() => {
-    //   if (!playerList){
-    //     return
-    //   }
-    //   // console.log(playerList.filter(({ winner }) => (winner))[0].character, '당첨!')
-    // }, ((delay + DURATION) * 1000) + 200 + 200)
-
-    onUpdateStatus(STATUS.START)
+    handleStatusUpdate(STATUS.RUN)
   }
 
   const handleResetButtonClick = () => {
-    onUpdateStatus(STATUS.READY)
+    handleStatusUpdate(STATUS.READY)
   }
 
-  const handleShuffleButtonClick = () => {
-    const memberList = CHARACTER_LIST.reduce<string[]>((data) => {
-      const randomNumber1 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
-      const randomNumber2 = getRandomIntInclusive(0, CHARACTER_LIST.length - 1)
-      const temp = data[randomNumber1]
-      data[randomNumber1] = data[randomNumber2]
-      data[randomNumber2] = temp
-      return data
-    }, [...CHARACTER_LIST]).slice(0, count)
-    setMemberList(memberList)
-
-    const playerListInit = memberList.map((value, index) => {
-      return {
-        index: index + 1,
-        character: value,
-        timings: [],
-        winner: false,
-        duration: 0,
-        ranking: 0
-      }
-    })
-    setPlayerList(playerListInit)
+  const handleUserReadyButtonClick = () => {
+    onUserReadyChange(false)
   }
 
   return (
+    <>
     <Block>
       <Box gap="small">
         <Box direction="row" gap="medium" justify="between">
-          {
-            status === STATUS.READY ? (
-              <>
-                <Box direction="row" gap="small">
-                  <Button
-                    label="Go!" onClick={handleGoButtonClick} disabled={!count}
-                    primary />
-                  <CheckBox
-                    checked={speedMode}
-                    label="Speed Mode"
-                    onChange={(event) => setSpeedMode(event.target.checked)}
-                    disabled={!count}
-                  />
-                </Box>
+          {runningStatus === STATUS.READY ? (
+            <>
+              <Box direction="row" gap="small">
+                <Button
+                  label="Go!" onClick={handleGoButtonClick} disabled={!count}
+                  primary />
+
+                <CheckBox
+                  checked={speedMode}
+                  label="Speed Mode"
+                  onChange={(event) => setSpeedMode(event.target.checked)}
+                  disabled={!count}
+                />
+              </Box>
+              <Box direction="row" gap="small">
+                <Button
+                  label="Change Character"
+                  onClick={handleUserReadyButtonClick}
+                  disabled={countDownStatus === COUNT_DWON_STATUS.START}
+                />
                 <Button
                   style={{ borderRadius: 10 }}
-                  label={<Cycle />} onClick={handleShuffleButtonClick} disabled={!count} />
-              </>
-            ) : (
-              <Button label="Re-Game" onClick={handleResetButtonClick} disabled={countDownStatus === COUNT_DWON_STATUS.START} />
-            )
-          }
+                  label={<Cycle />}
+                  onClick={handleShuffleButtonClick}
+                  disabled={!count}
+                />
+              </Box>
+            </>
+          ) : (
+            <Button
+              label="Re-Game"
+              onClick={handleResetButtonClick}
+              disabled={countDownStatus === COUNT_DWON_STATUS.START}
+            />
+          )}
         </Box>
         <Box>
-          {/* {clickedImg && <CharacterImg
-            show={clickedImg.show}
-            src={clickedImg.path}
-            width={38}
-            height={38}
-          />} */}
-
           <Item>
             {!count ? (
               <NoData text="인원수를 입력해주세요." />
             ) : (
               <DataTable
-                data={playerList}
+                data={players}
                 columns={[
                   {
                     property: 'index',
                     header: <Text>#</Text>,
                     align: 'center',
                     primary: true,
-                    size: 'small'
+                    size: 'small',
                   },
                   {
                     property: 'character',
                     header: <Text />,
                     size: 'large',
-                    render: ({
-                      character, timings, winner, duration, ranking
-                    }) => {
+                    render: ({ name: character, timings, winner, duration, ranking }) => {
                       return (
                         <>
                           <Rail
                             alpha={getRandomIntInclusive(1, 2) % 2 === 0 ? 1 : -1}
-                            delay={delay}
+                            delay={COUNT_DOWN}
                             duration={duration}
-                            active={status !== STATUS.READY}
+                            active={runningStatus !== STATUS.READY}
                             timing={timings}
                             winner={winner}
                             speedMode={speedMode}
                           >
-                            <Ranking active={status !== STATUS.READY} delay={delay + duration}>{ranking}</Ranking>
+                            <Ranking active={runningStatus !== STATUS.READY} delay={COUNT_DOWN + duration}>
+                              {ranking}
+                            </Ranking>
 
+                            {/* {runningStatus === STATUS.READY && speedMode && (
+                              <Img
+                                width={38}
+                                height={38}
+                                src="/images/fire.png"
+                                alt={character}
+                              />
+                            )} */}
                             <Img
-                              width={38} height={38}
+                              width={38}
+                              height={38}
                               src={`/images/animal/${String(character)}.png`}
                               alt={character}
-                              // onClick={() => {
-
-                              //   setClickedImg({
-                              //     show: true,
-                              //     path: `/images/animal/${String(character)}.png`
-                              //   })
-
-                              //   setTimeout(() => {
-                              //     setClickedImg({
-                              //       show: false,
-                              //       path: `/images/animal/${String(character)}.png`
-                              //     })
-                              //   }, 800)
-
-                              //   setTimeout(() => {
-                              //     setClickedImg({
-                              //       show: false,
-                              //       path: ''
-                              //     })
-                              //   }, 1000)
-                              // }}
                             />
                           </Rail>
                         </>
                       )
-                    }
+                    },
                   },
                 ]}
-              />)}
+              />
+            )}
           </Item>
         </Box>
       </Box>
     </Block>
+
+{countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
+
+</>
   )
 }
 
 export default Run
 
-// const CharacterImg = styled(Img)<{ show: boolean }>`
-//   transition: all .8s;
-//   /* display: ${({ show }) => !show ? 'block' : 'none' }; */
-//   /* opacity: ${({ show }) => !show ? 1 : 0.5 }; */
-//   transform: translate(50%, 50%) scale(${({ show }) => !show ? 0 : 4 });
-//   position: absolute;
-//   right: 50%;
-//   top: 50%;
-//   z-index: 1;
-//   padding: 10px;
-//   background: ${({ theme }) => theme.background};
-//   border: 3px solid ${({ theme }) => theme.border};
-// `
-
 const Block = styled.div`
-  padding: 16px;  
+  padding: 16px;
   margin-bottom: 4px;
   border: 3px solid ${({ theme }) => theme.border};
 `
 
 const Item = styled.div`
-
   position: relative;
-  table{
+  table {
     width: 100%;
     @media (max-width: 968px) {
       width: auto;
@@ -368,8 +317,8 @@ const Item = styled.div`
     border-collapse: collapse;
 
     position: relative;
-    &:after{
-      content: '';
+    &:after {
+      content: "";
       display: inline-block;
       /* background-color: ${({ theme }) => theme.highlight}; */
       background-color: rgb(165 155 121 / 20%);
@@ -382,59 +331,67 @@ const Item = styled.div`
       bottom: 0;
     }
 
-    th:first-of-type{
+    th:first-of-type {
       width: 40px;
     }
-    th{
+    th {
       padding: 4px 6px !important;
     }
-    td{
+    td {
       padding: 4px 0 !important;
     }
-    tr{
+    tr {
       border-bottom: 1px solid ${({ theme }) => theme.border};
     }
-  } 
+  }
 `
-const Rail = styled.div<{ speedMode: boolean; alpha: number; delay: number; duration: number; active: boolean; timing: number[]; winner: boolean }>`
+const Rail = styled.div<{
+  speedMode: boolean;
+  alpha: number;
+  delay: number;
+  duration: number;
+  active: boolean;
+  timing: number[];
+  winner: boolean;
+}>`
   width: calc(100% - 46px);
   transform: translateX(0px) translateY(0px);
   /* transform: translateX(calc(99%)) translateY(0px); */
   /* transform: translateX(calc(100% - 20px)) translateY(0px); */
-  
-  ${({
-    alpha, delay, duration, active, timing
-  }) => !active || timing.length === 0 ?
+
+  ${({ alpha, delay, duration, active, timing }) => !active || timing.length === 0
+      ? css`
+          animation: ${ready(alpha)} 1s ease infinite;
+        `
+      : css`
+          animation: ${running(timing)} ${duration}s ${delay}.2s linear forwards;
+        `}
+
+  ${({ speedMode }) => speedMode &&
     css`
-      animation: ${ready(alpha)} 1s ease infinite;
-    `
-    : css`
-      animation: ${running(timing)} ${duration}s ${delay}.2s linear forwards;
-  `}
-  
+      // margin-left: -20px;
+      &:before {
+        background-image: url("/images/fire.png");
+        background-size: 20px 20px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        content: "";
+        transform: rotate(-90deg) translateX(-12px);
+      }
+    `}
 
-  ${({ speedMode }) => speedMode && css`
-    margin-left: -20px;
-    &:before{
-      background-image: url('/images/fire.png');
-      background-size: 20px 20px;
-      display: inline-block;
-      width: 20px; 
-      height: 20px;
-      content:"";
-      transform: rotate(-90deg) translateX(-12px);
-    }
-  `}
-
-  > img{
+  > img {
     vertical-align: middle;
   }
 
-  ${({ delay, active, winner, duration }) => active && winner && css`
-    > img{
-      animation: ${shake} .3s ${delay + duration}s ease-in infinite;
-    }
-  `}
+  ${({ delay, active, winner, duration }) => active &&
+    winner &&
+    css`
+      > img {
+        animation: ${shake} 0.3s ${delay + duration}s ease-in infinite;
+      }
+    `}
 `
 
 const show = keyframes`
@@ -458,9 +415,10 @@ const Ranking = styled.span<{ active: boolean; delay: number }>`
   color: #333;
   text-align: right;
   visibility: hidden;
-  ${({ active, delay }) => active && css`
-    animation: ${show} .1s ${delay + 0.5}s linear forwards;
-  `}
+  ${({ active, delay }) => active &&
+    css`
+      animation: ${show} 0.1s ${delay + 0.5}s linear forwards;
+    `}
 `
 
 const ready = (alpha: number) => keyframes`
@@ -512,9 +470,13 @@ const running = (timing: number[]) => keyframes`
   }
   
   /* 100% {
-    transform: translateX(${(timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8]) === 100
-    ? '100%'
-    : String((timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8])) + '%'})
+    transform: translateX(${
+      timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8] === 100
+        ? '100%'
+        : `${String(
+            timing[0] + timing[1] + timing[2] + timing[3] + timing[4] + timing[5] + timing[6] + timing[7] + timing[8],
+          )}%`
+    })
     translateY(0);
   } */
 `

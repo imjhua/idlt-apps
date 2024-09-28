@@ -1,19 +1,18 @@
 import styled from '@emotion/styled'
-import {
-  MouseEvent, ReactNode, useEffect, useRef, useState
-} from 'react'
+import { type MouseEvent, type ReactNode, useEffect, useRef, useState } from 'react'
 
 import BoxShadow from './BoxShadow'
 
 function BottomSheet({ title, open = false, onClose, children }: { title?: string; open?: boolean; onClose: () => void; children: ReactNode }) {
   const dimmedRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
-    if (dimmedRef.current){
+    if (dimmedRef.current) {
       dimmedRef.current.addEventListener('wheel', (e) => {
         e.preventDefault()
       })
     }
-  }, [dimmedRef])
+  }, [])
 
   const [visible, setVisible] = useState(open)
   useEffect(() => {
@@ -31,19 +30,20 @@ function BottomSheet({ title, open = false, onClose, children }: { title?: strin
     <>
       {visible && (
         <BottomSheetBlock role="dialog">
-          <Dimmed
-            ref={dimmedRef}
-            onClick={onClickCloseButton} />
+          <Dimmed ref={dimmedRef} onClick={onClickCloseButton} />
           <BoxShadowBlock>
             <BoxShadow>
-              {title && (<Header><Title>{title}</Title></Header>)}
+              {title && (
+                <Header>
+                  <Title>{title}</Title>
+                </Header>
+              )}
               {/* <IcClose onClick={onClickCloseButton} /> */}
-              <Content>
-                {children}
-              </Content>
+              <Content>{children}</Content>
             </BoxShadow>
           </BoxShadowBlock>
-        </BottomSheetBlock>)}
+        </BottomSheetBlock>
+      )}
     </>
   )
 }

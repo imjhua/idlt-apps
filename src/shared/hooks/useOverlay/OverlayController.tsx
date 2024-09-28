@@ -1,9 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
-import {
-  forwardRef, Ref, useCallback, useEffect, useImperativeHandle, useState,
-} from 'react'
+import { forwardRef, type Ref, useCallback, useEffect, useImperativeHandle, useState } from 'react'
 
-import { CreateOverlayElement } from './types'
+import type { CreateOverlayElement } from './types'
 
 interface Props {
   overlayElement: CreateOverlayElement;
@@ -14,10 +12,7 @@ export interface OverlayControlRef {
   close: () => void;
 }
 
-const OverlayController = ((
-  { overlayElement: OverlayElement, onExit }: Props,
-  ref: Ref<OverlayControlRef>,
-) => {
+const OverlayController = ({ overlayElement: OverlayElement, onExit }: Props, ref: Ref<OverlayControlRef>) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClose = useCallback(() => setIsOpen(false), [])
@@ -37,13 +32,7 @@ const OverlayController = ((
     })
   }, [])
 
-  return (
-    <OverlayElement
-      isOpen={isOpen}
-      close={handleClose}
-      exit={onExit}
-    />
-  )
-})
+  return <OverlayElement isOpen={isOpen} close={handleClose} exit={onExit} />
+}
 
 export default forwardRef(OverlayController)
