@@ -193,33 +193,30 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     <>
     <Block>
       <Box gap="small">
-        <Box direction="row" gap="medium" justify="between">
+        <Box gap="medium">
           {runningStatus === STATUS.READY ? (
             <>
-              <Box direction="row" gap="small">
-                <Button
-                  label="Go!" onClick={handleGoButtonClick} disabled={!count}
-                  primary />
-
-                <CheckBox
-                  checked={speedMode}
-                  label="Speed Mode"
-                  onChange={(event) => setSpeedMode(event.target.checked)}
-                  disabled={!count}
-                />
-              </Box>
-              <Box direction="row" gap="small">
-                <Button
-                  label="Change Character"
-                  onClick={handleUserReadyButtonClick}
-                  disabled={countDownStatus === COUNT_DWON_STATUS.START}
-                />
-                <Button
-                  style={{ borderRadius: 10 }}
-                  label={<Cycle />}
-                  onClick={handleShuffleButtonClick}
-                  disabled={!count}
-                />
+              <Box direction="row" gap="medium" justify="between">
+                <Box direction="row" gap="small">
+                  <Button
+                    label="Go!" onClick={handleGoButtonClick} disabled={!count}
+                    primary />
+                </Box>
+                <Box direction="row" gap="small">
+                  <Button
+                    size="small"
+                    label="Change Character"
+                    onClick={handleUserReadyButtonClick}
+                    disabled={countDownStatus === COUNT_DWON_STATUS.START}
+                  />
+                  <Button
+                    size="small"
+                    style={{ borderRadius: 10 }}
+                    label={<Cycle />}
+                    onClick={handleShuffleButtonClick}
+                    disabled={!count}
+                  />
+                </Box>
               </Box>
             </>
           ) : (
@@ -229,7 +226,14 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
               disabled={countDownStatus === COUNT_DWON_STATUS.START}
             />
           )}
+
+          <CheckBox
+            checked={speedMode}
+            label="Speed Mode"
+            onChange={(event) => setSpeedMode(event.target.checked)}
+            disabled={!count || runningStatus !== STATUS.READY} />
         </Box>
+
         <Box>
           <Item>
             {!count ? (
@@ -264,15 +268,6 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                             <Ranking active={runningStatus !== STATUS.READY} delay={COUNT_DOWN + duration}>
                               {ranking}
                             </Ranking>
-
-                            {/* {runningStatus === STATUS.READY && speedMode && (
-                              <Img
-                                width={38}
-                                height={38}
-                                src="/images/fire.png"
-                                alt={character}
-                              />
-                            )} */}
                             <Img
                               width={38}
                               height={38}
@@ -291,10 +286,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
         </Box>
       </Box>
     </Block>
-
-{countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
-
-</>
+    {countDownStatus === COUNT_DWON_STATUS.START && <CountDown count={countDown} />}
+  </>
   )
 }
 
