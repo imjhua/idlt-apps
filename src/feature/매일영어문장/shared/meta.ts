@@ -14,6 +14,6 @@ type SentenceType = {
 type SentencesType = SentenceType[]
 
 export const SENTENCES: { [key in string]: SentencesType } = {
-  Day9월28일,
+  Day9월28일: Day9월28일.filter(({ value }) => value),
   Day9월29일,
 }
