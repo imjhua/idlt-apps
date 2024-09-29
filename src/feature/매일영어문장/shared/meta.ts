@@ -1,6 +1,6 @@
 
-import Day9월28일 from './assets/9월28일.json'
-import Day9월29일 from './assets/9월29일.json'
+import Day0928 from './assets/9월28일.json'
+import Day0929 from './assets/9월29일.json'
 
 type SentenceType = {
     key: string;
@@ -14,6 +14,6 @@ type SentenceType = {
 type SentencesType = SentenceType[]
 
 export const SENTENCES: { [key in string]: SentencesType } = {
-  Day9월28일: Day9월28일.filter(({ value }) => value),
-  Day9월29일,
+  Day9월28일: Day0928.filter(({ value }) => value),
+  Day9월29일: Day0929.filter(({ value }) => value),
 }
