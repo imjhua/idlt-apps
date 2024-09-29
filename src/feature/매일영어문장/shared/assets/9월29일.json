@@ -1,0 +1,452 @@
+[
+    {
+        "key": "1",
+        "sentence": "\b아침에 일어나서",
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "2",
+        "sentence": "어제밤부터 지금까지 아직도 바람이 많이 분다.",
+        "value": "It has still been windy since last night.",
+        "pattern": "It has been + 형용사 + since + 시간",
+        "mean": "[시간]부터 지금까지 ~했다",
+        "test": "주말 이후로 흐린 날씨가 계속되고 있나요?",
+        "ex": "Has it been cloudy since the weekend?"
+    },
+    {
+        "key": "3",
+        "sentence": "내 생각에 오늘 바람이 너무 많이 불어서 일정에 차질이 생기겠어.",
+        "value": "I think the wind is really strong today, and it might ruin my plans.",
+        "pattern": "주어 + might + 동사원형",
+        "mean": "[주어]가 ~할지도 모른다",
+        "test": "나중에 비가 올 것 같다고 생각하나요?",
+        "ex": "Do you think it might rain later?"
+    },
+    {
+        "key": "4",
+        "sentence": "어제 메시지를 보냈는데 답장이 왔을까?",
+        "value": "I messaged him yesterday. Did he reply to me?",
+        "pattern": "Did + 주어 + 동사원형 + ~?",
+        "mean": "[주어]가 ~를 했니?",
+        "test": "그들이 당신에게 연락했나요?",
+        "ex": "Did they get back to you?"
+    },
+    {
+        "key": "5",
+        "sentence": "오늘이 벌써 일요일이라니. 시간이 너무 빠르다.",
+        "value": "Today is already Sunday. Time really flies.",
+        "pattern": "It’s already + 시간",
+        "mean": "벌써 [시간]이다",
+        "test": "시작하기에는 이미 너무 늦었나요?",
+        "ex": "Is it already too late to start?"
+    },
+    {
+        "key": "6",
+        "sentence": "카페에서",
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "7",
+        "sentence": "문을 어떻게 여는 거예요?",
+        "value": "How can I open the door?",
+        "pattern": "How can I + 동사원형?",
+        "mean": "~하는 방법이 뭐예요?",
+        "test": "여기서 역까지 어떻게 가나요?",
+        "ex": "How can I get to the station from here?"
+    },
+    {
+        "key": "8",
+        "sentence": "그곳에 가는 가장 좋은 방법이 뭐예요?",
+        "value": "What’s the best way to get there?",
+        "pattern": "What’s the best way to + 동사원형?",
+        "mean": "~하는 가장 좋은 방법은 뭐예요?",
+        "test": "건강을 유지하기 위한 가장 좋은 방법은 무엇인가요?",
+        "ex": "What’s the best way to stay healthy?"
+    },
+    {
+        "key": "9",
+        "sentence": "커피되나요? 베이글은 포장할게요.",
+        "value": "Can I get a coffee? I’ll have the bagel to go, please.",
+        "pattern": "Can I + 동사원형?",
+        "mean": "~해도 될까요?",
+        "test": "따뜻한 물 한 컵 받을 수 있을까요?",
+        "ex": "Can I get a cup of warm water, please?"
+    },
+    {
+        "key": "10",
+        "sentence": "베이글은 데워주세요.",
+        "value": "Could you please heat up the bagel for me?",
+        "pattern": "Could you please + 동사원형?",
+        "mean": "~해 주실 수 있나요?",
+        "test": "길을 좀 안내해 주실 수 있나요?",
+        "ex": "Could you please show me the way?"
+    },
+    {
+        "key": "11",
+        "sentence": "점심",
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "12",
+        "sentence": "오늘 오후에 등산할 예정인데, 바람이 많이 불까 걱정이야.",
+        "value": "I’m planning to go hiking this afternoon, but I’m worried about the strong wind.",
+        "pattern": "I’m planning to + 동사원형",
+        "mean": "~할 계획이다.",
+        "test": "나중에 그 영화를 볼 계획이신가요?",
+        "ex": "Are you planning to watch the movie later?"
+    },
+    {
+        "key": "13",
+        "sentence": "편의점이 어디에요?",
+        "value": "Where is the convenience store?",
+        "pattern": "Where is the + 명사?",
+        "mean": "~가 어디에요?",
+        "test": "화장실이 어디에 있나요?",
+        "ex": "Where is the restrooms?"
+    },
+    {
+        "key": "14",
+        "sentence": "이제 슬슬 나가볼까?",
+        "value": "Should I head out now?",
+        "pattern": "Should I + 동사원형 + ~?",
+        "mean": "~해야 할까?",
+        "test": "우리가 가기 전에 날씨를 확인해야 할까요?",
+        "ex": "Should I check the weather before we go?"
+    },
+    {
+        "key": "15",
+        "sentence": "양치하는 것을 까먹었네. 다시 숙소에 돌아가야겠다.",
+        "value": "I totally forgot to brush my teeth. I guess I’ll head back to my place.",
+        "pattern": "I guess + 주어 + 동사원형.",
+        "mean": "~인 것 같아.",
+        "test": "그녀가 저녁에 우리와 함께하지 않은 이유가 뭐라고 생각해?",
+        "ex": "Why do you think I guess she didn’t join us for dinner?"
+    },
+    {
+        "key": "16",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "17",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "18",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "19",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "20",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "21",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "22",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "23",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "24",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "25",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "26",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "27",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "28",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "29",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "30",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "31",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "32",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "33",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "34",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "35",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "36",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "37",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "38",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "39",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "40",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "41",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "42",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "43",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "44",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "45",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "46",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "47",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "48",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "49",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    },
+    {
+        "key": "50",
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
+    }
+]

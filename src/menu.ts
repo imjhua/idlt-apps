@@ -27,4 +27,8 @@ export const MENUS = [
     path: '/영어회화패턴',
     title: '영어회화패턴'
   },
+  {
+    path: '/매일영어문장',
+    title: '매일영어문장'
+  },
 ]
