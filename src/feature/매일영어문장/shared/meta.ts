@@ -1,6 +1,6 @@
 
-import Day0928 from './assets/9월28일.json'
-import Day0929 from './assets/9월29일.json'
+import Day0928 from './assets/0928.json'
+import Day0929 from './assets/0929.json'
 
 type SentenceType = {
     key: string;
