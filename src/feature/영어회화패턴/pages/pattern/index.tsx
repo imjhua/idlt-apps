@@ -67,6 +67,7 @@ function HomePage() {
       })
     }
   }
+
   const handlePreviousClick = (e: MouseEvent) => {
     e.stopPropagation()
 
@@ -93,6 +94,7 @@ function HomePage() {
       return state + 1
     })
   }
+
   const handleBgClick = () => {
     if (!showMeaning) {
       setShowMeaning(true)

@@ -136,7 +136,7 @@
     },
     {
         "key": "16",
-        "sentence": null,
+        "sentence": "저녁",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -145,12 +145,12 @@
     },
     {
         "key": "17",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "sentence": "연기가 후드로 빨려들어간다.",
+        "value": "The smoke is getting sucked into the hood.",
+        "pattern": "주어 + is getting + p.p + into + 명사",
+        "mean": "주어가 ~로 들어가고 있어요.",
+        "test": "오염물질이 공기 청정기를 통해 걸러지고 있어요.",
+        "ex": "The pollutants are getting filtered through the air purifier."
     },
     {
         "key": "18",
@@ -181,7 +181,7 @@
     },
     {
         "key": "21",
-        "sentence": null,
+        "sentence": "숙소에서",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -190,7 +190,7 @@
     },
     {
         "key": "22",
-        "sentence": null,
+        "sentence": "몇일동안 못씻어서 너무 찝찝해.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -199,7 +199,7 @@
     },
     {
         "key": "23",
-        "sentence": null,
+        "sentence": "지도를 보고 찾아왔는데 여기가 맞나?",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -208,7 +208,7 @@
     },
     {
         "key": "24",
-        "sentence": null,
+        "sentence": "8시에 예약했습니다.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -217,7 +217,7 @@
     },
     {
         "key": "25",
-        "sentence": null,
+        "sentence": "불이 꺼졌는데 다시 켜줄수 있나요?",
         "value": null,
         "pattern": null,
         "mean": null,
