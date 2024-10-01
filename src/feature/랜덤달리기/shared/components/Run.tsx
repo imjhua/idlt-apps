@@ -481,7 +481,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       />
                     </Box>
                     <Box pad="large" gap="large" align="center">
-                      <Text>🎉 축하합니다. 🎉</Text>
+                      <Text>🎉 축하합니다 🎉</Text>
                       <Text size="xlarge">
                         {
                           charaterNicknameMap[
