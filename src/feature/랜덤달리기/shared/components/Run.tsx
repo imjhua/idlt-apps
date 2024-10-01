@@ -410,6 +410,9 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                                 src={`/images/animal/${String(character)}.png`}
                                 alt={character}
                                 onClick={() => {
+                                  if (countDownStatus === COUNT_DWON_STATUS.SHOW || runningStatus === STATUS.RUN){
+                                    return
+                                  }
                                   handleCharacterButtonClick(character)
                                 }}
                               />
