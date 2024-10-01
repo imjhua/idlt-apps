@@ -43,12 +43,12 @@ import { deepMerge } from 'grommet/utils'
 
 const myTheme: GloblThemeType = {
   global: {
-    // backgrounds: {
-    //   main: {
-    //     dark: 'blue',
-    //     light: 'red'
-    //   }
-    // },
+    backgrounds: {
+      main: {
+        dark: 'blue',
+        light: 'red'
+      }
+    },
     font: { family: 'Roboto' },
     colors: {
       // background: {

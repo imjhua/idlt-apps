@@ -9,7 +9,7 @@ function NotFound(){
       <Box>
         <Text>Not Found</Text>
         <Text>
-        페이지를 찾을 수 없습니다.
+          페이지를 찾을 수 없습니다.
         </Text>
       </Box>
     </PageBlock>

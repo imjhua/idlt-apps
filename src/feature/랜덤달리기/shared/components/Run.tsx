@@ -291,6 +291,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       onClick={handleGoButtonClick}
                       disabled={
                         !count ||
+                        openModal ||
                         !(
                           runningStatus === STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
@@ -305,6 +306,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       onClick={handleUserReadyButtonClick}
                       disabled={
                         !count ||
+                        openModal ||
                         !(
                           runningStatus === STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
@@ -318,6 +320,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       onClick={handleShuffleButtonClick}
                       disabled={
                         !count ||
+                        openModal ||
                         !(
                           runningStatus === STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
@@ -365,6 +368,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                             }}
                             disabled={
                               !count ||
+                              openModal ||
                               !(
                                 runningStatus === STATUS.READY &&
                                 countDownStatus === COUNT_DWON_STATUS.HIDDEN
@@ -395,8 +399,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                               speedMode={speedMode}
                             >
                               <Ranking
-                                active={runningStatus !== STATUS.READY}
                                 delay={duration}
+                                active={runningStatus !== STATUS.READY}
                               >
                                 {ranking}
                               </Ranking>
@@ -411,8 +415,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                               />
                               {runningStatus === STATUS.READY &&
                                 charaterNicknameMap[character] !==
-                                  character && (
-                                  <Text size="small">
+                                  character && !openModal && (
+                                  <Text size="small" style={{ marginLeft: 4 }}>
                                     {charaterNicknameMap[character]}
                                   </Text>
                                 )}
@@ -429,15 +433,17 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
             {openModal && (
               <Layer
                 style={{
-                  height: 210,
+                  height: 200,
                   width: '70vw',
                   border: '1px solid #eee',
-                  borderRadius: 4,
+                  boxShadow: 'rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset',
+                  borderRadius: 10,
                 }}
               >
-                {runningStatus === STATUS.READY && (
+                <>
+                  {runningStatus === STATUS.READY && (
                   <>
-                    <Box pad="medium" gap="medium" align="center">
+                    <Box pad="medium" align="center">
                       <Img
                         width={80}
                         height={80}
@@ -447,24 +453,25 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       <TextInput
                         placeholder={`Nick Name: ${selectedPlayer}`}
                         onChange={(e) => {
-                          handleInputChange(selectedPlayer, e.target.value)
-                        }}
-                      />
+                        handleInputChange(selectedPlayer, e.target.value)
+                          }}
+                        />
                     </Box>
                     <Button
                       size="small"
                       margin="small"
                       label="Save"
                       onClick={handleCharacterNickNameCloseClick}
+                      style={{ marginTop: 0 }}
                     />
-                  </>
+                    </>
                 )}
 
-                {runningStatus === STATUS.END && (
+                  {runningStatus === STATUS.END && (
                   <>
                     <Box direction="row" justify="end">
                       <Button
-                        icon={<Close />}
+                        icon={<Close size="small" />}
                         onClick={() => {
                           setOpenModal(false)
                         }}
@@ -482,6 +489,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                     </Box>
                   </>
                 )}
+                </>
               </Layer>
             )}
           </Box>
@@ -514,7 +522,7 @@ const Item = styled.div`
 
     position: relative;
     &:after {
-      content: '';
+      content: "";
       display: inline-block;
       /* background-color: ${({ theme }) => theme.highlight}; */
       background-color: rgb(165 155 121 / 20%);
@@ -565,12 +573,12 @@ const Rail = styled.div<{
     css`
       margin-left: -20px;
       &:before {
-        background-image: url('/images/fire.png');
+        background-image: url("/images/fire.png");
         background-size: 20px 20px;
         display: inline-block;
         width: 20px;
         height: 20px;
-        content: '';
+        content: "";
         transform: rotate(-90deg) translateX(-12px);
       }
     `}

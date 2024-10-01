@@ -51,6 +51,7 @@ module.exports = {
     'react/jsx-first-prop-new-line': [WARN, 'multiline'],
     'react/jsx-max-props-per-line': [WARN, { maximum: { single: 3, multi: 3 } }],
     'react/jsx-indent-props': ['WARN', 2],
+    'react/jsx-indent': ['WARN', 2],
     'react/jsx-curly-brace-presence': WARN,
     'react/jsx-wrap-multilines': [WARN, { return: 'parens-new-line' }],
     'react/react-in-jsx-scope': OFF,

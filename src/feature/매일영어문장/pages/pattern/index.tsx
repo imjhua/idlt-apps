@@ -97,27 +97,27 @@ function Page() {
           </Accordion>
         </Box>
         <Box gridArea="button" direction="row" justify="between">
-        <Button
-          pad="none"
-          style={{
+          <Button
+            pad="none"
+            style={{
               height: '100%',
               width: '100px',
               textAlign: 'center',
             }}
-          icon={<CaretPrevious />}
-          hoverIndicator
-          onClick={handlePreviousClick}
+            icon={<CaretPrevious />}
+            hoverIndicator
+            onClick={handlePreviousClick}
           />
-        <Button
-          pad="none"
-          style={{
+          <Button
+            pad="none"
+            style={{
               height: '100%',
               width: '100px',
               textAlign: 'center',
             }}
-          icon={<CaretNext />}
-          hoverIndicator
-          onClick={handleNextClick}
+            icon={<CaretNext />}
+            hoverIndicator
+            onClick={handleNextClick}
           />
         </Box>
       </>

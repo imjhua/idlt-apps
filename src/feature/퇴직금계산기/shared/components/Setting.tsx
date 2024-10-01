@@ -111,7 +111,7 @@ function Setting({
       <Box>
         <Text size="medium" weight="bold">
           <Highlight>
-          예상 퇴직금
+            예상 퇴직금
           </Highlight>
         </Text>
         {!showRetiermentPay ? (

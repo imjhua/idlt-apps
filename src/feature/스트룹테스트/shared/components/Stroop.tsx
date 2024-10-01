@@ -53,7 +53,7 @@ function Stroop(){
       <Content>
         <Box>
           <Text size="3" color="bronze">
-           보여지는 카드의 단어를 <strong>글자가 아닌 색상</strong>을 보고 정답을 선택 해 주세요!
+            보여지는 카드의 단어를 <strong>글자가 아닌 색상</strong>을 보고 정답을 선택 해 주세요!
           </Text>
         </Box>
         <FloatButton onClick={handleGoTestButtonClick}>테스트하기</FloatButton>
