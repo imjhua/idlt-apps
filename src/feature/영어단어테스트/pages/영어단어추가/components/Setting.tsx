@@ -31,18 +31,34 @@ function Setting() {
         messages={{ required: '필수입력입니다.' }}
       >
         <FormField
-          name="word" htmlFor="word" label="단어"
-          margin="small" required>
+          name="word"
+          htmlFor="word"
+          label="단어"
+          margin="small"
+          required
+        >
           <TextInput
-            id="word" name="word" placeholder="입력"
-            type="text" disabled={isLoading} />
+            id="word"
+            name="word"
+            placeholder="입력"
+            type="text"
+            disabled={isLoading}
+          />
         </FormField>
         <FormField
-          name="meaning" htmlFor="meaning" label="뜻"
-          margin="small" required>
+          name="meaning"
+          htmlFor="meaning"
+          label="뜻"
+          margin="small"
+          required
+        >
           <TextInput
-            id="meaning" name="meaning" placeholder="입력"
-            type="text" disabled={isLoading} />
+            id="meaning"
+            name="meaning"
+            placeholder="입력"
+            type="text"
+            disabled={isLoading}
+          />
         </FormField>
 
         <Box

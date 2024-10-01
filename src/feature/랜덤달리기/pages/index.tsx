@@ -13,7 +13,6 @@ function MainPage() {
   const [isUserReady, setIsUserReady] = useState<boolean>(false)
 
   const [players, setPlayers] = useState<string[]>([])
-  // TODO: CHARACTER_LIST 의 값을 타입으로 가지도록
   const [selectedPlayers, setSelectedPlayers] = useState<Set<string>>(new Set())
 
   useEffect(() => {

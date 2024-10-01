@@ -23,10 +23,7 @@ module.exports = {
   },
   plugins: ['react-refresh', '@typescript-eslint', 'simple-import-sort', '@emotion'],
   rules: {
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
+    'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     '@typescript-eslint/no-unused-vars': OFF,
     '@typescript-eslint/no-non-null-assertion': OFF,
     '@typescript-eslint/no-explicit-any': ERROR,
@@ -40,19 +37,19 @@ module.exports = {
     '@typescript-eslint/no-unsafe-argument': OFF,
     '@typescript-eslint/no-unsafe-assignment': OFF,
     '@typescript-eslint/no-unsafe-member-access': OFF,
-    '@typescript-eslint/no-misused-promises': [
-      ERROR,
-      { 'checksVoidReturn': false }
-    ],
+    '@typescript-eslint/no-misused-promises': [ERROR, { checksVoidReturn: false }],
     '@typescript-eslint/no-floating-promises': OFF,
-    'react/jsx-tag-spacing': [ERROR, {
-      'closingSlash': 'never',
-      'beforeSelfClosing': 'always',
-      'afterOpening': 'never',
-      'beforeClosing': 'never'
-    }],
+    'react/jsx-tag-spacing': [
+      ERROR,
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never',
+        beforeClosing: 'never',
+      },
+    ],
     'react/jsx-first-prop-new-line': [WARN, 'multiline'],
-    'react/jsx-max-props-per-line': [WARN, { 'maximum': { 'single': 3, 'multi': 3 } }],
+    'react/jsx-max-props-per-line': [WARN, { maximum: { single: 3, multi: 3 } }],
     'react/jsx-indent-props': ['WARN', 2],
     'react/jsx-curly-brace-presence': WARN,
     'react/jsx-wrap-multilines': [WARN, { return: 'parens-new-line' }],
@@ -66,19 +63,21 @@ module.exports = {
     'block-spacing': ERROR,
     'comma-spacing': ERROR,
     'implicit-arrow-linebreak': ERROR,
-    'quotes': [ERROR, 'single'],
+    quotes: [ERROR, 'single'],
     'no-trailing-spaces': ERROR,
     'array-bracket-spacing': ERROR,
-    'semi': [ERROR, 'never'],
+    semi: [ERROR, 'never'],
     'no-multi-spaces': ERROR,
-    'no-multiple-empty-lines': [WARN, {
-      'max': 1,
-      'maxBOF': 1
-    }],
+    'no-multiple-empty-lines': [
+      WARN,
+      {
+        max: 1,
+        maxBOF: 1,
+      },
+    ],
     'arrow-parens': ['error', 'always'],
-    'object-curly-newline': ['error', { 'multiline': true, 'minProperties': 7 }],
-    'jsx-quotes': ['error', 'prefer-double'],
+    'object-curly-newline': ['error', { multiline: true, minProperties: 7 }],
     'react/no-unescaped-entities': OFF,
-    'lint/style/useSelfClosingElements': OFF
+    'lint/style/useSelfClosingElements': OFF,
   },
 }
