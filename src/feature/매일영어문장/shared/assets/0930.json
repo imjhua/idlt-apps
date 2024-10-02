@@ -199,7 +199,7 @@
     },
     {
         "key": "23",
-        "sentence": null,
+        "sentence": "다른 사람도 다 하는데 나도 해야할까?",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -208,7 +208,7 @@
     },
     {
         "key": "24",
-        "sentence": null,
+        "sentence": "가방에 넣어 주세요.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -217,7 +217,7 @@
     },
     {
         "key": "25",
-        "sentence": null,
+        "sentence": "시동을 안끄고 차에서 내렸지 뭐야. 내 정신좀 봐.",
         "value": null,
         "pattern": null,
         "mean": null,

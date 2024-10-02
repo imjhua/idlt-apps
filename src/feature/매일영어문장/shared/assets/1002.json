@@ -1,7 +1,7 @@
 [
     {
         "key": "1",
-        "sentence": "\b아침에 일어나서",
+        "sentence": "아침 조식",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -10,43 +10,43 @@
     },
     {
         "key": "2",
-        "sentence": "어제밤부터 지금까지 아직도 바람이 많이 분다.",
-        "value": "It has still been windy since last night.",
-        "pattern": "It has been + 형용사 + since + 시간",
-        "mean": "[시간]부터 지금까지 ~했다",
-        "test": "주말 이후로 흐린 날씨가 계속되고 있나요?",
-        "ex": "Has it been cloudy since the weekend?"
+        "sentence": "너무 맛있어서 다 먹었어요.",
+        "value": "It was so good, I ended up eating it all.",
+        "pattern": "주어 + ended up + 동사ing + 목적어",
+        "mean": "주어가 결국 ~하게 되었다",
+        "test": "We ended up staying at home all day.",
+        "ex": "그들이 왜 여행을 취소하게 되었나요?"
     },
     {
         "key": "3",
-        "sentence": "내 생각에 오늘 바람이 너무 많이 불어서 일정에 차질이 생기겠어.",
-        "value": "I think the wind is really strong today, and it might ruin my plans.",
-        "pattern": "주어 + might + 동사원형",
-        "mean": "[주어]가 ~할지도 모른다",
-        "test": "나중에 비가 올 것 같다고 생각하나요?",
-        "ex": "Do you think it might rain later?"
+        "sentence": "조식이 제공되나요?",
+        "value": "Do you offer breakfast?",
+        "pattern": "Do you offer + 명사?",
+        "mean": "~을 제공하시나요?",
+        "test": "Do you offer free Wi-Fi?",
+        "ex": "무료 와이파이를 제공하시나요?"
     },
     {
         "key": "4",
-        "sentence": "어제 메시지를 보냈는데 답장이 왔을까?",
-        "value": "I messaged him yesterday. Did he reply to me?",
-        "pattern": "Did + 주어 + 동사원형 + ~?",
-        "mean": "[주어]가 ~를 했니?",
-        "test": "그들이 당신에게 연락했나요?",
-        "ex": "Did they get back to you?"
+        "sentence": "다행히도 화장실이 있었어.",
+        "value": "Luckily, there was a restroom.",
+        "pattern": "Luckily, + 주어 + 동사",
+        "mean": "다행히도 ~하다",
+        "test": "How did you feel when you luckily escaped?",
+        "ex": "다행히 탈출했을 때 기분이 어땠어?"
     },
     {
         "key": "5",
-        "sentence": "오늘이 벌써 일요일이라니. 시간이 너무 빠르다.",
-        "value": "Today is already Sunday. Time really flies.",
-        "pattern": "It’s already + 시간",
-        "mean": "벌써 [시간]이다",
-        "test": "시작하기에는 이미 너무 늦었나요?",
-        "ex": "Is it already too late to start?"
+        "sentence": "옷을 거꾸로 입었어요.",
+        "value": "I put my shirt on inside out.",
+        "pattern": "put + 의류 + on",
+        "mean": "옷을 입다.",
+        "test": "Why did he put his coat on so early?",
+        "ex": "그는 왜 이렇게 일찍 코트를 입었어?"
     },
     {
         "key": "6",
-        "sentence": "카페에서",
+        "sentence": "유동커피",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -55,43 +55,43 @@
     },
     {
         "key": "7",
-        "sentence": "문을 어떻게 여는 거예요?",
-        "value": "How can I open the door?",
-        "pattern": "How can I + 동사원형?",
-        "mean": "~하는 방법이 뭐예요?",
-        "test": "여기서 역까지 어떻게 가나요?",
-        "ex": "How can I get to the station from here?"
+        "sentence": "드디어 두번째 앱을 만들었어!",
+        "value": "I finally created my second app!",
+        "pattern": "finally + 동사",
+        "mean": "드디어 ~하다",
+        "test": "When will they finally make a decision?",
+        "ex": "그들은 언제 결정을 내릴까?"
     },
     {
         "key": "8",
-        "sentence": "그곳에 가는 가장 좋은 방법이 뭐예요?",
-        "value": "What’s the best way to get there?",
-        "pattern": "What’s the best way to + 동사원형?",
-        "mean": "~하는 가장 좋은 방법은 뭐예요?",
-        "test": "건강을 유지하기 위한 가장 좋은 방법은 무엇인가요?",
-        "ex": "What’s the best way to stay healthy?"
+        "sentence": "맛있는 커피를 먹고싶어.",
+        "value": "I want to have a delicious cup of coffee.",
+        "pattern": "want to have + 명사",
+        "mean": "~을 먹고/마시고 싶다",
+        "test": "Why does he want to have another drink?",
+        "ex": "그는 왜 또 한 잔 마시고 싶어 해?"
     },
     {
         "key": "9",
-        "sentence": "커피되나요? 베이글은 포장할게요.",
-        "value": "Can I get a coffee? I’ll have the bagel to go, please.",
-        "pattern": "Can I + 동사원형?",
-        "mean": "~해도 될까요?",
-        "test": "따뜻한 물 한 컵 받을 수 있을까요?",
-        "ex": "Can I get a cup of warm water, please?"
+        "sentence": "선물하려고하는데 원두 2개 포장해주세요.",
+        "value": "I'd like these as a gift. Could you wrap two bags of coffee beans, please?",
+        "pattern": "Could you + 동사 + 명사, please?",
+        "mean": "~해주시겠어요?",
+        "test": "Why could you not finish it, please explain?",
+        "ex": "왜 끝내지 못했는지 설명해 주시겠어요?"
     },
     {
         "key": "10",
-        "sentence": "베이글은 데워주세요.",
-        "value": "Could you please heat up the bagel for me?",
-        "pattern": "Could you please + 동사원형?",
-        "mean": "~해 주실 수 있나요?",
-        "test": "길을 좀 안내해 주실 수 있나요?",
-        "ex": "Could you please show me the way?"
+        "sentence": "여기에서 1시 반까지 있다가 출발해야지. (혼잣말)",
+        "value": "I guess I’ll head out around 1:30.",
+        "pattern": "I’ll head out + 시간.",
+        "mean": "나는 ~떠날 것이다.",
+        "test": "I’ll head out for my appointment by 5 PM.",
+        "ex": "나는 오후 5시까지 약속을 위해 나갈 것이다."
     },
     {
         "key": "11",
-        "sentence": "점심",
+        "sentence": null,
         "value": null,
         "pattern": null,
         "mean": null,
@@ -100,43 +100,43 @@
     },
     {
         "key": "12",
-        "sentence": "오늘 오후에 등산할 예정인데, 바람이 많이 불까 걱정이야.",
-        "value": "I’m planning to go hiking this afternoon, but I’m worried about the strong wind.",
-        "pattern": "I’m planning to + 동사원형",
-        "mean": "~할 계획이다.",
-        "test": "나중에 그 영화를 볼 계획이신가요?",
-        "ex": "Are you planning to watch the movie later?"
+        "sentence": "가격이 올랐어. 2만원 더 비싸졌는데?",
+        "value": "The price went up by 20,000 won.",
+        "pattern": "went up + by + 금액.",
+        "mean": "~ 만큼 올랐다.",
+        "test": "How much did the price go up this month?",
+        "ex": "이번 달에 가격이 얼마나 올랐나요?"
     },
     {
         "key": "13",
-        "sentence": "편의점이 어디에요?",
-        "value": "Where is the convenience store?",
-        "pattern": "Where is the + 명사?",
-        "mean": "~가 어디에요?",
-        "test": "화장실이 어디에 있나요?",
-        "ex": "Where is the restrooms?"
+        "sentence": "저녁에는 보통 운동을 해.",
+        "value": "I usually work out in the evening.",
+        "pattern": "I + usually + 동사",
+        "mean": "나는 보통 ~한다.",
+        "test": "When do you usually work out?",
+        "ex": "당신은 보통 언제 운동해?"
     },
     {
         "key": "14",
-        "sentence": "이제 슬슬 나가볼까?",
-        "value": "Should I head out now?",
-        "pattern": "Should I + 동사원형 + ~?",
-        "mean": "~해야 할까?",
-        "test": "우리가 가기 전에 날씨를 확인해야 할까요?",
-        "ex": "Should I check the weather before we go?"
+        "sentence": "프리다이빙은 물에서 하는 요가야.",
+        "value": "Freediving is like yoga in the water.",
+        "pattern": "주어 + is like + 명사.",
+        "mean": "주어는 명사와 같다.",
+        "test": "Why is yoga considered like freediving?",
+        "ex": "왜 요가는 프리다이빙과 같다고 여겨지나요?"
     },
     {
         "key": "15",
-        "sentence": "양치하는 것을 까먹었네. 다시 숙소에 돌아가야겠다.",
-        "value": "I totally forgot to brush my teeth. I guess I’ll head back to my place.",
-        "pattern": "I guess + 주어 + 동사원형.",
-        "mean": "~인 것 같아.",
-        "test": "그녀가 저녁에 우리와 함께하지 않은 이유가 뭐라고 생각해?",
-        "ex": "Why do you think I guess she didn’t join us for dinner?"
+        "sentence": null,
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
     },
     {
         "key": "16",
-        "sentence": "저녁",
+        "sentence": null,
         "value": null,
         "pattern": null,
         "mean": null,
@@ -145,16 +145,16 @@
     },
     {
         "key": "17",
-        "sentence": "연기가 후드로 빨려들어간다.",
-        "value": "The smoke is getting sucked into the hood.",
-        "pattern": "주어 + is getting + p.p + into + 명사",
-        "mean": "주어가 ~로 들어가고 있어요.",
-        "test": "오염물질이 공기 청정기를 통해 걸러지고 있어요.",
-        "ex": "The pollutants are getting filtered through the air purifier."
+        "sentence": "내가 너무 화내면서 말했나봐. 조심할 걸 그랬어.",
+        "value": null,
+        "pattern": null,
+        "mean": null,
+        "test": null,
+        "ex": null
     },
     {
         "key": "18",
-        "sentence": "이 자리에서는 고기 굽는 것도 잘 보여.",
+        "sentence": "바람부는 날 산을 올라야한다는 것을 깨달았어.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -163,7 +163,7 @@
     },
     {
         "key": "19",
-        "sentence": "연기가 엄청 많이난다. 불난거 아니야?",
+        "sentence": "안왔으면 어쩔뻔 했어. 이렇게 좋은데.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -172,16 +172,16 @@
     },
     {
         "key": "20",
-        "sentence": "샐러드 먼저 먹으세요.",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "sentence": "도착했나요?",
+        "value": "Have you arrived?",
+        "pattern": "주어 + have + 동사(p.p.)",
+        "mean": "~했나요? (현재완료)",
+        "test": "Why have you chosen this book?",
+        "ex": "왜 이 책을 선택했나요?"
     },
     {
         "key": "21",
-        "sentence": "숙소에서",
+        "sentence": null,
         "value": null,
         "pattern": null,
         "mean": null,
@@ -190,7 +190,7 @@
     },
     {
         "key": "22",
-        "sentence": "몇일동안 못씻어서 너무 찝찝해.",
+        "sentence": "씨리얼 먹으려고 집에서 스푼을 챙겨왔어.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -199,7 +199,7 @@
     },
     {
         "key": "23",
-        "sentence": "지도를 보고 찾아왔는데 여기가 맞나?",
+        "sentence": "아직도 밖에 바람이 불고 있나?",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -208,7 +208,7 @@
     },
     {
         "key": "24",
-        "sentence": "8시에 예약했습니다.",
+        "sentence": "수영하기 좋은 날이야.",
         "value": null,
         "pattern": null,
         "mean": null,
@@ -217,7 +217,7 @@
     },
     {
         "key": "25",
-        "sentence": "불이 꺼졌는데 다시 켜줄수 있나요?",
+        "sentence": "썬크림을 좀 더 발라야겠어. (혼잣말)",
         "value": null,
         "pattern": null,
         "mean": null,
