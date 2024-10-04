@@ -103,7 +103,7 @@ function Page() {
                 Example || '(문장 필요) - 2',
               ] : [SentenceOfTheDay, ExampleMeaning]}
               primaryKey={(item) => item ? (
-                <Text key={item} style={{ height: 60, display: 'flex', alignItems: 'center' }}>
+                <Text key={item} style={{ height: 50, display: 'flex', alignItems: 'center' }}>
                   {item}
                 </Text>
               ) : <div>asdf</div>}
