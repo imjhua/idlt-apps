@@ -10,7 +10,7 @@ import {
   TextInput,
 } from 'grommet'
 import { Close, Cycle } from 'grommet-icons'
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
@@ -30,7 +30,7 @@ type RunProps = {
 };
 
 function Run({ playerNames, onUserReadyChange }: RunProps) {
-  // const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const [openModal, setOpenModal] = useState<boolean>(false)
   const [speedMode, setSpeedMode] = useState<boolean>(false)
@@ -56,9 +56,11 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     }[]
   >([])
 
-  // useEffect(() => {
-  //   if(countDownStatus === COUNT_DWON_STATUS.HIDDEN)
-  // },[countDownStatus])
+  useEffect(() => {
+    if (runningStatus === RUNNING_STATUS.END){
+      setOpenModal(true)
+    }
+  }, [runningStatus])
 
   useEffect(() => {
     setCharaterNicknameMap((state) => {
@@ -226,20 +228,13 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     // 카운트다운
     setCountDownStatus(COUNT_DWON_STATUS.SHOW)
 
-    // setTimeout(() => {
-    //   setRunningStatus(STATUS.RUN)
-    // }, COUNT_DOWN * 1000)
+    if (timerRef.current) {
+      clearTimeout(timerRef.current)
+    }
 
-    // setTimeout(() => {
-    //   setRunningStatus(STATUS.END)
-
-    //   setOpenModal(() => {
-    //     setTimeout(() => {
-    //       setOpenModal(false)
-    //     }, 1500)
-    //     return true
-    //   })
-    // }, (COUNT_DOWN + 1 + defaultDuration) * 1000)
+    timerRef.current = setTimeout(() => {
+      setRunningStatus(RUNNING_STATUS.END)
+    }, (COUNT_DOWN + 1 + defaultDuration) * 1000)
   }
 
   const handleResetButtonClick = () => {
@@ -379,7 +374,6 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         duration,
                         ranking,
                       }) => {
-                        console.log('Rail')
                         return (
                           <>
                             <Rail
