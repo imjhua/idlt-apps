@@ -127,55 +127,56 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     )
 
     const sortedDurationList = [...durationList].sort((a, b) => a - b)
-
-    const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 8]
-    const playerrTiming = [18, 15, 16, 14, 12, 14, 14, 8, 9]
     const winningIndex = getRandomIntInclusive(0, count - 1)
 
-    console.log(winningTiming.reduce((data, item) => data + item, 0))
-    console.log(playerrTiming.reduce((data, item) => data + item, 0))
+    // console.log(winningTiming.reduce((data, item) => data + item, 0))
+    // console.log(playerrTiming.reduce((data, item) => data + item, 0))
 
-    console.log('wwwww'.repeat(10))
-    console.log(players[winningIndex].name)
-    console.log('='.repeat(10))
+    // console.log('wwwww'.repeat(10))
+    // console.log(players[winningIndex].name)
+    // console.log('='.repeat(10))
 
     const defaultDuration = speedMode ? DURATION_FOR_SPEEDMODE : DURATION
 
     const playerList = players.map(({ name: playerName }, index) => {
-      const randomMaxValues =
-        index === winningIndex ? winningTiming : playerrTiming
+      // const timings = [10, 6, 10, 12, 14, 12, 12, 10, 14]
+      // timings.reduce((data, item) => data + item, 0)
+      const number1 = getRandomIntInclusive(1, 10)
+      const number2 = getRandomIntInclusive(2, 6)
+      const number3 = getRandomIntInclusive(3, 10)
+      const number4 = getRandomIntInclusive(3, 12)
+      const number5 = getRandomIntInclusive(3, 14)
+      const number6 = getRandomIntInclusive(5, 12)
+      const number7 = getRandomIntInclusive(5, 12)
+      const number8 = getRandomIntInclusive(5, 10)
+      const number9 = getRandomIntInclusive(3, 14)
 
-      const number0 = getRandomIntInclusive(1, randomMaxValues[0])
-      const number1 = getRandomIntInclusive(1, randomMaxValues[1])
-      const number2 = getRandomIntInclusive(3, randomMaxValues[2])
-      const number3 = getRandomIntInclusive(2, randomMaxValues[3])
-      const number4 = getRandomIntInclusive(5, randomMaxValues[4])
-      const number5 = getRandomIntInclusive(7, randomMaxValues[5])
-      const number6 = getRandomIntInclusive(1, randomMaxValues[6])
-      const number7 = getRandomIntInclusive(1, randomMaxValues[7])
-      const number8 = getRandomIntInclusive(1, randomMaxValues[8])
-
-      const valueList = [
-        number0,
-        number0 + number1,
-        number0 + number1 + number2,
-        number0 + number1 + number2 + number3,
-        number0 + number1 + number2 + number3 + number4,
-        number0 + number1 + number2 + number3 + number4 + number5,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7,
-        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8,
+      const timings = [
+        number1, number2, number3, number4, number5, number6, number7, number8, number9
       ]
 
-      // 보정
-      const newValueList = valueList.map((value, index) => {
-        if (index >= 7 && value > 90) {
-          console.log('보정', playerName)
-          return valueList[index - 1] + getRandomIntInclusive(1, 5)
-        }
+      const totalTiming = timings.reduce((data, item) => data + item, 0)
 
-        return value
-      })
+      // 보정
+      if (totalTiming < 100){
+        const diff = 100 - totalTiming
+        const targetIndex = getRandomIntInclusive(0, 8)
+        timings[targetIndex] += diff
+      }
+
+      const valueList = [
+        0,
+         number1,
+         number1 + number2,
+         number1 + number2 + number3,
+         number1 + number2 + number3 + number4,
+         number1 + number2 + number3 + number4 + number5,
+         number1 + number2 + number3 + number4 + number5 + number6,
+         number1 + number2 + number3 + number4 + number5 + number6 + number7,
+         number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8,
+         number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8 + number9,
+         100
+      ]
 
       let duration = 0
       if (winningIndex === index) {
@@ -199,7 +200,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
       return {
         index: index + 1,
         name: playerName,
-        timings: [...newValueList, 100],
+        timings: [...valueList, 100],
         winner: winningIndex === index,
         ranking:
           winningIndex === index
@@ -225,7 +226,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
       + 1
       + defaultDuration
       + (durationList[playerList.length - 1] * (speedMode ? 0.1 : 0.2))
-      + 0.1
+      + 0.2
     ) * 1000)
   }
 
@@ -630,68 +631,39 @@ const ready = (alpha: number) => keyframes`
 `
 
 const running = (timing: number[]) => keyframes`
-  0% {
-    transform: translateX(0px) translateY(0px);
-  }
-  10% {
+  0% {    
     transform: translateX(calc(${timing[0]}%)) translateY(2px);
   }
-  20% {
+  10% {
     transform: translateX(calc(${timing[1]}%)) translateY(2px);
   }
-  30% {
+  20% {
     transform: translateX(calc(${timing[2]}%)) translateY(2px);
   }
-  40% {
+  30% {
     transform: translateX(calc(${timing[3]}%)) translateY(2px);
   }
-  50% {
+  40% {
     transform: translateX(calc(${timing[4]}%)) translateY(2px);
   }
-  60% {
+  50% {
     transform: translateX(calc(${timing[5]}%)) translateY(2px);
   }
-  70% {
+  60% {
     transform: translateX(calc(${timing[6]}%)) translateY(2px);
   }
-  80% {
+  70% {
     transform: translateX(calc(${timing[7]}%)) translateY(2px);
   }
-  90% {
+  80% {
     transform: translateX(calc(${timing[8]}%)) translateY(2px);
   }
-  100% {
+  90% {
     transform: translateX(calc(${timing[9]}%)) translateY(2px);
-    /* transform: translateX(100%) translateY(2px); */
   }
-  
-  /* 100% {
-    transform: translateX(${
-      timing[0] +
-        timing[1] +
-        timing[2] +
-        timing[3] +
-        timing[4] +
-        timing[5] +
-        timing[6] +
-        timing[7] +
-        timing[8] ===
-      100
-        ? '100%'
-        : `${String(
-            timing[0] +
-              timing[1] +
-              timing[2] +
-              timing[3] +
-              timing[4] +
-              timing[5] +
-              timing[6] +
-              timing[7] +
-              timing[8]
-          )}%`
-    })
-    translateY(0);
-  } */
+  100% {
+    transform: translateX(calc(${timing[10]}%)) translateY(2px);
+  }
 `
 
 const shake = keyframes`
