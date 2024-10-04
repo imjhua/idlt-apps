@@ -5,6 +5,7 @@ import Day0929 from './assets/0929.json'
 import Day0930 from './assets/0930.json'
 import Day1001 from './assets/1001.json'
 import Day1002 from './assets/1002.json'
+import Day1003 from './assets/1003.json'
 
 // key	SentenceOfTheDay	EnglishSentence	Pattern	PatternMeaning	Example	ExampleMeaning
 
@@ -26,4 +27,5 @@ export const SENTENCES: { [key in string]: SentencesType } = {
   Day9월30일: Day0930.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월01일: Day1001.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월02일: Day1002.filter(({ EnglishSentence }) => EnglishSentence),
+  Day10월03일: Day1003.filter(({ EnglishSentence }) => EnglishSentence),
 }
