@@ -128,22 +128,22 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
 
     const sortedDurationList = [...durationList].sort((a, b) => a - b)
 
-    const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 4]
-    const playerTiming = [18, 15, 16, 16, 12, 14, 14, 10, 12]
+    const winningTiming = [10, 12, 14, 10, 14, 12, 14, 6, 8]
+    const playerrTiming = [18, 15, 16, 14, 12, 14, 14, 8, 9]
     const winningIndex = getRandomIntInclusive(0, count - 1)
 
-    // console.log(winningTiming.reduce((data, item) => data + item, 0))
-    // console.log(playerTiming.reduce((data, item) => data + item, 0))
+    console.log(winningTiming.reduce((data, item) => data + item, 0))
+    console.log(playerrTiming.reduce((data, item) => data + item, 0))
 
-    // console.log('wwwww'.repeat(10))
-    // console.log(playerNames[winningIndex])
-    // console.log('='.repeat(10))
+    console.log('wwwww'.repeat(10))
+    console.log(players[winningIndex].name)
+    console.log('='.repeat(10))
 
     const defaultDuration = speedMode ? DURATION_FOR_SPEEDMODE : DURATION
 
     const playerList = players.map(({ name: playerName }, index) => {
       const randomMaxValues =
-        index === winningIndex ? winningTiming : playerTiming
+        index === winningIndex ? winningTiming : playerrTiming
 
       const number0 = getRandomIntInclusive(1, randomMaxValues[0])
       const number1 = getRandomIntInclusive(1, randomMaxValues[1])
@@ -163,23 +163,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
         number0 + number1 + number2 + number3 + number4,
         number0 + number1 + number2 + number3 + number4 + number5,
         number0 + number1 + number2 + number3 + number4 + number5 + number6,
-        number0 +
-          number1 +
-          number2 +
-          number3 +
-          number4 +
-          number5 +
-          number6 +
-          number7,
-        number0 +
-          number1 +
-          number2 +
-          number3 +
-          number4 +
-          number5 +
-          number6 +
-          number7 +
-          number8,
+        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7,
+        number0 + number1 + number2 + number3 + number4 + number5 + number6 + number7 + number8,
       ]
 
       // 보정
@@ -203,6 +188,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
           ).toFixed(2)
         )
       }
+
+      // console.log(duration)
 
       const removeItem = durationList[winningIndex]
       const rankingList = sortedDurationList.filter(
@@ -234,7 +221,12 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
 
     timerRef.current = setTimeout(() => {
       setRunningStatus(RUNNING_STATUS.END)
-    }, (COUNT_DOWN + 1 + defaultDuration) * 1000)
+    }, Number(COUNT_DOWN
+      + 1
+      + defaultDuration
+      + (durationList[playerList.length - 1] * (speedMode ? 0.1 : 0.2))
+      + 0.1
+    ) * 1000)
   }
 
   const handleResetButtonClick = () => {

@@ -56,7 +56,7 @@ function MainPage() {
     <Box pad="small" gap="small">
       {!isUserReady ? (
         <Box gap="medium">
-          <Text size="small">* 캐릭터를 선택하세요.</Text>
+          <Text size="small">* 참여 할 캐릭터들을 선택하세요.</Text>
           <Grid>
             {players.map((characterName) => {
               return (
