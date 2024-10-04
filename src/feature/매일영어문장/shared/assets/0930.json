@@ -1,452 +1,452 @@
 [
     {
         "key": "1",
-        "sentence": "아침에 요가를 하면서",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "아침",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "2",
-        "sentence": "둘이 같이 운동하는 모습이 보기 좋아요.",
-        "value": "They look great exercising together.",
-        "pattern": "They look + 형용사 + ~ing.",
-        "mean": "그들이 ~하는 모습이 ~해 보여요.",
-        "test": "그들이 매일 늦게까지 일해서 피곤해 보이는 이유가 뭘까?",
-        "ex": "Why do they look tired working late every day?"
+        "SentenceOfTheDay": "갑자기 비가 많이 오네. 차에서 우산을 가져올걸 그랬어.",
+        "EnglishSentence": "It's raining heavily. I wish I had brought an umbrella.",
+        "Pattern": "주어 + wish + 주어 + had + 동사(p.p.).",
+        "PatternMeaning": "~할걸 그랬어",
+        "Example": "I wish I had studied harder for the exam.",
+        "ExampleMeaning": "시험을 위해 더 열심히 공부했더라면 좋았을 텐데."
     },
     {
         "key": "3",
-        "sentence": "안한지 오래되어서 될지 모르겠어요.",
-        "value": "I'm not sure if I can still do it since it's been so long.",
-        "pattern": "I'm not sure if + 주어 + 동사원형.",
-        "mean": "~인지 잘 모르겠어요.",
-        "test": "그게 올바른 결정인지 확신이 없는 이유가 뭐죠?",
-        "ex": "What makes you unsure if it's the right decision?"
+        "SentenceOfTheDay": "나에게 이런 자유가 주어지다니!",
+        "EnglishSentence": "I can't believe I have this freedom!",
+        "Pattern": "주어 + can't believe + 주어 + 동사.",
+        "PatternMeaning": "믿기지 않아!",
+        "Example": "Do you believe that anything is possible if you try?",
+        "ExampleMeaning": "노력하면 뭐든지 가능하다고 믿어?"
     },
     {
         "key": "4",
-        "sentence": "그 자세를 한번 도전해볼게요.",
-        "value": "I’ll give that position a try.",
-        "pattern": "I’ll give + 명사 + a try.",
-        "mean": "~를 한번 해볼게요.",
-        "test": "이번 주말에 그 그림을 한번 그려볼게요.",
-        "ex": "I’ll give the painting a try this weekend."
+        "SentenceOfTheDay": "혼자 여행오길 잘했어.",
+        "EnglishSentence": "I'm happy I took this solo trip!",
+        "Pattern": "I'm happy 주어 + 동사",
+        "PatternMeaning": "나는 주어 + 동사 해서 행복해",
+        "Example": "What made you happy about your trip?",
+        "ExampleMeaning": "What made you happy about your trip?"
     },
     {
         "key": "5",
-        "sentence": "여기 문 몇시에 열어요? 계속 열려있으면 좋은데",
-        "value": "What time does it open? I hope this place is open all the time.",
-        "pattern": "What time does it + 동사원형 + ~?",
-        "mean": "~는 몇 시에 ~하나요?",
-        "test": "오늘 몇 시에 문을 닫나요?",
-        "ex": "What time does it close for the day?"
+        "SentenceOfTheDay": "날이 흐려서 한라산이 안보여. 아쉽다.",
+        "EnglishSentence": "It’s overcast, so I can’t see Hallasan. What a pity.",
+        "Pattern": "What a pity.",
+        "PatternMeaning": "아쉽다",
+        "Example": "The weather is bad for hiking today. What a pity.",
+        "ExampleMeaning": "오늘 하이킹하기에 날씨가 좋지 않다. 아쉽다."
     },
     {
         "key": "6",
-        "sentence": "전기차를 충전하면서",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "7",
-        "sentence": "이렇게 하는게 맞나? 왜 안돼지?",
-        "value": "Am I doing this right? Why isn't it working for me?",
-        "pattern": "Am I doing + 명사 + right?",
-        "mean": "~를 잘하고 있나요?",
-        "test": "내가 이 레시피를 제대로 하고 있나요?",
-        "ex": "Am I doing this recipe the right way?"
+        "SentenceOfTheDay": "다이빙 몇번했어? 몇일동안 머물렀던거야?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "8",
-        "sentence": "충전하는데 시간이 얼마나 걸렸어?",
-        "value": "How long did it take to charge?",
-        "pattern": "How long did it take to + 동사원형 + ~?",
-        "mean": "~하는 데 얼마나 걸렸니?",
-        "test": "컴퓨터를 수리하는 데 얼마나 걸렸어?",
-        "ex": "How long did it take to repair the computer?"
+        "SentenceOfTheDay": "거기 가보니까 어땠어?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "9",
-        "sentence": "충전소를 찾아다녔어. 충전소가 어디있지?",
-        "value": "I’ve been searching for a charging station. Where can I find one?",
-        "pattern": "I’ve been searching for + a + 명사.",
-        "mean": "나는 ~을 찾아다녔어.",
-        "test": "나는 친구 생일 선물을 찾아다녔어.",
-        "ex": "I’ve been searching for a gift for my friend’s birthday."
+        "SentenceOfTheDay": "파도가 너무 세서 내일 다이빙은 못하겠지? (혼잣말)",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "10",
-        "sentence": "화장실을 쓸 수 있을까요?",
-        "value": "May I use the restroom, please?",
-        "pattern": "May I + 동사원형 + ~?",
-        "mean": "~해도 될까요?",
-        "test": "여기 앉아도 될까요?",
-        "ex": "May I take a seat here?"
+        "SentenceOfTheDay": "혼자 여행하는 중이에요. 게스트하우스는 처음이에요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "11",
-        "sentence": "밖에서 바람쐬면서",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "숙소에서",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "12",
-        "sentence": "네잎클로버를 그려야겠다고 생각했다.",
-        "value": "I thought I should draw a four-leaf clover.",
-        "pattern": "I thought I should + 동사원형 + ~",
-        "mean": "~해야겠다고 생각했다.",
-        "test": "왜 더 많은 책을 읽어야 한다고 생각해?",
-        "ex": "Why do you think I should read more books?"
+        "SentenceOfTheDay": "여기 바로앞에 늦게까지하는 일식집이 있어요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "13",
-        "sentence": "같이 걸을까?",
-        "value": "How about we take a walk together?",
-        "pattern": "How about we + 동사원형 + ~?",
-        "mean": "~하는 건 어때?",
-        "test": "점심 먹는 건 어때?",
-        "ex": "How about we grab some lunch?"
+        "SentenceOfTheDay": "저녁을 일찍 드시네요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "14",
-        "sentence": "저녁은 무엇을 먹을까? 국수가 좋겠다.",
-        "value": "What do you want to have for dinner? I think noodles sound good.",
-        "pattern": "What do you want to + 동사원형 + ~?",
-        "mean": "~하고 싶니?",
-        "test": "저녁 먹으면서 뭐 이야기하고 싶어?",
-        "ex": "What do you want to talk about during dinner?"
+        "SentenceOfTheDay": "숙소에 치약이 있나요?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "15",
-        "sentence": "집에 먹을게 없으니까 씨리얼이라도 살까? 씨리얼 어때?",
-        "value": "Should we grab some cereal since we have nothing to eat at home? How does cereal sound?",
-        "pattern": "Should we + 동사원형 + ~?",
-        "mean": "~하는 게 어때?",
-        "test": "저녁으로 피자 시켜 먹는 게 어때?",
-        "ex": "Should we order some pizza for dinner?"
+        "SentenceOfTheDay": "이 노래 너무 많이 들어서 지겨워",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "16",
-        "sentence": "오후에 원격근무를 하면서",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "저녁",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "17",
-        "sentence": "배가 고파서 힘이 없다.",
-        "value": "I'm feeling weak because I'm hungry.",
-        "pattern": "I'm feeling + 형용사 + because + ~",
-        "mean": "나는 ~ 때문에 형용사이다.",
-        "test": "나는 휴가를 가기 때문에 신나.",
-        "ex": "I'm feeling excited because I'm going on vacation."
+        "SentenceOfTheDay": "바로 정면에 사장님 얼굴이 보여요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "18",
-        "sentence": "점심을 못먹었어요. 저녁을 미리 먹고 올게요.",
-        "value": "I missed lunch, so I’ll eat dinner a bit earlier.",
-        "pattern": "I missed + 명사 + so I’ll + 동사원형 + ~",
-        "mean": "나는 ~을 놓쳤으니까 ~할 거야.",
-        "test": "버스를 놓쳤으니까 대신 택시를 탈 거야.",
-        "ex": "I missed the bus, so I’ll take a taxi instead."
+        "SentenceOfTheDay": "뜨거운 국물을 다리에 쏟아서 데였어요. 다친것 같아요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "19",
-        "sentence": "밖에 날씨가 좋으니까 밖에서 일해야겠다.",
-        "value": "The weather is great, so I’m working outside.",
-        "pattern": "The weather is + 형용사 + so I’m + 동사원형 + ~",
-        "mean": "날씨가 ~하니까 나는 ~할 거야.",
-        "test": "날씨가 추우니까 재킷을 입고 있어요.",
-        "ex": "The weather is cold, so I’m wearing a jacket."
+        "SentenceOfTheDay": "가게 사장님이 추천해줬어요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "20",
-        "sentence": "문제를 고쳤어.",
-        "value": "I managed to get the issue fixed.",
-        "pattern": "I managed to + 동사원형 + the + 명사 + ~",
-        "mean": "나는 ~하는 데 성공했어.",
-        "test": "나는 어떻게 보고서를 제시간에 끝낼 수 있었지?",
-        "ex": "How did I manage to finish the report on time?"
+        "SentenceOfTheDay": "오늘은 무엇을 먹으면 좋을까? (혼잣말)",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "21",
-        "sentence": "저녁",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "22",
-        "sentence": "인테리어와 조명이 잘 어울려.",
-        "value": "The lighting complements the interior nicely.",
-        "pattern": "주어 + complements + the + 명사 + nicely.",
-        "mean": "[주어]가 ~와 잘 어울리다.",
-        "test": "그 색상이 가구와 잘 어울려요.",
-        "ex": "The color complements the furniture nicely."
+        "SentenceOfTheDay": "여기가 가는길이 맞는거야?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "23",
-        "sentence": "다른 사람도 다 하는데 나도 해야할까?",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "이 도로에는 차가 없어. 아무도 안다니나봐.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "24",
-        "sentence": "가방에 넣어 주세요.",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "차 유리탕이 자꾸만 더러워진다. 왜그러지?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "25",
-        "sentence": "시동을 안끄고 차에서 내렸지 뭐야. 내 정신좀 봐.",
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "오름중에서도 높은 편이야?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "26",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "27",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "그 산은 해발 몇미터야?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "28",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "썬크림은 왜 바르는거야?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "29",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "가방안에 있는 썬크림좀 줄래?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "30",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "내가 사는 방식이 맞다고 생각해.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "31",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "32",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "바다에 사람들이 많다고 했더니 서핑하는 사람들이군.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "33",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "화장실이 급해요",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "34",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "길을 잘못 들었네",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "35",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": "드라이브 하려고 밖에 나왔어.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "36",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "37",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "38",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "39",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "40",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "41",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "42",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "43",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "44",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "45",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "46",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "47",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "48",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "49",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     },
     {
         "key": "50",
-        "sentence": null,
-        "value": null,
-        "pattern": null,
-        "mean": null,
-        "test": null,
-        "ex": null
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
     }
 ]

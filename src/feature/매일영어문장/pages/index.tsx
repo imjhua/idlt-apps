@@ -16,7 +16,7 @@ function HomePage() {
                   key={index}
                   to={{
                     pathname: 'pattern',
-                    search: `?title=${title}`,
+                    search: `?day=${title}`,
                   }}
                 >
                   {title}

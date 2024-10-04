@@ -1,6 +1,4 @@
-import {
- Accordion, AccordionPanel, Box, Button, Card, Grid, Text
-} from 'grommet'
+import { Box, Button, Card, Grid, List, Text } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
 import { useMemo, useState } from 'react'
 
@@ -10,12 +8,13 @@ import useQueryParams from '@/shared/hooks/useQueryParams'
 import { SENTENCES, type SentencesType } from '../../shared/meta'
 
 function Page() {
-  const title = useQueryParams('title') as string
+  const day = useQueryParams('day') as string
 
   const [patternIndex, setPatternIndex] = useState<number>(0)
+  const [showExSentence, setShowExSentence] = useState<boolean>(false)
 
   const randomList = useMemo(() => {
-    const originalList = SENTENCES[title]
+    const originalList = SENTENCES[day]
 
     const randomList = originalList.reduce<SentencesType>((data) => {
         const randomNumber1 = getRandomIntInclusive(0, originalList.length - 1)
@@ -28,22 +27,29 @@ function Page() {
     )
 
     return randomList
-  }, [title])
+  }, [day])
 
-  const { sentence, value, pattern, mean, test, ex } = useMemo(() => {
+  const { SentenceOfTheDay,	EnglishSentence, Pattern, PatternMeaning, Example, ExampleMeaning } = useMemo(() => {
     return randomList[patternIndex]
   }, [patternIndex, randomList])
 
-  const handleBgClick = () => {
-    setPatternIndex((state) => {
-      if (state === randomList.length - 1) {
-        return 0
-      }
-      return state + 1
-    })
+  const handleExampleSentenceClick = () => {
+    setShowExSentence((state) => !state)
+
+    // if (showExSentence) {
+    //   setShowMeaning(false)
+    //   setPatternIndex((state) => {
+    //     if (state === randomList.length - 1) {
+    //       return 0
+    //     }
+    //     return state + 1
+    //   })
+    // }
   }
 
   const handlePreviousClick = () => {
+    setShowExSentence(false)
+
     setPatternIndex((state) => {
       if (state === 0) {
         return 0
@@ -52,6 +58,8 @@ function Page() {
     })
   }
   const handleNextClick = () => {
+    setShowExSentence(false)
+
     setPatternIndex((state) => {
       if (state === randomList.length - 1) {
         return 0
@@ -63,45 +71,50 @@ function Page() {
   return (
     <Grid
       fill
-      areas={[['pattern'], ['main'], ['footer'], ['button']]}
+      areas={[['pattern'], ['card'], ['ex'], ['button']]}
       height="full"
-      rows={['auto', 'auto', 'auto', '300px']}
+      rows={['auto', 'auto', 'auto', '150px']}
       columns={['full']}
       pad="small"
-      gap="small"
+      gap="large"
     >
       <>
         <Box gridArea="pattern" align="center" style={{ marginTop: '30px' }}>
-          <Text size="large">#{patternIndex + 1}. {mean}</Text>
+          <Text size="large">#{patternIndex + 1}. {PatternMeaning}</Text>
         </Box>
-        <Box gridArea="main" align="center" onClick={handleBgClick}>
-          <Card
-            pad="large"
-            background="white"
-            width="auto"
-            style={{ whiteSpace: 'pre', padding: '14px' }}
+        <Box gridArea="card" align="center">
+          <Box align="center">
+            <Card
+              pad="large"
+              background="white"
+              width="auto"
+              style={{ whiteSpace: 'pre', padding: '14px' }}
           >
-            <Text size="medium">{pattern}</Text>
-          </Card>
+              <Text size="medium">{Pattern}</Text>
+            </Card>
+          </Box>
         </Box>
-        {/* const { sentence, value, pattern, mean, test, ex } = useMemo(() => { */}
 
-        <Box gridArea="footer" style={{ marginTop: '30px' }}>
-          <Accordion multiple gap="small">
-            <AccordionPanel label={sentence} style={{ height: '40px' }}>
-              <Box pad="small">{value}</Box>
-            </AccordionPanel>
-            <AccordionPanel label={test} style={{ height: '40px' }}>
-              <Box pad="small">{ex}</Box>
-            </AccordionPanel>
-          </Accordion>
+        <Box gridArea="ex">
+          <Box gridArea="footer" gap="medium" pad="small">
+            <Text size="small">* 예문을 보려면 아래 영역을 터치하세요.</Text>
+            <List
+              pad="small"
+              onClick={handleExampleSentenceClick}
+              data={showExSentence ? [
+                EnglishSentence || '(문장 필요) - 1',
+                Example || '(문장 필요) - 2',
+              ] : [SentenceOfTheDay, ExampleMeaning]}
+            />
+          </Box>
         </Box>
+
         <Box gridArea="button" direction="row" justify="between">
           <Button
             pad="none"
             style={{
               height: '100%',
-              width: '100px',
+              width: '40px',
               textAlign: 'center',
             }}
             icon={<CaretPrevious />}
@@ -112,7 +125,7 @@ function Page() {
             pad="none"
             style={{
               height: '100%',
-              width: '100px',
+              width: '40px',
               textAlign: 'center',
             }}
             icon={<CaretNext />}
