@@ -1,5 +1,5 @@
 import styled from '@emotion/styled/macro'
-import { Box, Button } from 'grommet'
+import { Box, Button, Text } from 'grommet'
 import { useEffect, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
@@ -56,6 +56,7 @@ function MainPage() {
     <Box pad="small" gap="small">
       {!isUserReady ? (
         <Box gap="medium">
+          <Text size="small">* 캐릭터를 선택하세요.</Text>
           <Grid>
             {players.map((characterName) => {
               return (

@@ -14,9 +14,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import Img from '@/shared/components/Image'
+import Loading from '@/shared/components/Loading'
 import NoData from '@/shared/components/NoData'
 
-import { COUNT_DWON_STATUS, STATUS } from '../meta'
+import { COUNT_DWON_STATUS, RUNNING_STATUS } from '../meta'
 import CountDown from './CountDown'
 
 const COUNT_DOWN = 3
@@ -29,6 +30,8 @@ type RunProps = {
 };
 
 function Run({ playerNames, onUserReadyChange }: RunProps) {
+  // const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
   const [openModal, setOpenModal] = useState<boolean>(false)
   const [speedMode, setSpeedMode] = useState<boolean>(false)
   const [charaterNicknameMap, setCharaterNicknameMap] = useState<
@@ -36,9 +39,8 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
   >({})
 
   const [selectedPlayer, setSelectedPlayer] = useState<string>('')
-  const [runningStatus, setRunningStatus] = useState<STATUS>(STATUS.READY)
+  const [runningStatus, setRunningStatus] = useState<RUNNING_STATUS>(RUNNING_STATUS.READY)
 
-  const [countDown, setCountDown] = useState<number>(COUNT_DOWN)
   const [countDownStatus, setCountDownStatus] = useState<COUNT_DWON_STATUS>(
     COUNT_DWON_STATUS.HIDDEN
   )
@@ -54,19 +56,9 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     }[]
   >([])
 
-  useEffect(() => {
-    setCountDown(COUNT_DOWN)
-    for (let i = 1; i <= COUNT_DOWN; i++) {
-      ((i) => {
-        setTimeout(() => {
-          setCountDown(COUNT_DOWN - i)
-          if (i === COUNT_DOWN) {
-            setCountDownStatus(COUNT_DWON_STATUS.HIDDEN)
-          }
-        }, 1000 * i)
-      })(i)
-    }
-  }, [countDownStatus])
+  // useEffect(() => {
+  //   if(countDownStatus === COUNT_DWON_STATUS.HIDDEN)
+  // },[countDownStatus])
 
   useEffect(() => {
     setCharaterNicknameMap((state) => {
@@ -114,7 +106,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
   const handleGoButtonClick = () => {
     const count = players.length
 
-    if (count === 0 || runningStatus !== STATUS.READY) {
+    if (count === 0 || runningStatus !== RUNNING_STATUS.READY) {
       return
     }
 
@@ -234,24 +226,24 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     // 카운트다운
     setCountDownStatus(COUNT_DWON_STATUS.SHOW)
 
-    setTimeout(() => {
-      setRunningStatus(STATUS.RUN)
-    }, COUNT_DOWN * 1000)
+    // setTimeout(() => {
+    //   setRunningStatus(STATUS.RUN)
+    // }, COUNT_DOWN * 1000)
 
-    setTimeout(() => {
-      setRunningStatus(STATUS.END)
+    // setTimeout(() => {
+    //   setRunningStatus(STATUS.END)
 
-      setOpenModal(() => {
-        setTimeout(() => {
-          setOpenModal(false)
-        }, 1500)
-        return true
-      })
-    }, (COUNT_DOWN + 1 + defaultDuration) * 1000)
+    //   setOpenModal(() => {
+    //     setTimeout(() => {
+    //       setOpenModal(false)
+    //     }, 1500)
+    //     return true
+    //   })
+    // }, (COUNT_DOWN + 1 + defaultDuration) * 1000)
   }
 
   const handleResetButtonClick = () => {
-    setRunningStatus(STATUS.READY)
+    setRunningStatus(RUNNING_STATUS.READY)
   }
 
   const handleUserReadyButtonClick = () => {
@@ -276,12 +268,16 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
     })
   }
 
+  if (players.length === 0){
+    return <Loading />
+  }
+
   return (
     <>
       <Block>
         <Box gap="medium">
           <Box gap="medium">
-            {runningStatus === STATUS.READY ? (
+            {runningStatus === RUNNING_STATUS.READY ? (
               <>
                 <Box direction="row" gap="medium" justify="between">
                   <Box direction="row" gap="small">
@@ -293,7 +289,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         !count ||
                         openModal ||
                         !(
-                          runningStatus === STATUS.READY &&
+                          runningStatus === RUNNING_STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
                         )
                       }
@@ -308,7 +304,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         !count ||
                         openModal ||
                         !(
-                          runningStatus === STATUS.READY &&
+                          runningStatus === RUNNING_STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
                         )
                       }
@@ -322,7 +318,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         !count ||
                         openModal ||
                         !(
-                          runningStatus === STATUS.READY &&
+                          runningStatus === RUNNING_STATUS.READY &&
                           countDownStatus === COUNT_DWON_STATUS.HIDDEN
                         )
                       }
@@ -334,9 +330,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
               <Button
                 label="Re-Game"
                 onClick={handleResetButtonClick}
-                disabled={
-                  countDownStatus === COUNT_DWON_STATUS.SHOW || openModal
-                }
+                disabled={openModal}
               />
             )}
           </Box>
@@ -358,7 +352,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                     },
                     {
                       property: 'character',
-                      header: (
+                      header: runningStatus === RUNNING_STATUS.READY && (
                         <Box align="end">
                           <CheckBox
                             checked={speedMode}
@@ -370,7 +364,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                               !count ||
                               openModal ||
                               !(
-                                runningStatus === STATUS.READY &&
+                                runningStatus === RUNNING_STATUS.READY &&
                                 countDownStatus === COUNT_DWON_STATUS.HIDDEN
                               )
                             }
@@ -385,22 +379,25 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         duration,
                         ranking,
                       }) => {
+                        console.log('Rail')
                         return (
                           <>
                             <Rail
                               alpha={
-                                getRandomIntInclusive(1, 2) % 2 === 0 ? 1 : -1
+                                countDownStatus === COUNT_DWON_STATUS.SHOW
+                                ? 0
+                                : (getRandomIntInclusive(1, 2) % 2 === 0 ? 1 : -1)
                               }
                               delay={0}
                               duration={duration}
-                              active={runningStatus !== STATUS.READY}
+                              active={runningStatus !== RUNNING_STATUS.READY}
                               timing={timings}
                               winner={winner}
                               speedMode={speedMode}
                             >
                               <Ranking
                                 delay={duration}
-                                active={runningStatus !== STATUS.READY}
+                                active={runningStatus !== RUNNING_STATUS.READY}
                               >
                                 {ranking}
                               </Ranking>
@@ -410,13 +407,13 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                                 src={`/images/animal/${String(character)}.png`}
                                 alt={character}
                                 onClick={() => {
-                                  if (countDownStatus === COUNT_DWON_STATUS.SHOW || runningStatus === STATUS.RUN){
+                                  if (countDownStatus === COUNT_DWON_STATUS.SHOW || runningStatus === RUNNING_STATUS.RUN){
                                     return
                                   }
                                   handleCharacterButtonClick(character)
                                 }}
                               />
-                              {runningStatus === STATUS.READY &&
+                              {runningStatus === RUNNING_STATUS.READY &&
                                 charaterNicknameMap[character] !==
                                   character && !openModal && (
                                   <Text size="small" style={{ marginLeft: 4 }}>
@@ -444,7 +441,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                 }}
               >
                 <>
-                  {runningStatus === STATUS.READY && (
+                  {runningStatus === RUNNING_STATUS.READY && (
                   <>
                     <Box pad="medium" align="center">
                       <Img
@@ -470,7 +467,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                     </>
                 )}
 
-                  {runningStatus === STATUS.END && (
+                  {runningStatus === RUNNING_STATUS.END && (
                   <>
                     <Box direction="row" justify="end">
                       <Button
@@ -499,7 +496,15 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
         </Box>
       </Block>
       {countDownStatus === COUNT_DWON_STATUS.SHOW && (
-        <CountDown count={countDown} />
+        <CountDown
+          count={COUNT_DOWN}
+          onCountDownStatus={(countDownStatus) => {
+            setCountDownStatus(countDownStatus)
+          }}
+          onRunningStatus={(runningStatus) => {
+            setRunningStatus(runningStatus)
+          }}
+        />
       )}
     </>
   )

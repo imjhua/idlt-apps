@@ -1,10 +1,10 @@
 import { Box, Form, FormField, TextInput } from 'grommet'
 
-import { STATUS } from '../meta'
+import { RUNNING_STATUS } from '../meta'
 
 const MAX_MEMBER = 12
 type SettingProps = {
-  status: STATUS | undefined;
+  status: RUNNING_STATUS | undefined;
   count: number;
   onChange: (count: number) => void;
 }
@@ -42,7 +42,7 @@ function Setting({ status, count, onChange }: SettingProps) {
             type="tel"
             min={1}
             max={12}
-            disabled={status === STATUS.RUN}
+            disabled={status === RUNNING_STATUS.RUN}
           />
         </FormField>
       </Form>

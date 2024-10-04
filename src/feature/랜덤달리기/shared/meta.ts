@@ -5,7 +5,7 @@ export enum COUNT_DWON_STATUS {
   HIDDEN = 1,
 }
 
-export enum STATUS {
+export enum RUNNING_STATUS {
   READY = 0,
   RUN = 1,
   END = 2,

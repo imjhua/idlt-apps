@@ -1,10 +1,34 @@
 
 import styled from '@emotion/styled/macro'
+import { useEffect, useState } from 'react'
 
-type CountDownProps = { count: number }
-function CountDown({ count }: CountDownProps){
-  return count ? (
-    <Text>{count}</Text>
+import { COUNT_DWON_STATUS, RUNNING_STATUS } from '../meta'
+
+type CountDownProps = {
+  count: number;
+  onCountDownStatus: (status: COUNT_DWON_STATUS) => void;
+  onRunningStatus: (status: RUNNING_STATUS) => void;
+}
+function CountDown({ count, onCountDownStatus, onRunningStatus }: CountDownProps){
+  const [countDown, setCountDown] = useState<number>(count)
+
+  useEffect(() => {
+    setCountDown(count)
+    for (let i = 1; i <= count; i++) {
+      ((i) => {
+        setTimeout(() => {
+          setCountDown(count - i)
+          if (i === count) {
+            onCountDownStatus(COUNT_DWON_STATUS.HIDDEN)
+            onRunningStatus(RUNNING_STATUS.RUN)
+          }
+        }, 1000 * i)
+      })(i)
+    }
+  }, [count, onCountDownStatus, onRunningStatus])
+
+  return countDown ? (
+    <Text>{countDown}</Text>
   ) : null
 }
 
