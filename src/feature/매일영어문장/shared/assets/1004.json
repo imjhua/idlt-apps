@@ -1,0 +1,452 @@
+[
+    {
+        "key": "1",
+        "SentenceOfTheDay": "아침에",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "2",
+        "SentenceOfTheDay": "일어나야하는데 도저히 못일어나겠어.",
+        "EnglishSentence": "I need to get up, but I just can't seem to do it right now.",
+        "Pattern": "can't seem to + 동사원형",
+        "PatternMeaning": "~할 수 없는 것 같다",
+        "Example": "I can't seem to focus on my work today.",
+        "ExampleMeaning": "오늘 일에 집중할 수 없는 것 같아."
+    },
+    {
+        "key": "3",
+        "SentenceOfTheDay": "어제 귀찮아서 운동을 안했어.",
+        "EnglishSentence": "I skipped my workout yesterday because I felt lazy.",
+        "Pattern": "skipped + 명사 + because + 주어 + felt + 형용사",
+        "PatternMeaning": "~해서 ~를 건너뛰었다",
+        "Example": "He skipped the meeting because he felt sick.",
+        "ExampleMeaning": "그는 아파서 회의를 건너뛰었어."
+    },
+    {
+        "key": "4",
+        "SentenceOfTheDay": "잠깐 나갔다올게.",
+        "EnglishSentence": "I'm stepping out for a bit.",
+        "Pattern": "stepping out for + 시간 표현",
+        "PatternMeaning": "~ 동안 잠깐 나가다",
+        "Example": "When will you step out for a bit?",
+        "ExampleMeaning": "언제 잠깐 나갈꺼야?"
+    },
+    {
+        "key": "5",
+        "SentenceOfTheDay": "감기에 걸렸나봐.",
+        "EnglishSentence": "I might have caught a cold.",
+        "Pattern": "might have + p.p.",
+        "PatternMeaning": "~했을지도 몰라",
+        "Example": "They might have left early.",
+        "ExampleMeaning": "그들은 일찍 떠났을지도 몰라."
+    },
+    {
+        "key": "6",
+        "SentenceOfTheDay": "스카에서",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "7",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "8",
+        "SentenceOfTheDay": "벌써 점심시간이 끝나간다니.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "9",
+        "SentenceOfTheDay": "이제 슬슬 일을 시작해볼까?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "10",
+        "SentenceOfTheDay": "3시에 스터디가 있어요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "11",
+        "SentenceOfTheDay": "일하는 중에",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "12",
+        "SentenceOfTheDay": "제 질문이 어려운가요?",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "13",
+        "SentenceOfTheDay": "적응만 잘하면 되는 줄 알았어요.",
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "14",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "15",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "16",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "17",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "18",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "19",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "20",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "21",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "22",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "23",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "24",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "25",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "26",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "27",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "28",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "29",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "30",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "31",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "32",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "33",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "34",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "35",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "36",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "37",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "38",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "39",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "40",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "41",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "42",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "43",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "44",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "45",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "46",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "47",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "48",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "49",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    },
+    {
+        "key": "50",
+        "SentenceOfTheDay": null,
+        "EnglishSentence": null,
+        "Pattern": null,
+        "PatternMeaning": null,
+        "Example": null,
+        "ExampleMeaning": null
+    }
+]
