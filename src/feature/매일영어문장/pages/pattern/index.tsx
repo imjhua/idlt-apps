@@ -29,22 +29,19 @@ function Page() {
     return randomList
   }, [day])
 
-  const { SentenceOfTheDay,	EnglishSentence, Pattern, PatternMeaning, Example, ExampleMeaning } = useMemo(() => {
-    return randomList[patternIndex]
+  const {
+    SentenceOfTheDay = '하늘에 별이 엄청 많다.',
+    EnglishSentence = 'The sky is full of stars.',
+    Pattern = '주어 + is/are + 형용사',
+    PatternMeaning = '주어는 형용사다.',
+    Example = 'You are beautiful',
+    ExampleMeaning = '너는 아름다워',
+} = useMemo(() => {
+    return randomList[patternIndex] || {}
   }, [patternIndex, randomList])
 
   const handleExampleSentenceClick = () => {
     setShowExSentence((state) => !state)
-
-    // if (showExSentence) {
-    //   setShowMeaning(false)
-    //   setPatternIndex((state) => {
-    //     if (state === randomList.length - 1) {
-    //       return 0
-    //     }
-    //     return state + 1
-    //   })
-    // }
   }
 
   const handlePreviousClick = () => {
@@ -76,7 +73,7 @@ function Page() {
       rows={['auto', 'auto', 'auto', '150px']}
       columns={['full']}
       pad="small"
-      gap="large"
+      gap="medium"
     >
       <>
         <Box gridArea="pattern" align="center" style={{ marginTop: '30px' }}>
@@ -97,7 +94,7 @@ function Page() {
 
         <Box gridArea="ex">
           <Box gridArea="footer" gap="medium" pad="small">
-            <Text size="small">* 예문을 보려면 아래 영역을 터치하세요.</Text>
+            <Text size="small" style={{ marginTop: 20 }}>* 예문을 보려면 아래 영역을 터치하세요.</Text>
             <List
               pad="small"
               onClick={handleExampleSentenceClick}
@@ -105,6 +102,11 @@ function Page() {
                 EnglishSentence || '(문장 필요) - 1',
                 Example || '(문장 필요) - 2',
               ] : [SentenceOfTheDay, ExampleMeaning]}
+              primaryKey={(item) => item ? (
+                <Text key={item} style={{ height: 60, display: 'flex', alignItems: 'center' }}>
+                  {item}
+                </Text>
+              ) : <div>asdf</div>}
             />
           </Box>
         </Box>
