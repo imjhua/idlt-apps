@@ -1,7 +1,7 @@
 [
     {
         "key": "1",
-        "SentenceOfTheDay": "아침",
+        "SentenceOfTheDay": "아침에 일어나서",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -10,43 +10,43 @@
     },
     {
         "key": "2",
-        "SentenceOfTheDay": "갑자기 비가 많이 오네. 차에서 우산을 가져올걸 그랬어.",
-        "EnglishSentence": "It's raining heavily. I wish I had brought an umbrella.",
-        "Pattern": "주어 + wish + 주어 + had + 동사(p.p.).",
-        "PatternMeaning": "~할걸 그랬어",
-        "Example": "I wish I had studied harder for the exam.",
-        "ExampleMeaning": "시험을 위해 더 열심히 공부했더라면 좋았을 텐데."
+        "SentenceOfTheDay": "어제밤부터 지금까지 아직도 바람이 많이 분다.",
+        "EnglishSentence": "It has still been windy since last night.",
+        "Pattern": "It has been + 형용사 + since + 시간",
+        "PatternMeaning": "[시간]부터 지금까지 ~했다",
+        "Example": "Has it been cloudy since the weekend?",
+        "ExampleMeaning": "주말 이후로 흐린 날씨가 계속되고 있나요?"
     },
     {
         "key": "3",
-        "SentenceOfTheDay": "나에게 이런 자유가 주어지다니!",
-        "EnglishSentence": "I can't believe I have this freedom!",
-        "Pattern": "주어 + can't believe + 주어 + 동사.",
-        "PatternMeaning": "믿기지 않아!",
-        "Example": "Do you believe that anything is possible if you try?",
-        "ExampleMeaning": "노력하면 뭐든지 가능하다고 믿어?"
+        "SentenceOfTheDay": "내 생각에 오늘 바람이 너무 많이 불어서 일정에 차질이 생기겠어.",
+        "EnglishSentence": "I think the wind is really strong today, and it might ruin my plans.",
+        "Pattern": "주어 + might + 동사원형",
+        "PatternMeaning": "[주어]가 ~할지도 모른다",
+        "Example": "Do you think it might rain later?",
+        "ExampleMeaning": "나중에 비가 올 것 같다고 생각하나요?"
     },
     {
         "key": "4",
-        "SentenceOfTheDay": "혼자 여행오길 잘했어.",
-        "EnglishSentence": "I'm happy I took this solo trip!",
-        "Pattern": "I'm happy 주어 + 동사",
-        "PatternMeaning": "나는 주어 + 동사 해서 행복해",
-        "Example": "What made you happy about your trip?",
-        "ExampleMeaning": "여행에서 무엇이 제일 좋았니?"
+        "SentenceOfTheDay": "어제 메시지를 보냈는데 답장이 왔을까?",
+        "EnglishSentence": "I messaged him yesterday. Did he reply to me?",
+        "Pattern": "Did + 주어 + 동사원형 + ~?",
+        "PatternMeaning": "[주어]가 ~를 했니?",
+        "Example": "Did they get back to you?",
+        "ExampleMeaning": "그들이 당신에게 연락했나요?"
     },
     {
         "key": "5",
-        "SentenceOfTheDay": "날이 흐려서 한라산이 안보여. 아쉽다.",
-        "EnglishSentence": "It’s overcast, so I can’t see Hallasan. What a pity.",
-        "Pattern": "What a pity.",
-        "PatternMeaning": "아쉽다",
-        "Example": "The weather is bad for hiking today. What a pity.",
-        "ExampleMeaning": "오늘 하이킹하기에 날씨가 좋지 않다. 아쉽다."
+        "SentenceOfTheDay": "오늘이 벌써 일요일이라니. 시간이 너무 빠르다.",
+        "EnglishSentence": "Today is already Sunday. Time really flies.",
+        "Pattern": "It’s already + 시간",
+        "PatternMeaning": "벌써 [시간]이다",
+        "Example": "Is it already too late to start?",
+        "ExampleMeaning": "시작하기에는 이미 너무 늦었나요?"
     },
     {
         "key": "6",
-        "SentenceOfTheDay": null,
+        "SentenceOfTheDay": "카페에서",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -55,43 +55,43 @@
     },
     {
         "key": "7",
-        "SentenceOfTheDay": "다이빙 몇번했어? 몇일동안 머물렀던거야?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "문을 어떻게 여는 거예요?",
+        "EnglishSentence": "How can I open the door?",
+        "Pattern": "How can I + 동사원형?",
+        "PatternMeaning": "~하는 방법이 뭐예요?",
+        "Example": "How can I get to the station from here?",
+        "ExampleMeaning": "여기서 역까지 어떻게 가나요?"
     },
     {
         "key": "8",
-        "SentenceOfTheDay": "거기 가보니까 어땠어?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "그곳에 가는 가장 좋은 방법이 뭐예요?",
+        "EnglishSentence": "What’s the best way to get there?",
+        "Pattern": "What’s the best way to + 동사원형?",
+        "PatternMeaning": "~하는 가장 좋은 방법은 뭐예요?",
+        "Example": "What’s the best way to stay healthy?",
+        "ExampleMeaning": "건강을 유지하기 위한 가장 좋은 방법은 무엇인가요?"
     },
     {
         "key": "9",
-        "SentenceOfTheDay": "파도가 너무 세서 내일 다이빙은 못하겠지? (혼잣말)",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "커피되나요? 베이글은 포장할게요.",
+        "EnglishSentence": "Can I get a coffee? I’ll have the bagel to go, please.",
+        "Pattern": "Can I + 동사원형?",
+        "PatternMeaning": "~해도 될까요?",
+        "Example": "Can I get a cup of warm water, please?",
+        "ExampleMeaning": "따뜻한 물 한 컵 받을 수 있을까요?"
     },
     {
         "key": "10",
-        "SentenceOfTheDay": "혼자 여행하는 중이에요. 게스트하우스는 처음이에요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "베이글은 데워주세요.",
+        "EnglishSentence": "Could you please heat up the bagel for me?",
+        "Pattern": "Could you please + 동사원형?",
+        "PatternMeaning": "~해 주실 수 있나요?",
+        "Example": "Could you please show me the way?",
+        "ExampleMeaning": "길을 좀 안내해 주실 수 있나요?"
     },
     {
         "key": "11",
-        "SentenceOfTheDay": "숙소에서",
+        "SentenceOfTheDay": "점심",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -100,39 +100,39 @@
     },
     {
         "key": "12",
-        "SentenceOfTheDay": "여기 바로앞에 늦게까지하는 일식집이 있어요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "오늘 오후에 등산할 예정인데, 바람이 많이 불까 걱정이야.",
+        "EnglishSentence": "I’m planning to go hiking this afternoon, but I’m worried about the strong wind.",
+        "Pattern": "I’m planning to + 동사원형",
+        "PatternMeaning": "~할 계획이다.",
+        "Example": "Are you planning to watch the movie later?",
+        "ExampleMeaning": "나중에 그 영화를 볼 계획이신가요?"
     },
     {
         "key": "13",
-        "SentenceOfTheDay": "저녁을 일찍 드시네요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "편의점이 어디에요?",
+        "EnglishSentence": "Where is the convenience store?",
+        "Pattern": "Where is the + 명사?",
+        "PatternMeaning": "~가 어디에요?",
+        "Example": "Where is the restrooms?",
+        "ExampleMeaning": "화장실이 어디에 있나요?"
     },
     {
         "key": "14",
-        "SentenceOfTheDay": "숙소에 치약이 있나요?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "이제 슬슬 나가볼까?",
+        "EnglishSentence": "Should I head out now?",
+        "Pattern": "Should I + 동사원형 + ~?",
+        "PatternMeaning": "~해야 할까?",
+        "Example": "Should I check the weather before we go?",
+        "ExampleMeaning": "우리가 가기 전에 날씨를 확인해야 할까요?"
     },
     {
         "key": "15",
-        "SentenceOfTheDay": "이 노래 너무 많이 들어서 지겨워",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "양치하는 것을 까먹었네. 다시 숙소에 돌아가야겠다.",
+        "EnglishSentence": "I totally forgot to brush my teeth. I guess I’ll head back to my place.",
+        "Pattern": "I guess + 주어 + 동사원형.",
+        "PatternMeaning": "~인 것 같아.",
+        "Example": "Why do you think I guess she didn’t join us for dinner?",
+        "ExampleMeaning": "그녀가 저녁에 우리와 함께하지 않은 이유가 뭐라고 생각해?"
     },
     {
         "key": "16",
@@ -145,16 +145,16 @@
     },
     {
         "key": "17",
-        "SentenceOfTheDay": "바로 정면에 사장님 얼굴이 보여요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "연기가 후드로 빨려들어간다.",
+        "EnglishSentence": "The smoke is getting sucked into the hood.",
+        "Pattern": "주어 + is getting + p.p + into + 명사",
+        "PatternMeaning": "주어가 ~로 들어가고 있어요.",
+        "Example": "The pollutants are getting filtered through the air purifier.",
+        "ExampleMeaning": "오염물질이 공기 청정기를 통해 걸러지고 있어요."
     },
     {
         "key": "18",
-        "SentenceOfTheDay": "뜨거운 국물을 다리에 쏟아서 데였어요. 다친것 같아요.",
+        "SentenceOfTheDay": "이 자리에서는 고기 굽는 것도 잘 보여.",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -163,7 +163,7 @@
     },
     {
         "key": "19",
-        "SentenceOfTheDay": "가게 사장님이 추천해줬어요.",
+        "SentenceOfTheDay": "연기가 엄청 많이난다. 불난거 아니야?",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -172,7 +172,7 @@
     },
     {
         "key": "20",
-        "SentenceOfTheDay": "오늘은 무엇을 먹으면 좋을까? (혼잣말)",
+        "SentenceOfTheDay": "샐러드 먼저 먹으세요.",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -181,7 +181,7 @@
     },
     {
         "key": "21",
-        "SentenceOfTheDay": null,
+        "SentenceOfTheDay": "숙소에서",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -190,7 +190,7 @@
     },
     {
         "key": "22",
-        "SentenceOfTheDay": "여기가 가는길이 맞는거야?",
+        "SentenceOfTheDay": "몇일동안 못씻어서 너무 찝찝해.",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -199,7 +199,7 @@
     },
     {
         "key": "23",
-        "SentenceOfTheDay": "이 도로에는 차가 없어. 아무도 안다니나봐.",
+        "SentenceOfTheDay": "지도를 보고 찾아왔는데 여기가 맞나?",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -208,7 +208,7 @@
     },
     {
         "key": "24",
-        "SentenceOfTheDay": "차 유리탕이 자꾸만 더러워진다. 왜그러지?",
+        "SentenceOfTheDay": "8시에 예약했습니다.",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -217,7 +217,7 @@
     },
     {
         "key": "25",
-        "SentenceOfTheDay": "오름중에서도 높은 편이야?",
+        "SentenceOfTheDay": "불이 꺼졌는데 다시 켜줄수 있나요?",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -235,7 +235,7 @@
     },
     {
         "key": "27",
-        "SentenceOfTheDay": "그 산은 해발 몇미터야?",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -244,7 +244,7 @@
     },
     {
         "key": "28",
-        "SentenceOfTheDay": "썬크림은 왜 바르는거야?",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -253,7 +253,7 @@
     },
     {
         "key": "29",
-        "SentenceOfTheDay": "가방안에 있는 썬크림좀 줄래?",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -262,7 +262,7 @@
     },
     {
         "key": "30",
-        "SentenceOfTheDay": "내가 사는 방식이 맞다고 생각해.",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -280,7 +280,7 @@
     },
     {
         "key": "32",
-        "SentenceOfTheDay": "바다에 사람들이 많다고 했더니 서핑하는 사람들이군.",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -289,7 +289,7 @@
     },
     {
         "key": "33",
-        "SentenceOfTheDay": "화장실이 급해요",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -298,7 +298,7 @@
     },
     {
         "key": "34",
-        "SentenceOfTheDay": "길을 잘못 들었네",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -307,7 +307,7 @@
     },
     {
         "key": "35",
-        "SentenceOfTheDay": "드라이브 하려고 밖에 나왔어.",
+        "SentenceOfTheDay": null,
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
