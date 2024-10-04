@@ -1,6 +1,6 @@
 import { Box, Button, Card, Grid, List, Text } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
-import { useMemo, useState } from 'react'
+import { Fragment, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import useQueryParams from '@/shared/hooks/useQueryParams'
@@ -30,6 +30,7 @@ function Page() {
   }, [day])
 
   const {
+    key,
     SentenceOfTheDay = '하늘에 별이 엄청 많다.',
     EnglishSentence = 'The sky is full of stars.',
     Pattern = '주어 + is/are + 형용사',
@@ -39,6 +40,8 @@ function Page() {
 } = useMemo(() => {
     return randomList[patternIndex] || {}
   }, [patternIndex, randomList])
+
+  console.log('key: ', key)
 
   const handleExampleSentenceClick = () => {
     setShowExSentence((state) => !state)
@@ -77,7 +80,7 @@ function Page() {
     >
       <>
         <Box gridArea="pattern" align="center" style={{ marginTop: '30px' }}>
-          <Text size="large">#{patternIndex + 1}. {PatternMeaning}</Text>
+          <Text size="large">#{patternIndex + 1}. {PatternMeaning!.replace(/[$.]/, '')}</Text>
         </Box>
         <Box gridArea="card" align="center">
           <Box align="center">
@@ -85,9 +88,9 @@ function Page() {
               pad="large"
               background="white"
               width="auto"
-              style={{ whiteSpace: 'pre', padding: '14px' }}
+              style={{ whiteSpace: 'pre', padding: '14px', overflow: 'scroll' }}
           >
-              <Text size="medium">{Pattern}</Text>
+              <Text size="medium">{Pattern!.replace(/[$.]/, '')}</Text>
             </Card>
           </Box>
         </Box>
@@ -98,15 +101,14 @@ function Page() {
             <List
               pad="small"
               onClick={handleExampleSentenceClick}
-              data={showExSentence ? [
-                EnglishSentence || '(문장 필요) - 1',
-                Example || '(문장 필요) - 2',
-              ] : [SentenceOfTheDay, ExampleMeaning]}
+              data={!showExSentence
+                ? [SentenceOfTheDay, ExampleMeaning]
+                : [EnglishSentence, Example]}
               primaryKey={(item) => item ? (
                 <Text key={item} style={{ height: 50, display: 'flex', alignItems: 'center' }}>
                   {item}
                 </Text>
-              ) : <div>asdf</div>}
+              ) : <Fragment key="item"></Fragment>}
             />
           </Box>
         </Box>

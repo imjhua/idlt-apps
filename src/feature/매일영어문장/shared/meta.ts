@@ -22,7 +22,7 @@ type SentenceType = {
 }
 export type SentencesType = SentenceType[]
 
-export const SENTENCES: { [key in string]: SentencesType } = {
+export const SENTENCES: { [key in string]: Required<SentenceType>[] } = {
   이것저것: etc.filter(({ EnglishSentence }) => EnglishSentence),
   Day9월27일: Day0927.filter(({ EnglishSentence }) => EnglishSentence),
   Day9월28일: Day0928.filter(({ EnglishSentence }) => EnglishSentence),
