@@ -11,38 +11,38 @@
     {
         "key": "2",
         "SentenceOfTheDay": "갑자기 차가 튀어나와서 놀랬어.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "I was startled when a car suddenly appeared.",
+        "Pattern": "주어 + was + startled + when + 주어 + 동사",
+        "PatternMeaning": "~할 때 깜짝 놀랐다.",
+        "Example": "I was startled when my phone rang",
+        "ExampleMeaning": "전화가 울려서 깜짝 놀랐어요."
     },
     {
         "key": "3",
         "SentenceOfTheDay": "요가한지는 3년정도 되었어요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "I’ve been practicing yoga for about 3 years now.",
+        "Pattern": "주어 + have been + 동사-ing + for + 시간",
+        "PatternMeaning": "~한 지 ~동안 되어왔다.",
+        "Example": "They have been traveling together for several months.",
+        "ExampleMeaning": "그들은 몇 달 동안 함께 여행하고 있어요."
     },
     {
         "key": "4",
-        "SentenceOfTheDay": "예전에 부진선생님에게 요가를 배웠어요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "예전에 선생님에게 요가를 배웠어요.",
+        "EnglishSentence": "I learned yoga from a teacher a few years ago.",
+        "Pattern": "I learned + 명사 + from + 주어",
+        "PatternMeaning": "~에게서 배웠다.",
+        "Example": "Where did you learn to dance?",
+        "ExampleMeaning": "어디에서 춤을 배웠나요?"
     },
     {
         "key": "5",
         "SentenceOfTheDay": "혼자 여행 왔어요?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Are you traveling alone?",
+        "Pattern": "alone",
+        "PatternMeaning": "혼자",
+        "Example": "When did you start traveling alone?",
+        "ExampleMeaning": "언제부터 혼자 여행하기 시작했나요?"
     },
     {
         "key": "6",
@@ -56,38 +56,38 @@
     {
         "key": "7",
         "SentenceOfTheDay": "예전에는 왜 그런게 재미있었을까?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Why did I think that was fun back then?",
+        "Pattern": "Why did I believe that?",
+        "PatternMeaning": "왜 나는 그것을 믿었을까?",
+        "Example": "Why did I believe that experience was valuable?",
+        "ExampleMeaning": "왜 나는 그 경험이 소중하다고 믿었을까?"
     },
     {
         "key": "8",
         "SentenceOfTheDay": "나도 20대 때는 그랬었지.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "I used to be like that in my 20s.",
+        "Pattern": "I used to + 동사",
+        "PatternMeaning": "나는 ~하곤 했다.",
+        "Example": "I used to enjoy staying up late.",
+        "ExampleMeaning": "나는 늦게까지 깨어 있는 것을 즐기곤 했다."
     },
     {
         "key": "9",
         "SentenceOfTheDay": "다들 나가고 혼자 방에 있으니까 조용하고 좋다.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "I enjoy the quietness of being alone in the room since they went outside.",
+        "Pattern": "I enjoy + 명사",
+        "PatternMeaning": "나는 ~를 즐긴다.",
+        "Example": "I enjoy the beauty of nature.",
+        "ExampleMeaning": "나는 자연의 아름다움을 즐긴다."
     },
     {
         "key": "10",
         "SentenceOfTheDay": "요즘 젊은이들은 이렇게 노는구나. (혼잣말)",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "This is how young people have fun these days.",
+        "Pattern": "This is how + 주어 + 동사",
+        "PatternMeaning": "~하는 방법이다.",
+        "Example": "This is how I study for exams.",
+        "ExampleMeaning": "이것은 내가 시험 공부를 하는 방법이다."
     },
     {
         "key": "11",
@@ -101,38 +101,38 @@
     {
         "key": "12",
         "SentenceOfTheDay": "이게 무슨 냄새야?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "What is that smell?",
+        "Pattern": "What is + 명사?",
+        "PatternMeaning": "무엇인가요?",
+        "Example": "What is that noise?",
+        "ExampleMeaning": "그게 무슨 소리지?"
     },
     {
         "key": "13",
         "SentenceOfTheDay": "물을 가지고 입장하면 안돼요. 보관함에 보관하세요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "You can’t bring water in. Please keep it in the locker.",
+        "Pattern": "You can’t + 동사 + 명사",
+        "PatternMeaning": "~할수 없어요.",
+        "Example": "You can't enter without a ticket.",
+        "ExampleMeaning": "티켓 없이 입장할 수 없습니다."
     },
     {
         "key": "14",
         "SentenceOfTheDay": "어디에 들렸다가면 좋을까?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Where should I stop by?",
+        "Pattern": "Where should I + 동사",
+        "PatternMeaning": "~해야 할까?",
+        "Example": "Where should I go for lunch?",
+        "ExampleMeaning": "점심 먹으러 어디로 가야 할까?"
     },
     {
         "key": "15",
-        "SentenceOfTheDay": "시간이 남았는데 어디 들릴데가 없나?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "시간이 남았다.",
+        "EnglishSentence": "I still have some time.",
+        "Pattern": "I have + 명사",
+        "PatternMeaning": "~를 가지고 있다.",
+        "Example": "I have a friend coming over.",
+        "ExampleMeaning": "내 친구가 올 예정이다."
     },
     {
         "key": "16",
@@ -146,38 +146,38 @@
     {
         "key": "17",
         "SentenceOfTheDay": "모두 확인되었습니다. 이제 가셔도 됩니다.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Everything is checked. You can go now.",
+        "Pattern": "You can go now.",
+        "PatternMeaning": "이제 가셔도 됩니다.",
+        "Example": "Can I go now?",
+        "ExampleMeaning": "이제 가도 되나요?"
     },
     {
         "key": "18",
         "SentenceOfTheDay": "셔틀버스를 타세요. 이제 곧 출발합니다.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Take the shuttle bus. It will depart soon.",
+        "Pattern": "Take + 교통편",
+        "PatternMeaning": "교통편을 타세요",
+        "Example": "Take the train to downtown.",
+        "ExampleMeaning": "도심으로 가는 기차를 타세요."
     },
     {
         "key": "19",
         "SentenceOfTheDay": "잠깐만요. 지금 가고 있어요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Just a moment. I'm on my way.",
+        "Pattern": "on my way.",
+        "PatternMeaning": "가고 있어요",
+        "Example": "Is she on her way to the party?",
+        "ExampleMeaning": "그녀는 파티로 가고 있나요?"
     },
     {
         "key": "20",
         "SentenceOfTheDay": "쓰레기를 버리고 싶은데 어디에 버려야하나요?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "I want to throw away this trash. Where should I put it?",
+        "Pattern": "Where should I + 동사 + 명사?",
+        "PatternMeaning": "어디에서 해야 하나요?",
+        "Example": "Where should I park my car?",
+        "ExampleMeaning": "내 차를 어디에 주차해야 하나요?"
     },
     {
         "key": "21",
@@ -191,38 +191,38 @@
     {
         "key": "22",
         "SentenceOfTheDay": "잠깐 짐을 봐주시겠어요? 화장실을 빨리 다녀올게요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Could you watch my baggage for a moment? I’ll be right back from the restroom.",
+        "Pattern": "I’ll be right back",
+        "PatternMeaning": "금방 돌아올게요",
+        "Example": "I’ll grab my jacket and be right back.",
+        "ExampleMeaning": "내 재킷을 가져오고 금방 돌아올게요."
     },
     {
         "key": "23",
         "SentenceOfTheDay": "여기 안쪽으로 줄을 서주세요.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Please line up inside.",
+        "Pattern": "line up",
+        "PatternMeaning": "줄을 서다",
+        "Example": "Please line up at the entrance.",
+        "ExampleMeaning": "입구에서 줄 서 주세요."
     },
     {
         "key": "24",
         "SentenceOfTheDay": "교통약자 전용 줄입니다.",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "This line is for people with disabilities.",
+        "Pattern": "This line is for + 명사",
+        "PatternMeaning": "이 줄은 ~를 위한 것입니다.",
+        "Example": "This line is for everyone.",
+        "ExampleMeaning": "이 줄은 모든 사람을 위한 것입니다."
     },
     {
         "key": "25",
         "SentenceOfTheDay": "수화물 무게를 재볼 수 있을까요?",
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "EnglishSentence": "Can I check the weight of my baggage?",
+        "Pattern": "Can I check + 명사 + ?",
+        "PatternMeaning": "내가 ~를 확인할 수 있을까요?",
+        "Example": "Can I check the time?",
+        "ExampleMeaning": "내가 시간을 확인할 수 있을까요?"
     },
     {
         "key": "26",
