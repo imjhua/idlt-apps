@@ -10,43 +10,43 @@
     },
     {
         "key": "2",
-        "SentenceOfTheDay": "일어나야하는데 도저히 못일어나겠어.",
-        "EnglishSentence": "I need to get up, but I just can't seem to do it right now.",
-        "Pattern": "can't seem to + 동사원형",
-        "PatternMeaning": "~할 수 없는 것 같다",
-        "Example": "I can't seem to focus on my work today.",
-        "ExampleMeaning": "오늘 일에 집중할 수 없는 것 같아."
+        "SentenceOfTheDay": "잘못살뻔했네",
+        "EnglishSentence": "I almost bought the wrong item.",
+        "Pattern": "주어 + almost + 동사.",
+        "PatternMeaning": "주어가 거의 ~할 뻔했어.",
+        "Example": "She almost fell down the stairs.",
+        "ExampleMeaning": "그녀는 거의 계단에서 넘어질 뻔했어."
     },
     {
         "key": "3",
-        "SentenceOfTheDay": "어제 귀찮아서 운동을 안했어.",
-        "EnglishSentence": "I skipped my workout yesterday because I felt lazy.",
-        "Pattern": "skipped + 명사 + because + 주어 + felt + 형용사",
-        "PatternMeaning": "~해서 ~를 건너뛰었다",
-        "Example": "He skipped the meeting because he felt sick.",
-        "ExampleMeaning": "그는 아파서 회의를 건너뛰었어."
+        "SentenceOfTheDay": "너한테 먼저 물어볼껄",
+        "EnglishSentence": "I should have asked you first.",
+        "Pattern": "주어 + should have + p.p.",
+        "PatternMeaning": "주어가 ~했어야 했는데",
+        "Example": "Why should I have known that?",
+        "ExampleMeaning": "내가 그걸 왜 알아야 했을까?"
     },
     {
         "key": "4",
-        "SentenceOfTheDay": "잠깐 나갔다올게.",
-        "EnglishSentence": "I'm stepping out for a bit.",
-        "Pattern": "stepping out for + 시간 표현",
-        "PatternMeaning": "~ 동안 잠깐 나가다",
-        "Example": "When will you step out for a bit?",
-        "ExampleMeaning": "언제 잠깐 나갈꺼야?"
+        "SentenceOfTheDay": "안봤으면 더 좋았을 텐데",
+        "EnglishSentence": "I shouldn't have seen that.",
+        "Pattern": "주어 + should not have + p.p.",
+        "PatternMeaning": "주어가 ~하지 않았어야 했는데.",
+        "Example": "She shouldn't have bought it.",
+        "ExampleMeaning": "그녀는 그걸 사지 말았어야 했어."
     },
     {
         "key": "5",
-        "SentenceOfTheDay": "감기에 걸렸나봐.",
-        "EnglishSentence": "I might have caught a cold.",
-        "Pattern": "might have + p.p.",
-        "PatternMeaning": "~했을지도 몰라",
-        "Example": "They might have left early.",
-        "ExampleMeaning": "그들은 일찍 떠났을지도 몰라."
+        "SentenceOfTheDay": "영수증을 가지고 있을걸 그랬어",
+        "EnglishSentence": "I wish I had kept the receipt.",
+        "Pattern": "I wish + 주어 + had + p.p.",
+        "PatternMeaning": "주어가 ~했었으면 좋았을 텐데",
+        "Example": "Why do they wish they had known earlier?",
+        "ExampleMeaning": "왜 그들은 더 일찍 알았으면 좋았다고 생각해?"
     },
     {
         "key": "6",
-        "SentenceOfTheDay": "스카에서",
+        "SentenceOfTheDay": "산책하면서",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -55,43 +55,43 @@
     },
     {
         "key": "7",
-        "SentenceOfTheDay": "공부하는 사람들이 많다.",
-        "EnglishSentence": "There are a lot of people studying.",
-        "Pattern": "There are + a lot of/many + 명사 + 동명사.",
-        "PatternMeaning": "많은 ~이 ~하고 있다.",
-        "Example": "What are many people doing right now?",
-        "ExampleMeaning": "지금 많은 사람들이 무엇을 하고 있지?"
+        "SentenceOfTheDay": "친구들한테 자꾸 왜 그러니?",
+        "EnglishSentence": "Why do you keep treating your friends like that?",
+        "Pattern": "Why do you keep + 동사-ing?",
+        "PatternMeaning": "왜 계속 ~하는 거야?",
+        "Example": "Why do you keep changing your mind?",
+        "ExampleMeaning": "왜 계속 마음을 바꾸는 거야?"
     },
     {
         "key": "8",
-        "SentenceOfTheDay": "벌써 점심시간이 끝나간다니.",
-        "EnglishSentence": "Lunch time is almost over.",
-        "Pattern": "is + almost/nearly over.",
-        "PatternMeaning": "지금 ~가 거의 끝나가고 있다.",
-        "Example": "Is your homework almost over?",
-        "ExampleMeaning": "숙제가 거의 끝나가고 있니?"
+        "SentenceOfTheDay": "내리고 싶어?",
+        "EnglishSentence": "Do you want to get off?",
+        "Pattern": "Do you want to + 동사원형?",
+        "PatternMeaning": "~하고 싶어?",
+        "Example": "Do you want to ride in the stroller?",
+        "ExampleMeaning": "유모차 탈까?"
     },
     {
         "key": "9",
-        "SentenceOfTheDay": "이제 슬슬 일을 시작해볼까?",
-        "EnglishSentence": "Shall we start working now?",
-        "Pattern": "Shall we + 동사?",
-        "PatternMeaning": "우리 ~할까요?",
-        "Example": "Shall we meet at the café?",
-        "ExampleMeaning": "카페에서 만날까요?"
+        "SentenceOfTheDay": "이리와. 이쪽으로 가자.",
+        "EnglishSentence": "Come over here. Let’s go this way.",
+        "Pattern": "Let's go + 장소.",
+        "PatternMeaning": "장소로 가자.",
+        "Example": "Why don’t we go this way?",
+        "ExampleMeaning": "이쪽으로 가지 않을래?"
     },
     {
         "key": "10",
-        "SentenceOfTheDay": "3시에 스터디가 있어요.",
-        "EnglishSentence": "I have a study group at 3:00.",
-        "Pattern": "I have a + 명사 + at + 시간.",
-        "PatternMeaning": "나는 ~이/가 ~시에 있어요.",
-        "Example": "I have a meeting at 10:00.",
-        "ExampleMeaning": "나는 10시에 미팅이 있어요."
+        "SentenceOfTheDay": "산책하러 밖에 나가자",
+        "EnglishSentence": "Let’s go for a walk outside.",
+        "Pattern": "Let's go + 장소.",
+        "PatternMeaning": "장소로 가자.",
+        "Example": "Where should we go next?",
+        "ExampleMeaning": "다음에는 어디로 가야 할까?"
     },
     {
         "key": "11",
-        "SentenceOfTheDay": "일하는 중에",
+        "SentenceOfTheDay": "영어말하기",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -100,43 +100,43 @@
     },
     {
         "key": "12",
-        "SentenceOfTheDay": "제 질문이 어려운가요?",
-        "EnglishSentence": "Is my question difficult?",
-        "Pattern": "Is my + 명사 + 형용사?",
-        "PatternMeaning": "내 ~이/가 ~하나요?",
-        "Example": "Is my explanation clear?",
-        "ExampleMeaning": "내 설명이 명확한가요?"
+        "SentenceOfTheDay": "너가 좋아해서 다행이다",
+        "EnglishSentence": "I'm glad you like it.",
+        "Pattern": "I'm glad + 주어 + 동사.",
+        "PatternMeaning": "나는 + 주어가 + 동사를 해서 기쁘다.",
+        "Example": "What are you glad about?",
+        "ExampleMeaning": "너는 무엇에 대해 기쁘니?"
     },
     {
         "key": "13",
-        "SentenceOfTheDay": "그걸로 충분할줄 알았어요.",
-        "EnglishSentence": "I thought that would be enough.",
-        "Pattern": "I thought + 주어 + would + 동사",
-        "PatternMeaning": "주어가 ~할 것이라고 생각했다.",
-        "Example": "I thought saving money would help me travel.",
-        "ExampleMeaning": "돈을 모으면 여행하는 데 도움이 될 거라고 생각했어요."
+        "SentenceOfTheDay": "너가 초콜릿을 좋아하는지 몰랐어",
+        "EnglishSentence": "I had no idea you liked chocolate.",
+        "Pattern": "I had no idea + 주어 + 동사.",
+        "PatternMeaning": "나는 + 주어가 + 동사를 몰랐다.",
+        "Example": "I had no idea you were such a good singer.",
+        "ExampleMeaning": "나는 너가 이렇게 노래를 잘 부르는지 몰랐어."
     },
     {
         "key": "14",
-        "SentenceOfTheDay": "거기에 쓰레기 버리지마",
-        "EnglishSentence": "Don’t throw that waste away there.",
-        "Pattern": "Don’t throw + 주어 + away.",
-        "PatternMeaning": "버리지 마세요.",
-        "Example": "Don’t throw your trash away in the park.",
-        "ExampleMeaning": "공원에 쓰레기 버리지 마세요."
+        "SentenceOfTheDay": "선물하길 잘했다",
+        "EnglishSentence": "It's a good thing I gave you a present.",
+        "Pattern": "It's a good thing + 주어 + 동사.",
+        "PatternMeaning": "주어가 동사한것은 잘한일이야.",
+        "Example": "It's a good thing she stayed home.",
+        "ExampleMeaning": "그녀가 집에 남아 있는 것은 좋은 일이야."
     },
     {
         "key": "15",
-        "SentenceOfTheDay": "아무 문장이나 말해줘",
-        "EnglishSentence": "Tell me anything.",
-        "Pattern": "Tell me +",
-        "PatternMeaning": "나에게 ~\b를 말해줘",
-        "Example": "Tell me where you found it.",
-        "ExampleMeaning": "그걸 어디서 찾았는지 말해줘."
+        "SentenceOfTheDay": "약 먹을래?",
+        "EnglishSentence": "Would you like to take some medicine?",
+        "Pattern": "Would you like + 동사 + 명사",
+        "PatternMeaning": "원하는 것을 하시겠어요?",
+        "Example": "When would you like to leave?",
+        "ExampleMeaning": "언제 출발하고 싶으세요?"
     },
     {
         "key": "16",
-        "SentenceOfTheDay": "부엌에서",
+        "SentenceOfTheDay": "티비를 보다가",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -145,39 +145,39 @@
     },
     {
         "key": "17",
-        "SentenceOfTheDay": "건강관리하려고 레몬을 사왔어. 너도 레몬 먹어볼래?",
-        "EnglishSentence": "I bought a lemon for my health. Do you want to try a lemon?",
-        "Pattern": "Do you want to + 동사 + 명사?",
-        "PatternMeaning": "~하고 싶으세요?",
-        "Example": "What do you like?",
-        "ExampleMeaning": "너는 뭐가 좋아?"
+        "SentenceOfTheDay": "도저히 멈출수가 없다",
+        "EnglishSentence": "I can't stop at all.",
+        "Pattern": "I can't + 동사 + at all",
+        "PatternMeaning": "나는 전혀 ~할 수 없다.",
+        "Example": "They can't hear me at all.",
+        "ExampleMeaning": "그들은 나를 전혀 들을 수 없어."
     },
     {
         "key": "18",
-        "SentenceOfTheDay": "핫초코먹어야지",
-        "EnglishSentence": "I'd like to have hot chocolate.",
-        "Pattern": "I'd like to have + 명사",
-        "PatternMeaning": "~을 먹고 싶어.",
-        "Example": "I'd like to have a slice of cake.",
-        "ExampleMeaning": "케이크 한 조각 먹고 싶어."
+        "SentenceOfTheDay": "준비하고 있어. 공부같이 하자",
+        "EnglishSentence": "You should get ready. Let’s study together.",
+        "Pattern": "You should + 동사.",
+        "PatternMeaning": "너는 ~해야 해",
+        "Example": "Should we study together later?",
+        "ExampleMeaning": "나중에 같이 공부할까요?"
     },
     {
         "key": "19",
-        "SentenceOfTheDay": "결제가 왜 안돼지? 새로고침 해주세요.",
-        "EnglishSentence": "Why isn't the payment working? Could you refresh the page, please?",
-        "Pattern": "Why isn't + 주어 + 동사-ing?",
-        "PatternMeaning": "왜 ~하고 있지 않나요?",
-        "Example": "Why isn't he answering my calls?",
-        "ExampleMeaning": "그가 왜 내 전화를 받지 않나요?"
+        "SentenceOfTheDay": "졸리면 가서 자",
+        "EnglishSentence": "If you feel sleepy, you should hit the sack.",
+        "Pattern": "If you + 느낌(형용사), you should + 동사.",
+        "PatternMeaning": "만약 네가 ~하면, 너는 ~해야 해.",
+        "Example": "If you’re tired, you should take a break.",
+        "ExampleMeaning": "피곤하면, 너는 잠깐 쉬어야 해."
     },
     {
         "key": "20",
-        "SentenceOfTheDay": "저녁 7시 반에 요가 어때?",
-        "EnglishSentence": "How about having yoga together at 7:30 PM?",
-        "Pattern": "How about + 주어 + 동사-ing?",
-        "PatternMeaning": "~하는 건 어때?",
-        "Example": "How about going for a walk after dinner?",
-        "ExampleMeaning": "저녁 먹고 산책하는 건 어때?"
+        "SentenceOfTheDay": "밖에 엄청 춥다. 내일도 춥데",
+        "EnglishSentence": "It’s very cold outside. It will be cold tomorrow, too.",
+        "Pattern": "It will be + 형용사 + tomorrow.",
+        "PatternMeaning": "내일은 ~할 것이다.",
+        "Example": "What will the weather be like tomorrow?",
+        "ExampleMeaning": "내일 날씨는 어떨까?"
     },
     {
         "key": "21",
