@@ -1,6 +1,6 @@
 import { Box, Button, Card, Grid, List, Text } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
-import { Fragment, useMemo, useState } from 'react'
+import { Fragment, type MouseEvent, useMemo, useState } from 'react'
 
 import { getRandomIntInclusive } from '@/lib/utils'
 import useQueryParams from '@/shared/hooks/useQueryParams'
@@ -43,11 +43,15 @@ function Page() {
 
   console.log('key: ', key)
 
-  const handleExampleSentenceClick = () => {
+  const handleExampleSentenceClick = (e: MouseEvent) => {
+    e.stopPropagation()
+
     setShowExSentence((state) => !state)
   }
 
-  const handlePreviousClick = () => {
+  const handlePreviousClick = (e: MouseEvent) => {
+    e.stopPropagation()
+
     setShowExSentence(false)
 
     setPatternIndex((state) => {
@@ -57,7 +61,20 @@ function Page() {
       return state - 1
     })
   }
-  const handleNextClick = () => {
+  const handleNextClick = (e: MouseEvent) => {
+    e.stopPropagation()
+
+    setShowExSentence(false)
+
+    setPatternIndex((state) => {
+      if (state === randomList.length - 1) {
+        return 0
+      }
+      return state + 1
+    })
+  }
+
+  const handleBgClick = () => {
     setShowExSentence(false)
 
     setPatternIndex((state) => {
@@ -77,6 +94,7 @@ function Page() {
       columns={['full']}
       pad="small"
       gap="medium"
+      onClick={handleBgClick}
     >
       <>
         <Box gridArea="pattern" align="center" style={{ marginTop: '30px' }}>
