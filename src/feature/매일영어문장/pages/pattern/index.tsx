@@ -98,7 +98,7 @@ function Page() {
     >
       <>
         <Box gridArea="pattern" align="center" style={{ marginTop: '30px' }}>
-          <Text size="large">#{patternIndex + 1}. {PatternMeaning!.replace(/[.$]/, '')}</Text>
+          <Text size="large">#{patternIndex + 1}. {PatternMeaning!.replace(/[.]$/, '')}</Text>
         </Box>
         <Box gridArea="card" align="center">
           <Box align="center">
@@ -108,7 +108,7 @@ function Page() {
               width="auto"
               style={{ whiteSpace: 'pre', padding: '14px', overflow: 'scroll' }}
           >
-              <Text size="medium">{Pattern!.replace(/[.$]/, '')}</Text>
+              <Text size="medium">{Pattern!.replace(/[.]$/, '')}</Text>
             </Card>
           </Box>
         </Box>
