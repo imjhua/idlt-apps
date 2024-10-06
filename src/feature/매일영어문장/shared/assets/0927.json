@@ -6,7 +6,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -16,7 +15,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -26,7 +24,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -36,7 +33,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -46,7 +42,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -56,7 +51,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -66,7 +60,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -76,7 +69,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -86,7 +78,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -96,7 +87,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -106,7 +96,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -116,7 +105,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -126,8 +114,7 @@
         "Pattern": "I really wanted to + 동사 + 명사",
         "Example": "나는 정말 ~하고 싶었어.",
         "PatternMeaning": "I really wanted to visit my friend.",
-        "": "나는 정말 내 친구를 방문하고 싶었어.",
-        "ExampleMeaning": null
+        "ExampleMeaning": "나는 정말 내 친구를 방문하고 싶었어."
     },
     {
         "key": "14",
@@ -136,8 +123,7 @@
         "Pattern": "What should I + 동사 + 명사?",
         "Example": "나는 무엇을 해야 할까?",
         "PatternMeaning": "What should I do today?",
-        "": "오늘 나는 무엇을 해야 할까?",
-        "ExampleMeaning": null
+        "ExampleMeaning": "오늘 나는 무엇을 해야 할까?"
     },
     {
         "key": "15",
@@ -146,7 +132,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -156,7 +141,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -166,7 +150,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -176,7 +159,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -186,7 +168,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -196,7 +177,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -206,7 +186,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -216,7 +195,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -226,7 +204,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -236,7 +213,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -246,7 +222,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -256,7 +231,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -266,7 +240,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -276,7 +249,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -286,7 +258,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -296,7 +267,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -306,7 +276,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -316,7 +285,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -326,7 +294,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -336,7 +303,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -346,7 +312,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -356,7 +321,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -366,7 +330,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -376,7 +339,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -386,7 +348,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -396,7 +357,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -406,7 +366,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -416,7 +375,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -426,7 +384,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -436,7 +393,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -446,7 +402,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -456,7 +411,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -466,7 +420,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -476,7 +429,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -486,7 +438,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     },
     {
@@ -496,7 +447,6 @@
         "Pattern": null,
         "Example": null,
         "PatternMeaning": null,
-        "": null,
         "ExampleMeaning": null
     }
 ]
