@@ -13,7 +13,7 @@
         "SentenceOfTheDay": "어제밤부터 지금까지 아직도 바람이 많이 분다.",
         "EnglishSentence": "It has still been windy since last night.",
         "Pattern": "It has been + 형용사 + since + 시간",
-        "PatternMeaning": "[시간]부터 지금까지 ~했다",
+        "PatternMeaning": "~부터 지금까지 ~했다",
         "Example": "Has it been cloudy since the weekend?",
         "ExampleMeaning": "주말 이후로 흐린 날씨가 계속되고 있나요?"
     },
@@ -22,7 +22,7 @@
         "SentenceOfTheDay": "내 생각에 오늘 바람이 너무 많이 불어서 일정에 차질이 생기겠어.",
         "EnglishSentence": "I think the wind is really strong today, and it might ruin my plans.",
         "Pattern": "주어 + might + 동사원형",
-        "PatternMeaning": "[주어]가 ~할지도 모른다",
+        "PatternMeaning": "~할지도 모른다",
         "Example": "Do you think it might rain later?",
         "ExampleMeaning": "나중에 비가 올 것 같다고 생각하나요?"
     },
@@ -31,7 +31,7 @@
         "SentenceOfTheDay": "어제 메시지를 보냈는데 답장이 왔을까?",
         "EnglishSentence": "I messaged him yesterday. Did he reply to me?",
         "Pattern": "Did + 주어 + 동사원형 + ~?",
-        "PatternMeaning": "[주어]가 ~를 했니?",
+        "PatternMeaning": "~를 했니?",
         "Example": "Did they get back to you?",
         "ExampleMeaning": "그들이 당신에게 연락했나요?"
     },
@@ -40,7 +40,7 @@
         "SentenceOfTheDay": "오늘이 벌써 일요일이라니. 시간이 너무 빠르다.",
         "EnglishSentence": "Today is already Sunday. Time really flies.",
         "Pattern": "It’s already + 시간",
-        "PatternMeaning": "벌써 [시간]이다",
+        "PatternMeaning": "벌써 ~할 시간이다",
         "Example": "Is it already too late to start?",
         "ExampleMeaning": "시작하기에는 이미 너무 늦었나요?"
     },
