@@ -1,4 +1,5 @@
 
+import Day10_2 from './assets/10-2.json'
 import Day0927 from './assets/0927.json'
 import Day0928 from './assets/0928.json'
 import Day0929 from './assets/0929.json'
@@ -34,4 +35,5 @@ export const SENTENCES: { [key in string]: Required<SentenceType>[] } = {
   Day10월03일: Day1003.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월04일: Day1004.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월05일: Day1005.filter(({ EnglishSentence }) => EnglishSentence),
+  Day10월첫째주: Day10_2.filter(({ EnglishSentence }) => EnglishSentence),
 }
