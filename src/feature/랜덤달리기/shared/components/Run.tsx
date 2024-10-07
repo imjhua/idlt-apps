@@ -436,6 +436,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         height={80}
                         src={`/images/animal/${String(selectedPlayer)}.png`}
                         alt={selectedPlayer}
+                        style={{ marginBottom: 8 }}
                       />
                       <TextInput
                         placeholder={`Nick Name: ${selectedPlayer}`}
@@ -464,9 +465,15 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                         }}
                       />
                     </Box>
-                    <Box pad="large" gap="large" align="center">
-                      <Text>🎉 축하합니다 🎉</Text>
-                      <Text size="xlarge">
+                    <Box pad="small" gap="medium" align="center">
+                      <Text size="large">🎉 Congratulations! 🎉</Text>
+                      <Img
+                        width={48}
+                        height={48}
+                        src={`/images/animal/${String(players.filter(({ winner }) => winner)[0]?.name)}.png`}
+                        alt="winner"
+                      />
+                      <Text>
                         {
                           charaterNicknameMap[
                             players.filter(({ winner }) => winner)[0]?.name

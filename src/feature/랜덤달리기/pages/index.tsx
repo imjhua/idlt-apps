@@ -56,7 +56,7 @@ function MainPage() {
     <Box pad="small" gap="small">
       {!isUserReady ? (
         <Box gap="medium">
-          <Text size="small">* 달리기에 참여할 캐릭터들을 선택하세요.</Text>
+          <Text size="small">* Choose the characters to participate in the race.</Text>
           <Grid>
             {players.map((characterName) => {
               return (
