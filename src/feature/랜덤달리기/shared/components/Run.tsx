@@ -190,8 +190,6 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
         )
       }
 
-      // console.log(duration)
-
       const removeItem = durationList[winningIndex]
       const rankingList = sortedDurationList.filter(
         (value) => value !== removeItem
@@ -222,11 +220,9 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
 
     timerRef.current = setTimeout(() => {
       setRunningStatus(RUNNING_STATUS.END)
-    }, Number(COUNT_DOWN
-      + 1
+    }, Number(0.8 + COUNT_DOWN
       + defaultDuration
-      + (durationList[playerList.length - 1] * (speedMode ? 0.1 : 0.2))
-      + 0.2
+      + (sortedDurationList[sortedDurationList.length - 1] * (speedMode ? 0.1 : 0.2))
     ) * 1000)
   }
 
