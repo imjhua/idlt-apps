@@ -396,13 +396,18 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                                   handleCharacterButtonClick(character)
                                 }}
                               />
-                              {runningStatus === RUNNING_STATUS.READY &&
-                                charaterNicknameMap[character] !==
-                                  character && !openModal && (
-                                  <Text size="small" style={{ marginLeft: 4 }}>
-                                    {charaterNicknameMap[character]}
-                                  </Text>
-                                )}
+                              {runningStatus === RUNNING_STATUS.READY && (
+                                <Text
+                                  size="small" style={{ marginLeft: 4 }}
+                                  onClick={() => {
+                                  if (countDownStatus === COUNT_DWON_STATUS.SHOW){
+                                    return
+                                  }
+                                  handleCharacterButtonClick(character)
+                                }}>
+                                  {charaterNicknameMap[character]}
+                                </Text>
+                              )}
                             </Rail>
                           </>
                         )
