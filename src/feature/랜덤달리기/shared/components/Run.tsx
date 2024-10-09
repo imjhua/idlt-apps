@@ -575,7 +575,7 @@ const Rail = styled.div<{
     css`
       margin-left: -20px;
       &:before {
-        background-image: url("/images/fire.png");
+        background-image: url("/images/animal/fire.png");
         background-size: 20px 20px;
         display: inline-block;
         width: 20px;
