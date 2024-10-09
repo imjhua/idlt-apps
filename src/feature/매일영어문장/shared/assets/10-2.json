@@ -1,7 +1,7 @@
 [
     {
         "key": "1",
-        "SentenceOfTheDay": "10/7",
+        "SentenceOfTheDay": "10/6",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -46,7 +46,7 @@
     },
     {
         "key": "6",
-        "SentenceOfTheDay": "10/8",
+        "SentenceOfTheDay": "10/7",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -91,7 +91,7 @@
     },
     {
         "key": "11",
-        "SentenceOfTheDay": null,
+        "SentenceOfTheDay": "10/8",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -100,43 +100,43 @@
     },
     {
         "key": "12",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "오늘은 문장이 엄청 짧아요",
+        "EnglishSentence": "Today's sentences are really short.",
+        "Pattern": "Today's + 명사 + are/is + 형용사",
+        "PatternMeaning": "오늘의 ~는 ~하다.",
+        "Example": "Is today's meeting important?",
+        "ExampleMeaning": "오늘 회의가 중요한가요?"
     },
     {
         "key": "13",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "친구가 되고 싶어요",
+        "EnglishSentence": "I’d like to be your friend.",
+        "Pattern": "I'd like to + 동사원형",
+        "PatternMeaning": "~하고 싶어요.",
+        "Example": "I'd like to help you with that.",
+        "ExampleMeaning": "그 일에 대해 도와드리고 싶어요."
     },
     {
         "key": "14",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "이제 나가야해요",
+        "EnglishSentence": "I'm about to head out.",
+        "Pattern": "I'm about to + 동사원형",
+        "PatternMeaning": "~하려고 해요.",
+        "Example": "I'm about to leave for the airport.",
+        "ExampleMeaning": "공항으로 출발하려고 해요."
     },
     {
         "key": "15",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "이것만 먹고 그만 먹어야지",
+        "EnglishSentence": "I think I'll stop eating after this.",
+        "Pattern": "I think I'll + 동사원형",
+        "PatternMeaning": "~할 것 같아요.",
+        "Example": "I think I'll take a break now.",
+        "ExampleMeaning": "지금 잠깐 쉴 것 같아요."
     },
     {
         "key": "16",
-        "SentenceOfTheDay": null,
+        "SentenceOfTheDay": "10/9",
         "EnglishSentence": null,
         "Pattern": null,
         "PatternMeaning": null,
@@ -145,39 +145,39 @@
     },
     {
         "key": "17",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "냉장고에서 꺼내먹어",
+        "EnglishSentence": "Grab something to eat from the fridge.",
+        "Pattern": "Grab something + to 동사원형 + from 장소",
+        "PatternMeaning": "어떤 것을 ~하기 위해서 ~에서 가져와.",
+        "Example": "Grab something to drink from the kitchen.",
+        "ExampleMeaning": "부엌에서 마실 것을 가져와."
     },
     {
         "key": "18",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "세탁실 불좀 꺼줘",
+        "EnglishSentence": "Can you turn off the light in the laundry room?",
+        "Pattern": "Can you turn off + 명사 + in 장소",
+        "PatternMeaning": "~에서 ~을 꺼줄 수 있나요?",
+        "Example": "Can you turn off the fan in the living room?",
+        "ExampleMeaning": "거실의 선풍기 꺼줄 수 있나요?"
     },
     {
         "key": "19",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "오늘 같이 공부할까?",
+        "EnglishSentence": "Do you want to study together today?",
+        "Pattern": "Do you want to + 동사원형?",
+        "PatternMeaning": "~할래?",
+        "Example": "Do you want to grab lunch today?",
+        "ExampleMeaning": "오늘 점심 같이 먹을래?"
     },
     {
         "key": "20",
-        "SentenceOfTheDay": null,
-        "EnglishSentence": null,
-        "Pattern": null,
-        "PatternMeaning": null,
-        "Example": null,
-        "ExampleMeaning": null
+        "SentenceOfTheDay": "너 언제잘꺼야?",
+        "EnglishSentence": "What time are you going to bed?",
+        "Pattern": "What time are you going to + 동사원형?",
+        "PatternMeaning": "~는 몇 시에 할 거야?",
+        "Example": "What time are you going to leave for work?",
+        "ExampleMeaning": "일하러 몇 시에 나갈 거야?"
     },
     {
         "key": "21",

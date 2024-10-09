@@ -35,5 +35,5 @@ export const SENTENCES: { [key in string]: Required<SentenceType>[] } = {
   Day10월03일: Day1003.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월04일: Day1004.filter(({ EnglishSentence }) => EnglishSentence),
   Day10월05일: Day1005.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월첫째주: Day10_2.filter(({ EnglishSentence }) => EnglishSentence),
+  Day10월둘째주: Day10_2.filter(({ EnglishSentence }) => EnglishSentence),
 }
