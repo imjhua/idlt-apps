@@ -17,7 +17,7 @@ import Img from '@/shared/components/Image'
 import Loading from '@/shared/components/Loading'
 import NoData from '@/shared/components/NoData'
 
-import { COUNT_DWON_STATUS, RUNNING_STATUS } from '../meta'
+import { CHARACTER_LIST, COUNT_DWON_STATUS, RUNNING_STATUS } from '../meta'
 import CountDown from './CountDown'
 
 const COUNT_DOWN = 3
@@ -25,11 +25,12 @@ const COUNT_DOWN = 3
 const DURATION = 10
 const DURATION_FOR_SPEEDMODE = 1
 type RunProps = {
+  runType: keyof typeof CHARACTER_LIST;
   playerNames: string[];
   onUserReadyChange: (isUserReady: boolean) => void;
 };
 
-function Run({ playerNames, onUserReadyChange }: RunProps) {
+function Run({ runType, playerNames, onUserReadyChange }: RunProps) {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   const [openModal, setOpenModal] = useState<boolean>(false)
@@ -55,6 +56,18 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
       ranking: number;
     }[]
   >([])
+
+  /* FIXME: path */
+  const characterImagePreFix = useMemo(() => {
+    let preFix = ''
+      if (runType === 'Animals'){
+        preFix = '/images/animals'
+      }
+      if (runType === 'Foods'){
+        preFix = '/images/foods'
+      }
+      return preFix
+  }, [runType])
 
   useEffect(() => {
     if (runningStatus === RUNNING_STATUS.END){
@@ -387,7 +400,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                               <Img
                                 width={38}
                                 height={38}
-                                src={`/images/animal/${String(character)}.png`}
+                                src={`${characterImagePreFix}/${String(character)}.png`}
                                 alt={character}
                                 onClick={() => {
                                   if (countDownStatus === COUNT_DWON_STATUS.SHOW || runningStatus === RUNNING_STATUS.RUN){
@@ -435,7 +448,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       <Img
                         width={80}
                         height={80}
-                        src={`/images/animal/${String(selectedPlayer)}.png`}
+                        src={`${characterImagePreFix}/${String(selectedPlayer)}.png`}
                         alt={selectedPlayer}
                         style={{ marginBottom: 8 }}
                       />
@@ -471,7 +484,7 @@ function Run({ playerNames, onUserReadyChange }: RunProps) {
                       <Img
                         width={48}
                         height={48}
-                        src={`/images/animal/${String(players.filter(({ winner }) => winner)[0]?.name)}.png`}
+                        src={`${characterImagePreFix}/${String(players.filter(({ winner }) => winner)[0]?.name)}.png`}
                         alt="winner"
                       />
                       <Text>
@@ -576,7 +589,8 @@ const Rail = styled.div<{
     css`
       margin-left: -20px;
       &:before {
-        background-image: url("/images/animal/fire.png");
+        /* FIXME: Anima?! */
+        background-image: url("/images/animals/fire.png");
         background-size: 20px 20px;
         display: inline-block;
         width: 20px;

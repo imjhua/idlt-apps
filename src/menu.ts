@@ -31,4 +31,8 @@ export const MENUS = [
     path: '/매일영어문장',
     title: '매일영어문장'
   },
+  {
+    path: '/프리다이빙용어집',
+    title: '프리다이빙용어집'
+  },
 ]

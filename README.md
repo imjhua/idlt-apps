@@ -17,3 +17,4 @@
 - 캐릭터 이미지: https://www.flaticon.com/packs/animals-126
 - grommet 아이콘: https://icons.grommet.io/?
 - grommet 컴포넌트: https://v2.grommet.io/components
+- 색상: https://coolors.co/palettes/trending
