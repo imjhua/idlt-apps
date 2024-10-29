@@ -65,7 +65,7 @@ function HomePage() {
           onChange={handleInputChange}
         />
         <List
-          data={filteredList.map(({ 용어, 용어풀이, 태그 }, index) => {
+          data={filteredList.map(({ 용어, 용어풀이, 태그, index }) => {
             return {
               item: (
                 <Link

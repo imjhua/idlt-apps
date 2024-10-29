@@ -48,7 +48,7 @@ function Page() {
       fill
       height="full"
       areas={[['title'], ['description'], ['button']]}
-      rows={['80px', 'auto', '150px']}
+      rows={['80px', 'auto', 'auto']}
       columns={['full']}
       pad="small"
       gap="medium"
@@ -88,7 +88,7 @@ function Page() {
           style={{
             height: 100,
             position: 'fixed',
-            bottom: 100,
+            bottom: 50,
             right: 0,
             left: 0,
           }}
