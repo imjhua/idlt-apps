@@ -15,8 +15,8 @@ function HomePage() {
   const filteredList = useMemo(() => {
     const filteredList = 목록.filter(({ 용어 }) => {
       return (
-        용어.toLowerCase().indexOf(value) > -1 ||
-        용어.toUpperCase().indexOf(value) > -1
+        용어.toLowerCase().indexOf(value) > -1
+        || 용어.toUpperCase().indexOf(value) > -1
       )
     })
 
