@@ -52,8 +52,8 @@ const ModeBlock = styled.div<{ show: boolean; isDark: boolean }>`
 
   position: fixed;
   
-  bottom: 10px;
-  right: 10px;
+  bottom: 16px;
+  right: 16px;
   border-radius: 40px;
   padding: 10px;
   background: #fff;
