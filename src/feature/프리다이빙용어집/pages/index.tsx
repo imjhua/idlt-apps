@@ -5,18 +5,19 @@ import { Sort } from 'grommet-icons'
 import { ChangeEvent, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { 목록 } from '../shared/meta'
+import { 프리다이빙용어목록 } from '../shared/meta'
 
-const COLORS = ['8AC926', '1982C4', 'a4ac86', 'FFCA3A', 'FF595E']
+const COLORS = ['8AC926', '1982C4', 'a4ac86', 'FFCA3A', 'FF595E', '8ecae6', '9f86c0']
 function HomePage() {
   const [isSort, setIsSort] = useState<boolean>(false)
   const [value, setValue] = useState<string>('')
 
+  /* TODO: 정렬했을때 index 변경 */
   const filteredList = useMemo(() => {
-    const filteredList = 목록.filter(({ 용어 }) => {
+    const filteredList = 프리다이빙용어목록.filter(({ 용어, 용어풀이 }) => {
       return (
-        용어.toLowerCase().indexOf(value) > -1
-        || 용어.toUpperCase().indexOf(value) > -1
+        용어.toLowerCase().indexOf(value.toLowerCase()) > -1
+        || 용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
       )
     })
 
@@ -29,7 +30,7 @@ function HomePage() {
   }, [value, isSort])
 
   const colorIndex = useMemo(() => {
-    const tags = 목록.map(({ 태그 }) => {
+    const tags = 프리다이빙용어목록.map(({ 태그 }) => {
       return 태그
     })
 

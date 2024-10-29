@@ -4,7 +4,7 @@ import { type MouseEvent, useState } from 'react'
 
 import useQueryParams from '@/shared/hooks/useQueryParams'
 
-import { 목록 } from '../../shared/meta'
+import { 프리다이빙용어목록 } from '../../shared/meta'
 
 function Page() {
   const index = Number(useQueryParams('index') as string)
@@ -26,7 +26,7 @@ function Page() {
     e.stopPropagation()
 
     setPatternIndex((state) => {
-      if (state === 목록.length - 1) {
+      if (state === 프리다이빙용어목록.length - 1) {
         return 0
       }
       return state + 1
@@ -35,14 +35,14 @@ function Page() {
 
   const handleBgClick = () => {
     setPatternIndex((state) => {
-      if (state === 목록.length - 1) {
+      if (state === 프리다이빙용어목록.length - 1) {
         return 0
       }
       return state + 1
     })
   }
 
-  const { 뜻, 용어, 용어풀이, 태그 } = 목록[patternIndex]
+  const { 뜻, 용어, 용어풀이, 태그 } = 프리다이빙용어목록[patternIndex]
   return (
     <Grid
       fill
