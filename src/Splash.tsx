@@ -8,6 +8,8 @@ function Splash() {
       style={{
         position: 'absolute',
         bottom: 700,
+        right: 0,
+        left: 0,
       }}
     >
       <Text weight="bolder" style={{ fontSize: 100 }}>
