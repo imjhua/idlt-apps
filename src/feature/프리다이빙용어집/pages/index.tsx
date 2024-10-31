@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom'
 
 import { 프리다이빙용어목록 } from '../shared/meta'
 
-const COLORS = ['8AC926', '1982C4', 'a4ac86', 'FFCA3A', 'FF595E', '8ecae6', '9f86c0']
+const COLORS = ['8AC926', '1982C4', 'a4ac86', 'FFCA3A', 'FF595E', '8ecae6', '9f86c0', '83c5be',
+  'f5cac3', 'f6bd60', 'cfbaf0']
 function HomePage() {
   const [isSort, setIsSort] = useState<boolean>(false)
   const [value, setValue] = useState<string>('')
 
-  /* TODO: 정렬했을때 index 변경 */
   const filteredList = useMemo(() => {
     const filteredList = 프리다이빙용어목록.filter(({ 용어, 용어풀이 }) => {
       return (

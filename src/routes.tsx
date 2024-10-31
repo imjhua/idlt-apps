@@ -4,6 +4,7 @@ import { RouteObject } from 'react-router-dom'
 import HomePage from '.'
 import NotFound from './404'
 import App from './App'
+import Splash from './Splash'
 
 interface ComponentModule {
   default: ComponentType;
@@ -32,6 +33,7 @@ export const routes: RouteObject[] = [
     element: <App />,
     children: [
       { element: <HomePage />, path: '/' },
+      { element: <Splash />, path: '/splash' },
       { element: <NotFound />, path: '*' },
       ...pageRoutes
     ]
