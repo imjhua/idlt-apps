@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
+// import { ReactQueryDevtools } from 'react-query/devtools'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import ThemeProvider from './context/ThemeProvider'
@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <Suspense fallback={null}>
       <GlobalStyle />
       <QueryClientProvider client={client}>
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
 
         <ThemeProvider>
           {/* {import.meta.env['VITE_APP_TYPE'] === 'LOCAL' && <VConsoleScript />} */}
