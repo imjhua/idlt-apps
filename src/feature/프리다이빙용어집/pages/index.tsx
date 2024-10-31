@@ -5,10 +5,24 @@ import { Sort } from 'grommet-icons'
 import { ChangeEvent, useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import { GNB_HEIGHT } from '@/shared/components/Gnb'
+import theme from '@/styles/theme'
+
 import { 프리다이빙용어목록 } from '../shared/meta'
 
-const COLORS = ['8AC926', '1982C4', 'a4ac86', 'FFCA3A', 'FF595E', '8ecae6', '9f86c0', '83c5be',
-  'f5cac3', 'f6bd60', 'cfbaf0']
+// SEE: https://coolors.co/palettes/trending
+const COLORS: Record<string, `#${string}`> = {
+  '프리다이빙 협회': '#8ac926',
+  용어: '#8ecae6',
+  훈련법: '#a4ac86',
+  종목: '#ffca3a',
+  기술: '#cfbaf0',
+  // 질환: '#be95c4',
+  위험상태: '#ff595e',
+  스트레칭: '#81b29a',
+}
+
+// console.log(Array.from(new Set(프리다이빙용어목록.map((({ 태그 }) => (`"${태그 || ''}"`))))).join(', '))
 function HomePage() {
   const [isSort, setIsSort] = useState<boolean>(false)
   const [value, setValue] = useState<string>('')
@@ -16,8 +30,8 @@ function HomePage() {
   const filteredList = useMemo(() => {
     const filteredList = 프리다이빙용어목록.filter(({ 용어, 용어풀이 }) => {
       return (
-        용어.toLowerCase().indexOf(value.toLowerCase()) > -1
-        || 용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
+        용어.toLowerCase().indexOf(value.toLowerCase()) > -1 ||
+        용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
       )
     })
 
@@ -28,14 +42,6 @@ function HomePage() {
     }
     return filteredList
   }, [value, isSort])
-
-  const colorIndex = useMemo(() => {
-    const tags = 프리다이빙용어목록.map(({ 태그 }) => {
-      return 태그
-    })
-
-    return Array.from(new Set(tags))
-  }, [])
 
   const handleOrderClick = () => {
     setIsSort((state) => !state)
@@ -49,22 +55,26 @@ function HomePage() {
   return (
     <>
       <Box pad="large" gap="large">
-        <Box direction="row" justify="between">
-          <Heading level={2}>프리다이빙 용어집</Heading>
-          <Button primary={isSort} style={{ padding: 4, borderRadius: 4 }}>
-            <SortIcon
-              sort={isSort}
-              onClick={handleOrderClick}
-          />
-          </Button>
-        </Box>
-
-        <TextInput
-          name="name"
-          placeholder={<Text>검색</Text>}
-          onChange={handleInputChange}
+        <Box
+          gap="medium" style={{
+          paddingTop: 20,
+          paddingBottom: 10,
+          position: 'fixed', top: `${GNB_HEIGHT}px`, left: 20, right: 20, background: `${theme.background}`
+}}>
+          <Box direction="row" justify="between">
+            <Heading level={2}>프리다이빙 용어집</Heading>
+            <Button primary={isSort} style={{ padding: 4, borderRadius: 4 }}>
+              <SortIcon sort={isSort} onClick={handleOrderClick} />
+            </Button>
+          </Box>
+          <TextInput
+            name="name"
+            placeholder={<Text>검색</Text>}
+            onChange={handleInputChange}
         />
+        </Box>
         <List
+          style={{ paddingTop: 100 }}
           data={filteredList.map(({ 용어, 용어풀이, 태그, index }) => {
             return {
               item: (
@@ -77,7 +87,7 @@ function HomePage() {
                     <Text
                       size="small"
                       style={{
-                        background: `#${COLORS[colorIndex.indexOf(태그)]}`,
+                        background: `${COLORS[태그]}`,
                         borderRadius: 12,
                         padding: '4px 6px',
                         marginLeft: 4,

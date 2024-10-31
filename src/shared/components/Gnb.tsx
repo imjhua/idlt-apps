@@ -10,7 +10,7 @@ import theme from '@/styles/theme'
 import Logo from './Logo'
 import Profile from './Profile'
 
-const GNB_HEIGHT = 62
+export const GNB_HEIGHT = 62
 
 type GnbProps = { addYOffset?: number };
 function Gnb({ addYOffset }: GnbProps) {
