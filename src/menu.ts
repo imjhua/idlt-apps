@@ -4,6 +4,10 @@ export const MENUS = [
   //   title: '소개'
   // },
   {
+    path: '/splash',
+    title: '스플래쉬'
+  },
+  {
     path: '/랜덤달리기',
     title: '랜덤달리기'
   },
