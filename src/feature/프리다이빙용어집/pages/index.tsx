@@ -93,6 +93,7 @@ function HomePage() {
                         borderRadius: 12,
                         padding: '4px 6px',
                         marginLeft: 4,
+                        color: '#444'
                       }}
                     >
                       {태그}
