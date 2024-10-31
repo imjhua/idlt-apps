@@ -59,8 +59,10 @@ function HomePage() {
           gap="medium" style={{
           paddingTop: 20,
           paddingBottom: 10,
-          position: 'fixed', top: `${GNB_HEIGHT}px`, left: 20, right: 20, background: `${theme.background}`
-}}>
+          position: 'fixed',
+          top: `calc(env(safe-area-inset-top) + ${GNB_HEIGHT}px)`,
+          left: 20, right: 20, background: `${theme.background}`
+        }}>
           <Box direction="row" justify="between">
             <Heading level={2}>프리다이빙 용어집</Heading>
             <Button primary={isSort} style={{ padding: 4, borderRadius: 4 }}>
