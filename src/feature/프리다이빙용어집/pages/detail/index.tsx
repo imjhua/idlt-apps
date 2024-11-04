@@ -59,7 +59,11 @@ function Page() {
             <Text size="large">
               #{patternIndex}. {용어}
             </Text>
-            {태그 && <Text size="small">{태그}</Text>}
+            {태그 && (
+            <Text size="small">
+              {태그} <span>- 연습시에는 강사동반 권장</span>
+            </Text>
+            )}
           </Box>
 
           <Box
@@ -106,8 +110,8 @@ function Page() {
           gridArea="button"
           direction="row"
           justify="between"
-          style={{ height: 60, }}
-          >
+          style={{ height: 60 }}
+        >
           <Button
             pad="none"
             style={{
@@ -133,8 +137,8 @@ function Page() {
           />
         </Box>
         {/* 면책조항 */}
-        <Box pad="large" style={{ paddingTop: 10, }}>
-          <Text size="xsmall" style={{ color: '#c1121f', }}>
+        <Box pad="large" style={{ paddingTop: 10 }}>
+          <Text size="xsmall" style={{ color: '#c1121f' }}>
             * 이 용어집은 정보 제공을 목적으로 하며, 실제 다이빙 활동에서 발생할
             수 있는 부상이나 사고에 대한 책임은 지지 않습니다.
           </Text>
