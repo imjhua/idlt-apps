@@ -15,8 +15,8 @@ function Page() {
     e.stopPropagation()
 
     setPatternIndex((state) => {
-      if (state === 0) {
-        return 0
+      if (state === 1) {
+        return 1
       }
       return state - 1
     })
@@ -25,8 +25,8 @@ function Page() {
     e.stopPropagation()
 
     setPatternIndex((state) => {
-      if (state === 프리다이빙용어목록.length - 1) {
-        return 0
+      if (state === 프리다이빙용어목록.length) {
+        return 1
       }
       return state + 1
     })
@@ -34,8 +34,8 @@ function Page() {
 
   const handleBgClick = () => {
     setPatternIndex((state) => {
-      if (state === 프리다이빙용어목록.length - 1) {
-        return 0
+      if (state === 프리다이빙용어목록.length) {
+        return 1
       }
       return state + 1
     })
@@ -43,26 +43,32 @@ function Page() {
 
   const { 뜻, 용어, 용어풀이, 태그 } = 프리다이빙용어목록[patternIndex - 1]
   return (
-    <Grid
-      fill
-      height="full"
-      areas={[['title'], ['description'], ['button']]}
-      rows={['80px', 'auto', 'auto']}
-      columns={['full']}
-      pad="small"
-      gap="medium"
-      onClick={handleBgClick}
-    >
-      <>
-        <Box gridArea="title" align="center" style={{ marginTop: '30px' }}>
-          <Text size="large">
-            #{patternIndex}. {용어}
-          </Text>
-          {태그 && <Text size="small">{태그}</Text>}
-        </Box>
+    <>
+      <Grid
+        fill
+        height="full"
+        areas={[['title'], ['description']]}
+        rows={['80px', 'auto']}
+        columns={['full']}
+        pad="small"
+        gap="medium"
+        onClick={handleBgClick}
+      >
+        <>
+          <Box gridArea="title" align="center" style={{ marginTop: '30px' }}>
+            <Text size="large">
+              #{patternIndex}. {용어}
+            </Text>
+            {태그 && <Text size="small">{태그}</Text>}
+          </Box>
 
-        <Box gridArea="description" gap="medium" pad="large">
-          {용어풀이.indexOf('(') > 0 && (
+          <Box
+            gridArea="description"
+            gap="medium"
+            pad="large"
+            style={{ paddingTop: 0, paddingBottom: 0 }}
+          >
+            {/* {용어풀이.indexOf('(') > 0 && ( */}
             <Text
               size="small"
               // style={{
@@ -74,24 +80,34 @@ function Page() {
             >
               {용어풀이}
             </Text>
-          )}
-          <Text size="medium" style={{ lineHeight: '28px' }}>
-            {뜻}
-          </Text>
-        </Box>
+            {/* )} */}
+            <Text
+              size="medium"
+              style={{
+                lineHeight: '28px',
+                // overflow: 'scroll',
+              }}
+            >
+              {뜻}
+            </Text>
+          </Box>
+        </>
+      </Grid>
 
+      <Box
+        style={{
+          position: 'fixed',
+          bottom: 30,
+          right: 0,
+          left: 0,
+        }}
+      >
         <Box
           gridArea="button"
           direction="row"
           justify="between"
-          style={{
-            height: 100,
-            position: 'fixed',
-            bottom: 50,
-            right: 0,
-            left: 0,
-          }}
-        >
+          style={{ height: 60, }}
+          >
           <Button
             pad="none"
             style={{
@@ -116,8 +132,15 @@ function Page() {
             onClick={handleNextClick}
           />
         </Box>
-      </>
-    </Grid>
+        {/* 면책조항 */}
+        <Box pad="large" style={{ paddingTop: 10, }}>
+          <Text size="xsmall" style={{ color: '#c1121f', }}>
+            * 이 용어집은 정보 제공을 목적으로 하며, 실제 다이빙 활동에서 발생할
+            수 있는 부상이나 사고에 대한 책임은 지지 않습니다.
+          </Text>
+        </Box>
+      </Box>
+    </>
   )
 }
 
