@@ -11,7 +11,6 @@ function Page() {
 
   const [patternIndex, setPatternIndex] = useState<number>(index)
 
-  /* TODO: index & key URL변경 */
   const handlePreviousClick = (e: MouseEvent) => {
     e.stopPropagation()
 
@@ -42,7 +41,7 @@ function Page() {
     })
   }
 
-  const { 뜻, 용어, 용어풀이, 태그 } = 프리다이빙용어목록[patternIndex]
+  const { 뜻, 용어, 용어풀이, 태그 } = 프리다이빙용어목록[patternIndex - 1]
   return (
     <Grid
       fill
@@ -57,7 +56,7 @@ function Page() {
       <>
         <Box gridArea="title" align="center" style={{ marginTop: '30px' }}>
           <Text size="large">
-            #{patternIndex + 1}. {용어}
+            #{patternIndex}. {용어}
           </Text>
           {태그 && <Text size="small">{태그}</Text>}
         </Box>
@@ -66,12 +65,12 @@ function Page() {
           {용어풀이.indexOf('(') > 0 && (
             <Text
               size="small"
-              style={{
-                display: 'block',
-                overflow: 'hidden',
-                whiteSpace: 'nowrap',
-                textOverflow: 'ellipsis',
-              }}
+              // style={{
+              //   display: 'block',
+              //   overflow: 'hidden',
+              //   whiteSpace: 'nowrap',
+              //   textOverflow: 'ellipsis',
+              // }}
             >
               {용어풀이}
             </Text>

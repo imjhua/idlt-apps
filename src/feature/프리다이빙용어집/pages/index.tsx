@@ -82,7 +82,7 @@ function HomePage() {
               item: (
                 <Link
                   key={index}
-                  to={{ pathname: 'detail', search: `?index=${index}` }}
+                  to={{ pathname: 'detail', search: `?index=${index + 1}` }}
                 >
                   <Text size="large">{용어}</Text>
                   {태그 && (
