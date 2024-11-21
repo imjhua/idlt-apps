@@ -1,17 +1,15 @@
 
-import Day10_2 from './assets/10-2.json'
-import Day0927 from './assets/0927.json'
-import Day0928 from './assets/0928.json'
-import Day0929 from './assets/0929.json'
-import Day0930 from './assets/0930.json'
-import Day1001 from './assets/1001.json'
-import Day1002 from './assets/1002.json'
-import Day1003 from './assets/1003.json'
-import Day1004 from './assets/1004.json'
-import Day1005 from './assets/1005.json'
-import etc from './assets/etc.json'
-
-// key	SentenceOfTheDay	EnglishSentence	Pattern	PatternMeaning	Example	ExampleMeaning
+import October from './assets/10-2.json'
+import September from './assets/0927.json'
+import August from './assets/0928.json'
+import July from './assets/0929.json'
+import June from './assets/0930.json'
+import May from './assets/1001.json'
+import April from './assets/1002.json'
+import March from './assets/1003.json'
+import February from './assets/1004.json'
+import January from './assets/1005.json'
+import November from './assets/2024/November.json'
 
 type SentenceType = {
     key: string;
@@ -24,16 +22,21 @@ type SentenceType = {
 }
 export type SentencesType = SentenceType[]
 
+// const months = [
+//   'January', 'February', 'March', 'April', 'May', 'June',
+//   'July', 'August', 'September', 'October', 'November', 'December'
+// ]
+
 export const SENTENCES: { [key in string]: Required<SentenceType>[] } = {
-  이것저것: etc.filter(({ EnglishSentence }) => EnglishSentence),
-  Day9월27일: Day0927.filter(({ EnglishSentence }) => EnglishSentence),
-  Day9월28일: Day0928.filter(({ EnglishSentence }) => EnglishSentence),
-  Day9월29일: Day0929.filter(({ EnglishSentence }) => EnglishSentence),
-  Day9월30일: Day0930.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월01일: Day1001.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월02일: Day1002.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월03일: Day1003.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월04일: Day1004.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월05일: Day1005.filter(({ EnglishSentence }) => EnglishSentence),
-  Day10월둘째주: Day10_2.filter(({ EnglishSentence }) => EnglishSentence),
+  November: November.filter(({ EnglishSentence }) => EnglishSentence),
+  October: October.filter(({ EnglishSentence }) => EnglishSentence),
+  September: September.filter(({ EnglishSentence }) => EnglishSentence),
+  August: August.filter(({ EnglishSentence }) => EnglishSentence),
+  July: July.filter(({ EnglishSentence }) => EnglishSentence),
+  June: June.filter(({ EnglishSentence }) => EnglishSentence),
+  May: May.filter(({ EnglishSentence }) => EnglishSentence),
+  April: April.filter(({ EnglishSentence }) => EnglishSentence),
+  March: March.filter(({ EnglishSentence }) => EnglishSentence),
+  February: February.filter(({ EnglishSentence }) => EnglishSentence),
+  January: January.filter(({ EnglishSentence }) => EnglishSentence),
 }
