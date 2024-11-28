@@ -234,7 +234,7 @@
         "용어": "Chin Mudra",
         "용어풀이": "친 무드라",
         "뜻": "손의 무드라, 엄지와 중지가 연결되는 것.",
-        "태그": null,
+        "태그": "용어",
         "아사나": null
     },
     {
@@ -446,13 +446,6 @@
         "뜻": "복부, 위, 아랫배",
         "태그": "신체부위",
         "아사나": "Jathara Parivrttasana 자타라 파리브르타 아사나 /"
-    },
-    {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
     },
     {
         "용어": null,
@@ -984,7 +977,7 @@
         "용어풀이": "숩타",
         "뜻": "수면, 누운",
         "태그": "용어",
-        "아사나": "Supta Pavanmuktasana 숩타 파반 묵타 아사나 / Supta Padangusthasana 숩타 파당구쉬타 아사나 / Supta Konasana 숩타 코나아사나 / Supta Baddha Konasana 숩타 받다 코나아사나 /"
+        "아사나": "Supta Virasana 숩타 비라 아사나 / Supta Pavanmuktasana 숩타 파반 묵타 아사나 / Supta Padangusthasana 숩타 파당구쉬타 아사나 / Supta Konasana 숩타 코나아사나 / Supta Baddha Konasana 숩타 받다 코나아사나 /"
     },
     {
         "용어": "Surya",
@@ -1201,7 +1194,7 @@
         "용어풀이": "비라",
         "뜻": "영웅, 용감",
         "태그": "용어",
-        "아사나": "Virasana 비라 아사나 / Vira Bhadrasana 비라 바드라 아사나 /"
+        "아사나": "Virasana 비라 아사나 / Vira Bhadrasana 비라 바드라 아사나 / Supta Virasana 숩타 비라 아사나 /"
     },
     {
         "용어": "Vrksa",
