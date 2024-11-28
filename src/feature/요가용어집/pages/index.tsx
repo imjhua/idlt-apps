@@ -69,7 +69,7 @@ function HomePage() {
           left: 20, right: 20, background: `${theme.background}`
         }}>
           <Box direction="row" justify="between">
-            <Heading level={2}>프리다이빙 용어집</Heading>
+            <Heading level={2}>요가 용어집</Heading>
             <Button primary={isSort} style={{ padding: 4, borderRadius: 4 }}>
               <SortIcon sort={isSort} onClick={handleOrderClick} />
             </Button>
