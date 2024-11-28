@@ -4,7 +4,7 @@ import { type MouseEvent, useState } from 'react'
 
 import useQueryParams from '@/shared/hooks/useQueryParams'
 
-import { 프리다이빙용어목록 } from '../../shared/meta'
+import { 요가용어목록 } from '../../shared/meta'
 
 function Page() {
   const index = Number(useQueryParams('index') as string)
@@ -25,7 +25,7 @@ function Page() {
     e.stopPropagation()
 
     setPatternIndex((state) => {
-      if (state === 프리다이빙용어목록.length) {
+      if (state === 요가용어목록.length) {
         return 1
       }
       return state + 1
@@ -34,14 +34,14 @@ function Page() {
 
   const handleBgClick = () => {
     setPatternIndex((state) => {
-      if (state === 프리다이빙용어목록.length) {
+      if (state === 요가용어목록.length) {
         return 1
       }
       return state + 1
     })
   }
 
-  const { 뜻, 용어, 용어풀이, 태그 } = 프리다이빙용어목록[patternIndex - 1]
+  const { 뜻, 용어, 용어풀이, 태그, 아사나 } = 요가용어목록[patternIndex - 1]
   return (
     <>
       <Grid
@@ -61,7 +61,7 @@ function Page() {
             </Text>
             {태그 && (
             <Text size="small">
-              {태그} <span>- 연습시에는 강사동반 권장</span>
+              ({태그}) <span>- {용어풀이}</span>
             </Text>
             )}
           </Box>
@@ -72,15 +72,37 @@ function Page() {
             pad="large"
             style={{ paddingTop: 0, paddingBottom: 0 }}
           >
-            <Text size="small">
-              {용어풀이}
-            </Text>
             <Text
               size="medium"
               style={{ lineHeight: '28px', }}
             >
-              {뜻}
+              뜻: {뜻}
             </Text>
+
+            <>
+              {아사나 && (<>
+                <Text size="medium">
+                  아사나:
+                </Text>
+                {아사나.split('/').map((value, index) => {
+                return value && (
+                  <Text
+                    key={index}
+                    size="medium"
+                    style={{
+                        background: '#83c5be',
+                        padding: '4px 6px',
+                        borderRadius: 12,
+                        color: '#444',
+                        verticalAlign: 'text-top',
+                        marginBottom: 8
+                      }}
+                    >
+                    {value}
+                  </Text>
+                )
+              })}</>)}
+            </>
           </Box>
         </>
       </Grid>
@@ -123,11 +145,9 @@ function Page() {
             onClick={handleNextClick}
           />
         </Box>
-        {/* 면책조항 */}
         <Box pad="large" style={{ paddingTop: 10 }}>
           <Text size="xsmall" style={{ color: '#c1121f' }}>
-            * 이 용어집은 정보 제공을 목적으로 하며, 실제 다이빙 활동에서 발생할
-            수 있는 부상이나 사고에 대한 책임은 지지 않습니다.
+            * 요가에서는 산스크리트어를 사용하기 때문에 생소할 수 있어요.
           </Text>
         </Box>
       </Box>

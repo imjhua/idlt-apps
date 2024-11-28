@@ -39,4 +39,8 @@ export const MENUS = [
     path: '/프리다이빙용어집',
     title: '프리다이빙용어집'
   },
+  {
+    path: '/요가용어집',
+    title: '요가용어집'
+  },
 ]

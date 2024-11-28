@@ -8,18 +8,24 @@ import { Link } from 'react-router-dom'
 import { GNB_HEIGHT } from '@/shared/components/Gnb'
 import theme from '@/styles/theme'
 
-import { 프리다이빙용어목록 } from '../shared/meta'
+import { 요가용어목록 } from '../shared/meta'
 
 // SEE: https://coolors.co/palettes/trending
 const COLORS: Record<string, `#${string}`> = {
-  '프리다이빙 협회': '#8ac926',
-  용어: '#8ecae6',
-  훈련법: '#a4ac86',
-  종목: '#ffca3a',
-  기술: '#cfbaf0',
-  // 질환: '#be95c4',
-  위험상태: '#ff595e',
-  스트레칭: '#81b29a',
+  동물: '#cfbaf0',
+  반다: '#a4ac86',
+  방향: '#f28482',
+  사물: '#be95c4',
+  용어: '#ffd670',
+  신체부위: '#81b29a',
+  상태: '#8ac926',
+  현인: '#be95c4',
+  호흡법: '#ff595e',
+  자연: '#f4a261',
+  숫자: '#e5e5e5',
+  요가: '#8ecae6',
+  차크라: '#a8dadc',
+  '식물, 곤충': '#d4a373',
 }
 
 function HomePage() {
@@ -27,7 +33,7 @@ function HomePage() {
   const [value, setValue] = useState<string>('')
 
   const filteredList = useMemo(() => {
-    const filteredList = 프리다이빙용어목록.filter(({ 용어, 용어풀이 }) => {
+    const filteredList = 요가용어목록.filter(({ 용어, 용어풀이 }) => {
       return (
         용어.toLowerCase().indexOf(value.toLowerCase()) > -1 ||
         용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
@@ -76,7 +82,7 @@ function HomePage() {
         </Box>
         <List
           style={{ paddingTop: 100 }}
-          data={filteredList.map(({ 용어, 용어풀이, 태그, index }) => {
+          data={filteredList.map(({ 용어, 용어풀이, 태그, 뜻, index }) => {
             return {
               item: (
                 <Link
@@ -92,7 +98,8 @@ function HomePage() {
                         borderRadius: 12,
                         padding: '4px 6px',
                         marginLeft: 4,
-                        color: '#444'
+                        color: '#444',
+                        verticalAlign: 'text-top'
                       }}
                     >
                       {태그}
@@ -108,7 +115,7 @@ function HomePage() {
                       textOverflow: 'ellipsis',
                     }}
                   >
-                    {용어풀이}
+                    {용어풀이} - {뜻}
                   </Text>
                 </Link>
               ),
