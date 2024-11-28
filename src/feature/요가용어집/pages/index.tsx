@@ -33,10 +33,11 @@ function HomePage() {
   const [value, setValue] = useState<string>('')
 
   const filteredList = useMemo(() => {
-    const filteredList = 요가용어목록.filter(({ 용어, 용어풀이 }) => {
+    const filteredList = 요가용어목록.filter(({ 용어, 용어풀이, 태그 }) => {
       return (
         용어.toLowerCase().indexOf(value.toLowerCase()) > -1 ||
-        용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
+        용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1 ||
+        태그.toLowerCase().indexOf(value.toLowerCase()) > -1
       )
     })
 
