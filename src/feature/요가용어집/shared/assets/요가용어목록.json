@@ -305,7 +305,7 @@
         "용어풀이": "에카",
         "뜻": "하나, 유일의",
         "태그": "숫자",
-        "아사나": "Eka Pada Rajakapotasana 에카 파다 라자 카포타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
+        "아사나": "Eka Pada Rajakapotasana 에카 파다 라자 카포타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
     },
     {
         "용어": null,
@@ -725,7 +725,7 @@
         "용어풀이": "파다",
         "뜻": "발 또는 다리",
         "태그": "신체부위",
-        "아사나": "Uttana Padasana 욷카타 파다사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
+        "아사나": "Uttana Padasana 욷카타 파다사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
     },
     {
         "용어": "Padangustha",
@@ -746,7 +746,7 @@
         "용어풀이": "파리가",
         "뜻": "빗장. 문을 닫는데 쓰이는 막대기",
         "태그": "사물",
-        "아사나": null
+        "아사나": "Parighasana 파리가 아사나 /"
     },
     {
         "용어": "Paripurna",
@@ -823,7 +823,7 @@
         "용어풀이": "프라사리타",
         "뜻": "버리다, 밖으로 펼쳐진. 내뻗다.",
         "태그": "상태",
-        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
+        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
     },
     {
         "용어": "Purva",
@@ -873,13 +873,6 @@
         "뜻": "소파, 침대",
         "태그": "사물",
         "아사나": "Paryankasana 파리얀카 아사나 /"
-    },
-    {
-        "용어": "Pparigha",
-        "용어풀이": "파리가",
-        "뜻": "빗장",
-        "태그": "사물",
-        "아사나": "Parighasana 파리가 아사나 /"
     },
     {
         "용어": null,
