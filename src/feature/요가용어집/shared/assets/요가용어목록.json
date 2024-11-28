@@ -53,7 +53,7 @@
         "용어풀이": "아르다",
         "뜻": "절반",
         "태그": "상태",
-        "아사나": "Ardha Chandrasana  아르다 찬드라 아사나 / Ardha Matsyendrasana 아르다 마첸드라 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나"
+        "아사나": "Ardha Chandrasana  아르다 찬드라 아사나 / Ardha Matsyendrasana 아르다 마첸드라 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
     },
     {
         "용어": "Asana",
@@ -95,7 +95,7 @@
         "용어풀이": "받다",
         "뜻": "구속된, 잡힌, 억제된, 확고한",
         "태그": "상태",
-        "아사나": "Baddha Konasana 받다 코나 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 /"
+        "아사나": "Baddha Konasana 받다 코나 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
     },
     {
         "용어": "Baka",
@@ -354,7 +354,7 @@
         "용어풀이": "가루다",
         "뜻": "독수리, 새(조류) 중의 왕",
         "태그": "동물",
-        "아사나": null
+        "아사나": "Garudasana 가루다아사나 /"
     },
     {
         "용어": "Go",
@@ -739,7 +739,7 @@
         "용어풀이": "파드마",
         "뜻": "연꽃",
         "태그": "식물, 곤충",
-        "아사나": "Padmasana 파드마 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나 / Urdhva Padmasana 우르드바 파드마 아사나 /"
+        "아사나": "Padmasana 파드마 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나 / Urdhva Padmasana 우르드바 파드마 아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
     },
     {
         "용어": "Parigha",
@@ -795,7 +795,7 @@
         "용어풀이": "파스치마",
         "뜻": "몸의 뒷부분 전체, 또는 서쪽",
         "태그": "신체부위",
-        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나"
+        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 /"
     },
     {
         "용어": "Pida",
