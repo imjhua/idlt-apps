@@ -156,7 +156,7 @@
     {
         "용어": "Ganda",
         "용어풀이": "간다",
-        "뜻": "얼굴의 모든 면, 뺨.",
+        "뜻": "얼굴의 모든 면, 뺨. 귀. 양쪽 귀",
         "태그": "신체부위",
         "아사나": "Gandaberundasana 간다 베룬다 아사나 /"
     },
@@ -179,7 +179,7 @@
         "용어풀이": "자타라",
         "뜻": "복부, 위, 아랫배",
         "태그": "신체부위",
-        "아사나": "Jathara Parivrttasana 자타라 파리브르타 아사나 /"
+        "아사나": "Jathara Parivartanasana 자타라 파리브르타 아사나 /"
     },
     {
         "용어": "Karna",
@@ -221,7 +221,7 @@
         "용어풀이": "시르사",
         "뜻": "머리",
         "태그": "신체부위",
-        "아사나": "Sirsasana 시르사 아사나 / Sirsa Padasana 시르사 파다아사나 / Janu Sirsasana  자누시르사 아사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Salamba Sirsasana 살람바 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parsvaika Pada Sirsasana 파르스바이카 파다 시르사아사나 / Parivrtta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 /"
+        "아사나": "Sirsasana 시르사 아사나 / Sirsa Padasana 시르사 파다아사나 / Janu Sirsasana  자누시르사 아사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Salamba Sirsasana 살람바 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parsvaika Pada Sirsasana 파르스바이카 파다 시르사아사나 / Parivarta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 /"
     },
     {
         "용어": "Sarvanga",
@@ -259,11 +259,11 @@
         "아사나": "Akarna Dhanurasana 아카르나 다누라아사나 /"
     },
     {
-        "용어": "Parivrtta",
+        "용어": "Parivarta",
         "용어풀이": "파리브르타",
         "뜻": "회전된",
         "태그": "방향",
-        "아사나": "Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Jathara Parivrttasana 자타라 파리브르타 아사나 /"
+        "아사나": "Parivarta Trikonasana 파리브르타 트리코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Jathara Parivrttasana 자타라 파리브르타 아사나 /"
     },
     {
         "용어": "Parsva",
@@ -539,11 +539,11 @@
         "아사나": "Bharadvajasana 바라드바자 아사나 /"
     },
     {
-        "용어": "Bitala",
-        "용어풀이": "비탈라",
+        "용어": "Bitila",
+        "용어풀이": "비틸라",
         "뜻": "소 변형, 소 동작",
         "태그": "동물",
-        "아사나": "Bitilasana 비탈라 아사나 /"
+        "아사나": "Bitilasana 비틸라 아사나 /"
     },
     {
         "용어": "Bidala",
@@ -690,14 +690,14 @@
         "용어풀이": "가르바",
         "뜻": "자궁",
         "태그": "용어",
-        "아사나": "Garbhasana 가르바 아사나 / Garva Pindasana 가르바 핀다 아사나 /"
+        "아사나": "Garbhasana 가르바 아사나"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Garva",
+        "용어풀이": "가르바",
+        "뜻": "자부심, 자존심",
+        "태그": "용어",
+        "아사나": "Garva Pindasana 가르바 핀다 아사나 /"
     },
     {
         "용어": "Garuda",
@@ -823,7 +823,7 @@
         "용어풀이": "코나",
         "뜻": "각도",
         "태그": null,
-        "아사나": "Samakonasana 사마코나아사나 / Baddha Konasana 받다 코나 아사나 / Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 / Supta Konasana 숩타 코나아사나"
+        "아사나": "Samakonasana 사마코나아사나 / Baddha Konasana 받다 코나 아사나 / Parivarta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 / Supta Konasana 숩타 코나아사나"
     },
     {
         "용어": "Krauncha",
@@ -872,7 +872,7 @@
         "용어풀이": "쿰바카",
         "뜻": "숨을 완전히 들이마신 뒤나 혹은 내쉰 후 호흡의 정지를 말한다.",
         "태그": "용어",
-        "아사나": null
+        "아사나": "Kumbhakasana 쿰바카 아나사 /"
     },
     {
         "용어": "Koundinya",
@@ -1509,7 +1509,7 @@
         "용어풀이": "트리",
         "뜻": "셋",
         "태그": "숫자",
-        "아사나": "Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 /"
+        "아사나": "Parivarta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 /"
     },
     {
         "용어": "Trianga",
