@@ -32,13 +32,23 @@ function Page() {
     })
   }
 
-  const handleBgClick = () => {
-    setPatternIndex((state) => {
-      if (state === 요가용어목록.length) {
-        return 1
-      }
-      return state + 1
-    })
+  // const handleBgClick = () => {
+  //   setPatternIndex((state) => {
+  //     if (state === 요가용어목록.length) {
+  //       return 1
+  //     }
+  //     return state + 1
+  //   })
+  // }
+
+  const handleCopyClick = (text: string) => {
+    const copyInput = document.createElement('input')
+    copyInput.style.cssText = 'position:fixed;left:-9999px;top:-9999px;'
+    document.body.appendChild(copyInput)
+    copyInput.value = text
+    copyInput.focus()
+    copyInput.select()
+
   }
 
   const { 뜻, 용어, 용어풀이, 태그, 아사나 } = 요가용어목록[patternIndex - 1]
@@ -52,7 +62,7 @@ function Page() {
         columns={['full']}
         pad="small"
         gap="medium"
-        onClick={handleBgClick}
+        // onClick={handleBgClick}
       >
         <>
           <Box gridArea="title" align="center" style={{ marginTop: '30px' }}>
@@ -86,10 +96,12 @@ function Page() {
                 </Text>
                 {아사나.split('/').map((value, index) => {
                 return value && (
-                  <Text
-                    key={index}
-                    size="medium"
-                    style={{
+                  <Button
+                    onClick={() => handleCopyClick(value)}
+                    key={index}>
+                    <Text
+                      size="medium"
+                      style={{
                         background: '#83c5be',
                         padding: '4px 6px',
                         borderRadius: 12,
@@ -98,8 +110,9 @@ function Page() {
                         marginBottom: 8
                       }}
                     >
-                    {value}
-                  </Text>
+                      {value}
+                    </Text>
+                  </Button>
                 )
               })}</>)}
             </>
