@@ -97,18 +97,19 @@ function Page() {
                 {아사나.split('/').map((value, index) => {
                 return value && (
                   <Button
+                    key={index}
                     onClick={() => handleCopyClick(value)}
-                    key={index}>
+                    style={{
+                      background: '#83c5be',
+                      padding: '4px 6px',
+                      borderRadius: 12,
+                      color: '#444',
+                      verticalAlign: 'text-top',
+                      marginBottom: 8
+                    }}
+                    >
                     <Text
                       size="medium"
-                      style={{
-                        background: '#83c5be',
-                        padding: '4px 6px',
-                        borderRadius: 12,
-                        color: '#444',
-                        verticalAlign: 'text-top',
-                        marginBottom: 8
-                      }}
                     >
                       {value}
                     </Text>
