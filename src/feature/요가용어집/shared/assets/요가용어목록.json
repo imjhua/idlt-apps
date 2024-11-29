@@ -193,7 +193,7 @@
         "용어풀이": "무카",
         "뜻": "얼굴, 입",
         "태그": "신체부위",
-        "아사나": "Adho Muka Svanasana 아도 무카 스바나 아사나 / Gomukasana 고무카 아사나 /"
+        "아사나": "Adho Muka Svanasana 아도 무카 스바나 아사나 / Gomukasana 고무카 아사나 / Urdhva Mukha Svanasana 우르드바 무카 스바나아사나"
     },
     {
         "용어": "Pada",
@@ -214,14 +214,14 @@
         "용어풀이": "파스치마",
         "뜻": "몸의 뒷부분 전체, 또는 서쪽",
         "태그": "신체부위",
-        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나"
+        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 / Urdhva Mukha Paschimottanasana 우르드바 무카 파스치모타나아사나"
     },
     {
         "용어": "Sirsa",
         "용어풀이": "시르사",
         "뜻": "머리",
         "태그": "신체부위",
-        "아사나": "Sirsasana 시르사 아사나 / Janusirsasana  자누시르사 아사나 / Salamba Sirsasana 살람바 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나"
+        "아사나": "Sirsasana 시르사 아사나 / Janusirsasana  자누시르사 아사나 / Salamba Sirsasana 살람바 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 /"
     },
     {
         "용어": "Sarvanga",
@@ -243,6 +243,48 @@
         "뜻": "어깨",
         "태그": "신체부위",
         "아사나": "Kandharasana 칸드라 아사나 /"
+    },
+    {
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
+    },
+    {
+        "용어": "Akarna",
+        "용어풀이": "아카르나",
+        "뜻": "귀 주변, 귀쪽으로 향한",
+        "태그": "방향",
+        "아사나": "Akarna Dhanurasana 아카르나 다누라아사나 /"
+    },
+    {
+        "용어": "Parivrtta",
+        "용어풀이": "파리브르타",
+        "뜻": "회전된",
+        "태그": "방향",
+        "아사나": "Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Jathara Parivrttasana 자타라 파리브르타 아사나 /"
+    },
+    {
+        "용어": "Parsva",
+        "용어풀이": "파르스바(Paristha)",
+        "뜻": "옆, 측면, 옆구리",
+        "태그": "방향",
+        "아사나": "Utthita Parsvakonasana 욷티타 파르스바 코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Parsvottanasana  파르스보타나 아사나 /  Parsva sarvangasana 파르스바 사르방가 아사나 /"
+    },
+    {
+        "용어": "Purva",
+        "용어풀이": "푸르바",
+        "뜻": "몸의 앞면, 또는 동쪽",
+        "태그": "방향",
+        "아사나": "Purvottanasana 푸르보타나 아사나 /"
+    },
+    {
+        "용어": "Urdhva",
+        "용어풀이": "우르드바",
+        "뜻": "위쪽으로 향하는, 상승되는",
+        "태그": "방향",
+        "아사나": "Urdhva Dhanurasana 우르드바 다누라 아사나 / Urdhva Padmasana 우르드바 파드마 아사나 / Urdhva Mukha Svanasana 우르드바 무카 스바나아사나"
     },
     {
         "용어": null,
@@ -301,17 +343,17 @@
         "아사나": "Agnistambhasana 아그니 스탐바 아사나 /"
     },
     {
-        "용어": "Adho-Mukha",
-        "용어풀이": "아도 무카",
-        "뜻": "얼굴을 아래로 향하다.",
-        "태그": "방향",
-        "아사나": "Adho Muka Svanasana 아도 무카 스바나 아사나 /"
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
     },
     {
-        "용어": "Akarna",
-        "용어풀이": "아카르나",
-        "뜻": "귀 주변, 귀쪽으로 향한",
-        "태그": "방향",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -320,6 +362,13 @@
         "뜻": "타격받지 않은, 손상되지 않은",
         "태그": "용어",
         "아사나": "Anahatasana 아나하타 아사타 /"
+    },
+    {
+        "용어": "Ashwa",
+        "용어풀이": "아쉬와",
+        "뜻": "말. 일반적인 말, 말이 달리는 자세",
+        "태그": "동물",
+        "아사나": "Ashwa Sanchalanasana 아쉬와 산찰라나아사나 /"
     },
     {
         "용어": null,
@@ -539,6 +588,13 @@
         "아사나": "Ardha Chandra Chapasana 아르다 찬드라 자파 아사나 /"
     },
     {
+        "용어": "Sanchalan",
+        "용어풀이": "산찰란",
+        "뜻": "발걸음",
+        "태그": "용어",
+        "아사나": "Ashwa Sanchalanasana 아쉬와 산찰라나아사나 /"
+    },
+    {
         "용어": null,
         "용어풀이": null,
         "뜻": null,
@@ -550,14 +606,14 @@
         "용어풀이": "단다",
         "뜻": "지팡이, 막대기, 몸뚱이",
         "태그": "사물",
-        "아사나": "Dandasana 단다 아사나 / Dwi Pada Viparita Dandasana 드위 파다 비파리타 단다 아사나  /"
+        "아사나": "Dandasana 단다 아사나 / Chaturanga Dandasana 차투랑가 단다아사나 / Dwi Pada Viparita Dandasana 드위 파다 비파리타 단다 아사나  /"
     },
     {
         "용어": "Dhanu",
         "용어풀이": "다누",
         "뜻": "활",
         "태그": "사물",
-        "아사나": "Dhanurasana 다누라 아사나 / Urdhva Dhanurasana 우르드바 다누라 아사나 / Parsva Danurasana 파르스바 다누라 아사나 /"
+        "아사나": "Dhanurasana 다누라 아사나 / Urdhva Dhanurasana 우르드바 다누라 아사나 / Parsva Danurasana 파르스바 다누라 아사나 / Padangustha Dhanurasana  파당구쉬타 다누라아사나"
     },
     {
         "용어": null,
@@ -630,10 +686,10 @@
         "아사나": "Garbhasana 가르바 아사나 / Garva Pindasana 가르바 핀다 아사나 /"
     },
     {
-        "용어": "Garbha-Pinda",
-        "용어풀이": "가르바 핀다",
-        "뜻": "자궁 내의 태아",
-        "태그": "용어",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -648,7 +704,7 @@
         "용어풀이": "고",
         "뜻": "소 상징",
         "태그": "동물",
-        "아사나": "Gomukasana 고무카 아사나 /"
+        "아사나": "Gomukasana 고무카 아사나 / Goraksasana 고륵샤 아사나 /"
     },
     {
         "용어": "Guru",
@@ -772,9 +828,9 @@
     {
         "용어": "Kukkuta",
         "용어풀이": "쿡쿠타",
-        "뜻": "수탉",
+        "뜻": "수탉, 닭",
         "태그": "동물",
-        "아사나": null
+        "아사나": "Kukkutasana 쿡쿠타 아사나 /"
     },
     {
         "용어": "Kurma",
@@ -812,11 +868,11 @@
         "아사나": null
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Koundinya",
+        "용어풀이": "코운딘야",
+        "뜻": "인도의 위대한 성자이자 현자.",
+        "태그": "현자",
+        "아사나": "Eka Pada Koundinyasana 에카 파다 코운딘야아사나 /"
     },
     {
         "용어": "Kriya",
@@ -851,7 +907,7 @@
         "용어풀이": "로라",
         "뜻": "매달려 앞뒤로 움직이는 그네 또는 추",
         "태그": "용어",
-        "아사나": null
+        "아사나": "Lolasana 로라아사나 /"
     },
     {
         "용어": null,
@@ -998,7 +1054,7 @@
         "용어풀이": "나바",
         "뜻": "배, 보트",
         "태그": "사물",
-        "아사나": "Navasana 나바 아사나 / paripurna navasana 파리푸르나 나바 아사나 /"
+        "아사나": "Navasana 나바 아사나 /Ardha Navasana 나바아사나 / Paripurna navasana 파리푸르나 나바 아사나 /"
     },
     {
         "용어": "Niralamba",
@@ -1085,24 +1141,24 @@
         "아사나": null
     },
     {
-        "용어": "Parivrtta",
-        "용어풀이": "파리브르타",
-        "뜻": "회전된",
-        "태그": "방향",
-        "아사나": "Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Jathara Parivrttasana 자타라 파리브르타 아사나 /"
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
     },
     {
-        "용어": "Parsva",
-        "용어풀이": "파르스바(Paristha)",
-        "뜻": "옆, 측면, 옆구리",
-        "태그": "방향",
-        "아사나": "Utthita Parsvakonasana 욷티타 파르스바 코나 아사나 / Parivrtta Parsvakonasana 파리브리타 파르스바 코나 아사나  / Parsvottanasana  파르스보타나 아사나 /  Parsva sarvangasana 파르스바 사르방가 아사나 /"
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
     },
     {
-        "용어": "Parvata",
-        "용어풀이": "파르바타",
-        "뜻": "산",
-        "태그": "자연",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -1148,10 +1204,10 @@
         "아사나": null
     },
     {
-        "용어": "Purva",
-        "용어풀이": "푸르바",
-        "뜻": "몸의 앞면, 또는 동쪽",
-        "태그": "방향",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -1239,18 +1295,18 @@
         "아사나": "Eka Pada Rajakapotasana 에카 파다 라자 카포타 아사나 /"
     },
     {
+        "용어": "Raksha",
+        "용어풀이": "륵샤",
+        "뜻": "보호",
+        "태그": null,
+        "아사나": "Goraksasana 고륵샤 아사나 /"
+    },
+    {
         "용어": null,
         "용어풀이": null,
         "뜻": null,
         "태그": null,
         "아사나": null
-    },
-    {
-        "용어": "Salabha",
-        "용어풀이": "살라바",
-        "뜻": "메뚜기",
-        "태그": "식물, 곤충",
-        "아사나": "Salabhasana 살라바 아사나 / Viparita Salabhasana 비파리타 살라바 아사나 /"
     },
     {
         "용어": null,
@@ -1288,11 +1344,11 @@
         "아사나": "Simhasana 심하 아사나 /"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Salabha",
+        "용어풀이": "살라바",
+        "뜻": "메뚜기",
+        "태그": "식물, 곤충",
+        "아사나": "Salabhasana 살라바 아사나 / Viparita Salabhasana 비파리타 살라바 아사나 /"
     },
     {
         "용어": "Sukha",
@@ -1449,10 +1505,10 @@
         "아사나": null
     },
     {
-        "용어": "Ubhaya",
-        "용어풀이": "우바야",
-        "뜻": "양쪽",
-        "태그": "용어",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -1463,11 +1519,11 @@
         "아사나": null
     },
     {
-        "용어": "Urdhva",
-        "용어풀이": "우르드바",
-        "뜻": "위쪽으로 향하는, 상승되는",
-        "태그": "방향",
-        "아사나": "Urdhva Dhanurasana 우르드바 다누라 아사나 / Urdhva Padmasana 우르드바 파드마 아사나 /"
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
     },
     {
         "용어": "Ustra",
@@ -1584,7 +1640,7 @@
     {
         "용어": "Vataya",
         "용어풀이": "바타야",
-        "뜻": "말",
+        "뜻": "말. 바람을 타고 달리는 말, 말과 관련된 것",
         "태그": "동물",
         "아사나": "Vatayanasana 바타야 아사나 /"
     },
