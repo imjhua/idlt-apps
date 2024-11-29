@@ -53,7 +53,7 @@
         "용어풀이": "아르다",
         "뜻": "절반",
         "태그": "상태",
-        "아사나": "Ardha Chandrasana  아르다 찬드라 아사나 / Ardha Matsyendrasana 아르다 마첸드라 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
+        "아사나": "Ardha Chandrasana  아르다 찬드라 아사나 / Ardha Matsyendrasana 아르다 마첸드라 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나"
     },
     {
         "용어": "Asana",
@@ -95,7 +95,7 @@
         "용어풀이": "받다",
         "뜻": "구속된, 잡힌, 억제된, 확고한",
         "태그": "상태",
-        "아사나": "Baddha Konasana 받다 코나 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
+        "아사나": "Baddha Konasana 받다 코나 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 /"
     },
     {
         "용어": "Baka",
@@ -305,7 +305,7 @@
         "용어풀이": "에카",
         "뜻": "하나, 유일의",
         "태그": "숫자",
-        "아사나": "Eka Pada Rajakapotasana 에카 파다 라자 카포타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
+        "아사나": "Eka Pada Rajakapotasana 에카 파다 라자 카포타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
     },
     {
         "용어": null,
@@ -319,7 +319,7 @@
         "용어풀이": "갈라바",
         "뜻": "현인의 이름",
         "태그": "현인",
-        "아사나": null
+        "아사나": "Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
     },
     {
         "용어": "Ganda",
@@ -354,7 +354,7 @@
         "용어풀이": "가루다",
         "뜻": "독수리, 새(조류) 중의 왕",
         "태그": "동물",
-        "아사나": "Garudasana 가루다아사나 /"
+        "아사나": null
     },
     {
         "용어": "Go",
@@ -371,11 +371,11 @@
         "아사나": null
     },
     {
-        "용어": "Galava",
-        "용어풀이": "갈라바",
-        "뜻": "인도 현인",
-        "태그": "현인",
-        "아사나": "Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
+        "아사나": null
     },
     {
         "용어": null,
@@ -725,7 +725,7 @@
         "용어풀이": "파다",
         "뜻": "발 또는 다리",
         "태그": "신체부위",
-        "아사나": "Uttana Padasana 욷카타 파다사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
+        "아사나": "Uttana Padasana 욷카타 파다사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
     },
     {
         "용어": "Padangustha",
@@ -739,14 +739,14 @@
         "용어풀이": "파드마",
         "뜻": "연꽃",
         "태그": "식물, 곤충",
-        "아사나": "Padmasana 파드마 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나 / Urdhva Padmasana 우르드바 파드마 아사나 / Ardha Baddha Padmottanasana 아르다 받다 파드모타나아사나"
+        "아사나": "Padmasana 파드마 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나 / Urdhva Padmasana 우르드바 파드마 아사나 /"
     },
     {
         "용어": "Parigha",
         "용어풀이": "파리가",
         "뜻": "빗장. 문을 닫는데 쓰이는 막대기",
         "태그": "사물",
-        "아사나": "Parighasana 파리가 아사나 /"
+        "아사나": null
     },
     {
         "용어": "Paripurna",
@@ -795,7 +795,7 @@
         "용어풀이": "파스치마",
         "뜻": "몸의 뒷부분 전체, 또는 서쪽",
         "태그": "신체부위",
-        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 /"
+        "아사나": "Pschimottanasana 파스치모타나 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나"
     },
     {
         "용어": "Pida",
@@ -823,7 +823,7 @@
         "용어풀이": "프라사리타",
         "뜻": "버리다, 밖으로 펼쳐진. 내뻗다.",
         "태그": "상태",
-        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
+        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
     },
     {
         "용어": "Purva",
@@ -873,6 +873,13 @@
         "뜻": "소파, 침대",
         "태그": "사물",
         "아사나": "Paryankasana 파리얀카 아사나 /"
+    },
+    {
+        "용어": "Pparigha",
+        "용어풀이": "파리가",
+        "뜻": "빗장",
+        "태그": "사물",
+        "아사나": "Parighasana 파리가 아사나 /"
     },
     {
         "용어": null,
@@ -1237,6 +1244,13 @@
         "뜻": "거꾸로 전환된",
         "태그": "상태",
         "아사나": "Viparita Salabhasana 비파리타 살라바 아사나 / Viparita Dandasana 비파리타 단다 아사나 / Viparita Salabhasana 비파리타 살라바 아사나 / Viparita Virabhadrasana 비파리타 비라바드라 아사나 /"
+    },
+    {
+        "용어": "Vasista",
+        "용어풀이": "바시스타",
+        "뜻": "인도 현인. 가장 훌륭한, 최고의",
+        "태그": null,
+        "아사나": "Vasisthasana 바시스타 아사나 /"
     },
     {
         "용어": null,
