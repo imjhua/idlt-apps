@@ -2,6 +2,7 @@ import { Box, Button, Grid, Text } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
 import { type MouseEvent, useState } from 'react'
 
+import { clipboard } from '@/lib/utils'
 import useQueryParams from '@/shared/hooks/useQueryParams'
 
 import { 요가용어목록 } from '../../shared/meta'
@@ -42,13 +43,7 @@ function Page() {
   // }
 
   const handleCopyClick = (text: string) => {
-    const copyInput = document.createElement('input')
-    copyInput.style.cssText = 'position:fixed;left:-9999px;top:-9999px;'
-    document.body.appendChild(copyInput)
-    copyInput.value = text
-    copyInput.focus()
-    copyInput.select()
-
+    clipboard.writeText(text)
   }
 
   const { 뜻, 용어, 용어풀이, 태그, 아사나 } = 요가용어목록[patternIndex - 1]
