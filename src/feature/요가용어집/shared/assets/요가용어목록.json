@@ -200,7 +200,7 @@
         "용어풀이": "파다",
         "뜻": "발 또는 다리",
         "태그": "신체부위",
-        "아사나": "UttanaPadasana 욷타나 파다아사나/ Uttana Padasana 욷카타 파다아사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
+        "아사나": "UttanaPadasana 욷타나 파다아사나/ Uttana Padasana 욷카타 파다아사나 / Pada Hastasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 / Sirsa Padasana 시르사 파다아사나 /"
     },
     {
         "용어": "Padangustha",
@@ -221,7 +221,7 @@
         "용어풀이": "시르사",
         "뜻": "머리",
         "태그": "신체부위",
-        "아사나": "Sirsasana 시르사 아사나 / Janu Sirsasana  자누시르사 아사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Salamba Sirsasana 살람바 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parsvaika Pada Sirsasana 파르스바이카 파다 시르사아사나 / Parivrtta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 /"
+        "아사나": "Sirsasana 시르사 아사나 / Sirsa Padasana 시르사 파다아사나 / Janu Sirsasana  자누시르사 아사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Salamba Sirsasana 살람바 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parsvaika Pada Sirsasana 파르스바이카 파다 시르사아사나 / Parivrtta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 /"
     },
     {
         "용어": "Sarvanga",
@@ -438,7 +438,7 @@
         "용어풀이": "바카",
         "뜻": "학(새의 종류)",
         "태그": "동물",
-        "아사나": "Bakasana 바카 아사나 /"
+        "아사나": "Bakasana 바카 아사나 / Eka Pada Bakasana 에카 파다 바카아사나 /"
     },
     {
         "용어": "bherunda",
@@ -481,6 +481,13 @@
         "뜻": "뱀",
         "태그": "동물",
         "아사나": "Bhujangasana 부장가 아사나 /"
+    },
+    {
+        "용어": "Buddha",
+        "용어풀이": "붇다",
+        "뜻": "깨달은 자, 지혜로운 자",
+        "태그": "용어",
+        "아사나": "Buddhasana 붇다아사나 /"
     },
     {
         "용어": "Buddhi",
@@ -557,7 +564,7 @@
         "용어풀이": "차크라",
         "뜻": "바퀴, 원. 인체 구조의 속도 조절 바퀴",
         "태그": "용어",
-        "아사나": "Chakrasana 차크라 아사나 /"
+        "아사나": "Chakrasana 차크라 아사나 / Chakra Bandhasana 차크라 반다 아나사 /"
     },
     {
         "용어": "Chandra",
@@ -606,7 +613,7 @@
         "용어풀이": "단다",
         "뜻": "지팡이, 막대기, 몸뚱이",
         "태그": "사물",
-        "아사나": "Dandasana 단다 아사나 / Chaturanga Dandasana 차투랑가 단다아사나 / Urdhva Dandasana 우르드바 단다아사나 / Dwi Pada Viparita Dandasana 드위 파다 비파리타 단다 아사나  /"
+        "아사나": "Dandasana 단다 아사나 / Chaturanga Dandasana 차투랑가 단다아사나 / Urdhva Dandasana 우르드바 단다아사나 / Eka Pada Viparita Dandasana 에카 파다 비파리타 단다 아사나 / Dwi Pada Viparita Dandasana 드위 파다 비파리타 단다 아사나  /"
     },
     {
         "용어": "Dhanu",
@@ -662,7 +669,7 @@
         "용어풀이": "갈라바",
         "뜻": "현인의 이름",
         "태그": "현인",
-        "아사나": "Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
+        "아사나": "Galavasana 갈라바 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
     },
     {
         "용어": null,
@@ -672,10 +679,10 @@
         "아사나": null
     },
     {
-        "용어": "Ganda-Bherunda",
-        "용어풀이": "간다 베룬다",
-        "뜻": "새(조류)의 이름",
-        "태그": "동물",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -816,7 +823,7 @@
         "용어풀이": "코나",
         "뜻": "각도",
         "태그": null,
-        "아사나": "Baddha Konasana 받다 코나 아사나 / Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 / Supta Konasana 숩타 코나아사나"
+        "아사나": "Samakonasana 사마코나아사나 / Baddha Konasana 받다 코나 아사나 / Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 / Supta Konasana 숩타 코나아사나"
     },
     {
         "용어": "Krauncha",
@@ -830,14 +837,14 @@
         "용어풀이": "쿡쿠타",
         "뜻": "수탉, 닭",
         "태그": "동물",
-        "아사나": "Kukkutasana 쿡쿠타 아사나 /"
+        "아사나": "Kukkutasana 쿡쿠타 아사나 / Urdhva Kukkutasana 우르다 쿡쿠타 아사나 / Parsva Kukkutasana 파르스바 쿡쿠타 아사나 /"
     },
     {
         "용어": "Kurma",
         "용어풀이": "쿠르마",
         "뜻": "거북이",
         "태그": "동물",
-        "아사나": "Kurmasana 쿠르마 아사나 / Uthitha Kurmasana 우티타 쿠르마 아사나 /"
+        "아사나": "Kurmasana 쿠르마 아사나 / Uthitha Kurmasana 우티타 쿠르마 아사나 / Supta Kurmasana 숩타 쿠르마 아사나 /"
     },
     {
         "용어": "Kaka",
@@ -871,8 +878,8 @@
         "용어": "Koundinya",
         "용어풀이": "코운딘야",
         "뜻": "인도의 위대한 성자이자 현자.",
-        "태그": "현자",
-        "아사나": "Eka Pada Koundinyasana 에카 파다 코운딘야아사나 /"
+        "태그": "현인",
+        "아사나": "Eka Pada Koundinyasana 에카 파다 코운딘야아사나 / Dwi Pada Koundinyasna 드위 파다 코운딘야아사나 /"
     },
     {
         "용어": "Kriya",
@@ -1358,6 +1365,13 @@
         "아사나": "Sukhasana 수카 아사나 /"
     },
     {
+        "용어": "Skanda",
+        "용어풀이": "스칸다",
+        "뜻": "전쟁의 신. 점프. 올라감",
+        "태그": "용어",
+        "아사나": "Skandasana 스칸다아사나"
+    },
+    {
         "용어": null,
         "용어풀이": null,
         "뜻": null,
@@ -1412,6 +1426,13 @@
         "뜻": "토끼",
         "태그": "동물",
         "아사나": "Sasangasana 사상가 아사나 /"
+    },
+    {
+        "용어": "Sama",
+        "용어풀이": "사마",
+        "뜻": "평평한, 동일한, 똑바른",
+        "태그": "용어",
+        "아사나": "Samakonasana 사마코나아사나 /"
     },
     {
         "용어": "Samadhi",
@@ -1496,6 +1517,13 @@
         "뜻": "세 개의 신체 부분, 가지",
         "태그": "용어",
         "아사나": "Trianga Mukhaikapada Paschimottanasana 트리앙가 무카이카파다 파스치모타나아사나 /"
+    },
+    {
+        "용어": "Triang",
+        "용어풀이": "트리앙",
+        "뜻": "비스듬히, 대각선 방향으로",
+        "태그": "용어",
+        "아사나": "Tiriang Mukhottanasana 티리앙 무코타나아사나"
     },
     {
         "용어": "Tola",
@@ -1628,7 +1656,7 @@
         "용어풀이": "바카",
         "뜻": "새 자세",
         "태그": "동물",
-        "아사나": "Vakasana 바카 아사나 /"
+        "아사나": "Vakasana 바카 아사나 / Parsva Bakasan 파르스바 바카 아사나 /"
     },
     {
         "용어": "Vajra",
