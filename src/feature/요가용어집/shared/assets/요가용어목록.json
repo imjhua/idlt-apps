@@ -18,7 +18,7 @@
         "용어풀이": "파리푸르나",
         "뜻": "완전하게 가득 찬, 전적으로 충족된. 완전함이 모든 면에서 충족되었음을 나타냄",
         "태그": "상태",
-        "아사나": "paripurna navasana 파리푸르나 나바 아사나 /"
+        "아사나": "paripurna navasana 파리푸르나 나바 아사나 / Paripurna Matsyendrasana 파리푸르나 마첸드라아사나 /"
     },
     {
         "용어": "Purna",
@@ -39,7 +39,7 @@
         "용어풀이": "프라사리타",
         "뜻": "버리다, 밖으로 펼쳐진. 내뻗다.",
         "태그": "상태",
-        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
+        "아사나": "Prasarita Padottanasana 프라사리타 파도타나 아사나 / Urdhva Prasarita Padasana 우르드바 프라사리타 파다 아사나 / Urdhva Prasarita Ekapadasana 우르드바 프라사리타 에카 파다 아사나 /"
     },
     {
         "용어": "Salamba",
@@ -151,7 +151,7 @@
         "용어풀이": "부자",
         "뜻": "팔이나 어깨",
         "태그": "신체부위",
-        "아사나": null
+        "아사나": "Bhujapidasana 부자 피다 아사나 / Eka Hasta Bhujasana 에카 하스타 부자 아사나 / Dwi Hasta Bhujasana 드위 하스타 부자 아사나 /"
     },
     {
         "용어": "Ganda",
@@ -200,7 +200,7 @@
         "용어풀이": "파다",
         "뜻": "발 또는 다리",
         "태그": "신체부위",
-        "아사나": "Uttana Padasana 욷카타 파다사사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
+        "아사나": "UttanaPadasana 욷타나 파다아사나/ Uttana Padasana 욷카타 파다아사나 / Pada Hasthasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 /"
     },
     {
         "용어": "Padangustha",
@@ -221,14 +221,14 @@
         "용어풀이": "시르사",
         "뜻": "머리",
         "태그": "신체부위",
-        "아사나": "Sirsasana 시르사 아사나 / Janusirsasana  자누시르사 아사나 / Salamba Sirsasana 살람바 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parivrtta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 /"
+        "아사나": "Sirsasana 시르사 아사나 / Janu Sirsasana  자누시르사 아사나 / Eka Pada Sirsasana 에카 파다 시르사아사나 / Salamba Sirsasana 살람바 시르사아사나 / Mukta Hasta Sirsasana 묵타 하스타 시르사 아사나 / Baddha Hasta Sirsasana 받다 하스타 시르사 아사나 / Parsva Sirsasana 파르스바 시르사 아사나 / Parsvaika Pada Sirsasana 파르스바이카 파다 시르사아사나 / Parivrtta Eka Pada Sirsasana 파리브리타 에카 파다 시르사아사나 / Dwi Pada Sirsanana 드위 파다 시르사사나 /"
     },
     {
         "용어": "Sarvanga",
         "용어풀이": "사르방가",
         "뜻": "몸 전체",
         "태그": "신체부위",
-        "아사나": "Sarvangasana 사르방가 아사나 / Salamba Sarvangasana 살람바 사르방가 아사나 /"
+        "아사나": "Sarvangasana 사르방가 아사나 / Salamba Sarvangasana 살람바 사르방가 아사나 / Setu Bandha Sarvangasana 세투 반다 사르반가아사나 / Niralamba Sarvangasana 니라람바 사르방가 / Parsva Sarvangasana 파르스바 사르방가 아사나 / Parsvaika Pada Sarvangasana 파르스바이카 파다 사르반가아사나 / Parsva Sarvangasana 파르스바 사르반가 아사나 / Eka Pada Setu Bandha Sarvangasana  에카 파다 세투 반다 사르반가 아사나"
     },
     {
         "용어": "Setu",
@@ -343,11 +343,11 @@
         "아사나": "Agnistambhasana 아그니 스탐바 아사나 /"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Ananta",
+        "용어풀이": "아난타",
+        "뜻": "끝없는, 무한한, 영원한",
+        "태그": "용어",
+        "아사나": "Anantasana 아난타 아사나 /"
     },
     {
         "용어": null,
@@ -469,10 +469,10 @@
         "아사나": null
     },
     {
-        "용어": "Bhuja-Pida",
-        "용어풀이": "부자 피다",
-        "뜻": "팔이나 어깨에 가해지는 압력",
-        "태그": "상태",
+        "용어": null,
+        "용어풀이": null,
+        "뜻": null,
+        "태그": null,
         "아사나": null
     },
     {
@@ -732,7 +732,7 @@
         "용어풀이": "할라",
         "뜻": "쟁기",
         "태그": "사물",
-        "아사나": "Halasana 할라 아사나 /"
+        "아사나": "Halasana 할라 아사나 / Parsva Halasana 파르스바 할라아사나 /"
     },
     {
         "용어": "Hamsa",
@@ -816,7 +816,7 @@
         "용어풀이": "코나",
         "뜻": "각도",
         "태그": null,
-        "아사나": "Baddha Konasana 받다 코나 아사나 / Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 /"
+        "아사나": "Baddha Konasana 받다 코나 아사나 / Parivrtta Trikonasana 파리브르타 트리코나 아사나 / Uttita Trikonasana  욷티타 트리코나 아사나 / Upavistha Konasana 우파비스타 코나 아사나 / Supta Konasana 숩타 코나아사나"
     },
     {
         "용어": "Krauncha",
@@ -855,7 +855,7 @@
     },
     {
         "용어": "Karanda",
-        "용어풀이": "카란다바",
+        "용어풀이": "카란다",
         "뜻": "오리 또는 작은 거북이 (종종 오리로 비유되는 형태).",
         "태그": "동물",
         "아사나": "Karandavasana 카란다바 아사나 /"
@@ -886,7 +886,7 @@
         "용어풀이": "쿤달리니",
         "뜻": "남성적 활동의 근본 에너지. 척추의 기저에 뱀처럼 또아리를 틀고 있음.",
         "태그": "용어",
-        "아사나": null
+        "아사나": "Hamsasana 함사아사나 /"
     },
     {
         "용어": null,
@@ -977,7 +977,7 @@
         "용어풀이": "마유라",
         "뜻": "수공작",
         "태그": "동물",
-        "아사나": "Mayurasana  마유라 아사나 /"
+        "아사나": "Mayurasana  마유라 아사나 / Pincha Mayurasana 핀차 마유라사나 /"
     },
     {
         "용어": "Mudra",
@@ -1054,14 +1054,14 @@
         "용어풀이": "나바",
         "뜻": "배, 보트",
         "태그": "사물",
-        "아사나": "Navasana 나바 아사나 /Ardha Navasana 나바아사나 / Paripurna navasana 파리푸르나 나바 아사나 /"
+        "아사나": "Navasana 나바 아사나 / Ardha Navasana 나바아사나 / Paripurna navasana 파리푸르나 나바 아사나 /"
     },
     {
         "용어": "Niralamba",
-        "용어풀이": "나라람바",
+        "용어풀이": "니라람바",
         "뜻": "지지 없이",
         "태그": "용어",
-        "아사나": null
+        "아사나": "Niralamba Sarvangasana 니라람바 사르방가 /"
     },
     {
         "용어": "Nadi",
@@ -1117,7 +1117,7 @@
         "용어풀이": "파드마",
         "뜻": "연꽃",
         "태그": "식물, 곤충",
-        "아사나": "Padmasana 파드마 아사나 / Ardha Baddha Padma Paschimottanasana / 아르다 받다 파드마 파스치모타나아사나 / Urdhva Padmasana 우르드바 파드마 아사나 /"
+        "아사나": "Padmasana 파드마 아사나 / PadmaMayurasana 파드마 마유라아사나 / Urdhva Padmasana 우르드바 파드마 아사나 / Parsva Urdhva Padmasana 파르스바 우르드바 파드마 아사나 / Ardha Baddha Padma Paschimottanasana 아르다 받다 파드마 파스치모타나아사나 / Uttana Padma Mayurasana 욷타나 파드마 마유라아사나"
     },
     {
         "용어": "Parigha",
@@ -1187,7 +1187,7 @@
         "용어풀이": "핀차",
         "뜻": "턱, 깃털",
         "태그": "사물",
-        "아사나": null
+        "아사나": "Pincha Mayurasana 핀차 마유라사나 /"
     },
     {
         "용어": "Pinda",
@@ -1454,6 +1454,13 @@
         "뜻": "개",
         "태그": "동물",
         "아사나": "Adho Muka Svanasana 아도 무카 스바나 아사나 /"
+    },
+    {
+        "용어": "Sayana",
+        "용어풀이": "시야나",
+        "뜻": "눕다, 쉬다, 잠을 자다",
+        "태그": "용어",
+        "아사나": "Sayanasana 시야니 아사나 /"
     },
     {
         "용어": null,
