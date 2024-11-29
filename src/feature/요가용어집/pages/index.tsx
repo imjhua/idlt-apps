@@ -56,6 +56,10 @@ function HomePage() {
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const search = e.target.value
+
+    if (search === ''){
+      setSearchParams({ search })
+    }
     setSearchValue(search)
   }
 

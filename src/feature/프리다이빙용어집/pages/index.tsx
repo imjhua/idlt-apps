@@ -3,7 +3,7 @@ import styled from '@emotion/styled/macro'
 import { Box, Button, Heading, List, Text, TextInput } from 'grommet'
 import { Sort } from 'grommet-icons'
 import { ChangeEvent, useMemo, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 
 import { GNB_HEIGHT } from '@/shared/components/Gnb'
 import theme from '@/styles/theme'
@@ -23,14 +23,15 @@ const COLORS: Record<string, `#${string}`> = {
 }
 
 function HomePage() {
+  const [searchParams, setSearchParams] = useSearchParams()
   const [isSort, setIsSort] = useState<boolean>(false)
-  const [value, setValue] = useState<string>('')
+  const [searchValue, setSearchValue] = useState<string>(searchParams.get('search') || '')
 
   const filteredList = useMemo(() => {
     const filteredList = 프리다이빙용어목록.filter(({ 용어, 용어풀이 }) => {
       return (
-        용어.toLowerCase().indexOf(value.toLowerCase()) > -1 ||
-        용어풀이.toUpperCase().indexOf(value.toUpperCase()) > -1
+        용어.toLowerCase().indexOf(searchValue.toLowerCase()) > -1 ||
+        용어풀이.toUpperCase().indexOf(searchValue.toUpperCase()) > -1
       )
     })
 
@@ -40,7 +41,7 @@ function HomePage() {
       })
     }
     return filteredList
-  }, [value, isSort])
+  }, [searchValue, isSort])
 
   const handleOrderClick = () => {
     setIsSort((state) => !state)
@@ -48,7 +49,10 @@ function HomePage() {
 
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     const search = e.target.value
-    setValue(search)
+    if (search === ''){
+      setSearchParams({ search })
+    }
+    setSearchValue(search)
   }
 
   return (
@@ -65,13 +69,16 @@ function HomePage() {
           <Box direction="row" justify="between">
             <Heading level={2}>프리다이빙 용어집</Heading>
             <Button primary={isSort} style={{ padding: 4, borderRadius: 4 }}>
-              <SortIcon sort={isSort} onClick={handleOrderClick} />
+              <SortIcon sorted={isSort} onClick={handleOrderClick}>
+                <Sort />
+              </SortIcon>
             </Button>
           </Box>
           <TextInput
             name="name"
             placeholder={<Text>검색</Text>}
             onChange={handleInputChange}
+            value={searchValue}
         />
         </Box>
         <List
@@ -82,6 +89,9 @@ function HomePage() {
                 <Link
                   key={index}
                   to={{ pathname: 'detail', search: `?index=${index + 1}` }}
+                  onClick={() => {
+                    setSearchParams({ search: searchValue })
+                  }}
                 >
                   <Text size="large">{용어}</Text>
                   {태그 && (
@@ -122,8 +132,8 @@ function HomePage() {
 
 export default HomePage
 
-const SortIcon = styled(Sort)<{ sort: boolean }>`
-  ${({ theme, sort }) => sort &&
+const SortIcon = styled.span<{ sorted: boolean }>`
+  ${({ theme, sorted }) => sorted &&
     css`
       stroke: ${theme.background};
     `};
