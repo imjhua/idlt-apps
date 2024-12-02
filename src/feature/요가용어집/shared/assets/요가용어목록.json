@@ -32,7 +32,7 @@
         "용어풀이": "피다",
         "뜻": "아픔, 고통, 압박",
         "태그": "상태",
-        "아사나": "Karna pidasana 카르나 피다 아사나 /"
+        "아사나": "Karnapidasana 카르나 피다 아사나 /"
     },
     {
         "용어": "Prasarita",
@@ -186,7 +186,7 @@
         "용어풀이": "카르나",
         "뜻": "귀(신체 부위)",
         "태그": "신체부위",
-        "아사나": "Karna pidasana 카르나 피다 아사나 /"
+        "아사나": "Karnapidasana 카르나 피다 아사나 /"
     },
     {
         "용어": "Mukha",
@@ -207,7 +207,7 @@
         "용어풀이": "파당구쉬타",
         "뜻": "엄지 발가락 또는 발가락",
         "태그": "신체부위",
-        "아사나": "Padandgushtasana 파당구쉬타 아사나 / Supta Padangusthasana 숩타 파당구쉬타 아사나 / Utthita Hasta Padangustasana 욷티타 하스타 파당구쉬타 아사나 /"
+        "아사나": "Padandgushtasana 파당구쉬타 아사나 / Supta Padangusthasana 숩타 파당구쉬타 아사나 / Utthita Hasta Padangustasana 욷티타 하스타 파당구쉬타 아사나 / Ubhaya Padangusthasana 우바야 파당구쉬타 아사나 /"
     },
     {
         "용어": "Paschima",
@@ -994,11 +994,11 @@
         "아사나": null
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Mrig",
+        "용어풀이": "므리가",
+        "뜻": "사슴",
+        "태그": "동물",
+        "아사나": "Mrigasana 므리가사나 /"
     },
     {
         "용어": "Mukta",
