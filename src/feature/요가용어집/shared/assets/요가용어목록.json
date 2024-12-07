@@ -200,7 +200,7 @@
         "용어풀이": "파다",
         "뜻": "발 또는 다리",
         "태그": "신체부위",
-        "아사나": "UttanaPadasana 욷타나 파다아사나/ Uttana Padasana 욷카타 파다아사나 / Pada Hastasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 / Sirsa Padasana 시르사 파다아사나 /"
+        "아사나": "Uttana Padasana 욷타나 파다아사나/ Uttana Padasana 욷카타 파다아사나 / Pada Hastasana 파다 하스타 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 / Prasarita Padottanasana 프라사리타 파도타나 아사나 / Sirsa Padasana 시르사 파다아사나 /"
     },
     {
         "용어": "Padangustha",
@@ -350,11 +350,11 @@
         "아사나": "Anantasana 아난타 아사나 /"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Anga",
+        "용어풀이": "앙가",
+        "뜻": "부분, 신체 부위",
+        "태그": "용어",
+        "아사나": "Ashtangasana 아쉬탕가 아사나 /"
     },
     {
         "용어": "Anahata",
@@ -413,11 +413,11 @@
         "아사나": null
     },
     {
-        "용어": "Ahtavakra",
-        "용어풀이": "아스타바크라",
+        "용어": "Asta",
+        "용어풀이": "아슈타",
         "뜻": "인도 현인",
         "태그": "현인",
-        "아사나": "Astavakrasana 아스타바크라 아사나 /"
+        "아사나": "Astavakrasana 아슈타바크라 아사나 /"
     },
     {
         "용어": null,
@@ -672,11 +672,11 @@
         "아사나": "Galavasana 갈라바 아사나 / Eka Pada Galavasana 에카 파다 갈라바 아사나 /"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Greeva",
+        "용어풀이": "그리바",
+        "뜻": "목",
+        "태그": "용어",
+        "아사나": "Greeva Sanchalanasana 그리바 산찰라나 /"
     },
     {
         "용어": null,
@@ -1680,11 +1680,11 @@
         "아사나": "Vatayanasana 바타야 아사나 /"
     },
     {
-        "용어": null,
-        "용어풀이": null,
-        "뜻": null,
-        "태그": null,
-        "아사나": null
+        "용어": "Vakra",
+        "용어풀이": "바크라",
+        "뜻": "굽은 휘어진",
+        "태그": "용어",
+        "아사나": "Astavakrasana 아슈타바크라 아사나 /"
     },
     {
         "용어": "Vasista",
