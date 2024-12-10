@@ -34,11 +34,12 @@ function HomePage() {
   const [searchValue, setSearchValue] = useState<string>(searchParams.get('search') || '')
 
   const filteredList = useMemo(() => {
-    const filteredList = 요가용어목록.filter(({ 용어, 용어풀이, 태그 }) => {
+    const filteredList = 요가용어목록.filter(({ 용어, 용어풀이, 태그, 아사나 }) => {
       return (
         용어.toLowerCase().indexOf(searchValue.toLowerCase()) > -1 ||
         용어풀이.toUpperCase().indexOf(searchValue.toUpperCase()) > -1 ||
-        태그.toLowerCase().indexOf(searchValue.toLowerCase()) > -1
+        태그.toLowerCase().indexOf(searchValue.toLowerCase()) > -1 ||
+        아사나.toLowerCase().indexOf(searchValue.toLowerCase()) > -1
       )
     })
 
