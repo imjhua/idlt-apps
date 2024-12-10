@@ -5,7 +5,7 @@ export const 요가용어목록 = (LIST.filter(({ 용어, 용어풀이, 뜻, 태
   용어풀이: string;
   뜻: string;
   태그: string;
-  아사나: string;
+  아사나: string | null;
   index: number;
 }[])
 .sort(function (a, b) {

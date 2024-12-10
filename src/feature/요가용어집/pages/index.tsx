@@ -39,7 +39,7 @@ function HomePage() {
         용어.toLowerCase().indexOf(searchValue.toLowerCase()) > -1 ||
         용어풀이.toUpperCase().indexOf(searchValue.toUpperCase()) > -1 ||
         태그.toLowerCase().indexOf(searchValue.toLowerCase()) > -1 ||
-        아사나.toLowerCase().indexOf(searchValue.toLowerCase()) > -1
+        (아사나 || '').toLowerCase().indexOf(searchValue.toLowerCase()) > -1
       )
     })
 
