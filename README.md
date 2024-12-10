@@ -13,6 +13,7 @@
 
 ## 참고 사이트
 
+- 웹뷰 관련: https://webkit.org/blog/7929/designing-websites-for-iphone-x/
 - 이모지: https://emoji.supply/kitchen/
 - 캐릭터 이미지: https://www.flaticon.com/packs/animals-126
 - grommet 아이콘: https://icons.grommet.io/?

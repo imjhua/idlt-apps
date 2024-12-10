@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Text } from 'grommet'
 import { CaretNext, CaretPrevious } from 'grommet-icons'
 import { type MouseEvent, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import { clipboard } from '@/lib/utils'
 import useQueryParams from '@/shared/hooks/useQueryParams'
@@ -103,11 +104,15 @@ function Page() {
                       marginBottom: 8
                     }}
                     >
-                    <Text
-                      size="medium"
-                    >
-                      {value}
-                    </Text>
+                    <Link
+                      target='_blank'
+                      to={`https://www.istockphoto.com/kr/search/2/image-film?family=creative&phrase=${encodeURIComponent(value)}`}>
+                      <Text
+                        size="medium"
+                      >
+                        {value}
+                      </Text>
+                    </Link>
                   </Button>
                 )
               })}</>)}
