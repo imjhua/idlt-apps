@@ -106,7 +106,7 @@ function Page() {
                     >
                     <Link
                       target='_blank'
-                      to={`https://pixabay.com/ko/images/search/${encodeURIComponent(value.split(' ')[0])}`}>
+                      to={`https://www.shutterstock.com/ko/search/${encodeURIComponent(value.split(' ')[0])}`}>
                       {/* to={`https://www.istockphoto.com/kr/search/2/image-film?family=creative&phrase=${encodeURIComponent(value.split(' ')[0])}`}> */}
                       <Text
                         size="medium"
