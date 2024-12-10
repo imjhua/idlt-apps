@@ -91,6 +91,12 @@ function Page() {
                   아사나:
                 </Text>
                 {아사나.split('/').map((value, index) => {
+                  const korean = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/
+
+                  const asana = value.split('').filter((v) => {
+                    return !korean.test(v)
+                  }).join('')
+
                 return value && (
                   <Button
                     key={index}
@@ -106,7 +112,7 @@ function Page() {
                     >
                     <Link
                       target='_blank'
-                      to={`https://www.shutterstock.com/ko/search/${encodeURIComponent(value.split(' ')[0])}`}>
+                      to={`https://www.shutterstock.com/ko/search/${encodeURIComponent(asana)}`}>
                       {/* to={`https://www.istockphoto.com/kr/search/2/image-film?family=creative&phrase=${encodeURIComponent(value.split(' ')[0])}`}> */}
                       <Text
                         size="medium"
